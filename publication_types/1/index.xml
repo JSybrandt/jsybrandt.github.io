@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>1 on Justin Sybrandt</title>
-    <link>sybrandt.com/publication_types/1/</link>
+    <link>www.sybrandt.com/publication_types/1/</link>
     <description>Recent content in 1 on Justin Sybrandt</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2017 Justin Sybrandt</copyright>
     <lastBuildDate>Sun, 13 Aug 2017 00:00:00 +0000</lastBuildDate>
-    <atom:link href="sybrandt.com/publication_types/1/" rel="self" type="application/rss+xml" />
+    <atom:link href="www.sybrandt.com/publication_types/1/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>MOLIERE: Automatic Biomedical Hypothesis Generation System</title>
-      <link>sybrandt.com/publication/moliere-automatic-biomedical-hypothesis-generation/</link>
+      <link>www.sybrandt.com/publication/moliere-automatic-biomedical-hypothesis-generation/</link>
       <pubDate>Sun, 13 Aug 2017 00:00:00 +0000</pubDate>
       
-      <guid>sybrandt.com/publication/moliere-automatic-biomedical-hypothesis-generation/</guid>
+      <guid>www.sybrandt.com/publication/moliere-automatic-biomedical-hypothesis-generation/</guid>
       <description>&lt;p&gt;MOLIERE is a hypothesis generation system which is able to identify potential relationships from large text corpora.
 Our presented system was trained on the MEDLINE dataset, containing nearly 25 million documents dating back to the late 1800&amp;rsquo;s.
 We validate our system by predicting recent findings using only information present before 2010.

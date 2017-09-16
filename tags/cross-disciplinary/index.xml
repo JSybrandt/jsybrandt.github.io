@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Cross Disciplinary on Justin Sybrandt</title>
-    <link>sybrandt.com/tags/cross-disciplinary/</link>
+    <link>www.sybrandt.com/tags/cross-disciplinary/</link>
     <description>Recent content in Cross Disciplinary on Justin Sybrandt</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2017 Justin Sybrandt</copyright>
     <lastBuildDate>Fri, 15 Sep 2017 17:35:11 -0400</lastBuildDate>
-    <atom:link href="sybrandt.com/tags/cross-disciplinary/" rel="self" type="application/rss+xml" />
+    <atom:link href="www.sybrandt.com/tags/cross-disciplinary/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Bridge Health Classification With Automotive Sensing</title>
-      <link>sybrandt.com/project/bridge-classification/</link>
+      <link>www.sybrandt.com/project/bridge-classification/</link>
       <pubDate>Fri, 15 Sep 2017 17:35:11 -0400</pubDate>
       
-      <guid>sybrandt.com/project/bridge-classification/</guid>
+      <guid>www.sybrandt.com/project/bridge-classification/</guid>
       <description>&lt;p&gt;In this project, I am applying machine learning techniques to identify the structural health of arbitrary bridges.
 Our goal is to collect data related to bridge health, such as vertical acceleration and harmonic frequency, through sensors present in vehicles.&lt;/p&gt;
 

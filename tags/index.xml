@@ -2,57 +2,57 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Justin Sybrandt</title>
-    <link>sybrandt.com/tags/</link>
+    <link>www.sybrandt.com/tags/</link>
     <description>Recent content in Tags on Justin Sybrandt</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2017 Justin Sybrandt</copyright>
     <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
-    <atom:link href="sybrandt.com/tags/" rel="self" type="application/rss+xml" />
+    <atom:link href="www.sybrandt.com/tags/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Content tagged as &#39;Academic&#39;</title>
-      <link>sybrandt.com/tags/academic/</link>
+      <link>www.sybrandt.com/tags/academic/</link>
       <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>sybrandt.com/tags/academic/</guid>
+      <guid>www.sybrandt.com/tags/academic/</guid>
       <description>&lt;p&gt;Here is a list of all the content that has been tagged as &lt;em&gt;academic&lt;/em&gt;.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Big Data</title>
-      <link>sybrandt.com/tags/big-data/</link>
+      <link>www.sybrandt.com/tags/big-data/</link>
       <pubDate>Fri, 15 Sep 2017 22:27:22 -0400</pubDate>
       
-      <guid>sybrandt.com/tags/big-data/</guid>
+      <guid>www.sybrandt.com/tags/big-data/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Cross Disciplinary</title>
-      <link>sybrandt.com/tags/cross-disciplinary/</link>
+      <link>www.sybrandt.com/tags/cross-disciplinary/</link>
       <pubDate>Fri, 15 Sep 2017 17:35:11 -0400</pubDate>
       
-      <guid>sybrandt.com/tags/cross-disciplinary/</guid>
+      <guid>www.sybrandt.com/tags/cross-disciplinary/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Knowledge Discovery</title>
-      <link>sybrandt.com/tags/knowledge-discovery/</link>
+      <link>www.sybrandt.com/tags/knowledge-discovery/</link>
       <pubDate>Fri, 15 Sep 2017 22:27:22 -0400</pubDate>
       
-      <guid>sybrandt.com/tags/knowledge-discovery/</guid>
+      <guid>www.sybrandt.com/tags/knowledge-discovery/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Teaching</title>
-      <link>sybrandt.com/tags/teaching/</link>
+      <link>www.sybrandt.com/tags/teaching/</link>
       <pubDate>Wed, 16 Aug 2017 17:35:11 -0400</pubDate>
       
-      <guid>sybrandt.com/tags/teaching/</guid>
+      <guid>www.sybrandt.com/tags/teaching/</guid>
       <description></description>
     </item>
     

@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Teaching on Justin Sybrandt</title>
-    <link>sybrandt.com/tags/teaching/</link>
+    <link>www.sybrandt.com/tags/teaching/</link>
     <description>Recent content in Teaching on Justin Sybrandt</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2017 Justin Sybrandt</copyright>
     <lastBuildDate>Wed, 16 Aug 2017 17:35:11 -0400</lastBuildDate>
-    <atom:link href="sybrandt.com/tags/teaching/" rel="self" type="application/rss+xml" />
+    <atom:link href="www.sybrandt.com/tags/teaching/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Learn to Program Python</title>
-      <link>sybrandt.com/project/learn-to-program-python/</link>
+      <link>www.sybrandt.com/project/learn-to-program-python/</link>
       <pubDate>Wed, 16 Aug 2017 17:35:11 -0400</pubDate>
       
-      <guid>sybrandt.com/project/learn-to-program-python/</guid>
+      <guid>www.sybrandt.com/project/learn-to-program-python/</guid>
       <description>&lt;p&gt;I, on occasion, put together python tutorial videos as a way to explain the basics of programming to interested friends.
 Unfortunately, with my schedule, these don&amp;rsquo;t come out as often as I would like, but the episodes are available for anyone interested.&lt;/p&gt;
 
