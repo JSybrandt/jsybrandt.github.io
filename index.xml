@@ -11,6 +11,160 @@
     <atom:link href="sybrandt.com/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Producer and Consumer Model in C&#43;&#43;</title>
+      <link>sybrandt.com/post/producer-consumer-openmp-cpp/</link>
+      <pubDate>Sat, 16 Sep 2017 23:18:26 -0400</pubDate>
+      
+      <guid>sybrandt.com/post/producer-consumer-openmp-cpp/</guid>
+      <description>
+
+&lt;p&gt;So recently, I have had to parallelize a lot of the code I&amp;rsquo;ve been working with.
+This initially seemed like a daunting task.&lt;/p&gt;
+
+&lt;p&gt;Not its not like I&amp;rsquo;ve never had to write parallel code before, and its not like my task was that hard, in principle, to modify.
+My issue primarily came from a staunch unwillingness to look up the old &lt;em&gt;PRAGMA&lt;/em&gt; statements that I&amp;rsquo;ve forgotten.
+After all, I could just throw my problem into python, right?&lt;/p&gt;
+
+&lt;p&gt;While that may be true, the version of myself today would like to tell the version of myself from last week that the C++ solution is not as bad as I thought.&lt;/p&gt;
+
+&lt;h2 id=&#34;the-task&#34;&gt;The Task&lt;/h2&gt;
+
+&lt;p&gt;I have a really large file, and each of its 40 million lines corresponded to a different computation.
+There were no dependencies between these lines, and the whole thing was just encoded as plain text.
+A line consisted of an id followed by 500 floats, representing a vector in $\Re^{500}$.&lt;/p&gt;
+
+&lt;p&gt;For each line, I just wanted to load the corresponding vector, and compute two vector distances.
+Based on those distances, I would either keep the vector or throw it away.&lt;/p&gt;
+
+&lt;p&gt;Sequentially, this took forever.&lt;/p&gt;
+
+&lt;h2 id=&#34;the-problem&#34;&gt;The Problem&lt;/h2&gt;
+
+&lt;p&gt;There are two synchronization points in this task.
+Firstly, each line from the file must be read sequentially.
+Because the lines are of variable length, I can&amp;rsquo;t do any fancy parallel file system tricks to make loading faster.
+Secondly, the resulting data structure, my collection of selected vectors, needs to be protected so two different threads don&amp;rsquo;t try to modify it at the same time.&lt;/p&gt;
+
+&lt;p&gt;This means firstly that only a single thread can read from the time at a time, and only a single thread can store its results at a time.
+That being said, we are only going to be saving a small fraction of the total vectors.
+Also, other threads shouldn&amp;rsquo;t have to wait while the reading thread actually &lt;em&gt;parses&lt;/em&gt; the input.&lt;/p&gt;
+
+&lt;p&gt;So the idea is pretty simple.
+One thread should read from the data file, extracting each line as fast as possible.
+We will call this the &lt;strong&gt;producer&lt;/strong&gt; thread because it produces work.
+The &lt;strong&gt;consumer&lt;/strong&gt; threads will be all other threads.&lt;/p&gt;
+
+&lt;p&gt;Whenever a new line is found, one of the available threads should take it and start parsing.
+Once parsed, the thread can independently do its distance calculations.
+If the conditions are right, then the thread should get a lock on the data structure, store its result, and repeat.&lt;/p&gt;
+
+&lt;p&gt;In python that&amp;rsquo;s pretty much as easy as:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;pool.map(doWork, [line for line in file])
+# Note: This line doesn&#39;t do EXACTLY what I just described, but you get the gist.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;How on earth do you do that in C++?&lt;/p&gt;
+
+&lt;h2 id=&#34;the-c-solution&#34;&gt;The C++ Solution&lt;/h2&gt;
+
+&lt;p&gt;Okay, we are going to use &lt;a href=&#34;http://www.openmp.org/&#34; target=&#34;_blank&#34;&gt;OpenMP&lt;/a&gt; and their &lt;em&gt;#pragma&lt;/em&gt; statements.
+For unfamiliar readers, these are statements that the compiler will use to do a lot of the gritty parallel work for us.
+For the semi-familiar readers, you probably do something like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-c++&#34;&gt;#pragma omp parallel for
+for(unsigned int i = 0; i &amp;lt; N; ++i){
+  //Make Magic Happen
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The above code block says &lt;em&gt;&amp;ldquo;Do the following for loop in parallel&amp;rdquo;&lt;/em&gt;.
+Unsurprisingly, each iteration of the for loop is done be a different thread.
+Unfortunately, there is no single &lt;em&gt;#pragma&lt;/em&gt; statement for our little producer-consumer idea described above.
+That said, its easier than you might think.&lt;/p&gt;
+
+&lt;p&gt;The code looks a little something like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-c++&#34;&gt;DataStructure data;
+ifstream fileStream;
+string line;
+
+// ...
+
+#pragma omp parallel
+{
+#pragma omp single
+  {
+    while(getline(fileStream, line)){
+#pragma omp task firstprivate(line)
+      {
+        Vector vec(line); // Parse line
+        // Get Work Done
+        if(condition_met){
+#pragma omp critical
+          data.add(line);
+        }
+      }
+    }
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;So whats going on?&lt;/p&gt;
+
+&lt;p&gt;First thing first, we get our data setup before the &lt;em&gt;#pragma&lt;/em&gt; nonsense.
+This is because once we enter these &lt;em&gt;#pragma&lt;/em&gt; statements, we are going to be in a new scope, and we won&amp;rsquo;t be able to get the data back out. We enter the new scope with:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-c++&#34;&gt;#pragma omp parallel
+{
+  // Everything here is run in parallel.
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This says that the following block will be run using all the threads available on the system.
+What confused me at first is that the next line seems to say the opposite:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-c++&#34;&gt;#pragma omp single
+{
+  // Everything here is run by one thread.
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This line says that the following block will be run on only &lt;strong&gt;one&lt;/strong&gt; of the many threads.
+Whats important to note here is that the remaining threads still exist, and are waiting for work.
+Its this &lt;em&gt;#pragma&lt;/em&gt; which allows us to set up our &lt;strong&gt;producer&lt;/strong&gt;.
+We get our &lt;strong&gt;consumers&lt;/strong&gt; with this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-c++&#34;&gt;#pragma omp task
+{
+  // A new thread takes this work.
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This statement creates work for a &lt;strong&gt;consumer&lt;/strong&gt; to take on.
+Our single producer thread creates a new task every time they enter the body of our loop.
+The option &lt;strong&gt;firstprivate(line)&lt;/strong&gt; specifies that each task should copy over its own version of the &lt;strong&gt;line&lt;/strong&gt; variable.
+That way, each thread doesn&amp;rsquo;t need to worry about it when the &lt;strong&gt;producer&lt;/strong&gt; gets a new line.&lt;/p&gt;
+
+&lt;p&gt;Finally, we use the following to protect our data structure:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-c++&#34;&gt;#pragma omp critical
+{
+  // Only one thread can run this at a time.
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;By using the &lt;strong&gt;critical&lt;/strong&gt; keyword, we specify that only one thread is allowed to write to our data structure at a time.&lt;/p&gt;
+
+&lt;p&gt;And that&amp;rsquo;s it!
+Who knew it was so easy to set this up?
+All we need to do now is compile our code with the &lt;em&gt;-fopenmp&lt;/em&gt; flag and we are off to the races.
+I was able to use a 64 core machine at 100% using this method!
+Hope this helps you too.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Hypothesis Generation Explained</title>
       <link>sybrandt.com/post/hypothesis-generation-explained/</link>
       <pubDate>Fri, 15 Sep 2017 23:18:26 -0400</pubDate>
