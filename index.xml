@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Justin Sybrandt on Justin Sybrandt</title>
+    <link>jsybrandt.github.io/</link>
+    <description>Recent content in Justin Sybrandt on Justin Sybrandt</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2017 Justin Sybrandt</copyright>
+    <lastBuildDate>Wed, 20 Sep 2017 00:00:00 +0000</lastBuildDate>
+    <atom:link href="jsybrandt.github.io/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Hypothesis Generation Explained</title>
+      <link>jsybrandt.github.io/post/hypothesis-generation-explained/</link>
+      <pubDate>Fri, 15 Sep 2017 23:18:26 -0400</pubDate>
+      
+      <guid>jsybrandt.github.io/post/hypothesis-generation-explained/</guid>
+      <description>
+
+&lt;h1 id=&#34;undiscovered-public-knowledge&#34;&gt;Undiscovered Public Knowledge&lt;/h1&gt;
+
+&lt;p&gt;In the last couple of years, researchers worldwide have begun to develop a powerful new tool. By using data mining techniques, these scientists hope to one day put themselves out of a job.&lt;/p&gt;
+
+&lt;p&gt;It all began in the 80&amp;rsquo;s with a man named Don Swanson. He was the first to notice something that he called undiscovered public knowledge. He saw that no human could possibly read all of the available information on a given topic, and he guessed that there were some truths that no one actually knows, but have already been published.&lt;/p&gt;
+
+&lt;p&gt;Big ideas are often discovered when people from different backgrounds get together on the same team. These ideas crop up because cross-disciplinary collaboration brings in not only a new viewpoint, but people who entirely different sets of mental information. For example, the idea of DNA storage has been recently popularized by Harvard scientists as a way to keep massive amounts of digital data. This bioinformatic technology relies on the connection that DNA and SSD&amp;rsquo;s are both solutions to the same core problem: information storage.&lt;/p&gt;
+
+&lt;p&gt;DNA was originally proposed as a means for data storage in 1964. Up until that point, there had been papers about DNA in medical journals, and there had been papers about hard drives in technical journals. Typically, doctors don&amp;rsquo;t tend to meet many people from IBM at dinner parties, so it was not likely that many doctors knew how hard drives worked, or IBM employees who could describe DNA&amp;rsquo;s storage capabilities. But without realizing it, both communities explored the same problem. This is an example of Don Swanson&amp;rsquo;s undiscovered public knowledge.&lt;/p&gt;
+
+&lt;p&gt;Before 1964, no one was saying DNA had anything to do with hard drives, but there existed an implicit connection: both addressed information storage. If someone was capable of keeping all technical and medical literature in their head simultaneously, this connection might seem trivial. And now, looking back on it, the connection seems pretty clear to us. What we attempt to do with hypothesis generation is exactly this; we try to identify these implicit connections.
+Current State of the Art&lt;/p&gt;
+
+&lt;p&gt;Right now, most hypothesis generation systems are beginning to become really powerful, and almost all of them stick to the field of medicine. This is for two main reasons:  Firstly there is a wealth of public information available about medicine. PubMed.gov is a service which allows anyone to search for medical papers, and we can download all of them! This dataset consists of over 24.5 million papers dating all the way back to the late 1800&amp;rsquo;s.  Secondly, medicine is important! We are in the business of curing cancer with computers! Who doesn&amp;rsquo;t want to say that at a dinner party?  All of these systems tend to have a similar structure. They start with paper data from PubMed and typically select a subset of the literature they think is relevant to some particular inquiry. They might also take in some keyword data, gene data, or other domain specific information to help make their decision. After this the team applies some statistical and/or machine learning techniques eventually resulting in a program which allows a user to request some information.&lt;/p&gt;
+
+&lt;p&gt;Right now, these systems are starting to be used in the real world. Drug companies use techniques like this to figure out what to do with their R&amp;amp;D budgets. Drug research is very costly and, like all research, results are not guaranteed. Hypothesis generation promises to give these companies a better return on their investments.That return can be even bigger when we start considering drug-repurposing.&lt;/p&gt;
+
+&lt;p&gt;When a scientist develops a new drug to treat some disease, they typically focus on a specific biological function which the drug is intended to change. For example, a specific protein might be responsible for a viral disease, so drugs will focus on changing how that protein interacts in the body. If we later discover that the same protein is responsible for certain types of cancer, it is likely that we can use the same anti-viral drugs to treat them. This sort of discovery is perfect for hypothesis generation.&lt;/p&gt;
+
+&lt;p&gt;Many current hypothesis generation systems require the user to specify two keywords, such as an anti-viral drug, and a protein for example. From this, the system could possibly discover types of cancer or the stages in cancer development. This discovery would imply to a human scientist that it is worthwhile to investigate this drug repurposing.&lt;/p&gt;
+
+&lt;h1 id=&#34;moliere&#34;&gt;MOLIERE&lt;/h1&gt;
+
+&lt;p&gt;In the last couple of months, I have worked on MOLIERE, a new hypothesis generation system that can find conceptual links within the entire PubMed data set. We built MOLIERE to be more generalized than other systems which limit their search to specific proteins or keywords. Instead, we process all 24.5 million medical papers and learn a whole lot about them. We still allow people to query for the links between two keywords, but we use some machine learning and natural language processing techniques to give that user a list of topics which we believe are connected to the search.&lt;/p&gt;
+
+&lt;p&gt;We found that we can detect a lot of really interesting relationships. We did some tests using historical data, meaning we only looked at papers published before anyone had actually found these relationships, and we saw that MOLIERE could identify them anyway!&lt;/p&gt;
+
+&lt;p&gt;One of our best results was around the gene DDX3. It has been known to be involved with the transmission of HIV, but more recently it has been found to be linked to cancer development. There exist viral drugs intended to help treat HIV by interacting with DDX3, and these have been prime repurposing candidates for cancer treatments. So to run our experiments, we went back to 2009 before any of this had been discovered.&lt;/p&gt;
+
+&lt;p&gt;We looked for the associations between DDX3 and certain cancer concepts, primarily those involved with the &amp;ldquo;wnt signaling pathway.&amp;rdquo; Although I am not a biologist, it is my understanding that cancer cells spread to new parts of the body through this. The concepts which MOLIERE found all indicated that there is a strong relationship between DDX3 and the wnt signaling pathway. We even identify the types of interactions DDX3 has in this process.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>MOLIERE: Automatic Biomedical Hypothesis Generation</title>
+      <link>jsybrandt.github.io/project/moliere-automatic-biomedical-hypothesis-generation/</link>
+      <pubDate>Fri, 15 Sep 2017 22:27:22 -0400</pubDate>
+      
+      <guid>jsybrandt.github.io/project/moliere-automatic-biomedical-hypothesis-generation/</guid>
+      <description>&lt;p&gt;MOLIERE, originally presented at &lt;a href=&#34;http://dl.acm.org/citation.cfm?id=3098057&amp;amp;CFID=985180416&#34; target=&#34;_blank&#34;&gt;KDD&amp;rsquo;17&lt;/a&gt;, is a system which can identify connections within medical literature.
+In order to increase the productivity of medical researchers, we are attempting to deploy the pipeline to perform at scale.
+Along with this come a series of complications regarding the scale of the MEDLINE data set and the use-cases of scientists.&lt;/p&gt;
+
+&lt;p&gt;This project is being pursued primarily by an aspiring group of undergraduate students in Clemson&amp;rsquo;s &lt;em&gt;Seminar for Professional Issues&lt;/em&gt; class.
+Progress soon to come!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Bridge Health Classification With Automotive Sensing</title>
+      <link>jsybrandt.github.io/project/bridge-classification/</link>
+      <pubDate>Fri, 15 Sep 2017 17:35:11 -0400</pubDate>
+      
+      <guid>jsybrandt.github.io/project/bridge-classification/</guid>
+      <description>&lt;p&gt;In this project, I am applying machine learning techniques to identify the structural health of arbitrary bridges.
+Our goal is to collect data related to bridge health, such as vertical acceleration and harmonic frequency, through sensors present in vehicles.&lt;/p&gt;
+
+&lt;p&gt;In the coming years, smart cars will be more prevalent.
+This will facilitate community planning and monitoring projects, such as this.
+We attempt to ready ourselves for this future by identifying the techniques and methods nessesary to gather and interpret this very noisy data.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Rapid Replication of Multi-Petabyte File Systems</title>
+      <link>jsybrandt.github.io/project/rapid-replication-of-multipetabyte-filesystems/</link>
+      <pubDate>Fri, 15 Sep 2017 17:35:11 -0400</pubDate>
+      
+      <guid>jsybrandt.github.io/project/rapid-replication-of-multipetabyte-filesystems/</guid>
+      <description>&lt;p&gt;DistSync was presented as a Work in Progress (WIP) at the Parallel Data Storage Workshop, as well as in the &lt;a href=&#34;http://sc15.supercomputing.org/sites/all/themes/SC15images/src_poster/poster_files/spost103s2-file1.pdf&#34; target=&#34;_blank&#34;&gt;SC&amp;rsquo;15 poster session&lt;/a&gt;.
+This work was done along with the storage systems group at the &lt;a href=&#34;http://www.nersc.gov/&#34; target=&#34;_blank&#34;&gt;National Energy Research Scientific Computing Center (NERSC)&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;We developed distsync in order to facilitate the move from the Oakland Scientific Facility into a new building at the LBNL Berkeley campus.
+As part of this process, the scratch file system at the old location needed to be syncronized with an out of date replica present at the new location.
+Distsync dramatically reduced the time needed to process this syncronization.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Academic Website</title>
+      <link>jsybrandt.github.io/post/academic-wedbiste/</link>
+      <pubDate>Fri, 15 Sep 2017 17:18:26 -0400</pubDate>
+      
+      <guid>jsybrandt.github.io/post/academic-wedbiste/</guid>
+      <description>&lt;p&gt;For the longest time I have been trying to figure out what is the best way to manage an academic website.
+So far I&amp;rsquo;ve had two major issues.
+Firstly, I don&amp;rsquo;t want to waste too much of my time setting the dang thing up.
+Secondly, I&amp;rsquo;m not sure what to say.
+Well all of that is going to change (it seems) thanks to this thing called Hugo and this fancy academic theme.&lt;/p&gt;
+
+&lt;p&gt;At the time of writing, I am a second year Ph.D. student, so there is a lot to figure out.
+That said, its been over a years worth of hair-pulling and number-crunching.
+So hopefully some of what comes out on this site will help someone out there.
+(Or at least, future employers will know how hard I tried).&lt;/p&gt;
+
+&lt;p&gt;Anyway, on this new platform I am going to attempt to work on writing with a more casual tone.
+I want to be able to present my work to both ivory tower elites as well as the typical layperson.
+So expect posts about machine learning, programming, technology, and surviving this wild ride we call grad school.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>MOLIERE: Automatic Biomedical Hypothesis Generation System</title>
+      <link>jsybrandt.github.io/publication/moliere-automatic-biomedical-hypothesis-generation/</link>
+      <pubDate>Sun, 13 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>jsybrandt.github.io/publication/moliere-automatic-biomedical-hypothesis-generation/</guid>
+      <description>&lt;p&gt;MOLIERE is a hypothesis generation system which is able to identify potential relationships from large text corpora.
+Our presented system was trained on the MEDLINE dataset, containing nearly 25 million documents dating back to the late 1800&amp;rsquo;s.
+We validate our system by predicting recent findings using only information present before 2010.
+These validations efforts are confirmed with the help of a domain expert.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>To Agile or Not to Agile: A Comparison of Software Development Methodologies</title>
+      <link>jsybrandt.github.io/publication/to-agile-or-not-to-agile/</link>
+      <pubDate>Sat, 01 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>jsybrandt.github.io/publication/to-agile-or-not-to-agile/</guid>
+      <description>&lt;p&gt;During the graduate course on software development methods, Ruslan Shaydulin and I put together a paper analyzing different software methodologies.
+We find, through our literature review, that the landscape of methodologies has changed rapidly within the last decade.
+Additionally, we find a large number of pros and cons for all methodologies.&lt;/p&gt;
+
+&lt;p&gt;These strengths and weaknesses are detailed in the associated work.
+Note, this work is unpublished.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Rapid Replication of Multi-Petabyte File Systems</title>
+      <link>jsybrandt.github.io/publication/rapid-replication-of-multipetabyte-filesystems/</link>
+      <pubDate>Mon, 16 Nov 2015 00:00:00 +0000</pubDate>
+      
+      <guid>jsybrandt.github.io/publication/rapid-replication-of-multipetabyte-filesystems/</guid>
+      <description>&lt;p&gt;DistSync was presented as a Work in Progress (WIP) at the Parallel Data Storage Workshop, as well as in the &lt;a href=&#34;http://sc15.supercomputing.org/sites/all/themes/SC15images/src_poster/poster_files/spost103s2-file1.pdf&#34; target=&#34;_blank&#34;&gt;SC&amp;rsquo;15 poster session&lt;/a&gt;.
+This work was done along with the storage systems group at the &lt;a href=&#34;http://www.nersc.gov/&#34; target=&#34;_blank&#34;&gt;National Energy Research Scientific Computing Center (NERSC)&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;We developed distsync in order to facilitate the move from the Oakland Scientific Facility into a new building at the LBNL Berkeley campus.
+As part of this process, the scratch file system at the old location needed to be syncronized with an out of date replica present at the new location.
+Distsync dramatically reduced the time needed to process this syncronization.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

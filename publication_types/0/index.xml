@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>0 on Justin Sybrandt</title>
+    <link>jsybrandt.github.io/publication_types/0/</link>
+    <description>Recent content in 0 on Justin Sybrandt</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2017 Justin Sybrandt</copyright>
+    <lastBuildDate>Sat, 01 Apr 2017 00:00:00 +0000</lastBuildDate>
+    <atom:link href="jsybrandt.github.io/publication_types/0/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>To Agile or Not to Agile: A Comparison of Software Development Methodologies</title>
+      <link>jsybrandt.github.io/publication/to-agile-or-not-to-agile/</link>
+      <pubDate>Sat, 01 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>jsybrandt.github.io/publication/to-agile-or-not-to-agile/</guid>
+      <description>&lt;p&gt;During the graduate course on software development methods, Ruslan Shaydulin and I put together a paper analyzing different software methodologies.
+We find, through our literature review, that the landscape of methodologies has changed rapidly within the last decade.
+Additionally, we find a large number of pros and cons for all methodologies.&lt;/p&gt;
+
+&lt;p&gt;These strengths and weaknesses are detailed in the associated work.
+Note, this work is unpublished.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
