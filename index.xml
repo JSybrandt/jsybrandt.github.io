@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Justin Sybrandt on Justin Sybrandt</title>
-    <link>www.sybrandt.com/</link>
+    <link>http://sybrandt.com/</link>
     <description>Recent content in Justin Sybrandt on Justin Sybrandt</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2017 Justin Sybrandt</copyright>
     <lastBuildDate>Wed, 20 Sep 2017 00:00:00 +0000</lastBuildDate>
-    <atom:link href="www.sybrandt.com/" rel="self" type="application/rss+xml" />
+    <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Producer and Consumer Model in C&#43;&#43;</title>
-      <link>www.sybrandt.com/post/producer-consumer-openmp-cpp/</link>
+      <link>http://sybrandt.com/post/producer-consumer-openmp-cpp/</link>
       <pubDate>Sat, 16 Sep 2017 23:18:26 -0400</pubDate>
       
-      <guid>www.sybrandt.com/post/producer-consumer-openmp-cpp/</guid>
+      <guid>http://sybrandt.com/post/producer-consumer-openmp-cpp/</guid>
       <description>
 
 &lt;p&gt;So recently, I have had to parallelize a lot of the code I&amp;rsquo;ve been working with.
@@ -166,10 +166,10 @@ Hope this helps you too.&lt;/p&gt;
     
     <item>
       <title>Hypothesis Generation Explained</title>
-      <link>www.sybrandt.com/post/hypothesis-generation-explained/</link>
+      <link>http://sybrandt.com/post/hypothesis-generation-explained/</link>
       <pubDate>Fri, 15 Sep 2017 23:18:26 -0400</pubDate>
       
-      <guid>www.sybrandt.com/post/hypothesis-generation-explained/</guid>
+      <guid>http://sybrandt.com/post/hypothesis-generation-explained/</guid>
       <description>
 
 &lt;h1 id=&#34;undiscovered-public-knowledge&#34;&gt;Undiscovered Public Knowledge&lt;/h1&gt;
@@ -207,10 +207,10 @@ Current State of the Art&lt;/p&gt;
     
     <item>
       <title>MOLIERE: Automatic Biomedical Hypothesis Generation</title>
-      <link>www.sybrandt.com/project/moliere-automatic-biomedical-hypothesis-generation/</link>
+      <link>http://sybrandt.com/project/moliere-automatic-biomedical-hypothesis-generation/</link>
       <pubDate>Fri, 15 Sep 2017 22:27:22 -0400</pubDate>
       
-      <guid>www.sybrandt.com/project/moliere-automatic-biomedical-hypothesis-generation/</guid>
+      <guid>http://sybrandt.com/project/moliere-automatic-biomedical-hypothesis-generation/</guid>
       <description>&lt;p&gt;MOLIERE, originally presented at &lt;a href=&#34;http://dl.acm.org/citation.cfm?id=3098057&amp;amp;CFID=985180416&#34; target=&#34;_blank&#34;&gt;KDD&amp;rsquo;17&lt;/a&gt;, is a system which can identify connections within medical literature.
 In order to increase the productivity of medical researchers, we are attempting to deploy the pipeline to perform at scale.
 Along with this come a series of complications regarding the scale of the MEDLINE data set and the use-cases of scientists.&lt;/p&gt;
@@ -222,10 +222,10 @@ Progress soon to come!&lt;/p&gt;
     
     <item>
       <title>Bridge Health Classification With Automotive Sensing</title>
-      <link>www.sybrandt.com/project/bridge-classification/</link>
+      <link>http://sybrandt.com/project/bridge-classification/</link>
       <pubDate>Fri, 15 Sep 2017 17:35:11 -0400</pubDate>
       
-      <guid>www.sybrandt.com/project/bridge-classification/</guid>
+      <guid>http://sybrandt.com/project/bridge-classification/</guid>
       <description>&lt;p&gt;In this project, I am applying machine learning techniques to identify the structural health of arbitrary bridges.
 Our goal is to collect data related to bridge health, such as vertical acceleration and harmonic frequency, through sensors present in vehicles.&lt;/p&gt;
 
@@ -237,10 +237,10 @@ We attempt to ready ourselves for this future by identifying the techniques and 
     
     <item>
       <title>Academic Website</title>
-      <link>www.sybrandt.com/post/academic-wedbiste/</link>
+      <link>http://sybrandt.com/post/academic-wedbiste/</link>
       <pubDate>Fri, 15 Sep 2017 17:18:26 -0400</pubDate>
       
-      <guid>www.sybrandt.com/post/academic-wedbiste/</guid>
+      <guid>http://sybrandt.com/post/academic-wedbiste/</guid>
       <description>&lt;p&gt;For the longest time I have been trying to figure out what is the best way to manage an academic website.
 So far I&amp;rsquo;ve had two major issues.
 Firstly, I don&amp;rsquo;t want to waste too much of my time setting the dang thing up.
@@ -260,10 +260,10 @@ So expect posts about machine learning, programming, technology, and surviving t
     
     <item>
       <title>Learn to Program Python</title>
-      <link>www.sybrandt.com/project/learn-to-program-python/</link>
+      <link>http://sybrandt.com/project/learn-to-program-python/</link>
       <pubDate>Wed, 16 Aug 2017 17:35:11 -0400</pubDate>
       
-      <guid>www.sybrandt.com/project/learn-to-program-python/</guid>
+      <guid>http://sybrandt.com/project/learn-to-program-python/</guid>
       <description>&lt;p&gt;I, on occasion, put together python tutorial videos as a way to explain the basics of programming to interested friends.
 Unfortunately, with my schedule, these don&amp;rsquo;t come out as often as I would like, but the episodes are available for anyone interested.&lt;/p&gt;
 
@@ -273,10 +273,10 @@ Unfortunately, with my schedule, these don&amp;rsquo;t come out as often as I wo
     
     <item>
       <title>MOLIERE: Automatic Biomedical Hypothesis Generation System</title>
-      <link>www.sybrandt.com/publication/moliere-automatic-biomedical-hypothesis-generation/</link>
+      <link>http://sybrandt.com/publication/moliere-automatic-biomedical-hypothesis-generation/</link>
       <pubDate>Sun, 13 Aug 2017 00:00:00 +0000</pubDate>
       
-      <guid>www.sybrandt.com/publication/moliere-automatic-biomedical-hypothesis-generation/</guid>
+      <guid>http://sybrandt.com/publication/moliere-automatic-biomedical-hypothesis-generation/</guid>
       <description>&lt;p&gt;MOLIERE is a hypothesis generation system which is able to identify potential relationships from large text corpora.
 Our presented system was trained on the MEDLINE dataset, containing nearly 25 million documents dating back to the late 1800&amp;rsquo;s.
 We validate our system by predicting recent findings using only information present before 2010.
@@ -286,10 +286,10 @@ These validations efforts are confirmed with the help of a domain expert.&lt;/p&
     
     <item>
       <title>To Agile or Not to Agile: A Comparison of Software Development Methodologies</title>
-      <link>www.sybrandt.com/publication/to-agile-or-not-to-agile/</link>
+      <link>http://sybrandt.com/publication/to-agile-or-not-to-agile/</link>
       <pubDate>Sat, 01 Apr 2017 00:00:00 +0000</pubDate>
       
-      <guid>www.sybrandt.com/publication/to-agile-or-not-to-agile/</guid>
+      <guid>http://sybrandt.com/publication/to-agile-or-not-to-agile/</guid>
       <description>&lt;p&gt;During the graduate course on software development methods, Ruslan Shaydulin and I put together a paper analyzing different software methodologies.
 We find, through our literature review, that the landscape of methodologies has changed rapidly within the last decade.
 Additionally, we find a large number of pros and cons for all methodologies.&lt;/p&gt;
@@ -301,10 +301,10 @@ Note, this work is unpublished.&lt;/p&gt;
     
     <item>
       <title>Rapid Replication of Multi-Petabyte File Systems</title>
-      <link>www.sybrandt.com/publication/rapid-replication-of-multipetabyte-filesystems/</link>
+      <link>http://sybrandt.com/publication/rapid-replication-of-multipetabyte-filesystems/</link>
       <pubDate>Mon, 16 Nov 2015 00:00:00 +0000</pubDate>
       
-      <guid>www.sybrandt.com/publication/rapid-replication-of-multipetabyte-filesystems/</guid>
+      <guid>http://sybrandt.com/publication/rapid-replication-of-multipetabyte-filesystems/</guid>
       <description>&lt;p&gt;DistSync was presented as a Work in Progress (WIP) at the Parallel Data Storage Workshop, as well as in the &lt;a href=&#34;http://sc15.supercomputing.org/sites/all/themes/SC15images/src_poster/poster_files/spost103s2-file1.pdf&#34; target=&#34;_blank&#34;&gt;SC&amp;rsquo;15 poster session&lt;/a&gt;.
 This work was done along with the storage systems group at the &lt;a href=&#34;http://www.nersc.gov/&#34; target=&#34;_blank&#34;&gt;National Energy Research Scientific Computing Center (NERSC)&lt;/a&gt;.&lt;/p&gt;
 
@@ -316,10 +316,10 @@ Distsync dramatically reduced the time needed to process this syncronization.&lt
     
     <item>
       <title>Rapid Replication of Multi-Petabyte File Systems</title>
-      <link>www.sybrandt.com/project/rapid-replication-of-multipetabyte-filesystems/</link>
+      <link>http://sybrandt.com/project/rapid-replication-of-multipetabyte-filesystems/</link>
       <pubDate>Tue, 15 Sep 2015 17:35:11 -0400</pubDate>
       
-      <guid>www.sybrandt.com/project/rapid-replication-of-multipetabyte-filesystems/</guid>
+      <guid>http://sybrandt.com/project/rapid-replication-of-multipetabyte-filesystems/</guid>
       <description>&lt;p&gt;DistSync was presented as a Work in Progress (WIP) at the Parallel Data Storage Workshop, as well as in the &lt;a href=&#34;http://sc15.supercomputing.org/sites/all/themes/SC15images/src_poster/poster_files/spost103s2-file1.pdf&#34; target=&#34;_blank&#34;&gt;SC&amp;rsquo;15 poster session&lt;/a&gt;.
 This work was done along with the storage systems group at the &lt;a href=&#34;http://www.nersc.gov/&#34; target=&#34;_blank&#34;&gt;National Energy Research Scientific Computing Center (NERSC)&lt;/a&gt;.&lt;/p&gt;
 

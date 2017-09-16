@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Justin Sybrandt</title>
-    <link>www.sybrandt.com/post/</link>
+    <link>http://sybrandt.com/post/</link>
     <description>Recent content in Posts on Justin Sybrandt</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2017 Justin Sybrandt</copyright>
     <lastBuildDate>Sun, 01 Jan 2017 00:00:00 -0500</lastBuildDate>
-    <atom:link href="www.sybrandt.com/post/" rel="self" type="application/rss+xml" />
+    <atom:link href="/post/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Producer and Consumer Model in C&#43;&#43;</title>
-      <link>www.sybrandt.com/post/producer-consumer-openmp-cpp/</link>
+      <link>http://sybrandt.com/post/producer-consumer-openmp-cpp/</link>
       <pubDate>Sat, 16 Sep 2017 23:18:26 -0400</pubDate>
       
-      <guid>www.sybrandt.com/post/producer-consumer-openmp-cpp/</guid>
+      <guid>http://sybrandt.com/post/producer-consumer-openmp-cpp/</guid>
       <description>
 
 &lt;p&gt;So recently, I have had to parallelize a lot of the code I&amp;rsquo;ve been working with.
@@ -166,10 +166,10 @@ Hope this helps you too.&lt;/p&gt;
     
     <item>
       <title>Hypothesis Generation Explained</title>
-      <link>www.sybrandt.com/post/hypothesis-generation-explained/</link>
+      <link>http://sybrandt.com/post/hypothesis-generation-explained/</link>
       <pubDate>Fri, 15 Sep 2017 23:18:26 -0400</pubDate>
       
-      <guid>www.sybrandt.com/post/hypothesis-generation-explained/</guid>
+      <guid>http://sybrandt.com/post/hypothesis-generation-explained/</guid>
       <description>
 
 &lt;h1 id=&#34;undiscovered-public-knowledge&#34;&gt;Undiscovered Public Knowledge&lt;/h1&gt;
@@ -207,10 +207,10 @@ Current State of the Art&lt;/p&gt;
     
     <item>
       <title>Academic Website</title>
-      <link>www.sybrandt.com/post/academic-wedbiste/</link>
+      <link>http://sybrandt.com/post/academic-wedbiste/</link>
       <pubDate>Fri, 15 Sep 2017 17:18:26 -0400</pubDate>
       
-      <guid>www.sybrandt.com/post/academic-wedbiste/</guid>
+      <guid>http://sybrandt.com/post/academic-wedbiste/</guid>
       <description>&lt;p&gt;For the longest time I have been trying to figure out what is the best way to manage an academic website.
 So far I&amp;rsquo;ve had two major issues.
 Firstly, I don&amp;rsquo;t want to waste too much of my time setting the dang thing up.
