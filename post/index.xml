@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Justin Sybrandt</title>
-    <link>jsybrandt.github.io/post/</link>
+    <link>sybrandt.com/post/</link>
     <description>Recent content in Posts on Justin Sybrandt</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2017 Justin Sybrandt</copyright>
     <lastBuildDate>Sun, 01 Jan 2017 00:00:00 -0500</lastBuildDate>
-    <atom:link href="jsybrandt.github.io/post/" rel="self" type="application/rss+xml" />
+    <atom:link href="sybrandt.com/post/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Hypothesis Generation Explained</title>
-      <link>jsybrandt.github.io/post/hypothesis-generation-explained/</link>
+      <link>sybrandt.com/post/hypothesis-generation-explained/</link>
       <pubDate>Fri, 15 Sep 2017 23:18:26 -0400</pubDate>
       
-      <guid>jsybrandt.github.io/post/hypothesis-generation-explained/</guid>
+      <guid>sybrandt.com/post/hypothesis-generation-explained/</guid>
       <description>
 
 &lt;h1 id=&#34;undiscovered-public-knowledge&#34;&gt;Undiscovered Public Knowledge&lt;/h1&gt;
@@ -53,10 +53,10 @@ Current State of the Art&lt;/p&gt;
     
     <item>
       <title>Academic Website</title>
-      <link>jsybrandt.github.io/post/academic-wedbiste/</link>
+      <link>sybrandt.com/post/academic-wedbiste/</link>
       <pubDate>Fri, 15 Sep 2017 17:18:26 -0400</pubDate>
       
-      <guid>jsybrandt.github.io/post/academic-wedbiste/</guid>
+      <guid>sybrandt.com/post/academic-wedbiste/</guid>
       <description>&lt;p&gt;For the longest time I have been trying to figure out what is the best way to manage an academic website.
 So far I&amp;rsquo;ve had two major issues.
 Firstly, I don&amp;rsquo;t want to waste too much of my time setting the dang thing up.

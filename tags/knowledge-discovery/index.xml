@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Knowledge Discovery on Justin Sybrandt</title>
-    <link>jsybrandt.github.io/tags/knowledge-discovery/</link>
+    <link>sybrandt.com/tags/knowledge-discovery/</link>
     <description>Recent content in Knowledge Discovery on Justin Sybrandt</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2017 Justin Sybrandt</copyright>
     <lastBuildDate>Fri, 15 Sep 2017 22:27:22 -0400</lastBuildDate>
-    <atom:link href="jsybrandt.github.io/tags/knowledge-discovery/" rel="self" type="application/rss+xml" />
+    <atom:link href="sybrandt.com/tags/knowledge-discovery/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>MOLIERE: Automatic Biomedical Hypothesis Generation</title>
-      <link>jsybrandt.github.io/project/moliere-automatic-biomedical-hypothesis-generation/</link>
+      <link>sybrandt.com/project/moliere-automatic-biomedical-hypothesis-generation/</link>
       <pubDate>Fri, 15 Sep 2017 22:27:22 -0400</pubDate>
       
-      <guid>jsybrandt.github.io/project/moliere-automatic-biomedical-hypothesis-generation/</guid>
+      <guid>sybrandt.com/project/moliere-automatic-biomedical-hypothesis-generation/</guid>
       <description>&lt;p&gt;MOLIERE, originally presented at &lt;a href=&#34;http://dl.acm.org/citation.cfm?id=3098057&amp;amp;CFID=985180416&#34; target=&#34;_blank&#34;&gt;KDD&amp;rsquo;17&lt;/a&gt;, is a system which can identify connections within medical literature.
 In order to increase the productivity of medical researchers, we are attempting to deploy the pipeline to perform at scale.
 Along with this come a series of complications regarding the scale of the MEDLINE data set and the use-cases of scientists.&lt;/p&gt;
