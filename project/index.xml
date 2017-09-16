@@ -41,9 +41,22 @@ We attempt to ready ourselves for this future by identifying the techniques and 
     </item>
     
     <item>
+      <title>Learn to Program Python</title>
+      <link>jsybrandt.github.io/project/learn-to-program-python/</link>
+      <pubDate>Wed, 16 Aug 2017 17:35:11 -0400</pubDate>
+      
+      <guid>jsybrandt.github.io/project/learn-to-program-python/</guid>
+      <description>&lt;p&gt;I, on occasion, put together python tutorial videos as a way to explain the basics of programming to interested friends.
+Unfortunately, with my schedule, these don&amp;rsquo;t come out as often as I would like, but the episodes are available for anyone interested.&lt;/p&gt;
+
+&lt;p&gt;Look for updates to this series on &lt;a href=&#34;https://www.youtube.com/watch?v=wdEl10kp62Y&amp;amp;list=PL7Qcg0xHM7prCRBfgfQCXekKx5vOQxayc&#34; target=&#34;_blank&#34;&gt;YouTube&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Rapid Replication of Multi-Petabyte File Systems</title>
       <link>jsybrandt.github.io/project/rapid-replication-of-multipetabyte-filesystems/</link>
-      <pubDate>Fri, 15 Sep 2017 17:35:11 -0400</pubDate>
+      <pubDate>Tue, 15 Sep 2015 17:35:11 -0400</pubDate>
       
       <guid>jsybrandt.github.io/project/rapid-replication-of-multipetabyte-filesystems/</guid>
       <description>&lt;p&gt;DistSync was presented as a Work in Progress (WIP) at the Parallel Data Storage Workshop, as well as in the &lt;a href=&#34;http://sc15.supercomputing.org/sites/all/themes/SC15images/src_poster/poster_files/spost103s2-file1.pdf&#34; target=&#34;_blank&#34;&gt;SC&amp;rsquo;15 poster session&lt;/a&gt;.
