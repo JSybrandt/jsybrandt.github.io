@@ -18,22 +18,18 @@
       <guid>http://sybrandt.com/post/producer-consumer-openmp-cpp/</guid>
       <description>
 
-&lt;p&gt;So recently, I have had to parallelize a lot of the code I&amp;rsquo;ve been working with.
-This initially seemed like a daunting task.&lt;/p&gt;
-
-&lt;p&gt;Not its not like I&amp;rsquo;ve never had to write parallel code before, and its not like my task was that hard, in principle, to modify.
-My issue primarily came from a staunch unwillingness to look up the old &lt;em&gt;PRAGMA&lt;/em&gt; statements that I&amp;rsquo;ve forgotten.
+&lt;p&gt;So recently, I needed to parallelize a lot of my old code.
+This initially seemed like a daunting task.
+Now its not like I&amp;rsquo;ve never had to write parallel code before, and its not like my task was that hard.
+My issue primarily came from a staunch unwillingness to look anything up.
 After all, I could just throw my problem into python, right?&lt;/p&gt;
 
 &lt;p&gt;While that may be true, the version of myself today would like to tell the version of myself from last week that the C++ solution is not as bad as I thought.&lt;/p&gt;
 
 &lt;h2 id=&#34;the-task&#34;&gt;The Task&lt;/h2&gt;
 
-&lt;p&gt;I have a really large file, and each of its 40 million lines corresponded to a different computation.
-There were no dependencies between these lines, and the whole thing was just encoded as plain text.
-A line consisted of an id followed by 500 floats, representing a vector in $\Re^{500}$.&lt;/p&gt;
-
-&lt;p&gt;For each line, I just wanted to load the corresponding vector, and compute two vector distances.
+&lt;p&gt;I have a file with 40 million lines, and I have to parse and run a calculation on each.
+There are no dependencies between these lines, and the whole thing is just encoded as plain text. A line consists of an id followed by 500 floats, representing a vector in $\Re^{500}$. I just wanted to load each vector and compute two distances.
 Based on those distances, I would either keep the vector or throw it away.&lt;/p&gt;
 
 &lt;p&gt;Sequentially, this took forever.&lt;/p&gt;
