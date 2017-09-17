@@ -11,6 +11,175 @@
     <atom:link href="/post/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Word Embedding Basics</title>
+      <link>http://sybrandt.com/post/word-embeddings/</link>
+      <pubDate>Sun, 17 Sep 2017 14:18:26 -0400</pubDate>
+      
+      <guid>http://sybrandt.com/post/word-embeddings/</guid>
+      <description>
+
+&lt;p&gt;Recently, in text mining circles, a new method of representing words has taken off.
+This has been due, in a large part, to recent papers from Mikolov et al. and tools like &lt;em&gt;word2vec&lt;/em&gt; &lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.
+Since then, many other projects have applied this concept to a wide variety of areas within data mining &lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:2&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:2&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;.
+So what is all the hype about? What are these embeddings and why do we need them?&lt;/p&gt;
+
+&lt;h2 id=&#34;what-is-a-word-embedding&#34;&gt;What is a word embedding?&lt;/h2&gt;
+
+&lt;p&gt;So the word &amp;ldquo;embedding&amp;rdquo; is vague, and often times the same thing will be referred to as a &amp;ldquo;representation.&amp;rdquo;
+These terms clearly aren&amp;rsquo;t clear.
+When we say we want to find &amp;ldquo;word embeddings&amp;rdquo; or &amp;ldquo;word representations&amp;rdquo; we mean that we want to find numerical representations for a set of words from a set of documents.
+Of course, the question is &amp;ldquo;how?&amp;rdquo;
+Of maybe, the question is &amp;ldquo;why?&amp;rdquo;&lt;/p&gt;
+
+&lt;h2 id=&#34;why&#34;&gt;&amp;ldquo;Why?&amp;rdquo;&lt;/h2&gt;
+
+&lt;p&gt;Well, text is very difficult for a computer to process.
+People write in very expressive ways, and the meanings of words change over time.
+Because of this, there are very few machine learning methods which expect &amp;ldquo;text&amp;rdquo; as input.
+On the other hand, practically every method expects a vector as input.&lt;/p&gt;
+
+&lt;p&gt;So imagine you wanted to train a classifier to distinguish between happy and sad news stories.
+Data mining techniques such as Support vector Machines (SVM) and Neural Networks (NN) are already very good at solving classification problems.
+So in order to use them, we need to convert our plain text into input that these methods can accept.&lt;/p&gt;
+
+&lt;h2 id=&#34;okay-so-how&#34;&gt;&amp;ldquo;Okay, so how?&amp;rdquo;&lt;/h2&gt;
+
+&lt;p&gt;Before I get into the methods, I want to define some notation to make the explanations a bit more clear:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;$W$ is our set of words.
+
+&lt;ul&gt;
+&lt;li&gt;A single word is $w_i$.&lt;/li&gt;
+&lt;li&gt;$|W|$ is the number of different words we have.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;$D$ is our set of documents.
+
+&lt;ul&gt;
+&lt;li&gt;A single document is $d_j$.&lt;/li&gt;
+&lt;li&gt;$|D|$ is the number of different words we have.&lt;/li&gt;
+&lt;li&gt;Each document $d_j$ is comprised of its own sequence of words $W_j$.&lt;/li&gt;
+&lt;li&gt;$W_j[k]$ is the $k^{\text{th}}$ word in document $d_j$&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;$R(x)$ is a function that takes a word or document and produces a vector.
+
+&lt;ul&gt;
+&lt;li&gt;A vector of length $l$ is written as $\Re^l$.&lt;/li&gt;
+&lt;li&gt;$R(x)_k$ is the $k^{\text{th}}$ number in the vector $R(x)$.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Okay, with that out of the way:&lt;/p&gt;
+
+&lt;h3 id=&#34;the-old-bag-of-words&#34;&gt;The Old: Bag of Words&lt;/h3&gt;
+
+&lt;p&gt;The easiest representation is the &lt;em&gt;bag of words&lt;/em&gt; (BOW) method, but it&amp;rsquo;s usefulness is limited.
+The BOW method represents each word $w_i$ as a vector in $\Re^{|W|}$ where $R(w_i)_i = 1$ and all other values are 0.
+This method represents a document by simply summing together all of its word&amp;rsquo;s vectors.&lt;/p&gt;
+
+&lt;p&gt;$$ R(d_j) = \sum_{w_i \in W_j} R(w_i) $$&lt;/p&gt;
+
+&lt;p&gt;This method has some pros and some critical cons.
+On the pro side, if you want to know how often $w_i$ occurs in $d_j$ all you have to do is look at $R(d_j)_i$.
+Also, documents that use the same words will have vectors with a higher &lt;a href=&#34;https://en.wikipedia.org/wiki/Cosine_similarity&#34; target=&#34;_blank&#34;&gt;cosine similarity&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;On the con side, this method throws away the ordering of words within a document.
+For example, the sentence &lt;em&gt;&amp;ldquo;the man walks the dog&amp;rdquo;&lt;/em&gt; and &lt;em&gt;&amp;ldquo;the dog walks the man&amp;rdquo;&lt;/em&gt; have the same BOW representation.
+This additionally means that if two documents use &lt;em&gt;similar&lt;/em&gt; but not the same words, they will be seen as different as two documents using completely different words.
+Also, the vectors are inefficiently long, each as long as the entire vocabulary (typically tens of millions of words).
+This means that one of those classifiers, such as a neural net, will have to accept really really long input vectors.
+Long story short, this doesn&amp;rsquo;t scale well &lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:3&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:3&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+
+&lt;h3 id=&#34;the-new-word2vec&#34;&gt;The New: Word2Vec&lt;/h3&gt;
+
+&lt;p&gt;The new method which solves the problems with BOW is referred to as &lt;em&gt;&amp;ldquo;word2vec&amp;rdquo;&lt;/em&gt;, which is the name of the first tool which implements Mikolov&amp;rsquo;s ideas &lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.
+This method creates vectors in a much lower dimensionality (typically, $100 \leq l \leq 600$).
+Additionally, words which are similar will tend to have similar vectors.
+As a side effect, the distance between words which have the same relationship (i.e. the distance between a US state and it&amp;rsquo;s capitol) will all be about the same.
+These improvements have directly led to a huge improvement in text mining over the last five years.&lt;/p&gt;
+
+&lt;p&gt;The guiding assumption in the word2vec method is that &lt;em&gt;similar words share similar company&lt;/em&gt;.
+For example, think of all the words that can fill in the blank in this sentence:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;The cat __ on the sofa.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;You probably thought of words like &amp;ldquo;sat,&amp;rdquo; &amp;ldquo;slept,&amp;rdquo; &amp;ldquo;jumped,&amp;rdquo; or &amp;ldquo;threw-up.&amp;rdquo;
+We see that all of these words are verbs, in the past tense, and actions a cat could take.
+Note that the context of the blank has a huge, albeit inexact, bearing on what word the blank could take.
+By learning these sorts of context-sensitive relationships, word2vec is able to train its embeddings.&lt;/p&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://sybrandt.com/img/posts/word2vec.png&#34; /&gt;
+    
+    
+    &lt;figcaption&gt;
+        &lt;h4&gt;Typical word2vec Training Diagram. Source: deeplearning4j.org&lt;/h4&gt;
+        
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;The above figure depicts the two training methods used in word2vec to learn word embeddings.
+On the left is the Continuous Bag of Words (CBOW) method, and on the right is Skip-Gram.
+At a high level, the CBOW  and skip-gram model are opposites.
+The former learns to predict a word given that words context, the same way we did the example about the cat above.
+The latter learns to predict context given a word.&lt;/p&gt;
+
+&lt;p&gt;Both of these use some principles from convolutional neural nets, which are outside the scope of this article&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:4&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:4&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;.
+All  you need is to think of these processes as black boxes that take vectors as input, and refine their result quality by comparing their output with our existing vectors.&lt;/p&gt;
+
+&lt;p&gt;Initially, all words are initialized as a random vector.
+Then we start scanning through all of the sentences in our training corpus.
+For each word, we pull out a number of that word&amp;rsquo;s neighbors.
+Then, using either method, we attempt to find word representations.
+We use the error between our predicted vectors and the randomly initialized ones in order to improve our model.
+We also occasionally swap a word&amp;rsquo;s representation with the output of our model.&lt;/p&gt;
+
+&lt;p&gt;By this process, word2vec eventually both finds a model which can predict word vectors given context (or vice-versa) as well as a set of word vectors that maximize the quality of that predictive model.
+This gives us $R(x)$, for all our words, which we can use in a number of ways to find embeddings for our documents.
+One of the simplest ways to do this is by simply averaging all of a document&amp;rsquo;s word vectors together.&lt;/p&gt;
+
+&lt;p&gt;$$ R(d_j) = \frac{\sum_{w_i \in W_j} R(w_i) )}{ |W_j| } $$&lt;/p&gt;
+
+&lt;h2 id=&#34;so-now-what&#34;&gt;So now what?&lt;/h2&gt;
+
+&lt;p&gt;Okay, so now that we have the fancy word vectors, we can do a lot of things with them.
+For example, imagine we wanted to find news articles related to Google.
+Well, we could find a large number of them by selecting documents whose vector representation is close to $R(\text{Google})$.&lt;/p&gt;
+
+&lt;p&gt;By using these representations, we can so improve the quality of our classifiers.
+Anywhere we used to use a BOW representation, we can replace that with a more efficient and more descriptive vector.
+Adding to the benefits, the length of the word2vec embeddings does not change based on the size of our vocabulary.&lt;/p&gt;
+
+&lt;h2 id=&#34;in-conclusion&#34;&gt;In Conclusion&lt;/h2&gt;
+
+&lt;p&gt;I hope this helped give a background on word vectors, and at least brought you up to speed with this new method.
+Certainly, there is a lot more I could go into, and a lot of work is being done to apply this principle to solve a wide range of problems.
+But that will have to be the focus of a different post.&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+
+&lt;hr /&gt;
+
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;Mikolov et al. (2013) &lt;em&gt;&amp;ldquo;Distributed representations of words and phrases and their compositionality&amp;rdquo;&lt;/em&gt; and &lt;em&gt;&amp;ldquo;Efficient estimation of word representations in vector space&amp;rdquo;&lt;/em&gt;.
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:1&#34;&gt;&lt;sup&gt;^&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34;&gt;KDD&amp;rsquo;17 had a whole session devoted just to embeddings. &lt;a href=&#34;http://www.kdd.org/kdd2016/files/jm/KDD2017BookletV2.2.pdf&#34; target=&#34;_blank&#34;&gt;Search the schedule for RT8 &lt;em&gt;&amp;ldquo;Representations&amp;rdquo;&lt;/em&gt;.&lt;/a&gt;
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:2&#34;&gt;&lt;sup&gt;^&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li id=&#34;fn:3&#34;&gt;Although, for the sake of completion, I want to note that BOW is used a lot, and there are techniques to limit the length of these vectors. The other problems are still valid though.
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:3&#34;&gt;&lt;sup&gt;^&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li id=&#34;fn:4&#34;&gt;There are a number of &lt;a href=&#34;https://arxiv.org/abs/1411.2738&#34; target=&#34;_blank&#34;&gt;decent papers&lt;/a&gt; which explain the math behind these methods, if you are interested.
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:4&#34;&gt;&lt;sup&gt;^&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Producer and Consumer Model in C&#43;&#43;</title>
       <link>http://sybrandt.com/post/producer-consumer-openmp-cpp/</link>
       <pubDate>Sat, 16 Sep 2017 23:18:26 -0400</pubDate>
