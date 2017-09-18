@@ -35,8 +35,8 @@ Of maybe, the question is &amp;ldquo;why?&amp;rdquo;&lt;/p&gt;
 
 &lt;p&gt;Well, text is very difficult for a computer to process.
 People write in very expressive ways, and the meanings of words change over time.
-Because of this, there are very few machine learning methods which expect &amp;ldquo;text&amp;rdquo; as input.
-On the other hand, practically every method expects a vector as input.&lt;/p&gt;
+Because of this, there are very few machine learning methods which accept &amp;ldquo;text&amp;rdquo; as input.
+On the other hand, practically every method accepts a vector as input.&lt;/p&gt;
 
 &lt;p&gt;So imagine you wanted to train a classifier to distinguish between happy and sad news stories.
 Data mining techniques such as Support vector Machines (SVM) and Neural Networks (NN) are already very good at solving classification problems.
