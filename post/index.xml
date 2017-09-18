@@ -29,7 +29,7 @@ So what is all the hype about? What are these embeddings and why do we need them
 These terms clearly aren&amp;rsquo;t clear.
 When we say we want to find &amp;ldquo;word embeddings&amp;rdquo; or &amp;ldquo;word representations&amp;rdquo; we mean that we want to find numerical representations for a set of words from a set of documents.
 Of course, the question is &amp;ldquo;how?&amp;rdquo;
-Of maybe, the question is &amp;ldquo;why?&amp;rdquo;&lt;/p&gt;
+Or maybe, the question is &amp;ldquo;why?&amp;rdquo;&lt;/p&gt;
 
 &lt;h2 id=&#34;why&#34;&gt;&amp;ldquo;Why?&amp;rdquo;&lt;/h2&gt;
 
