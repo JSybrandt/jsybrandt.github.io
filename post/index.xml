@@ -11,6 +11,54 @@
     <atom:link href="/post/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Agile Project Management in Google Sheets</title>
+      <link>http://sybrandt.com/post/google-slides-agile/</link>
+      <pubDate>Wed, 20 Sep 2017 15:00:00 -0400</pubDate>
+      
+      <guid>http://sybrandt.com/post/google-slides-agile/</guid>
+      <description>&lt;p&gt;I think its way to hard to manage small projects.
+There are so many project planning platforms out there and they typically fall into one of two major pitfalls for small teams.
+Either they are free and simplistic, i.e. &lt;a href=&#34;https://trello.com/&#34; target=&#34;_blank&#34;&gt;Trello&lt;/a&gt;, or they are expensive and complicated, i.e. &lt;a href=&#34;https://www.atlassian.com/software/jira&#34; target=&#34;_blank&#34;&gt;Jira&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Of course, there are millions of people who make these systems work for them everyday, but in my experience I find that it is hard for a small, well-intentioned group to actually use these.
+In the case of more simplistic tools, it seems like even a few collaborators can quickly clutter even the best laid system of Trello boards.
+Additionally, in the case of enterprise tools, I worry that management overhead quickly absorbs what should be a lean and organic work environment.
+This puts aside the point that many groups of this size are either amateurs or academic projects which work on a nonexistent budget.&lt;/p&gt;
+
+&lt;p&gt;So I recently looked through at least a dozen potential solutions, and the truth is, Google Sheets may really be the best answer.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://sybrandt.com/img/posts/googleSheetsAgile.png&#34; alt=&#34;An image showing an example task list and burndown chart&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I know it seems like I&amp;rsquo;ve found a hammer and I&amp;rsquo;m just going around looking for nails, but don&amp;rsquo;t dismiss me too fast.
+Small groups working on projects of any decent size need some sort of structure to keep on track.
+They need a way to track each member&amp;rsquo;s progress, and they need to know their project is on course.
+Most importantly, they really don&amp;rsquo;t want to waste a week fiddling around chrome extensions that promise to revolutionize their Trello experience, and they don&amp;rsquo;t want to put money down for a digital manager before a single line of code is written.&lt;/p&gt;
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;p&gt;To make it even easier for small groups, I&amp;rsquo;ve gone ahead and made that Google Sheet for them!
+&lt;a href=&#34;https://docs.google.com/spreadsheets/d/1MfuBr9Aw26RMycB0cB2hWwQ8kErLMgJk0KzflRpUsz4/edit?usp=sharing&#34; target=&#34;_blank&#34;&gt;Click Here for a Template&lt;/a&gt;&lt;/p&gt;
+
+&lt;/div&gt;
+
+
+&lt;p&gt;The above template does a remarkable number of things, all you need to do is change the names around.
+For one, it manages sprints, just duplicate the existing sprint page.
+On each sprint, all you have to is change the start date and the duration and the burndown chart will be resized for you.
+Then, you can fill in tasks, estimate work times, and priorities.&lt;/p&gt;
+
+&lt;p&gt;As you complete tasks, just mark them as done and set the completion date.
+This will automatically be reflected in the given burndown chart.
+The chart is smart enough to only include data up to the current date, and will automatically progress over time.
+You even get to see how your project&amp;rsquo;s trend compares with the ideal trend.&lt;/p&gt;
+
+&lt;p&gt;Most importantly, you can make tweaks pretty quickly if this template doesn&amp;rsquo;t do something your team needs.
+To put this in perspective, this whole template only took me about an hour to throw together.&lt;/p&gt;
+
+&lt;p&gt;Hopefully this save you some time, and gives you a quick and dirty way to start planning your sprints today!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Word Embedding Basics</title>
       <link>http://sybrandt.com/post/word-embeddings/</link>
       <pubDate>Sun, 17 Sep 2017 14:18:26 -0400</pubDate>
