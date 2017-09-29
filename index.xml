@@ -36,14 +36,15 @@ For example, I just learned that one should refer to a group of small colorful l
 
 &lt;p&gt;Another application that can be very important is that of detecting duplicates.
 For instance, when you post on &lt;a href=&#34;https://stackoverflow.com/&#34; target=&#34;_blank&#34;&gt;Stack Overflow&lt;/a&gt;, there is a feature which attempts to find questions similar to the one you are asking.
-Like above, if we simply try to look for the number of words shared between posts, we will have very similar problems to the twitter example above.&lt;/p&gt;
+If we simply try to look for the number of words shared between posts then we will have very similar problems to the twitter example above.&lt;/p&gt;
 
-&lt;p&gt;In order to solve these problems, we are going to try and use the concepts from word embeddings to learn a vector representation of a document.
+&lt;p&gt;In order to solve these problems we are going to use the concepts from word embeddings to learn a vector representation of each document.
 This will give us an approximation of that document&amp;rsquo;s content, and that will give us a sophisticated way to compare and classify text.&lt;/p&gt;
 
 &lt;h2 id=&#34;how-do-we-get-a-document-s-embedding&#34;&gt;How do we get a document&amp;rsquo;s embedding?&lt;/h2&gt;
 
-&lt;p&gt;Like in the case of word embeddings, there are a number of methods to derive document embeddings, each with pros and cons.&lt;/p&gt;
+&lt;p&gt;Of course, there are many different ways to find a vector representation of a document.
+Here we are going to summarize three, the BOW method, the centroid method, and the doc2vec methods.&lt;/p&gt;
 
 &lt;h3 id=&#34;bag-of-words&#34;&gt;Bag Of Words&lt;/h3&gt;
 
@@ -79,7 +80,7 @@ By combining these ideas, Doc2Vec embeddings outperformed many of the other meth
 
 &lt;p&gt;If you remember word2vec, we learned the representation of a word by looking at its surrounding context.
 Doc2Vec adds a new vector into this context, representing the paragraph.
-Like word2vec, doc2vec has two complimentary methods which parallel the CBOW and skip-gram methods.&lt;/p&gt;
+In the same way word2vec refers to both the CBOW and skip-gram method, doc2vec refers to two methods, each with their pros and cons.&lt;/p&gt;
 
 &lt;h3 id=&#34;distributed-memory-model-pv-dm&#34;&gt;Distributed Memory Model (PV-DM)&lt;/h3&gt;
 
