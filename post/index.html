@@ -6,10 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="theme" content="hugo-academic">
-  <meta name="generator" content="Hugo 0.29" />
+  <meta name="generator" content="Hugo 0.30.2" />
   <meta name="author" content="Justin Sybrandt">
   <meta name="description" content="Ph. D. Student : Machine Learning">
 
+  
   
   
   
@@ -21,9 +22,17 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.1/css/academicons.min.css" integrity="sha512-NThgw3XKQ1absAahW6to7Ey42uycrVvfNfyjqcFNgCmOCQ5AR4AO0SiXrN+8ZtYeappp56lk1WtvjVmEa+VR6A==" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous">
   
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.css" integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ==" crossorigin="anonymous">
   
-  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather%7CRoboto+Mono">
-  <link rel="stylesheet" href="/css/hugo-academic.css">
+  
+  
+
+
+  
+
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700%7cMerriweather%7cRoboto&#43;Mono">
+  
+  <link rel="stylesheet" href="/styles.css">
   
 
   
@@ -41,13 +50,29 @@
     
   
 
+  
   <link rel="alternate" href="http://sybrandt.com/post/index.xml" type="application/rss+xml" title="Justin Sybrandt">
   <link rel="feed" href="http://sybrandt.com/post/index.xml" type="application/rss+xml" title="Justin Sybrandt">
+  
 
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/apple-touch-icon.png">
 
   <link rel="canonical" href="http://sybrandt.com/post/">
+
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="twitter:site" content="@Justin_Sybrandt">
+  <meta property="twitter:creator" content="@Justin_Sybrandt">
+  
+  <meta property="og:site_name" content="Justin Sybrandt">
+  <meta property="og:url" content="http://sybrandt.com/post/">
+  <meta property="og:title" content="Posts | Justin Sybrandt">
+  <meta property="og:description" content="Ph. D. Student : Machine Learning">
+  <meta property="og:locale" content="en-us">
+  
+  <meta property="og:updated_time" content="2017-01-01T00:00:00-05:00">
+  
 
   
 
@@ -61,6 +86,7 @@
 
     
     <div class="navbar-header">
+      
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
               data-target=".navbar-collapse" aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
@@ -68,6 +94,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
+      
       <a class="navbar-brand" href="/">Justin Sybrandt</a>
     </div>
 
@@ -169,10 +196,20 @@
 
   
   
-  <div>
     
-    <h2><a href="http://sybrandt.com/post/document-embedding/">Document Embedding</a></h2>
     
+
+<div class="article-list-item" itemscope itemprop="blogPost">
+  
+  
+  <a href="http://sybrandt.com/post/document-embedding/">
+    <img src="/img/headers/document.jpg" class="article-banner" itemprop="image">
+  </a>
+  
+  <h3 class="article-title" itemprop="name">
+    <a href="http://sybrandt.com/post/document-embedding/" itemprop="url">Document Embedding</a>
+  </h3>
+  
 
 <div class="article-metadata">
 
@@ -186,23 +223,45 @@
   
 
   
+  
+  <span class="middot-divider"></span>
+  <a href="http://sybrandt.com/post/document-embedding/#disqus_thread"></a>
+  
+
+  
 
   
 
 </div>
 
-    <div class="article-style"><p>
-      
-      In a previous post I talked about how tools like word2vec are used to numerically understand the meanings behind words. In this post, I&rsquo;m going to continue that discussion by describing ways we can find numerical representations for whole documents. So, I&rsquo;ll be assuming you&rsquo;re already familiar with the concept of word embeddings.
+  <div class="article-style" itemprop="articleBody">
+    
+    In a previous post I talked about how tools like word2vec are used to numerically understand the meanings behind words. In this post, I&rsquo;m going to continue that discussion by describing ways we can find numerical representations for whole documents. So, I&rsquo;ll be assuming you&rsquo;re already familiar with the concept of word embeddings.
 Why do we need document embeddings? Many real-world applications need to understand the content of text which is longer than just a single word.
-      
-    </p></div>
+    
   </div>
+  <p class="read-more">
+    <a href="http://sybrandt.com/post/document-embedding/" class="btn btn-primary btn-outline">
+      CONTINUE READING
+    </a>
+  </p>
+</div>
+
   
-  <div>
     
-    <h2><a href="http://sybrandt.com/post/google-slides-agile/">Agile Project Management in Google Sheets</a></h2>
     
+
+<div class="article-list-item" itemscope itemprop="blogPost">
+  
+  
+  <a href="http://sybrandt.com/post/google-slides-agile/">
+    <img src="/img/headers/charts.jpg" class="article-banner" itemprop="image">
+  </a>
+  
+  <h3 class="article-title" itemprop="name">
+    <a href="http://sybrandt.com/post/google-slides-agile/" itemprop="url">Agile Project Management in Google Sheets</a>
+  </h3>
+  
 
 <div class="article-metadata">
 
@@ -216,23 +275,45 @@ Why do we need document embeddings? Many real-world applications need to underst
   
 
   
+  
+  <span class="middot-divider"></span>
+  <a href="http://sybrandt.com/post/google-slides-agile/#disqus_thread"></a>
+  
+
+  
 
   
 
 </div>
 
-    <div class="article-style"><p>
-      
-      I think its way to hard to manage small projects. There are so many project planning platforms out there and they typically fall into one of two major pitfalls for small teams. Either they are free and simplistic, i.e. Trello, or they are expensive and complicated, i.e. Jira.
+  <div class="article-style" itemprop="articleBody">
+    
+    I think its way to hard to manage small projects. There are so many project planning platforms out there and they typically fall into one of two major pitfalls for small teams. Either they are free and simplistic, i.e. Trello, or they are expensive and complicated, i.e. Jira.
 Of course, there are millions of people who make these systems work for them everyday, but in my experience I find that it is hard for a small, well-intentioned group to actually use these.
-      
-    </p></div>
+    
   </div>
+  <p class="read-more">
+    <a href="http://sybrandt.com/post/google-slides-agile/" class="btn btn-primary btn-outline">
+      CONTINUE READING
+    </a>
+  </p>
+</div>
+
   
-  <div>
     
-    <h2><a href="http://sybrandt.com/post/word-embeddings/">Word Embedding Basics</a></h2>
     
+
+<div class="article-list-item" itemscope itemprop="blogPost">
+  
+  
+  <a href="http://sybrandt.com/post/word-embeddings/">
+    <img src="/img/headers/words.jpg" class="article-banner" itemprop="image">
+  </a>
+  
+  <h3 class="article-title" itemprop="name">
+    <a href="http://sybrandt.com/post/word-embeddings/" itemprop="url">Word Embedding Basics</a>
+  </h3>
+  
 
 <div class="article-metadata">
 
@@ -246,22 +327,44 @@ Of course, there are millions of people who make these systems work for them eve
   
 
   
+  
+  <span class="middot-divider"></span>
+  <a href="http://sybrandt.com/post/word-embeddings/#disqus_thread"></a>
+  
+
+  
 
   
 
 </div>
 
-    <div class="article-style"><p>
-      
-      Recently, in text mining circles, a new method of representing words has taken off. This has been due, in a large part, to recent papers from Mikolov et al. and tools like word2vec 1. Since then, many other projects have applied this concept to a wide variety of areas within data mining 2. So what is all the hype about? What are these embeddings and why do we need them?
-      
-    </p></div>
+  <div class="article-style" itemprop="articleBody">
+    
+    Recently, in text mining circles, a new method of representing words has taken off. This has been due, in a large part, to recent papers from Mikolov et al. and tools like word2vec 1. Since then, many other projects have applied this concept to a wide variety of areas within data mining 2. So what is all the hype about? What are these embeddings and why do we need them?
+    
   </div>
+  <p class="read-more">
+    <a href="http://sybrandt.com/post/word-embeddings/" class="btn btn-primary btn-outline">
+      CONTINUE READING
+    </a>
+  </p>
+</div>
+
   
-  <div>
     
-    <h2><a href="http://sybrandt.com/post/producer-consumer-openmp-cpp/">Producer and Consumer Model in C&#43;&#43;</a></h2>
     
+
+<div class="article-list-item" itemscope itemprop="blogPost">
+  
+  
+  <a href="http://sybrandt.com/post/producer-consumer-openmp-cpp/">
+    <img src="/img/headers/coding.jpg" class="article-banner" itemprop="image">
+  </a>
+  
+  <h3 class="article-title" itemprop="name">
+    <a href="http://sybrandt.com/post/producer-consumer-openmp-cpp/" itemprop="url">Producer and Consumer Model in C&#43;&#43;</a>
+  </h3>
+  
 
 <div class="article-metadata">
 
@@ -275,23 +378,41 @@ Of course, there are millions of people who make these systems work for them eve
   
 
   
+  
+  <span class="middot-divider"></span>
+  <a href="http://sybrandt.com/post/producer-consumer-openmp-cpp/#disqus_thread"></a>
+  
+
+  
 
   
 
 </div>
 
-    <div class="article-style"><p>
-      
-      So recently, I needed to parallelize a lot of my old code. This initially seemed like a daunting task. Now its not like I&rsquo;ve never had to write parallel code before, and its not like my task was that hard. My issue primarily came from a staunch unwillingness to look anything up. After all, I could just throw my problem into python, right?
+  <div class="article-style" itemprop="articleBody">
+    
+    So recently, I needed to parallelize a lot of my old code. This initially seemed like a daunting task. Now its not like I&rsquo;ve never had to write parallel code before, and its not like my task was that hard. My issue primarily came from a staunch unwillingness to look anything up. After all, I could just throw my problem into python, right?
 While that may be true, the version of myself today would like to tell the version of myself from last week that the C++ solution is not as bad as I thought.
-      
-    </p></div>
+    
   </div>
+  <p class="read-more">
+    <a href="http://sybrandt.com/post/producer-consumer-openmp-cpp/" class="btn btn-primary btn-outline">
+      CONTINUE READING
+    </a>
+  </p>
+</div>
+
   
-  <div>
     
-    <h2><a href="http://sybrandt.com/post/hypothesis-generation-explained/">Hypothesis Generation Explained</a></h2>
     
+
+<div class="article-list-item" itemscope itemprop="blogPost">
+  
+  
+  <h3 class="article-title" itemprop="name">
+    <a href="http://sybrandt.com/post/hypothesis-generation-explained/" itemprop="url">Hypothesis Generation Explained</a>
+  </h3>
+  
 
 <div class="article-metadata">
 
@@ -305,18 +426,30 @@ While that may be true, the version of myself today would like to tell the versi
   
 
   
+  
+  <span class="middot-divider"></span>
+  <a href="http://sybrandt.com/post/hypothesis-generation-explained/#disqus_thread"></a>
+  
+
+  
 
   
 
 </div>
 
-    <div class="article-style"><p>
-      
-      Undiscovered Public Knowledge In the last couple of years, researchers worldwide have begun to develop a powerful new tool. By using data mining techniques, these scientists hope to one day put themselves out of a job.
+  <div class="article-style" itemprop="articleBody">
+    
+    Undiscovered Public Knowledge In the last couple of years, researchers worldwide have begun to develop a powerful new tool. By using data mining techniques, these scientists hope to one day put themselves out of a job.
 It all began in the 80&rsquo;s with a man named Don Swanson. He was the first to notice something that he called undiscovered public knowledge. He saw that no human could possibly read all of the available information on a given topic, and he guessed that there were some truths that no one actually knows, but have already been published.
-      
-    </p></div>
+    
   </div>
+  <p class="read-more">
+    <a href="http://sybrandt.com/post/hypothesis-generation-explained/" class="btn btn-primary btn-outline">
+      CONTINUE READING
+    </a>
+  </p>
+</div>
+
   
 
   
@@ -329,8 +462,9 @@ It all began in the 80&rsquo;s with a man named Don Swanson. He was the first to
 
       &copy; 2017 Justin Sybrandt &middot; 
 
-      Powered by the <a href="https://github.com/gcushen/hugo-academic" target="_blank">Academic
-      theme</a> for <a href="http://gohugo.io" target="_blank">Hugo</a>.
+      Powered by the
+      <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+      <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
 
       <span class="pull-right" aria-hidden="true">
         <a href="#" id="back_to_top">
@@ -344,13 +478,47 @@ It all began in the 80&rsquo;s with a man named Don Swanson. He was the first to
   </div>
 </footer>
 
+
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close btn-large" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Cite</h4>
+      </div>
+      <div>
+        <pre><code class="modal-body tex"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-primary btn-outline js-copy-cite" href="#" target="_blank">
+          <i class="fa fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-primary btn-outline js-download-cite" href="#" target="_blank">
+          <i class="fa fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
     
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js" integrity="sha512-jGsMH83oKe9asCpkOVkBnUrDDTp8wl+adkB2D+//JtlxO4SrLoJdhbOysIFQJloQFD+C4Fl1rMsQZF76JjV0eQ==" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.2/imagesloaded.pkgd.min.js" integrity="sha512-iHzEu7GbSc705hE2skyH6/AlTpOfBmkx7nUqTLGzPYR+C1tRaItbRlJ7hT/D3YQ9SV0fqLKzp4XY9wKulTBGTw==" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js" integrity="sha512-Z5heTz36xTemt1TbtbfXtTq5lMfYnOkXM2/eWcTTiLU01+Sw4ku1i7vScDc8fWhrP2abz9GQzgKH5NGBLoYlAw==" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/plugins/ScrollToPlugin.min.js" integrity="sha512-CDeU7pRtkPX6XJtF/gcFWlEwyaX7mcAp5sO3VIu/ylsdR74wEw4wmBpD5yYTrmMAiAboi9thyBUr1vXRPA7t0Q==" crossorigin="anonymous"></script>
+
+    
+    
+    <script id="dsq-count-scr" src="//sybrandt-com.disqus.com/count.js" async></script>
+    
+
+    
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha512-3P8rXCuGJdNZOnUx/03c1jOTnMn3rP63nBip5gOP2qmUh5YAdVAvFZ1E+QLZZbC1rtMrQb+mah3AfYW11RUrWA==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.3/imagesloaded.pkgd.min.js" integrity="sha512-umsR78NN0D23AzgoZ11K7raBD+R6hqKojyBZs1w8WvYlsI+QuKRGBx3LFCwhatzBunCjDuJpDHwxD13sLMbpRA==" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha512-iztkobsvnjKfAtTNdHkGVjAYTrrtlC7mGp/54c40wowO7LhURYl3gVzzcEqGl/qKXQltJ2HwMrdLcNUdo+N/RQ==" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js" integrity="sha512-VDBOIlDbuC4VWxGJNmuFRQ0Li0SKkDpmGyuhAG5LTDLd/dJ/S0WMVxriR2Y+CyPL5gzjpN4f/6iqWVBJlht0tQ==" crossorigin="anonymous"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin="anonymous"></script>
+    
     
     <script src="/js/hugo-academic.js"></script>
     

@@ -20,6 +20,8 @@
 Our presented system was trained on the MEDLINE dataset, containing nearly 25 million documents dating back to the late 1800&amp;rsquo;s.
 We validate our system by predicting recent findings using only information present before 2010.
 These validations efforts are confirmed with the help of a domain expert.&lt;/p&gt;
+
+&lt;p&gt;Watch our &lt;a href=&#34;https://www.youtube.com/watch?v=wA6OCix-4FU&#34; target=&#34;_blank&#34;&gt;promotional video&lt;/a&gt; or our &lt;a href=&#34;https://www.youtube.com/watch?v=ra77iJ7r_Ys&#34; target=&#34;_blank&#34;&gt;KDD talk&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     

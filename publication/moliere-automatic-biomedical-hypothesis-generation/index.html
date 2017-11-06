@@ -6,10 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="theme" content="hugo-academic">
-  <meta name="generator" content="Hugo 0.29" />
+  <meta name="generator" content="Hugo 0.30.2" />
   <meta name="author" content="Justin Sybrandt">
   <meta name="description" content="Ph. D. Student : Machine Learning">
 
+  
   
   
   
@@ -26,9 +27,17 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.1/css/academicons.min.css" integrity="sha512-NThgw3XKQ1absAahW6to7Ey42uycrVvfNfyjqcFNgCmOCQ5AR4AO0SiXrN+8ZtYeappp56lk1WtvjVmEa+VR6A==" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous">
   
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.css" integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ==" crossorigin="anonymous">
   
-  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather%7CRoboto+Mono">
-  <link rel="stylesheet" href="/css/hugo-academic.css">
+  
+  
+
+
+  
+
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700%7cMerriweather%7cRoboto&#43;Mono">
+  
+  <link rel="stylesheet" href="/styles.css">
   
 
   
@@ -46,13 +55,31 @@
     
   
 
+  
   <link rel="alternate" href="http://sybrandt.com/index.xml" type="application/rss+xml" title="Justin Sybrandt">
   <link rel="feed" href="http://sybrandt.com/index.xml" type="application/rss+xml" title="Justin Sybrandt">
+  
 
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/apple-touch-icon.png">
 
   <link rel="canonical" href="http://sybrandt.com/publication/moliere-automatic-biomedical-hypothesis-generation/">
+
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="twitter:site" content="@Justin_Sybrandt">
+  <meta property="twitter:creator" content="@Justin_Sybrandt">
+  
+  <meta property="og:site_name" content="Justin Sybrandt">
+  <meta property="og:url" content="http://sybrandt.com/publication/moliere-automatic-biomedical-hypothesis-generation/">
+  <meta property="og:title" content="MOLIERE: Automatic Biomedical Hypothesis Generation System | Justin Sybrandt">
+  <meta property="og:description" content="Hypothesis generation is becoming a crucial time-saving technique which allows biomedical researchers to quickly discover implicit connections between important concepts. Typically, these systems operate on domain-specific fractions of public medical data. MOLIERE, in contrast, utilizes information from over 24.5 million documents and does not limit the document vocabulary. At the heart of our approach lies a multi-modal and multi-relational network of biomedical objects extracted from several heterogeneous datasets from the National Center for Biotechnology Information (NCBI). These objects include but are not limited to scientific papers, keywords, genes, proteins, diseases, and diagnoses. We model hypotheses using Latent Dirichlet Allocation applied on abstracts found near shortest paths discovered within this network. We demonstrate the effectiveness of MOLIERE by performing hypothesis generation on historical data. Our network, implementation, and resulting data are all publicly available for the broad scientific community.">
+  <meta property="og:locale" content="en-us">
+  
+  <meta property="article:published_time" content="2017-08-13T00:00:00&#43;00:00">
+  
+  <meta property="article:modified_time" content="2017-08-13T00:00:00&#43;00:00">
+  
 
   
 
@@ -66,6 +93,7 @@
 
     
     <div class="navbar-header">
+      
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
               data-target=".navbar-collapse" aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
@@ -73,6 +101,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
+      
       <a class="navbar-brand" href="/">Justin Sybrandt</a>
     </div>
 
@@ -179,30 +208,30 @@
 <div class="share-box" aria-hidden="true">
   <ul class="share">
     <li>
-      <a class="facebook"
-         href="https://www.facebook.com/sharer.php?u=http%3a%2f%2fsybrandt.com%2fpublication%2fmoliere-automatic-biomedical-hypothesis-generation%2f"
-         target="_blank">
-        <i class="fa fa-facebook"></i>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=MOLIERE%3a%20Automatic%20Biomedical%20Hypothesis%20Generation%20System&amp;url=http%3a%2f%2fsybrandt.com%2fpublication%2fmoliere-automatic-biomedical-hypothesis-generation%2f"
+         target="_blank" rel="noopener">
+        <i class="fa fa-twitter"></i>
       </a>
     </li>
     <li>
-      <a class="twitter"
-         href="https://twitter.com/intent/tweet?text=MOLIERE%3a%20Automatic%20Biomedical%20Hypothesis%20Generation%20System&amp;url=http%3a%2f%2fsybrandt.com%2fpublication%2fmoliere-automatic-biomedical-hypothesis-generation%2f"
-         target="_blank">
-        <i class="fa fa-twitter"></i>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u=http%3a%2f%2fsybrandt.com%2fpublication%2fmoliere-automatic-biomedical-hypothesis-generation%2f"
+         target="_blank" rel="noopener">
+        <i class="fa fa-facebook"></i>
       </a>
     </li>
     <li>
       <a class="linkedin"
          href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2fsybrandt.com%2fpublication%2fmoliere-automatic-biomedical-hypothesis-generation%2f&amp;title=MOLIERE%3a%20Automatic%20Biomedical%20Hypothesis%20Generation%20System"
-         target="_blank">
+         target="_blank" rel="noopener">
         <i class="fa fa-linkedin"></i>
       </a>
     </li>
     <li>
       <a class="weibo"
          href="http://service.weibo.com/share/share.php?url=http%3a%2f%2fsybrandt.com%2fpublication%2fmoliere-automatic-biomedical-hypothesis-generation%2f&amp;title=MOLIERE%3a%20Automatic%20Biomedical%20Hypothesis%20Generation%20System"
-         target="_blank">
+         target="_blank" rel="noopener">
         <i class="fa fa-weibo"></i>
       </a>
     </li>
@@ -219,121 +248,133 @@
     </span>
   </div>
 
-</div>
-<div class="article-container">
+  <div class="article-container">
 
-  
-  <img src="/img/headers/network.jpg" class="pub-banner" itemprop="image">
-  
+    
+    <img src="/img/headers/network.jpg" class="pub-banner" itemprop="image">
+    
 
-  <h3>Abstract</h3>
-  <p class="pub-abstract" itemprop="text">Hypothesis generation is becoming a crucial time-saving technique which allows biomedical researchers to quickly discover implicit connections between important concepts. Typically, these systems operate on domain-specific fractions of public medical data. MOLIERE, in contrast, utilizes information from over 24.5 million documents and does not limit the document vocabulary. At the heart of our approach lies a multi-modal and multi-relational network of biomedical objects extracted from several heterogeneous datasets from the National Center for Biotechnology Information (NCBI). These objects include but are not limited to scientific papers, keywords, genes, proteins, diseases, and diagnoses. We model hypotheses using Latent Dirichlet Allocation applied on abstracts found near shortest paths discovered within this network. We demonstrate the effectiveness of MOLIERE by performing hypothesis generation on historical data. Our network, implementation, and resulting data are all publicly available for the broad scientific community.</p>
+    <h3>Abstract</h3>
+    <p class="pub-abstract" itemprop="text">Hypothesis generation is becoming a crucial time-saving technique which allows biomedical researchers to quickly discover implicit connections between important concepts. Typically, these systems operate on domain-specific fractions of public medical data. MOLIERE, in contrast, utilizes information from over 24.5 million documents and does not limit the document vocabulary. At the heart of our approach lies a multi-modal and multi-relational network of biomedical objects extracted from several heterogeneous datasets from the National Center for Biotechnology Information (NCBI). These objects include but are not limited to scientific papers, keywords, genes, proteins, diseases, and diagnoses. We model hypotheses using Latent Dirichlet Allocation applied on abstracts found near shortest paths discovered within this network. We demonstrate the effectiveness of MOLIERE by performing hypothesis generation on historical data. Our network, implementation, and resulting data are all publicly available for the broad scientific community.</p>
 
-  
-  <div class="row">
-    <div class="col-sm-1"></div>
-    <div class="col-sm-10">
-      <div class="row">
-        <div class="col-xs-12 col-sm-3 pub-row-heading">Type</div>
-        <div class="col-xs-12 col-sm-9">
-          
-          <a href="/publication/#1">
-            Conference proceedings
-          </a>
-          
+    
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-10">
+        <div class="row">
+          <div class="col-xs-12 col-sm-3 pub-row-heading">Type</div>
+          <div class="col-xs-12 col-sm-9">
+            
+            <a href="/publication/#1">
+              Conference proceedings
+            </a>
+            
+          </div>
         </div>
       </div>
+      <div class="col-sm-1"></div>
     </div>
-    <div class="col-sm-1"></div>
-  </div>
-  <div class="visible-xs space-below"></div>
-  
+    <div class="visible-xs space-below"></div>
+    
 
-  <div class="row">
-    <div class="col-sm-1"></div>
-    <div class="col-sm-10">
-      <div class="row">
-        <div class="col-xs-12 col-sm-3 pub-row-heading">Publication</div>
-        <div class="col-xs-12 col-sm-9">Proceedings of the 23rd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining</div>
-      </div>
-    </div>
-    <div class="col-sm-1"></div>
-  </div>
-  <div class="visible-xs space-below"></div>
-
-  <div class="row">
-    <div class="col-sm-1"></div>
-    <div class="col-sm-10">
-      <div class="row">
-        <div class="col-xs-12 col-sm-3 pub-row-heading">Date</div>
-        <div class="col-xs-12 col-sm-9" itemprop="datePublished">
-          August, 2017
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-10">
+        <div class="row">
+          <div class="col-xs-12 col-sm-3 pub-row-heading">Publication</div>
+          <div class="col-xs-12 col-sm-9">Proceedings of the 23rd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining</div>
         </div>
       </div>
+      <div class="col-sm-1"></div>
     </div>
-    <div class="col-sm-1"></div>
-  </div>
-  <div class="visible-xs space-below"></div>
+    <div class="visible-xs space-below"></div>
 
-  <div class="row" style="padding-top: 10px">
-    <div class="col-sm-1"></div>
-    <div class="col-sm-10">
-      <div class="row">
-        <div class="col-xs-12 col-sm-3 pub-row-heading" style="line-height:34px;">Links</div>
-        <div class="col-xs-12 col-sm-9">
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-10">
+        <div class="row">
+          <div class="col-xs-12 col-sm-3 pub-row-heading">Date</div>
+          <div class="col-xs-12 col-sm-9" itemprop="datePublished">
+            August, 2017
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-1"></div>
+    </div>
+    <div class="visible-xs space-below"></div>
 
-          
+    <div class="row" style="padding-top: 10px">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-10">
+        <div class="row">
+          <div class="col-xs-12 col-sm-3 pub-row-heading" style="line-height:34px;">Links</div>
+          <div class="col-xs-12 col-sm-9">
+
+            
 
 
 
 
-<a class="btn btn-primary btn-outline" href="http://dl.acm.org/citation.cfm?id=3098057">
+<a class="btn btn-primary btn-outline" href="http://dl.acm.org/citation.cfm?id=3098057" target="_blank" rel="noopener">
   PDF
 </a>
 
 
-<a class="btn btn-primary btn-outline" href="https://www.slideshare.net/JustinSybrandt/moliere-automatic-biomedical-hypothesis-generation-system">
-  Slides
-</a>
 
 
-<a class="btn btn-primary btn-outline" href="https://www.youtube.com/watch?v=wA6OCix-4FU">
-  Video
-</a>
 
-
-<a class="btn btn-primary btn-outline" href="https://github.com/JSybrandt/MOLIERE">
+<a class="btn btn-primary btn-outline" href="https://github.com/JSybrandt/MOLIERE" target="_blank" rel="noopener">
   Code
 </a>
 
 
-<a class="btn btn-primary btn-outline" href="https://drive.google.com/open?id=0B2hkrBZ0Qc40LXRsZGxOa2VXMFk">
+<a class="btn btn-primary btn-outline" href="https://drive.google.com/open?id=0B2hkrBZ0Qc40LXRsZGxOa2VXMFk" target="_blank" rel="noopener">
   Dataset
 </a>
 
 
-<a class="btn btn-primary btn-outline" href="http://sybrandt.com/project/moliere-automatic-biomedical-hypothesis-generation/">
+
+<a class="btn btn-primary btn-outline" href="/project/moliere-automatic-biomedical-hypothesis-generation/">
   Project
 </a>
 
 
 
 
+<a class="btn btn-primary btn-outline" href="https://www.slideshare.net/JustinSybrandt/moliere-automatic-biomedical-hypothesis-generation-system" target="_blank" rel="noopener">
+  Slides
+</a>
+
+
+<a class="btn btn-primary btn-outline" href="https://www.youtube.com/watch?v=ra77iJ7r_Ys" target="_blank" rel="noopener">
+  Video
+</a>
+
+
+
+
+
+          </div>
         </div>
       </div>
+      <div class="col-sm-1"></div>
     </div>
-    <div class="col-sm-1"></div>
-  </div>
-  <div class="visible-xs space-below"></div>
+    <div class="visible-xs space-below"></div>
 
-  <div class="space-below"></div>
+    <div class="space-below"></div>
 
-  <div class="article-style"><p>MOLIERE is a hypothesis generation system which is able to identify potential relationships from large text corpora.
+    <div class="article-style"><p>MOLIERE is a hypothesis generation system which is able to identify potential relationships from large text corpora.
 Our presented system was trained on the MEDLINE dataset, containing nearly 25 million documents dating back to the late 1800&rsquo;s.
 We validate our system by predicting recent findings using only information present before 2010.
 These validations efforts are confirmed with the help of a domain expert.</p>
+
+<p>Watch our <a href="https://www.youtube.com/watch?v=wA6OCix-4FU" target="_blank">promotional video</a> or our <a href="https://www.youtube.com/watch?v=ra77iJ7r_Ys" target="_blank">KDD talk</a>.</p>
 </div>
 
+    
+
+
+  </div>
 </div>
 
 <div class="container">
@@ -356,8 +397,9 @@ These validations efforts are confirmed with the help of a domain expert.</p>
 
       &copy; 2017 Justin Sybrandt &middot; 
 
-      Powered by the <a href="https://github.com/gcushen/hugo-academic" target="_blank">Academic
-      theme</a> for <a href="http://gohugo.io" target="_blank">Hugo</a>.
+      Powered by the
+      <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+      <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
 
       <span class="pull-right" aria-hidden="true">
         <a href="#" id="back_to_top">
@@ -371,13 +413,47 @@ These validations efforts are confirmed with the help of a domain expert.</p>
   </div>
 </footer>
 
+
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close btn-large" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Cite</h4>
+      </div>
+      <div>
+        <pre><code class="modal-body tex"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-primary btn-outline js-copy-cite" href="#" target="_blank">
+          <i class="fa fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-primary btn-outline js-download-cite" href="#" target="_blank">
+          <i class="fa fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
     
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js" integrity="sha512-jGsMH83oKe9asCpkOVkBnUrDDTp8wl+adkB2D+//JtlxO4SrLoJdhbOysIFQJloQFD+C4Fl1rMsQZF76JjV0eQ==" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.2/imagesloaded.pkgd.min.js" integrity="sha512-iHzEu7GbSc705hE2skyH6/AlTpOfBmkx7nUqTLGzPYR+C1tRaItbRlJ7hT/D3YQ9SV0fqLKzp4XY9wKulTBGTw==" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js" integrity="sha512-Z5heTz36xTemt1TbtbfXtTq5lMfYnOkXM2/eWcTTiLU01+Sw4ku1i7vScDc8fWhrP2abz9GQzgKH5NGBLoYlAw==" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/plugins/ScrollToPlugin.min.js" integrity="sha512-CDeU7pRtkPX6XJtF/gcFWlEwyaX7mcAp5sO3VIu/ylsdR74wEw4wmBpD5yYTrmMAiAboi9thyBUr1vXRPA7t0Q==" crossorigin="anonymous"></script>
+
+    
+    
+    <script id="dsq-count-scr" src="//sybrandt-com.disqus.com/count.js" async></script>
+    
+
+    
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha512-3P8rXCuGJdNZOnUx/03c1jOTnMn3rP63nBip5gOP2qmUh5YAdVAvFZ1E+QLZZbC1rtMrQb+mah3AfYW11RUrWA==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.3/imagesloaded.pkgd.min.js" integrity="sha512-umsR78NN0D23AzgoZ11K7raBD+R6hqKojyBZs1w8WvYlsI+QuKRGBx3LFCwhatzBunCjDuJpDHwxD13sLMbpRA==" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha512-iztkobsvnjKfAtTNdHkGVjAYTrrtlC7mGp/54c40wowO7LhURYl3gVzzcEqGl/qKXQltJ2HwMrdLcNUdo+N/RQ==" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js" integrity="sha512-VDBOIlDbuC4VWxGJNmuFRQ0Li0SKkDpmGyuhAG5LTDLd/dJ/S0WMVxriR2Y+CyPL5gzjpN4f/6iqWVBJlht0tQ==" crossorigin="anonymous"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin="anonymous"></script>
+    
     
     <script src="/js/hugo-academic.js"></script>
     
@@ -385,7 +461,9 @@ These validations efforts are confirmed with the help of a domain expert.</p>
     
     
       
-      <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
+      
+      <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+      
 
       
 

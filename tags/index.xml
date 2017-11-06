@@ -7,18 +7,8 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2017 Justin Sybrandt</copyright>
-    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 15 Sep 2017 22:27:22 -0400</lastBuildDate>
     <atom:link href="/tags/" rel="self" type="application/rss+xml" />
-    
-    <item>
-      <title>Content tagged as &#39;Academic&#39;</title>
-      <link>http://sybrandt.com/tags/academic/</link>
-      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
-      
-      <guid>http://sybrandt.com/tags/academic/</guid>
-      <description>&lt;p&gt;Here is a list of all the content that has been tagged as &lt;em&gt;academic&lt;/em&gt;.&lt;/p&gt;
-</description>
-    </item>
     
     <item>
       <title>Big Data</title>
@@ -26,6 +16,15 @@
       <pubDate>Fri, 15 Sep 2017 22:27:22 -0400</pubDate>
       
       <guid>http://sybrandt.com/tags/big-data/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>C&#43;&#43;</title>
+      <link>http://sybrandt.com/tags/c&#43;&#43;/</link>
+      <pubDate>Sat, 16 Sep 2017 23:18:26 -0400</pubDate>
+      
+      <guid>http://sybrandt.com/tags/c&#43;&#43;/</guid>
       <description></description>
     </item>
     
@@ -48,11 +47,56 @@
     </item>
     
     <item>
+      <title>Programming</title>
+      <link>http://sybrandt.com/tags/programming/</link>
+      <pubDate>Sat, 16 Sep 2017 23:18:26 -0400</pubDate>
+      
+      <guid>http://sybrandt.com/tags/programming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Research</title>
+      <link>http://sybrandt.com/tags/research/</link>
+      <pubDate>Fri, 15 Sep 2017 23:18:26 -0400</pubDate>
+      
+      <guid>http://sybrandt.com/tags/research/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Summary</title>
+      <link>http://sybrandt.com/tags/summary/</link>
+      <pubDate>Fri, 15 Sep 2017 23:18:26 -0400</pubDate>
+      
+      <guid>http://sybrandt.com/tags/summary/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Teaching</title>
       <link>http://sybrandt.com/tags/teaching/</link>
       <pubDate>Wed, 16 Aug 2017 17:35:11 -0400</pubDate>
       
       <guid>http://sybrandt.com/tags/teaching/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Text</title>
+      <link>http://sybrandt.com/tags/text/</link>
+      <pubDate>Wed, 27 Sep 2017 14:18:52 -0400</pubDate>
+      
+      <guid>http://sybrandt.com/tags/text/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tutorial</title>
+      <link>http://sybrandt.com/tags/tutorial/</link>
+      <pubDate>Wed, 27 Sep 2017 14:18:52 -0400</pubDate>
+      
+      <guid>http://sybrandt.com/tags/tutorial/</guid>
       <description></description>
     </item>
     
