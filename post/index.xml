@@ -7,8 +7,81 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2017 Justin Sybrandt</copyright>
-    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 -0500</lastBuildDate>
+    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
     <atom:link href="/post/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Run Moliere Yourself</title>
+      <link>http://sybrandt.com/post/run-moliere-yourself/</link>
+      <pubDate>Thu, 14 Dec 2017 14:18:52 -0400</pubDate>
+      
+      <guid>http://sybrandt.com/post/run-moliere-yourself/</guid>
+      <description>
+
+&lt;p&gt;I have finally had time to package Moliere, our Automatic Hypothesis Generation System, into a single easy-to-use package!&lt;/p&gt;
+
+&lt;p&gt;Take a second to check it out at &lt;a href=&#34;https://github.com/JSybrandt/Moliere_Query_Runner&#34; target=&#34;_blank&#34;&gt;my repo&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;system-requirements&#34;&gt;System Requirements&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;gcc (something recent enough to support c++11)&lt;/li&gt;
+&lt;li&gt;mpich (mpich 1, NOT 2, needs to provide mpicxx)&lt;/li&gt;
+&lt;li&gt;python 3&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;preferred:&lt;/em&gt;  some sort of parallel file system&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;install-process&#34;&gt;Install Process&lt;/h2&gt;
+
+&lt;p&gt;The install process is pretty informal.
+The following steps are how I would setup Moliere on a linux system.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;export MOLIERE_HOME=&amp;lt;some install directory&amp;gt;
+mkdir -p $MOLIERE_HOME
+cd $MOLIERE_HOME
+git clone https://github.com/JSybrandt/Moliere_Query_Runner .
+make
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Next, you just need to get the data file into &lt;code&gt;$MOLIERE_HOME/data&lt;/code&gt;.
+The latest data we have avalible can be found in the following link:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://drive.google.com/drive/u/0/folders/0B2hkrBZ0Qc40VXNwcGQ1eEtMTDg&#34; target=&#34;_blank&#34;&gt;Get Data Here (Google Drive Link)&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;running&#34;&gt;Running&lt;/h2&gt;
+
+&lt;p&gt;Okay, now you have everything you need, assuming you ran make, setup the &lt;code&gt;$MOLIERE_HOME&lt;/code&gt; environment variable, and downloaded the provided data in to &lt;code&gt;$MOLIERE_HOME/data&lt;/code&gt;.
+To run our system, you will be executing &lt;code&gt;runQuery.py&lt;/code&gt;.
+Note, feel free to move this file anywhere you would like, as long as &lt;code&gt;$MOLIERE_HOME&lt;/code&gt; is set, you&amp;rsquo;re good to go.&lt;/p&gt;
+
+&lt;p&gt;If you run &lt;code&gt;runQuery.py -h&lt;/code&gt; you can see the options for the system.
+But, the general usage is going to be &lt;code&gt;runQuery.py -n $TOPIC_COUNT -m $TERM_A $TERM_B&lt;/code&gt;.
+Note that -n sets the number of topics (defaults to 100) and -m moves the resulting topic model and evaluation files from the local cache (default to /tmp) to the working directory.&lt;/p&gt;
+
+&lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
+
+&lt;p&gt;The work shown here is primarily based off &lt;a href=&#34;https://dl.acm.org/citation.cfm?id=3098057&#34; target=&#34;_blank&#34;&gt;this paper&lt;/a&gt; so if you use our tool in research, please include the following citation:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;@inproceedings{Sybrandt:2017:MAB:3097983.3098057,
+ author = {Sybrandt, Justin and Shtutman, Michael and Safro, Ilya},
+ title = {MOLIERE: Automatic Biomedical Hypothesis Generation System},
+ booktitle = {Proceedings of the 23rd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining},
+ series = {KDD &#39;17},
+ year = {2017},
+ isbn = {978-1-4503-4887-4},
+ location = {Halifax, NS, Canada},
+ pages = {1633--1642},
+ numpages = {10},
+ url = {http://doi.acm.org/10.1145/3097983.3098057},
+ doi = {10.1145/3097983.3098057},
+ acmid = {3098057},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {hypothesis generation, mining scientific publications, topic modeling, undiscovered public knowledge},
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
     
     <item>
       <title>Document Embedding</title>

@@ -5,6 +5,15 @@
     
     <url>
     
+      <loc>http://sybrandt.com/post/run-moliere-yourself/</loc>
+      <lastmod>2017-12-14T14:18:52-04:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>http://sybrandt.com/post/document-embedding/</loc>
       <lastmod>2017-09-27T14:18:52-04:00</lastmod>
     </url>
@@ -95,8 +104,8 @@
     
     <url>
     
-      <loc>http://sybrandt.com/post/</loc>
-      <lastmod>2017-01-01T00:00:00-05:00</lastmod>
+      <loc>http://sybrandt.com/academic/</loc>
+      <lastmod>2017-01-01T00:00:00+00:00</lastmod>
     </url>
     
   
@@ -104,7 +113,7 @@
     
     <url>
     
-      <loc>http://sybrandt.com/academic/</loc>
+      <loc>http://sybrandt.com/post/</loc>
       <lastmod>2017-01-01T00:00:00+00:00</lastmod>
     </url>
     
@@ -310,7 +319,7 @@
     <url>
     
       <loc>http://sybrandt.com/tags/tutorial/</loc>
-      <lastmod>2017-09-27T14:18:52-04:00</lastmod>
+      <lastmod>2017-12-14T14:18:52-04:00</lastmod>
       <priority>0</priority>
     </url>
     
