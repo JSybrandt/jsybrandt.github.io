@@ -16,11 +16,11 @@
       <pubDate>Thu, 14 Dec 2017 14:18:52 -0400</pubDate>
       
       <guid>http://sybrandt.com/post/run-moliere-yourself/</guid>
-      <description>
-
-&lt;p&gt;I have finally had time to package Moliere, our Automatic Hypothesis Generation System, into a single easy-to-use package!&lt;/p&gt;
+      <description>&lt;p&gt;I have finally had time to package Moliere, our Automatic Hypothesis Generation System, into a single easy-to-use package!&lt;/p&gt;
 
 &lt;p&gt;Take a second to check it out at &lt;a href=&#34;https://github.com/JSybrandt/Moliere_Query_Runner&#34; target=&#34;_blank&#34;&gt;my repo&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;system-requirements&#34;&gt;System Requirements&lt;/h2&gt;
 
@@ -79,8 +79,7 @@ Note that -n sets the number of topics (defaults to 100) and -m moves the result
  address = {New York, NY, USA},
  keywords = {hypothesis generation, mining scientific publications, topic modeling, undiscovered public knowledge},
 }
-&lt;/code&gt;&lt;/pre&gt;
-</description>
+&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     
     <item>
