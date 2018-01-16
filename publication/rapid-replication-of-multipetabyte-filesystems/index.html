@@ -6,20 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="theme" content="hugo-academic">
-  <meta name="generator" content="Hugo 0.31.1" />
+  <meta name="generator" content="Hugo 0.32.1" />
   <meta name="author" content="Justin Sybrandt">
   <meta name="description" content="Ph. D. Student : Machine Learning">
 
   
-  <link rel="alternate" hreflang="en-us" href="http://sybrandt.com/publication/rapid-replication-of-multipetabyte-filesystems/">
-
-  
-  
-
-
-  
-
-  
   
   
   
@@ -28,9 +19,7 @@
   
     
     
-      
-        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
-      
+    <link rel="stylesheet" href="/css/highlight.min.css">
     
   
   
@@ -42,7 +31,10 @@
   
   
   
+
+
   
+
   <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700%7cMerriweather%7cRoboto&#43;Mono">
   
   <link rel="stylesheet" href="/styles.css">
@@ -68,9 +60,8 @@
   <link rel="feed" href="http://sybrandt.com/index.xml" type="application/rss+xml" title="Justin Sybrandt">
   
 
-  <link rel="manifest" href="/site.webmanifest">
   <link rel="icon" type="image/png" href="/img/icon.png">
-  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/apple-touch-icon.png">
 
   <link rel="canonical" href="http://sybrandt.com/publication/rapid-replication-of-multipetabyte-filesystems/">
 
@@ -95,7 +86,7 @@
   <title>Rapid Replication of Multi-Petabyte File Systems | Justin Sybrandt</title>
 
 </head>
-<body id="top" data-spy="scroll" data-target="#toc" data-offset="71" >
+<body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71">
 
 <nav class="navbar navbar-default navbar-fixed-top" id="navbar-main">
   <div class="container">
@@ -118,114 +109,82 @@
     <div class="collapse navbar-collapse">
 
       
-      
       <ul class="nav navbar-nav navbar-right">
         
 
-        
-
-        
-          
         
 
         <li class="nav-item">
           <a href="/#about">
             
             <span>Home</span>
-            
           </a>
         </li>
 
         
         
 
-        
-
-        
-          
         
 
         <li class="nav-item">
           <a href="/#posts">
             
             <span>Posts</span>
-            
           </a>
         </li>
 
         
         
 
-        
-
-        
-          
         
 
         <li class="nav-item">
           <a href="/#publications">
             
             <span>Publications</span>
-            
           </a>
         </li>
 
         
         
 
-        
-
-        
-          
         
 
         <li class="nav-item">
           <a href="/#projects">
             
             <span>Projects</span>
-            
           </a>
         </li>
 
         
         
 
-        
-
-        
-          
         
 
         <li class="nav-item">
           <a href="/#contact">
             
             <span>Contact</span>
-            
           </a>
         </li>
 
         
         
 
-        
-
-        
-          
         
 
         <li class="nav-item">
           <a href="/resume/resume.pdf">
             
             <span>Resume</span>
-            
           </a>
         </li>
 
         
         
-      
 
-      
+        
       </ul>
 
     </div>
@@ -295,10 +254,8 @@
     <img src="/img/headers/server.jpg" class="pub-banner" itemprop="image">
     
 
-    
     <h3>Abstract</h3>
     <p class="pub-abstract" itemprop="text">As  file  systems  grow  larger,  tools  which  were  once  industry standard  become  unsustainable  at  scale.   Today,  large  data sets containing hundreds of millions of files often take longer to traverse than to copy.  The time needed to replicate a file system  has  grown  from  hours  to  weeks,  an  unrealistic  wait for  a  backup.   Distsync  is  our  new  utility  that  can  quickly update  an  out-of-date  file  system  replica.  By  utilizing  General Parallel File System (GPFS) policy scans, distsync finds changed  files  without  navigating  between  directories.  It  can then parallelize work across multiple nodes, maximizing the performance of a GPFS. The National Energy Research Scientific Computing Center (NERSC) is currently using distsync to replicate file systems of over 100 million inodes and over four petabytes.</p>
-    
 
     
     <div class="row">
