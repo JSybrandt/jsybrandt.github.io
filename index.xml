@@ -733,5 +733,18 @@ Distsync dramatically reduced the time needed to process this syncronization.&lt
 </description>
     </item>
     
+    <item>
+      <title>Mass Validation of Hypothesis Generation Systems</title>
+      <link>http://sybrandt.com/post/moliere-validation/</link>
+      <pubDate>Wed, 10 Feb 2010 15:00:00 -0400</pubDate>
+      
+      <guid>http://sybrandt.com/post/moliere-validation/</guid>
+      <description>&lt;p&gt;We have publicly available code and experimental data.
+Our validation information has been incorporated to &lt;a href=&#34;https://github.com/JSybrandt/Moliere_Query_Runner&#34; target=&#34;_blank&#34;&gt;THIS REPO&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;But, we are still working on uploading all of the supporing data.&lt;/p&gt;
+</description>
+    </item>
+    
   </channel>
 </rss>

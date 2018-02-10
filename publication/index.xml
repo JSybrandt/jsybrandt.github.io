@@ -8,7 +8,9 @@
     <language>en-us</language>
     <copyright>&amp;copy; 2017 Justin Sybrandt</copyright>
     <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/publication/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://sybrandt.com/publication/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>MOLIERE: Automatic Biomedical Hypothesis Generation System</title>
@@ -16,13 +18,8 @@
       <pubDate>Sun, 13 Aug 2017 00:00:00 +0000</pubDate>
       
       <guid>http://sybrandt.com/publication/moliere-automatic-biomedical-hypothesis-generation/</guid>
-      <description>&lt;p&gt;MOLIERE is a hypothesis generation system which is able to identify potential relationships from large text corpora.
-Our presented system was trained on the MEDLINE dataset, containing nearly 25 million documents dating back to the late 1800&amp;rsquo;s.
-We validate our system by predicting recent findings using only information present before 2010.
-These validations efforts are confirmed with the help of a domain expert.&lt;/p&gt;
-
-&lt;p&gt;Watch our &lt;a href=&#34;https://www.youtube.com/watch?v=wA6OCix-4FU&#34; target=&#34;_blank&#34;&gt;promotional video&lt;/a&gt; or our &lt;a href=&#34;https://www.youtube.com/watch?v=ra77iJ7r_Ys&#34; target=&#34;_blank&#34;&gt;KDD talk&lt;/a&gt;.&lt;/p&gt;
-</description>
+      <description>MOLIERE is a hypothesis generation system which is able to identify potential relationships from large text corpora. Our presented system was trained on the MEDLINE dataset, containing nearly 25 million documents dating back to the late 1800&amp;rsquo;s. We validate our system by predicting recent findings using only information present before 2010. These validations efforts are confirmed with the help of a domain expert.
+Watch our promotional video or our KDD talk.</description>
     </item>
     
     <item>
@@ -31,13 +28,8 @@ These validations efforts are confirmed with the help of a domain expert.&lt;/p&
       <pubDate>Sat, 01 Apr 2017 00:00:00 +0000</pubDate>
       
       <guid>http://sybrandt.com/publication/to-agile-or-not-to-agile/</guid>
-      <description>&lt;p&gt;During the graduate course on software development methods, &lt;a href=&#34;http://shaydul.in/&#34; target=&#34;_blank&#34;&gt;Ruslan Shaydulin&lt;/a&gt; and I put together a paper analyzing different software methodologies.
-We find, through our literature review, that the landscape of methodologies has changed rapidly within the last decade.
-Additionally, we find a large number of pros and cons for all methodologies.&lt;/p&gt;
-
-&lt;p&gt;These strengths and weaknesses are detailed in the associated work.
-Note, this work is unpublished.&lt;/p&gt;
-</description>
+      <description>During the graduate course on software development methods, Ruslan Shaydulin and I put together a paper analyzing different software methodologies. We find, through our literature review, that the landscape of methodologies has changed rapidly within the last decade. Additionally, we find a large number of pros and cons for all methodologies.
+These strengths and weaknesses are detailed in the associated work. Note, this work is unpublished.</description>
     </item>
     
     <item>
@@ -46,13 +38,8 @@ Note, this work is unpublished.&lt;/p&gt;
       <pubDate>Mon, 16 Nov 2015 00:00:00 +0000</pubDate>
       
       <guid>http://sybrandt.com/publication/rapid-replication-of-multipetabyte-filesystems/</guid>
-      <description>&lt;p&gt;DistSync was presented as a Work in Progress (WIP) at the Parallel Data Storage Workshop, as well as in the &lt;a href=&#34;http://sc15.supercomputing.org/sites/all/themes/SC15images/src_poster/poster_files/spost103s2-file1.pdf&#34; target=&#34;_blank&#34;&gt;SC&amp;rsquo;15 poster session&lt;/a&gt;.
-This work was done along with the storage systems group at the &lt;a href=&#34;http://www.nersc.gov/&#34; target=&#34;_blank&#34;&gt;National Energy Research Scientific Computing Center (NERSC)&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;We developed distsync in order to facilitate the move from the Oakland Scientific Facility into a new building at the LBNL Berkeley campus.
-As part of this process, the scratch file system at the old location needed to be syncronized with an out of date replica present at the new location.
-Distsync dramatically reduced the time needed to process this syncronization.&lt;/p&gt;
-</description>
+      <description>DistSync was presented as a Work in Progress (WIP) at the Parallel Data Storage Workshop, as well as in the SC&amp;rsquo;15 poster session. This work was done along with the storage systems group at the National Energy Research Scientific Computing Center (NERSC).
+We developed distsync in order to facilitate the move from the Oakland Scientific Facility into a new building at the LBNL Berkeley campus. As part of this process, the scratch file system at the old location needed to be syncronized with an out of date replica present at the new location.</description>
     </item>
     
   </channel>
