@@ -11,6 +11,21 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Mass Validation of Hypothesis Generation Systems</title>
+      <link>http://sybrandt.com/post/moliere-validation/</link>
+      <pubDate>Sun, 11 Feb 2018 15:00:00 -0400</pubDate>
+      
+      <guid>http://sybrandt.com/post/moliere-validation/</guid>
+      <description>&lt;p&gt;We have publicly available code and experimental data.
+Our validation information has been incorporated to &lt;a href=&#34;https://github.com/JSybrandt/Moliere_Query_Runner&#34; target=&#34;_blank&#34;&gt;THIS REPO&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Our experimental data and results can be found in &lt;a href=&#34;https://github.com/JSybrandt/Moliere_Validation_Data&#34; target=&#34;_blank&#34;&gt;THIS OTHER REPO&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;But, we are still working on uploading all of the supporting data.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Validation and Topic-driven Ranking for Biomedical Hypothesis Generation Systems</title>
       <link>http://sybrandt.com/publication/validation-and-topic-driven-ranking/</link>
       <pubDate>Sun, 11 Feb 2018 00:00:00 +0000</pubDate>
@@ -739,19 +754,6 @@ This work was done along with the storage systems group at the &lt;a href=&#34;h
 &lt;p&gt;We developed distsync in order to facilitate the move from the Oakland Scientific Facility into a new building at the LBNL Berkeley campus.
 As part of this process, the scratch file system at the old location needed to be syncronized with an out of date replica present at the new location.
 Distsync dramatically reduced the time needed to process this syncronization.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Mass Validation of Hypothesis Generation Systems</title>
-      <link>http://sybrandt.com/post/moliere-validation/</link>
-      <pubDate>Wed, 10 Feb 2010 15:00:00 -0400</pubDate>
-      
-      <guid>http://sybrandt.com/post/moliere-validation/</guid>
-      <description>&lt;p&gt;We have publicly available code and experimental data.
-Our validation information has been incorporated to &lt;a href=&#34;https://github.com/JSybrandt/Moliere_Query_Runner&#34; target=&#34;_blank&#34;&gt;THIS REPO&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;But, we are still working on uploading all of the supporing data.&lt;/p&gt;
 </description>
     </item>
     

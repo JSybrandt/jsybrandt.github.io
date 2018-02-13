@@ -13,6 +13,17 @@
     
     
     <item>
+      <title>Mass Validation of Hypothesis Generation Systems</title>
+      <link>http://sybrandt.com/post/moliere-validation/</link>
+      <pubDate>Sun, 11 Feb 2018 15:00:00 -0400</pubDate>
+      
+      <guid>http://sybrandt.com/post/moliere-validation/</guid>
+      <description>We have publicly available code and experimental data. Our validation information has been incorporated to THIS REPO.
+Our experimental data and results can be found in THIS OTHER REPO.
+But, we are still working on uploading all of the supporting data.</description>
+    </item>
+    
+    <item>
       <title>Run Moliere Yourself</title>
       <link>http://sybrandt.com/post/run-moliere-yourself/</link>
       <pubDate>Thu, 14 Dec 2017 14:18:52 -0400</pubDate>
@@ -72,16 +83,6 @@ While that may be true, the version of myself today would like to tell the versi
       <guid>http://sybrandt.com/post/hypothesis-generation-explained/</guid>
       <description>Undiscovered Public Knowledge In the last couple of years, researchers worldwide have begun to develop a powerful new tool. By using data mining techniques, these scientists hope to one day put themselves out of a job.
 It all began in the 80&amp;rsquo;s with a man named Don Swanson. He was the first to notice something that he called undiscovered public knowledge. He saw that no human could possibly read all of the available information on a given topic, and he guessed that there were some truths that no one actually knows, but have already been published.</description>
-    </item>
-    
-    <item>
-      <title>Mass Validation of Hypothesis Generation Systems</title>
-      <link>http://sybrandt.com/post/moliere-validation/</link>
-      <pubDate>Wed, 10 Feb 2010 15:00:00 -0400</pubDate>
-      
-      <guid>http://sybrandt.com/post/moliere-validation/</guid>
-      <description>We have publicly available code and experimental data. Our validation information has been incorporated to THIS REPO.
-But, we are still working on uploading all of the supporing data.</description>
     </item>
     
   </channel>
