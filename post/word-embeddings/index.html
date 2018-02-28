@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="theme" content="hugo-academic">
-  <meta name="generator" content="Hugo 0.36" />
+  <meta name="generator" content="Hugo 0.37" />
   <meta name="author" content="Justin Sybrandt">
   <meta name="description" content="Ph. D. Student : Machine Learning">
 
@@ -275,8 +275,8 @@
         
 
 <p>Recently, in text mining circles, a new method of representing words has taken off.
-This has been due, in a large part, to recent papers from Mikolov et al. and tools like <em>word2vec</em> <sup class="footnote-ref" id="fnref:1"><a rel="footnote" href="#fn:1">1</a></sup>.
-Since then, many other projects have applied this concept to a wide variety of areas within data mining <sup class="footnote-ref" id="fnref:2"><a rel="footnote" href="#fn:2">2</a></sup>.
+This has been due, in a large part, to recent papers from Mikolov et al. and tools like <em>word2vec</em> <sup class="footnote-ref" id="fnref:1"><a href="#fn:1">1</a></sup>.
+Since then, many other projects have applied this concept to a wide variety of areas within data mining <sup class="footnote-ref" id="fnref:2"><a href="#fn:2">2</a></sup>.
 So what is all the hype about? What are these embeddings and why do we need them?</p>
 
 <h2 id="what-is-a-word-embedding">What is a word embedding?</h2>
@@ -344,11 +344,11 @@ For example, the sentence <em>&ldquo;the man walks the dog&rdquo;</em> and <em>&
 This additionally means that if two documents use <em>similar</em> but not the same words, they will be seen as different as two documents using completely different words.
 Also, the vectors are inefficiently long, each as long as the entire vocabulary (typically tens of millions of words).
 This means that one of those classifiers, such as a neural net, will have to accept really really long input vectors.
-Long story short, this doesn&rsquo;t scale well <sup class="footnote-ref" id="fnref:3"><a rel="footnote" href="#fn:3">3</a></sup>.</p>
+Long story short, this doesn&rsquo;t scale well <sup class="footnote-ref" id="fnref:3"><a href="#fn:3">3</a></sup>.</p>
 
 <h3 id="the-new-word2vec">The New: Word2Vec</h3>
 
-<p>The new method which solves the problems with BOW is referred to as <em>&ldquo;word2vec&rdquo;</em>, which is the name of the first tool which implements Mikolov&rsquo;s ideas <sup class="footnote-ref" id="fnref:1"><a rel="footnote" href="#fn:1">1</a></sup>.
+<p>The new method which solves the problems with BOW is referred to as <em>&ldquo;word2vec&rdquo;</em>, which is the name of the first tool which implements Mikolov&rsquo;s ideas <sup class="footnote-ref" id="fnref:1"><a href="#fn:1">1</a></sup>.
 This method creates vectors in a much lower dimensionality (typically, $100 \leq l \leq 600$).
 Additionally, words which are similar will tend to have similar vectors.
 As a side effect, the distance between words which have the same relationship (i.e. the distance between a US state and it&rsquo;s capitol) will all be about the same.
@@ -367,7 +367,7 @@ Note that the context of the blank has a huge, albeit inexact, bearing on what w
 By learning these sorts of context-sensitive relationships, word2vec is able to train its embeddings.</p>
 
 
-<figure >
+<figure>
     
         <img src="/img/posts/word2vec.png" />
     
@@ -386,7 +386,7 @@ At a high level, the CBOW  and skip-gram model are opposites.
 The former learns to predict a word given that words context, the same way we did the example about the cat above.
 The latter learns to predict context given a word.</p>
 
-<p>Both of these use some principles from convolutional neural nets, which are outside the scope of this article<sup class="footnote-ref" id="fnref:4"><a rel="footnote" href="#fn:4">4</a></sup>.
+<p>Both of these use some principles from convolutional neural nets, which are outside the scope of this article<sup class="footnote-ref" id="fnref:4"><a href="#fn:4">4</a></sup>.
 All  you need is to think of these processes as black boxes that take vectors as input, and refine their result quality by comparing their output with our existing vectors.</p>
 
 <p>Initially, all words are initialized as a random vector.

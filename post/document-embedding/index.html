@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="theme" content="hugo-academic">
-  <meta name="generator" content="Hugo 0.36" />
+  <meta name="generator" content="Hugo 0.37" />
   <meta name="author" content="Justin Sybrandt">
   <meta name="description" content="Ph. D. Student : Machine Learning">
 
@@ -317,7 +317,7 @@ If we have a word embedding $R(w_i)$ for each of our words $w_i \in W$, then why
 
 <p>$$ R(d_j) = \frac{\sum\limits_{w_i \in W_j} R(w_i)}{|W_j|}$$</p>
 
-<p>This method actually works pretty well, especially for smaller documents<sup class="footnote-ref" id="fnref:1"><a rel="footnote" href="#fn:1">1</a></sup>.
+<p>This method actually works pretty well, especially for smaller documents<sup class="footnote-ref" id="fnref:1"><a href="#fn:1">1</a></sup>.
 If we think about comparing tweets, like we did above, then we would expect the vectors of two political tweets to be close to each other.
 It doesn&rsquo;t matter if these tweets don&rsquo;t use exactly the same words, one might be talking about a prominent politician and the other might be talking about a specific policy, but they both will likely use words that often occur in a <em>political context</em>.
 If one tweet were really talking about a congress of salamanders, then we would expect vector for salamander would move that tweet&rsquo;s centroid further away from all the political tweets.</p>
@@ -331,8 +331,8 @@ This means that &ldquo;I swung the bat&rdquo; and &ldquo;I swung at the bat&rdqu
 <h3 id="doc2vec">Doc2Vec</h3>
 
 <p>Yup, the moment problems arise, we make a new <em>blank2vec</em>.
-Doc2Vec<sup class="footnote-ref" id="fnref:2"><a rel="footnote" href="#fn:2">2</a></sup> learns vector representations of paragraphs along with word representations.
-By combining these ideas, Doc2Vec embeddings outperformed many of the other methods that were around when it debuted<sup class="footnote-ref" id="fnref:1"><a rel="footnote" href="#fn:1">1</a></sup>.</p>
+Doc2Vec<sup class="footnote-ref" id="fnref:2"><a href="#fn:2">2</a></sup> learns vector representations of paragraphs along with word representations.
+By combining these ideas, Doc2Vec embeddings outperformed many of the other methods that were around when it debuted<sup class="footnote-ref" id="fnref:1"><a href="#fn:1">1</a></sup>.</p>
 
 <p>If you remember word2vec, we learned the representation of a word by looking at its surrounding context.
 Doc2Vec adds a new vector into this context, representing the paragraph.
@@ -341,7 +341,7 @@ In the same way word2vec refers to both the CBOW and skip-gram method, doc2vec r
 <h3 id="distributed-memory-model-pv-dm">Distributed Memory Model (PV-DM)</h3>
 
 
-<figure >
+<figure>
     
         <img src="/img/posts/doc2vec.png" />
     
@@ -358,14 +358,14 @@ In the same way word2vec refers to both the CBOW and skip-gram method, doc2vec r
 Although it would require a little more engineering, this is the mechanisms we might use if we wanted to disambiguate &ldquo;I swung the bat&rdquo; and &ldquo;I swung at the bat&rdquo;.
 More directly, the paragraph vector helps inform the model as to which concepts are most likely to be discussed within the current window.</p>
 
-<p>Le, in the original paper<sup class="footnote-ref" id="fnref:2"><a rel="footnote" href="#fn:2">2</a></sup>, says that this vector provides <em>memory</em>, because the vector will change based on the words present in other parts of the same paragraph.
+<p>Le, in the original paper<sup class="footnote-ref" id="fnref:2"><a href="#fn:2">2</a></sup>, says that this vector provides <em>memory</em>, because the vector will change based on the words present in other parts of the same paragraph.
 Conceptually, imagine a paragraph discussing a man and his dog.
 Because of the paragraph vector&rsquo;s influence, the model will be more likely to succeed when attempting to fill in the blank in: &ldquo;the man walked his ____.&rdquo;</p>
 
 <h3 id="distributed-bag-of-words-pv-dbow">Distributed Bag of Words (PV-DBOW)</h3>
 
 
-<figure >
+<figure>
     
         <img src="/img/posts/doc2vec%28b%29.png" />
     
@@ -388,7 +388,7 @@ Additionally, in comparison to PV-DM, this method is computationally less expens
 <h2 id="comparison-and-conclusions">Comparison and Conclusions</h2>
 
 <p>So when doc2vec initially premiered, there was some controversy as to whether it could really outperform the centroid method.
-So, Lau and Baldwin performed an extensive comparison between these methodologies across different domains<sup class="footnote-ref" id="fnref:1"><a rel="footnote" href="#fn:1">1</a></sup>.
+So, Lau and Baldwin performed an extensive comparison between these methodologies across different domains<sup class="footnote-ref" id="fnref:1"><a href="#fn:1">1</a></sup>.
 The general consensus what that different methods are best suited for different tasks.
 For example, centroids perform well on tweets, but are outperformed on longer documents.
 I highly recommend this paper to anyone looking to include some of these techniques into their own work.</p>
