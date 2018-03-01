@@ -16,8 +16,8 @@
       <pubDate>Wed, 28 Feb 2018 14:18:52 -0400</pubDate>
       
       <guid>http://sybrandt.com/post/moliere-project-update-18-2-28/</guid>
-      <description>&lt;p&gt;Over the last couple of days, I have retooled MOLIERE into a system that anyone&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; can deploy it and run their own queries.
-The code is over at the &lt;a href=&#34;https://github.com/JSybrandt/MOLIERE&#34; target=&#34;_blank&#34;&gt;default repo&lt;/a&gt;&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34;&gt;2&lt;/a&gt;&lt;/sup&gt; and should be pretty straightforward, the code even downloads raw data itself!
+      <description>&lt;p&gt;Over the last couple of days, I have retooled MOLIERE into a system that anyone&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; can deploy it and run their own queries.
+The code is over at the &lt;a href=&#34;https://github.com/JSybrandt/MOLIERE&#34; target=&#34;_blank&#34;&gt;default repo&lt;/a&gt;&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:2&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:2&#34;&gt;2&lt;/a&gt;&lt;/sup&gt; and should be pretty straightforward, the code even downloads raw data itself!
 Just run &lt;code&gt;build_network.py&lt;/code&gt; and point it at a big parallel file systen &amp;mdash; in a few hours you&amp;rsquo;ll have your very own knowledge network!&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;
@@ -192,7 +192,7 @@ If we have a word embedding $R(w_i)$ for each of our words $w_i \in W$, then why
 
 &lt;p&gt;$$ R(d_j) = \frac{\sum\limits_{w_i \in W_j} R(w_i)}{|W_j|}$$&lt;/p&gt;
 
-&lt;p&gt;This method actually works pretty well, especially for smaller documents&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.
+&lt;p&gt;This method actually works pretty well, especially for smaller documents&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.
 If we think about comparing tweets, like we did above, then we would expect the vectors of two political tweets to be close to each other.
 It doesn&amp;rsquo;t matter if these tweets don&amp;rsquo;t use exactly the same words, one might be talking about a prominent politician and the other might be talking about a specific policy, but they both will likely use words that often occur in a &lt;em&gt;political context&lt;/em&gt;.
 If one tweet were really talking about a congress of salamanders, then we would expect vector for salamander would move that tweet&amp;rsquo;s centroid further away from all the political tweets.&lt;/p&gt;
@@ -206,8 +206,8 @@ This means that &amp;ldquo;I swung the bat&amp;rdquo; and &amp;ldquo;I swung at 
 &lt;h3 id=&#34;doc2vec&#34;&gt;Doc2Vec&lt;/h3&gt;
 
 &lt;p&gt;Yup, the moment problems arise, we make a new &lt;em&gt;blank2vec&lt;/em&gt;.
-Doc2Vec&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34;&gt;2&lt;/a&gt;&lt;/sup&gt; learns vector representations of paragraphs along with word representations.
-By combining these ideas, Doc2Vec embeddings outperformed many of the other methods that were around when it debuted&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+Doc2Vec&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:2&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:2&#34;&gt;2&lt;/a&gt;&lt;/sup&gt; learns vector representations of paragraphs along with word representations.
+By combining these ideas, Doc2Vec embeddings outperformed many of the other methods that were around when it debuted&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
 
 &lt;p&gt;If you remember word2vec, we learned the representation of a word by looking at its surrounding context.
 Doc2Vec adds a new vector into this context, representing the paragraph.
@@ -216,7 +216,7 @@ In the same way word2vec refers to both the CBOW and skip-gram method, doc2vec r
 &lt;h3 id=&#34;distributed-memory-model-pv-dm&#34;&gt;Distributed Memory Model (PV-DM)&lt;/h3&gt;
 
 
-&lt;figure&gt;
+&lt;figure &gt;
     
         &lt;img src=&#34;http://sybrandt.com/img/posts/doc2vec.png&#34; /&gt;
     
@@ -233,14 +233,14 @@ In the same way word2vec refers to both the CBOW and skip-gram method, doc2vec r
 Although it would require a little more engineering, this is the mechanisms we might use if we wanted to disambiguate &amp;ldquo;I swung the bat&amp;rdquo; and &amp;ldquo;I swung at the bat&amp;rdquo;.
 More directly, the paragraph vector helps inform the model as to which concepts are most likely to be discussed within the current window.&lt;/p&gt;
 
-&lt;p&gt;Le, in the original paper&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;, says that this vector provides &lt;em&gt;memory&lt;/em&gt;, because the vector will change based on the words present in other parts of the same paragraph.
+&lt;p&gt;Le, in the original paper&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:2&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:2&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;, says that this vector provides &lt;em&gt;memory&lt;/em&gt;, because the vector will change based on the words present in other parts of the same paragraph.
 Conceptually, imagine a paragraph discussing a man and his dog.
 Because of the paragraph vector&amp;rsquo;s influence, the model will be more likely to succeed when attempting to fill in the blank in: &amp;ldquo;the man walked his ____.&amp;rdquo;&lt;/p&gt;
 
 &lt;h3 id=&#34;distributed-bag-of-words-pv-dbow&#34;&gt;Distributed Bag of Words (PV-DBOW)&lt;/h3&gt;
 
 
-&lt;figure&gt;
+&lt;figure &gt;
     
         &lt;img src=&#34;http://sybrandt.com/img/posts/doc2vec%28b%29.png&#34; /&gt;
     
@@ -263,7 +263,7 @@ Additionally, in comparison to PV-DM, this method is computationally less expens
 &lt;h2 id=&#34;comparison-and-conclusions&#34;&gt;Comparison and Conclusions&lt;/h2&gt;
 
 &lt;p&gt;So when doc2vec initially premiered, there was some controversy as to whether it could really outperform the centroid method.
-So, Lau and Baldwin performed an extensive comparison between these methodologies across different domains&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.
+So, Lau and Baldwin performed an extensive comparison between these methodologies across different domains&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.
 The general consensus what that different methods are best suited for different tasks.
 For example, centroids perform well on tweets, but are outperformed on longer documents.
 I highly recommend this paper to anyone looking to include some of these techniques into their own work.&lt;/p&gt;
@@ -338,8 +338,8 @@ To put this in perspective, this whole template only took me about an hour to th
       <description>
 
 &lt;p&gt;Recently, in text mining circles, a new method of representing words has taken off.
-This has been due, in a large part, to recent papers from Mikolov et al. and tools like &lt;em&gt;word2vec&lt;/em&gt; &lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.
-Since then, many other projects have applied this concept to a wide variety of areas within data mining &lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;.
+This has been due, in a large part, to recent papers from Mikolov et al. and tools like &lt;em&gt;word2vec&lt;/em&gt; &lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.
+Since then, many other projects have applied this concept to a wide variety of areas within data mining &lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:2&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:2&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;.
 So what is all the hype about? What are these embeddings and why do we need them?&lt;/p&gt;
 
 &lt;h2 id=&#34;what-is-a-word-embedding&#34;&gt;What is a word embedding?&lt;/h2&gt;
@@ -407,11 +407,11 @@ For example, the sentence &lt;em&gt;&amp;ldquo;the man walks the dog&amp;rdquo;&
 This additionally means that if two documents use &lt;em&gt;similar&lt;/em&gt; but not the same words, they will be seen as different as two documents using completely different words.
 Also, the vectors are inefficiently long, each as long as the entire vocabulary (typically tens of millions of words).
 This means that one of those classifiers, such as a neural net, will have to accept really really long input vectors.
-Long story short, this doesn&amp;rsquo;t scale well &lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+Long story short, this doesn&amp;rsquo;t scale well &lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:3&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:3&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
 
 &lt;h3 id=&#34;the-new-word2vec&#34;&gt;The New: Word2Vec&lt;/h3&gt;
 
-&lt;p&gt;The new method which solves the problems with BOW is referred to as &lt;em&gt;&amp;ldquo;word2vec&amp;rdquo;&lt;/em&gt;, which is the name of the first tool which implements Mikolov&amp;rsquo;s ideas &lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.
+&lt;p&gt;The new method which solves the problems with BOW is referred to as &lt;em&gt;&amp;ldquo;word2vec&amp;rdquo;&lt;/em&gt;, which is the name of the first tool which implements Mikolov&amp;rsquo;s ideas &lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.
 This method creates vectors in a much lower dimensionality (typically, $100 \leq l \leq 600$).
 Additionally, words which are similar will tend to have similar vectors.
 As a side effect, the distance between words which have the same relationship (i.e. the distance between a US state and it&amp;rsquo;s capitol) will all be about the same.
@@ -430,7 +430,7 @@ Note that the context of the blank has a huge, albeit inexact, bearing on what w
 By learning these sorts of context-sensitive relationships, word2vec is able to train its embeddings.&lt;/p&gt;
 
 
-&lt;figure&gt;
+&lt;figure &gt;
     
         &lt;img src=&#34;http://sybrandt.com/img/posts/word2vec.png&#34; /&gt;
     
@@ -449,7 +449,7 @@ At a high level, the CBOW  and skip-gram model are opposites.
 The former learns to predict a word given that words context, the same way we did the example about the cat above.
 The latter learns to predict context given a word.&lt;/p&gt;
 
-&lt;p&gt;Both of these use some principles from convolutional neural nets, which are outside the scope of this article&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;.
+&lt;p&gt;Both of these use some principles from convolutional neural nets, which are outside the scope of this article&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:4&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:4&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;.
 All  you need is to think of these processes as black boxes that take vectors as input, and refine their result quality by comparing their output with our existing vectors.&lt;/p&gt;
 
 &lt;p&gt;Initially, all words are initialized as a random vector.
