@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme" content="hugo-academic">
+  <meta name="generator" content="Hugo 0.37" />
+  <meta name="author" content="Justin Sybrandt">
+  <meta name="description" content="Ph. D. Student : Machine Learning">
+
+  
+  
+  
+  
+    
+  
+  
+    
+    
+    <link rel="stylesheet" href="/css/highlight.min.css">
+    
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha512-6MXa8B6uaO18Hid6blRMetEIoPqHf7Ux1tnyIQdpt9qI5OACx7C+O3IVTr98vwGnlcg0LOLa02i9Y1HpVhlfiw==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.1/css/academicons.min.css" integrity="sha512-NThgw3XKQ1absAahW6to7Ey42uycrVvfNfyjqcFNgCmOCQ5AR4AO0SiXrN+8ZtYeappp56lk1WtvjVmEa+VR6A==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.css" integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ==" crossorigin="anonymous">
+  
+  
+  
+
+
+  
+
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700%7cMerriweather%7cRoboto&#43;Mono">
+  
+  <link rel="stylesheet" href="/styles.css">
+  
+
+  
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-76162256-1', 'auto');
+      ga('require', 'eventTracker');
+      ga('require', 'outboundLinkTracker');
+      ga('require', 'urlChangeTracker');
+      ga('send', 'pageview');
+    </script>
+    <script async src="//www.google-analytics.com/analytics.js"></script>
+    
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha512-HUmooslVKj4m6OBu0OgzjXXr+QuFYy/k7eLI5jdeEy/F4RSgMn6XRWRGkFi5IFaFgy7uFTkegp3Z0XnJf3Jq+g==" crossorigin="anonymous"></script>
+    
+  
+
+  
+  <link rel="alternate" href="http://sybrandt.com/index.xml" type="application/rss+xml" title="Justin Sybrandt">
+  <link rel="feed" href="http://sybrandt.com/index.xml" type="application/rss+xml" title="Justin Sybrandt">
+  
+
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/apple-touch-icon.png">
+
+  <link rel="canonical" href="http://sybrandt.com/post/basic-optimization-18-3-5/">
+
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="og:site_name" content="Justin Sybrandt">
+  <meta property="og:url" content="http://sybrandt.com/post/basic-optimization-18-3-5/">
+  <meta property="og:title" content="Basic Iterative Numeric Optimization | Justin Sybrandt">
+  <meta property="og:description" content=""><meta property="og:image" content="http://sybrandt.com/img/headers/function.jpg">
+  <meta property="og:locale" content="en-us">
+  
+  <meta property="article:published_time" content="2018-03-05T14:18:52-04:00">
+  
+  <meta property="article:modified_time" content="2018-03-05T14:18:52-04:00">
+  
+
+  
+
+  <title>Basic Iterative Numeric Optimization | Justin Sybrandt</title>
+
+</head>
+<body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71">
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="navbar-header">
+      
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+              data-target=".navbar-collapse" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+      <a class="navbar-brand" href="/">Justin Sybrandt</a>
+    </div>
+
+    
+    <div class="collapse navbar-collapse">
+
+      
+      <ul class="nav navbar-nav navbar-right">
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/#about">
+            
+            <span>Home</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/#posts">
+            
+            <span>Posts</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/#publications">
+            
+            <span>Publications</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/#projects">
+            
+            <span>Projects</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/#contact">
+            
+            <span>Contact</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/resume/resume.pdf">
+            
+            <span>Resume</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+<article class="article" itemscope itemtype="http://schema.org/Article">
+
+  
+<div class="article-header">
+  <img src="/img/headers/function.jpg" class="article-banner" itemprop="image">
+  
+</div>
+
+
+
+  <div class="article-container">
+    <div class="article-inner">
+      <h1 itemprop="name">Basic Iterative Numeric Optimization</h1>
+
+      
+
+<div class="article-metadata">
+
+  <span class="article-date">
+    
+    <time datetime="2018-03-05 14:18:52 -0400 -0400" itemprop="datePublished">
+      Mar 5, 2018
+    </time>
+  </span>
+
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <a href="http://sybrandt.com/post/basic-optimization-18-3-5/#disqus_thread"></a>
+  
+
+  
+
+  
+  
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=Basic%20Iterative%20Numeric%20Optimization&amp;url=http%3a%2f%2fsybrandt.com%2fpost%2fbasic-optimization-18-3-5%2f"
+         target="_blank" rel="noopener">
+        <i class="fa fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u=http%3a%2f%2fsybrandt.com%2fpost%2fbasic-optimization-18-3-5%2f"
+         target="_blank" rel="noopener">
+        <i class="fa fa-facebook"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2fsybrandt.com%2fpost%2fbasic-optimization-18-3-5%2f&amp;title=Basic%20Iterative%20Numeric%20Optimization"
+         target="_blank" rel="noopener">
+        <i class="fa fa-linkedin"></i>
+      </a>
+    </li>
+    <li>
+      <a class="weibo"
+         href="http://service.weibo.com/share/share.php?url=http%3a%2f%2fsybrandt.com%2fpost%2fbasic-optimization-18-3-5%2f&amp;title=Basic%20Iterative%20Numeric%20Optimization"
+         target="_blank" rel="noopener">
+        <i class="fa fa-weibo"></i>
+      </a>
+    </li>
+    <li>
+      <a class="email"
+         href="mailto:?subject=Basic%20Iterative%20Numeric%20Optimization&amp;body=http%3a%2f%2fsybrandt.com%2fpost%2fbasic-optimization-18-3-5%2f">
+        <i class="fa fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+
+      <div class="article-style" itemprop="articleBody">
+        <p>Today in a class, we were asked to write an iterative solver for numerical equations.
+Now, many students in the class did not have an optimization background, so for the benefit of everyone, I want to share a simple overview of this exercise and how to go about solving it.</p>
+
+<p>The problem was stated as follows:</p>
+
+<p>$$ M(a) = 2\times a + 14$$
+$$ G(b) = b - 2 $$</p>
+
+<p>And our goal was to find some solution $x$ such that $M(x) = G(x)$.
+Additionally, we were supposed to do so iteratively, so just solving the system of equations was out of the question.
+This is because our next exercise would have a different $M$ and $G$, so our code should be able to support whatever.</p>
+
+<p>For the sake of generalization, my solution here will assume only the $M$ and $G$ are continuous, but I will not assume we know their derivatives.
+Additionally, I will be writing my code in python, simply because I find that it is easier for anybody to understand.
+Knowledge of python, hopefully, won&rsquo;t be necessary.
+But first, lets go over some aspects of the problem&hellip;</p>
+
+<p></p>
+
+<h2 id="what-is-an-iterative-algorithm">What is an iterative algorithm?</h2>
+
+<p>As stated above, we are going to write an iterative solution, which means that our code will start with a <strong>random guess</strong> and refine it over time.</p>
+
+<h2 id="why-write-an-iterative-algorithm">Why write an iterative algorithm?</h2>
+
+<p>In the real world, we won&rsquo;t know everything about $M$ and $G$.
+They may be uncertain, ill-defined, or the result of a large simulation.
+So we wouldn&rsquo;t be able to simply solve a system of linear equations.
+By using an iterative method, we can treat each function as a <strong>black box</strong>
+This just means that our code won&rsquo;t know what $M$ or $G$ actually do, but it will be able to evaluate each function at different points.</p>
+
+<h2 id="how-do-we-write-an-iterative-algorithm">How do we write an iterative algorithm?</h2>
+
+<p>First, we are going to make a random guess at $x$.
+Then, we are going to check if our guess is right.
+If our guess is wrong, we are going to check whether we need to increase or decrease $x$ to get closer to the right answer.</p>
+
+<p>Caveat: Every optimization algorithm is going to answer the question, <em>&ldquo;How do I update $x$?&rdquo;</em> a different way.
+The method presented here is very simple, for the same of explaining the overarching concept.</p>
+
+<h1 id="conceptual-solution">Conceptual Solution</h1>
+
+<p>For future reference, here are our two functions shown graphically.
+Note that to make these plots we need to know the values of $M$ and $G$ at EVERY $x$ value.
+In real life <strong>this is impossible</strong>, so instead we are going to do this iterativly.
+But, this sort of check, for a simple problem, is a good idea just to know what the right answer will look like, regardless of method.
+In this case, our solution is $x = -16$.</p>
+
+<p><img src="/img/posts/18-3-5/overall-solution.jpg" alt="overall-solution" /></p>
+
+<p>Lets start our iterative process with a random guess, $x = 1$.
+We know we want $M(x) = G(x)$, but we can simplify our analysis by defining a third function: $D(x) = M(x) - G(x)$.
+Clearly, if $D(x) = 0$, we have our answer.</p>
+
+<p>At this point, all we know is that $M(1) = 16$ and $G(1) = -1$, so $D(1) = 17$.
+Graphically, this is just the two points shown below (dashed lines for reference, we don&rsquo;t know those yet).</p>
+
+<p><img src="/img/posts/18-3-5/first-point.jpg" alt="first-point" /></p>
+
+<p>So, we need to figure out whether we need to increase or decrease $x$ to get closer to a solution.
+For this, we are going to estimate the derivative of $D$.
+To do this, we just evaluate $D(x)$ at two points close to our previous guess.
+For example:</p>
+
+<p>$$ D(1.01) = 17.01$$
+$$ D(.99) = 16.99$$</p>
+
+<p>We use this to estimate the derivative of $D(1)$, which is simply change in y over change in x:</p>
+
+<p>$D&rsquo;(1) \approx 0.02 / 0.02 = 1$</p>
+
+<p>So our best guess, is that if we decrease x by 1, our difference will also decrease by 1.
+Note that this only requires we evaluate $D(x)$ at two points, and we don&rsquo;t need to know the entire function to make this derivative estimate.
+So for our next iteration, let $x=0$.</p>
+
+<p><img src="/img/posts/18-3-5/second-point.jpg" alt="second-point" /></p>
+
+<p>Sure enough, $D$ decreased by 1.
+If we were to follow the whole algorithm threw, we would make another derivative estimate and eventually find our solution of $D(16) = 0$.</p>
+
+<h2 id="considerations">Considerations</h2>
+
+<p>A couple of things were hand-waved away so far.
+Firstly, how far away from $x$ do we need to look in order to calculate the derivative?
+Also, how far should we jump once we have a local derivative estimate?
+Finally, what if we jump past the right answer?</p>
+
+<p>In this example, we only have linear equations, so as long as we take small steps, we will eventually get it right, but in the case of more complicated polynomials.
+In more complicated equations, we may get stuck at local optima, where no mater how we move $x$ we seem to only get further from $D(x) = 0$.
+That typically is solved by running our overall solution with multiple random guesses, or by varying the step size.
+But, lets get this solution programmed first.</p>
+
+<h1 id="code">Code</h1>
+
+<pre><code class="language-python">from random import random
+# If you don't know python, don't worry about this import
+
+# function for M
+def M(x):
+  return 2 * x + 14
+
+# function for G
+def G(x):
+  return x - 2
+
+# function for the difference of M and G
+def D(x):
+  return M(x) - G(x)
+
+# estimates the derivative of D at x.
+def estDerivative(x):
+  STEP = 0.01
+  # sample D at two points near x
+  e1 = D(x-STEP)
+  e2 = D(x+STEP)
+  # return rise over run
+  return (e2 - e1) / (2 * STEP)
+
+# dermines how far to move x each iteration
+# also, the smaller the jump, the closer
+# we end up to the right answer
+JUMP = 0.0001
+
+# start with a random guess for x
+x = random()
+
+# keep looping until the absolute difference 
+# between M and G is (practically) 0
+while abs(D(x)) &gt; 0.001:
+  # calculate change in D for change in x
+  d = estDerivative(x)
+  if D(x) &gt; 0:
+    # if positive, we need to update x against the direction of d
+    x += -d * JUMP
+  else:  # D(x) &lt; 0
+    # if negative, we need to update x along the direction of d
+    x += d * JUMP
+
+print(x)
+</code></pre>
+      </div>
+
+      
+
+
+<div class="article-tags">
+  
+  <a class="btn btn-primary btn-outline" href="/tags/tutorial">tutorial</a>
+  
+</div>
+
+
+
+    </div>
+  </div>
+
+</article>
+
+
+
+<div class="article-container article-widget">
+  <div class="hr-light"></div>
+  <h3>Related</h3>
+  <ul>
+    
+    <li><a href="/post/moliere-project-update-18-2-28/">Moliere Software Overhaul</a></li>
+    
+    <li><a href="/post/run-moliere-yourself/">Run Moliere Yourself</a></li>
+    
+    <li><a href="/post/document-embedding/">Document Embedding</a></li>
+    
+    <li><a href="/post/google-slides-agile/">Agile Project Management in Google Sheets</a></li>
+    
+    <li><a href="/post/word-embeddings/">Word Embedding Basics</a></li>
+    
+  </ul>
+</div>
+
+
+
+
+<div class="article-container">
+  
+<section id="comments">
+  <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "sybrandt-com" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <p class="powered-by">
+
+      &copy; 2017 Justin Sybrandt &middot; 
+
+      Powered by the
+      <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+      <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+      <span class="pull-right" aria-hidden="true">
+        <a href="#" id="back_to_top">
+          <span class="button_icon">
+            <i class="fa fa-chevron-up fa-2x"></i>
+          </span>
+        </a>
+      </span>
+
+    </p>
+  </div>
+</footer>
+
+
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close btn-large" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Cite</h4>
+      </div>
+      <div>
+        <pre><code class="modal-body tex"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-primary btn-outline js-copy-cite" href="#" target="_blank">
+          <i class="fa fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-primary btn-outline js-download-cite" href="#" target="_blank">
+          <i class="fa fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+    
+    <script id="dsq-count-scr" src="//sybrandt-com.disqus.com/count.js" async></script>
+    
+
+    
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha512-3P8rXCuGJdNZOnUx/03c1jOTnMn3rP63nBip5gOP2qmUh5YAdVAvFZ1E+QLZZbC1rtMrQb+mah3AfYW11RUrWA==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.3/imagesloaded.pkgd.min.js" integrity="sha512-umsR78NN0D23AzgoZ11K7raBD+R6hqKojyBZs1w8WvYlsI+QuKRGBx3LFCwhatzBunCjDuJpDHwxD13sLMbpRA==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha512-iztkobsvnjKfAtTNdHkGVjAYTrrtlC7mGp/54c40wowO7LhURYl3gVzzcEqGl/qKXQltJ2HwMrdLcNUdo+N/RQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js" integrity="sha512-VDBOIlDbuC4VWxGJNmuFRQ0Li0SKkDpmGyuhAG5LTDLd/dJ/S0WMVxriR2Y+CyPL5gzjpN4f/6iqWVBJlht0tQ==" crossorigin="anonymous"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin="anonymous"></script>
+    
+    
+    <script src="/js/hugo-academic.js"></script>
+    
+
+    
+    
+      
+      
+      <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+      
+
+      
+
+      
+
+      <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] } });
+    </script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML" integrity="sha512-tOav5w1OjvsSJzePRtt2uQPFwBoHt1VZcUq8l8nm5284LEKE9FSJBQryzMBzHxY5P0zRdNqEcpLIRVYFNgu1jw==" crossorigin="anonymous"></script>
+    
+    
+
+  </body>
+</html>
+

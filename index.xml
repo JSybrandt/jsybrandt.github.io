@@ -11,13 +11,161 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Basic Iterative Numeric Optimization</title>
+      <link>http://sybrandt.com/post/basic-optimization-18-3-5/</link>
+      <pubDate>Mon, 05 Mar 2018 14:18:52 -0400</pubDate>
+      
+      <guid>http://sybrandt.com/post/basic-optimization-18-3-5/</guid>
+      <description>&lt;p&gt;Today in a class, we were asked to write an iterative solver for numerical equations.
+Now, many students in the class did not have an optimization background, so for the benefit of everyone, I want to share a simple overview of this exercise and how to go about solving it.&lt;/p&gt;
+
+&lt;p&gt;The problem was stated as follows:&lt;/p&gt;
+
+&lt;p&gt;$$ M(a) = 2\times a + 14$$
+$$ G(b) = b - 2 $$&lt;/p&gt;
+
+&lt;p&gt;And our goal was to find some solution $x$ such that $M(x) = G(x)$.
+Additionally, we were supposed to do so iteratively, so just solving the system of equations was out of the question.
+This is because our next exercise would have a different $M$ and $G$, so our code should be able to support whatever.&lt;/p&gt;
+
+&lt;p&gt;For the sake of generalization, my solution here will assume only the $M$ and $G$ are continuous, but I will not assume we know their derivatives.
+Additionally, I will be writing my code in python, simply because I find that it is easier for anybody to understand.
+Knowledge of python, hopefully, won&amp;rsquo;t be necessary.
+But first, lets go over some aspects of the problem&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;what-is-an-iterative-algorithm&#34;&gt;What is an iterative algorithm?&lt;/h2&gt;
+
+&lt;p&gt;As stated above, we are going to write an iterative solution, which means that our code will start with a &lt;strong&gt;random guess&lt;/strong&gt; and refine it over time.&lt;/p&gt;
+
+&lt;h2 id=&#34;why-write-an-iterative-algorithm&#34;&gt;Why write an iterative algorithm?&lt;/h2&gt;
+
+&lt;p&gt;In the real world, we won&amp;rsquo;t know everything about $M$ and $G$.
+They may be uncertain, ill-defined, or the result of a large simulation.
+So we wouldn&amp;rsquo;t be able to simply solve a system of linear equations.
+By using an iterative method, we can treat each function as a &lt;strong&gt;black box&lt;/strong&gt;
+This just means that our code won&amp;rsquo;t know what $M$ or $G$ actually do, but it will be able to evaluate each function at different points.&lt;/p&gt;
+
+&lt;h2 id=&#34;how-do-we-write-an-iterative-algorithm&#34;&gt;How do we write an iterative algorithm?&lt;/h2&gt;
+
+&lt;p&gt;First, we are going to make a random guess at $x$.
+Then, we are going to check if our guess is right.
+If our guess is wrong, we are going to check whether we need to increase or decrease $x$ to get closer to the right answer.&lt;/p&gt;
+
+&lt;p&gt;Caveat: Every optimization algorithm is going to answer the question, &lt;em&gt;&amp;ldquo;How do I update $x$?&amp;rdquo;&lt;/em&gt; a different way.
+The method presented here is very simple, for the same of explaining the overarching concept.&lt;/p&gt;
+
+&lt;h1 id=&#34;conceptual-solution&#34;&gt;Conceptual Solution&lt;/h1&gt;
+
+&lt;p&gt;For future reference, here are our two functions shown graphically.
+Note that to make these plots we need to know the values of $M$ and $G$ at EVERY $x$ value.
+In real life &lt;strong&gt;this is impossible&lt;/strong&gt;, so instead we are going to do this iterativly.
+But, this sort of check, for a simple problem, is a good idea just to know what the right answer will look like, regardless of method.
+In this case, our solution is $x = -16$.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://sybrandt.com/img/posts/18-3-5/overall-solution.jpg&#34; alt=&#34;overall-solution&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Lets start our iterative process with a random guess, $x = 1$.
+We know we want $M(x) = G(x)$, but we can simplify our analysis by defining a third function: $D(x) = M(x) - G(x)$.
+Clearly, if $D(x) = 0$, we have our answer.&lt;/p&gt;
+
+&lt;p&gt;At this point, all we know is that $M(1) = 16$ and $G(1) = -1$, so $D(1) = 17$.
+Graphically, this is just the two points shown below (dashed lines for reference, we don&amp;rsquo;t know those yet).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://sybrandt.com/img/posts/18-3-5/first-point.jpg&#34; alt=&#34;first-point&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;So, we need to figure out whether we need to increase or decrease $x$ to get closer to a solution.
+For this, we are going to estimate the derivative of $D$.
+To do this, we just evaluate $D(x)$ at two points close to our previous guess.
+For example:&lt;/p&gt;
+
+&lt;p&gt;$$ D(1.01) = 17.01$$
+$$ D(.99) = 16.99$$&lt;/p&gt;
+
+&lt;p&gt;We use this to estimate the derivative of $D(1)$, which is simply change in y over change in x:&lt;/p&gt;
+
+&lt;p&gt;$D&amp;rsquo;(1) \approx 0.02 / 0.02 = 1$&lt;/p&gt;
+
+&lt;p&gt;So our best guess, is that if we decrease x by 1, our difference will also decrease by 1.
+Note that this only requires we evaluate $D(x)$ at two points, and we don&amp;rsquo;t need to know the entire function to make this derivative estimate.
+So for our next iteration, let $x=0$.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://sybrandt.com/img/posts/18-3-5/second-point.jpg&#34; alt=&#34;second-point&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Sure enough, $D$ decreased by 1.
+If we were to follow the whole algorithm threw, we would make another derivative estimate and eventually find our solution of $D(16) = 0$.&lt;/p&gt;
+
+&lt;h2 id=&#34;considerations&#34;&gt;Considerations&lt;/h2&gt;
+
+&lt;p&gt;A couple of things were hand-waved away so far.
+Firstly, how far away from $x$ do we need to look in order to calculate the derivative?
+Also, how far should we jump once we have a local derivative estimate?
+Finally, what if we jump past the right answer?&lt;/p&gt;
+
+&lt;p&gt;In this example, we only have linear equations, so as long as we take small steps, we will eventually get it right, but in the case of more complicated polynomials.
+In more complicated equations, we may get stuck at local optima, where no mater how we move $x$ we seem to only get further from $D(x) = 0$.
+That typically is solved by running our overall solution with multiple random guesses, or by varying the step size.
+But, lets get this solution programmed first.&lt;/p&gt;
+
+&lt;h1 id=&#34;code&#34;&gt;Code&lt;/h1&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;from random import random
+# If you don&#39;t know python, don&#39;t worry about this import
+
+# function for M
+def M(x):
+  return 2 * x + 14
+
+# function for G
+def G(x):
+  return x - 2
+
+# function for the difference of M and G
+def D(x):
+  return M(x) - G(x)
+
+# estimates the derivative of D at x.
+def estDerivative(x):
+  STEP = 0.01
+  # sample D at two points near x
+  e1 = D(x-STEP)
+  e2 = D(x+STEP)
+  # return rise over run
+  return (e2 - e1) / (2 * STEP)
+
+# dermines how far to move x each iteration
+# also, the smaller the jump, the closer
+# we end up to the right answer
+JUMP = 0.0001
+
+# start with a random guess for x
+x = random()
+
+# keep looping until the absolute difference 
+# between M and G is (practically) 0
+while abs(D(x)) &amp;gt; 0.001:
+  # calculate change in D for change in x
+  d = estDerivative(x)
+  if D(x) &amp;gt; 0:
+    # if positive, we need to update x against the direction of d
+    x += -d * JUMP
+  else:  # D(x) &amp;lt; 0
+    # if negative, we need to update x along the direction of d
+    x += d * JUMP
+
+print(x)
+&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    
+    <item>
       <title>Moliere Software Overhaul</title>
       <link>http://sybrandt.com/post/moliere-project-update-18-2-28/</link>
       <pubDate>Wed, 28 Feb 2018 14:18:52 -0400</pubDate>
       
       <guid>http://sybrandt.com/post/moliere-project-update-18-2-28/</guid>
-      <description>&lt;p&gt;Over the last couple of days, I have retooled MOLIERE into a system that anyone&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; can deploy it and run their own queries.
-The code is over at the &lt;a href=&#34;https://github.com/JSybrandt/MOLIERE&#34; target=&#34;_blank&#34;&gt;default repo&lt;/a&gt;&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:2&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:2&#34;&gt;2&lt;/a&gt;&lt;/sup&gt; and should be pretty straightforward, the code even downloads raw data itself!
+      <description>&lt;p&gt;Over the last couple of days, I have retooled MOLIERE into a system that anyone&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; can deploy it and run their own queries.
+The code is over at the &lt;a href=&#34;https://github.com/JSybrandt/MOLIERE&#34; target=&#34;_blank&#34;&gt;default repo&lt;/a&gt;&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34;&gt;2&lt;/a&gt;&lt;/sup&gt; and should be pretty straightforward, the code even downloads raw data itself!
 Just run &lt;code&gt;build_network.py&lt;/code&gt; and point it at a big parallel file systen &amp;mdash; in a few hours you&amp;rsquo;ll have your very own knowledge network!&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;
@@ -192,7 +340,7 @@ If we have a word embedding $R(w_i)$ for each of our words $w_i \in W$, then why
 
 &lt;p&gt;$$ R(d_j) = \frac{\sum\limits_{w_i \in W_j} R(w_i)}{|W_j|}$$&lt;/p&gt;
 
-&lt;p&gt;This method actually works pretty well, especially for smaller documents&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.
+&lt;p&gt;This method actually works pretty well, especially for smaller documents&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.
 If we think about comparing tweets, like we did above, then we would expect the vectors of two political tweets to be close to each other.
 It doesn&amp;rsquo;t matter if these tweets don&amp;rsquo;t use exactly the same words, one might be talking about a prominent politician and the other might be talking about a specific policy, but they both will likely use words that often occur in a &lt;em&gt;political context&lt;/em&gt;.
 If one tweet were really talking about a congress of salamanders, then we would expect vector for salamander would move that tweet&amp;rsquo;s centroid further away from all the political tweets.&lt;/p&gt;
@@ -206,8 +354,8 @@ This means that &amp;ldquo;I swung the bat&amp;rdquo; and &amp;ldquo;I swung at 
 &lt;h3 id=&#34;doc2vec&#34;&gt;Doc2Vec&lt;/h3&gt;
 
 &lt;p&gt;Yup, the moment problems arise, we make a new &lt;em&gt;blank2vec&lt;/em&gt;.
-Doc2Vec&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:2&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:2&#34;&gt;2&lt;/a&gt;&lt;/sup&gt; learns vector representations of paragraphs along with word representations.
-By combining these ideas, Doc2Vec embeddings outperformed many of the other methods that were around when it debuted&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+Doc2Vec&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34;&gt;2&lt;/a&gt;&lt;/sup&gt; learns vector representations of paragraphs along with word representations.
+By combining these ideas, Doc2Vec embeddings outperformed many of the other methods that were around when it debuted&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
 
 &lt;p&gt;If you remember word2vec, we learned the representation of a word by looking at its surrounding context.
 Doc2Vec adds a new vector into this context, representing the paragraph.
@@ -216,7 +364,7 @@ In the same way word2vec refers to both the CBOW and skip-gram method, doc2vec r
 &lt;h3 id=&#34;distributed-memory-model-pv-dm&#34;&gt;Distributed Memory Model (PV-DM)&lt;/h3&gt;
 
 
-&lt;figure &gt;
+&lt;figure&gt;
     
         &lt;img src=&#34;http://sybrandt.com/img/posts/doc2vec.png&#34; /&gt;
     
@@ -233,14 +381,14 @@ In the same way word2vec refers to both the CBOW and skip-gram method, doc2vec r
 Although it would require a little more engineering, this is the mechanisms we might use if we wanted to disambiguate &amp;ldquo;I swung the bat&amp;rdquo; and &amp;ldquo;I swung at the bat&amp;rdquo;.
 More directly, the paragraph vector helps inform the model as to which concepts are most likely to be discussed within the current window.&lt;/p&gt;
 
-&lt;p&gt;Le, in the original paper&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:2&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:2&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;, says that this vector provides &lt;em&gt;memory&lt;/em&gt;, because the vector will change based on the words present in other parts of the same paragraph.
+&lt;p&gt;Le, in the original paper&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;, says that this vector provides &lt;em&gt;memory&lt;/em&gt;, because the vector will change based on the words present in other parts of the same paragraph.
 Conceptually, imagine a paragraph discussing a man and his dog.
 Because of the paragraph vector&amp;rsquo;s influence, the model will be more likely to succeed when attempting to fill in the blank in: &amp;ldquo;the man walked his ____.&amp;rdquo;&lt;/p&gt;
 
 &lt;h3 id=&#34;distributed-bag-of-words-pv-dbow&#34;&gt;Distributed Bag of Words (PV-DBOW)&lt;/h3&gt;
 
 
-&lt;figure &gt;
+&lt;figure&gt;
     
         &lt;img src=&#34;http://sybrandt.com/img/posts/doc2vec%28b%29.png&#34; /&gt;
     
@@ -263,7 +411,7 @@ Additionally, in comparison to PV-DM, this method is computationally less expens
 &lt;h2 id=&#34;comparison-and-conclusions&#34;&gt;Comparison and Conclusions&lt;/h2&gt;
 
 &lt;p&gt;So when doc2vec initially premiered, there was some controversy as to whether it could really outperform the centroid method.
-So, Lau and Baldwin performed an extensive comparison between these methodologies across different domains&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.
+So, Lau and Baldwin performed an extensive comparison between these methodologies across different domains&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.
 The general consensus what that different methods are best suited for different tasks.
 For example, centroids perform well on tweets, but are outperformed on longer documents.
 I highly recommend this paper to anyone looking to include some of these techniques into their own work.&lt;/p&gt;
@@ -338,8 +486,8 @@ To put this in perspective, this whole template only took me about an hour to th
       <description>
 
 &lt;p&gt;Recently, in text mining circles, a new method of representing words has taken off.
-This has been due, in a large part, to recent papers from Mikolov et al. and tools like &lt;em&gt;word2vec&lt;/em&gt; &lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.
-Since then, many other projects have applied this concept to a wide variety of areas within data mining &lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:2&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:2&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;.
+This has been due, in a large part, to recent papers from Mikolov et al. and tools like &lt;em&gt;word2vec&lt;/em&gt; &lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.
+Since then, many other projects have applied this concept to a wide variety of areas within data mining &lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;.
 So what is all the hype about? What are these embeddings and why do we need them?&lt;/p&gt;
 
 &lt;h2 id=&#34;what-is-a-word-embedding&#34;&gt;What is a word embedding?&lt;/h2&gt;
@@ -407,11 +555,11 @@ For example, the sentence &lt;em&gt;&amp;ldquo;the man walks the dog&amp;rdquo;&
 This additionally means that if two documents use &lt;em&gt;similar&lt;/em&gt; but not the same words, they will be seen as different as two documents using completely different words.
 Also, the vectors are inefficiently long, each as long as the entire vocabulary (typically tens of millions of words).
 This means that one of those classifiers, such as a neural net, will have to accept really really long input vectors.
-Long story short, this doesn&amp;rsquo;t scale well &lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:3&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:3&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+Long story short, this doesn&amp;rsquo;t scale well &lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
 
 &lt;h3 id=&#34;the-new-word2vec&#34;&gt;The New: Word2Vec&lt;/h3&gt;
 
-&lt;p&gt;The new method which solves the problems with BOW is referred to as &lt;em&gt;&amp;ldquo;word2vec&amp;rdquo;&lt;/em&gt;, which is the name of the first tool which implements Mikolov&amp;rsquo;s ideas &lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.
+&lt;p&gt;The new method which solves the problems with BOW is referred to as &lt;em&gt;&amp;ldquo;word2vec&amp;rdquo;&lt;/em&gt;, which is the name of the first tool which implements Mikolov&amp;rsquo;s ideas &lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.
 This method creates vectors in a much lower dimensionality (typically, $100 \leq l \leq 600$).
 Additionally, words which are similar will tend to have similar vectors.
 As a side effect, the distance between words which have the same relationship (i.e. the distance between a US state and it&amp;rsquo;s capitol) will all be about the same.
@@ -430,7 +578,7 @@ Note that the context of the blank has a huge, albeit inexact, bearing on what w
 By learning these sorts of context-sensitive relationships, word2vec is able to train its embeddings.&lt;/p&gt;
 
 
-&lt;figure &gt;
+&lt;figure&gt;
     
         &lt;img src=&#34;http://sybrandt.com/img/posts/word2vec.png&#34; /&gt;
     
@@ -449,7 +597,7 @@ At a high level, the CBOW  and skip-gram model are opposites.
 The former learns to predict a word given that words context, the same way we did the example about the cat above.
 The latter learns to predict context given a word.&lt;/p&gt;
 
-&lt;p&gt;Both of these use some principles from convolutional neural nets, which are outside the scope of this article&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:4&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:4&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;.
+&lt;p&gt;Both of these use some principles from convolutional neural nets, which are outside the scope of this article&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;.
 All  you need is to think of these processes as black boxes that take vectors as input, and refine their result quality by comparing their output with our existing vectors.&lt;/p&gt;
 
 &lt;p&gt;Initially, all words are initialized as a random vector.
@@ -759,21 +907,6 @@ Additionally, we find a large number of pros and cons for all methodologies.&lt;
 
 &lt;p&gt;These strengths and weaknesses are detailed in the associated work.
 Note, this work is unpublished.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Rapid Replication of Multi-Petabyte File Systems</title>
-      <link>http://sybrandt.com/publication/rapid-replication-of-multipetabyte-filesystems/</link>
-      <pubDate>Mon, 16 Nov 2015 00:00:00 +0000</pubDate>
-      
-      <guid>http://sybrandt.com/publication/rapid-replication-of-multipetabyte-filesystems/</guid>
-      <description>&lt;p&gt;DistSync was presented as a Work in Progress (WIP) at the Parallel Data Storage Workshop, as well as in the &lt;a href=&#34;http://sc15.supercomputing.org/sites/all/themes/SC15images/src_poster/poster_files/spost103s2-file1.pdf&#34; target=&#34;_blank&#34;&gt;SC&amp;rsquo;15 poster session&lt;/a&gt;.
-This work was done along with the storage systems group at the &lt;a href=&#34;http://www.nersc.gov/&#34; target=&#34;_blank&#34;&gt;National Energy Research Scientific Computing Center (NERSC)&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;We developed distsync in order to facilitate the move from the Oakland Scientific Facility into a new building at the LBNL Berkeley campus.
-As part of this process, the scratch file system at the old location needed to be syncronized with an out of date replica present at the new location.
-Distsync dramatically reduced the time needed to process this syncronization.&lt;/p&gt;
 </description>
     </item>
     
