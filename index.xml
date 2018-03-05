@@ -44,7 +44,7 @@ But first, lets go over some aspects of the problem&amp;hellip;&lt;/p&gt;
 &lt;p&gt;In the real world, we won&amp;rsquo;t know everything about $M$ and $G$.
 They may be uncertain, ill-defined, or the result of a large simulation.
 So we wouldn&amp;rsquo;t be able to simply solve a system of linear equations.
-By using an iterative method, we can treat each function as a &lt;strong&gt;black box&lt;/strong&gt;
+By using an iterative method, we can treat each function as a &lt;strong&gt;black box&lt;/strong&gt;.
 This just means that our code won&amp;rsquo;t know what $M$ or $G$ actually do, but it will be able to evaluate each function at different points.&lt;/p&gt;
 
 &lt;h2 id=&#34;how-do-we-write-an-iterative-algorithm&#34;&gt;How do we write an iterative algorithm?&lt;/h2&gt;
