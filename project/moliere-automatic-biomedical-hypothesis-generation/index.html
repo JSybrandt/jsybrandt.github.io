@@ -6,35 +6,56 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="theme" content="hugo-academic">
-  <meta name="generator" content="Hugo 0.37" />
+  <meta name="generator" content="Hugo 0.36" />
   <meta name="author" content="Justin Sybrandt">
-  <meta name="description" content="Ph. D. Student : Machine Learning">
 
   
   
   
   
     
+      
+    
+  
+  <meta name="description" content="MOLIERE, originally presented at KDD&rsquo;17, is a system which can identify connections within medical literature. In order to increase the productivity of medical researchers, we are attempting to deploy the pipeline to perform at scale. Along with this come a series of complications regarding the scale of the MEDLINE data set and the use-cases of scientists.
+This project is being pursued primarily by an aspiring group of undergraduate students in Clemson&rsquo;s Seminar for Professional Issues class.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="http://sybrandt.com/project/moliere-automatic-biomedical-hypothesis-generation/">
+
+  
+
+
+  
+
+  
+  
+  <meta name="theme-color" content="#3f51b5">
+  
+  
+  
+  
+    
   
   
     
     
-    <link rel="stylesheet" href="/css/highlight.min.css">
+      
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+      
     
   
   
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha512-6MXa8B6uaO18Hid6blRMetEIoPqHf7Ux1tnyIQdpt9qI5OACx7C+O3IVTr98vwGnlcg0LOLa02i9Y1HpVhlfiw==" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.1/css/academicons.min.css" integrity="sha512-NThgw3XKQ1absAahW6to7Ey42uycrVvfNfyjqcFNgCmOCQ5AR4AO0SiXrN+8ZtYeappp56lk1WtvjVmEa+VR6A==" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
   
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.css" integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ==" crossorigin="anonymous">
   
   
   
-
-
   
-
   <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700%7cMerriweather%7cRoboto&#43;Mono">
   
   <link rel="stylesheet" href="/styles.css">
@@ -60,8 +81,9 @@
   <link rel="feed" href="http://sybrandt.com/index.xml" type="application/rss+xml" title="Justin Sybrandt">
   
 
+  <link rel="manifest" href="/site.webmanifest">
   <link rel="icon" type="image/png" href="/img/icon.png">
-  <link rel="apple-touch-icon" type="image/png" href="/img/apple-touch-icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
   <link rel="canonical" href="http://sybrandt.com/project/moliere-automatic-biomedical-hypothesis-generation/">
 
@@ -70,7 +92,8 @@
   <meta property="og:site_name" content="Justin Sybrandt">
   <meta property="og:url" content="http://sybrandt.com/project/moliere-automatic-biomedical-hypothesis-generation/">
   <meta property="og:title" content="MOLIERE: Automatic Biomedical Hypothesis Generation | Justin Sybrandt">
-  <meta property="og:description" content=""><meta property="og:image" content="http://sybrandt.com/img/headers/network.jpg">
+  <meta property="og:description" content="MOLIERE, originally presented at KDD&rsquo;17, is a system which can identify connections within medical literature. In order to increase the productivity of medical researchers, we are attempting to deploy the pipeline to perform at scale. Along with this come a series of complications regarding the scale of the MEDLINE data set and the use-cases of scientists.
+This project is being pursued primarily by an aspiring group of undergraduate students in Clemson&rsquo;s Seminar for Professional Issues class."><meta property="og:image" content="http://sybrandt.com/img/headers/network.jpg">
   <meta property="og:locale" content="en-us">
   
   <meta property="article:published_time" content="2017-09-15T22:27:22-04:00">
@@ -83,7 +106,7 @@
   <title>MOLIERE: Automatic Biomedical Hypothesis Generation | Justin Sybrandt</title>
 
 </head>
-<body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71">
+<body id="top" data-spy="scroll" data-target="#toc" data-offset="71" >
 
 <nav class="navbar navbar-default navbar-fixed-top" id="navbar-main">
   <div class="container">
@@ -106,82 +129,126 @@
     <div class="collapse navbar-collapse">
 
       
+      
       <ul class="nav navbar-nav navbar-right">
         
 
+        
+        
+        
+        
+        
+          
         
 
         <li class="nav-item">
           <a href="/#about">
             
             <span>Home</span>
+            
           </a>
         </li>
 
         
         
 
+        
+        
+        
+        
+        
+          
         
 
         <li class="nav-item">
           <a href="/#posts">
             
             <span>Posts</span>
+            
           </a>
         </li>
 
         
         
 
+        
+        
+        
+        
+        
+          
         
 
         <li class="nav-item">
           <a href="/#publications">
             
             <span>Publications</span>
+            
           </a>
         </li>
 
         
         
 
+        
+        
+        
+        
+        
+          
         
 
         <li class="nav-item">
           <a href="/#projects">
             
             <span>Projects</span>
+            
           </a>
         </li>
 
         
         
 
+        
+        
+        
+        
+        
+          
         
 
         <li class="nav-item">
           <a href="/#contact">
             
             <span>Contact</span>
+            
           </a>
         </li>
 
         
         
 
+        
+        
+        
+        
+        
+          
         
 
         <li class="nav-item">
           <a href="/resume/resume.pdf">
             
             <span>Resume</span>
+            
           </a>
         </li>
 
         
         
+      
 
-        
+      
       </ul>
 
     </div>
@@ -478,19 +545,7 @@ Progress soon to come!</p>
   </div>
 </article>
 
-<div class="container">
-  <nav>
-  <ul class="pager">
-    
-    <li class="previous"><a href="http://sybrandt.com/project/bridge-classification/"><span
-      aria-hidden="true">&larr;</span> Bridge Health Classification With Automotive Sensing</a></li>
-    
 
-    
-  </ul>
-</nav>
-
-</div>
 
 <footer class="site-footer">
   <div class="container">
@@ -552,6 +607,7 @@ Progress soon to come!</p>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.3/imagesloaded.pkgd.min.js" integrity="sha512-umsR78NN0D23AzgoZ11K7raBD+R6hqKojyBZs1w8WvYlsI+QuKRGBx3LFCwhatzBunCjDuJpDHwxD13sLMbpRA==" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha512-iztkobsvnjKfAtTNdHkGVjAYTrrtlC7mGp/54c40wowO7LhURYl3gVzzcEqGl/qKXQltJ2HwMrdLcNUdo+N/RQ==" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js" integrity="sha512-VDBOIlDbuC4VWxGJNmuFRQ0Li0SKkDpmGyuhAG5LTDLd/dJ/S0WMVxriR2Y+CyPL5gzjpN4f/6iqWVBJlht0tQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin="anonymous"></script>
     
