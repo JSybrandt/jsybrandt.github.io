@@ -843,12 +843,16 @@ Current State of the Art&lt;/p&gt;
       <pubDate>Fri, 15 Sep 2017 22:27:22 -0400</pubDate>
       
       <guid>http://sybrandt.com/project/moliere-automatic-biomedical-hypothesis-generation/</guid>
-      <description>&lt;p&gt;MOLIERE, originally presented at &lt;a href=&#34;http://dl.acm.org/citation.cfm?id=3098057&amp;amp;CFID=985180416&#34; target=&#34;_blank&#34;&gt;KDD&amp;rsquo;17&lt;/a&gt;, is a system which can identify connections within medical literature.
+      <description>&lt;p&gt;&lt;img src=&#34;http://sybrandt.com/img/logo/moliere_logo.png&#34; alt=&#34;moliere-logo&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;MOLIERE, originally presented at &lt;a href=&#34;http://dl.acm.org/citation.cfm?id=3098057&amp;amp;CFID=985180416&#34; target=&#34;_blank&#34;&gt;KDD&amp;rsquo;17&lt;/a&gt;, is a system which can identify connections within medical literature.
 In order to increase the productivity of medical researchers, we are attempting to deploy the pipeline to perform at scale.
 Along with this come a series of complications regarding the scale of the MEDLINE data set and the use-cases of scientists.&lt;/p&gt;
 
 &lt;p&gt;This project is being pursued primarily by an aspiring group of undergraduate students in Clemson&amp;rsquo;s &lt;em&gt;Seminar for Professional Issues&lt;/em&gt; class.
 Progress soon to come!&lt;/p&gt;
+
+&lt;p&gt;In the meantime, if you want to run a query, feel free to reach out to us &lt;a href=&#34;http://sybrandt.com/post/moliere-run-query/&#34;&gt;through this form&lt;/a&gt;, and we&amp;rsquo;ll get back to you soon.&lt;/p&gt;
 </description>
     </item>
     
