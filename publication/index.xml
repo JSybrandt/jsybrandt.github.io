@@ -13,6 +13,15 @@
     
     
     <item>
+      <title>Are Abstracts Enough for Hypothesis Generation?</title>
+      <link>http://sybrandt.com/publication/are-abstracts-enough-for-hg/</link>
+      <pubDate>Tue, 17 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://sybrandt.com/publication/are-abstracts-enough-for-hg/</guid>
+      <description>We explore the effect corpus size and document length have on knowledge network-based HG systems, primarily by comparing their performance with full-text papers against abstracts. Our experimental studies are based on the HG system Moliere that extends the basic principals of knowledge discovery networks introduced in earlier works. This centers around two major studies: the first comparing the performance of our system trained on abstract and full-text versions of the same document set, the second comparing the performance of iterative halves of a large abstract set.</description>
+    </item>
+    
+    <item>
       <title>Validation and Topic-driven Ranking for Biomedical Hypothesis Generation Systems</title>
       <link>http://sybrandt.com/publication/validation-and-topic-driven-ranking/</link>
       <pubDate>Sun, 11 Feb 2018 00:00:00 +0000</pubDate>

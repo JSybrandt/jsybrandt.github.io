@@ -11,6 +11,23 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Are Abstracts Enough for Hypothesis Generation?</title>
+      <link>http://sybrandt.com/publication/are-abstracts-enough-for-hg/</link>
+      <pubDate>Tue, 17 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://sybrandt.com/publication/are-abstracts-enough-for-hg/</guid>
+      <description>&lt;p&gt;We explore the effect corpus size and document length have on knowledge network-based HG systems, primarily by comparing their performance with full-text papers against abstracts.
+Our experimental studies are based on the HG system Moliere that extends the basic principals of knowledge discovery networks introduced in earlier works.
+This centers around two major studies: the first comparing the performance of our system trained on abstract and full-text versions of the same document set, the second comparing the performance of iterative halves of a large abstract set.
+Our results, while focused on Moliere, have important implications to other similar systems.&lt;/p&gt;
+
+&lt;p&gt;We evaluate our results in terms of quality, using the hypothesis ranking techniques developed in our previous work, and discuss practical challenges in terms of memory consumption and runtime.
+We find that corpora with a higher median document length perform better than those with shorter documents and that this effect can be more substantial than simply adding more documents.
+Most importantly, when comparing a corpus of full-text documents against a corpus of the abstracts of those same documents, we notice a &lt;em&gt;marginal&lt;/em&gt; improvement in quality (if at all), yet a &lt;em&gt;45X&lt;/em&gt; increase in runtime from 100 seconds to 75 minutes.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Basic Iterative Numeric Optimization</title>
       <link>http://sybrandt.com/post/basic-optimization-18-3-5/</link>
       <pubDate>Mon, 05 Mar 2018 14:18:52 -0400</pubDate>
@@ -896,21 +913,6 @@ We validate our system by predicting recent findings using only information pres
 These validations efforts are confirmed with the help of a domain expert.&lt;/p&gt;
 
 &lt;p&gt;Watch our &lt;a href=&#34;https://www.youtube.com/watch?v=wA6OCix-4FU&#34; target=&#34;_blank&#34;&gt;promotional video&lt;/a&gt; or our &lt;a href=&#34;https://www.youtube.com/watch?v=ra77iJ7r_Ys&#34; target=&#34;_blank&#34;&gt;KDD talk&lt;/a&gt;.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>To Agile or Not to Agile: A Comparison of Software Development Methodologies</title>
-      <link>http://sybrandt.com/publication/to-agile-or-not-to-agile/</link>
-      <pubDate>Sat, 01 Apr 2017 00:00:00 +0000</pubDate>
-      
-      <guid>http://sybrandt.com/publication/to-agile-or-not-to-agile/</guid>
-      <description>&lt;p&gt;During the graduate course on software development methods, &lt;a href=&#34;http://shaydul.in/&#34; target=&#34;_blank&#34;&gt;Ruslan Shaydulin&lt;/a&gt; and I put together a paper analyzing different software methodologies.
-We find, through our literature review, that the landscape of methodologies has changed rapidly within the last decade.
-Additionally, we find a large number of pros and cons for all methodologies.&lt;/p&gt;
-
-&lt;p&gt;These strengths and weaknesses are detailed in the associated work.
-Note, this work is unpublished.&lt;/p&gt;
 </description>
     </item>
     
