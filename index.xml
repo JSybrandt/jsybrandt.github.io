@@ -380,19 +380,18 @@ In the same way word2vec refers to both the CBOW and skip-gram method, doc2vec r
 
 &lt;h3 id=&#34;distributed-memory-model-pv-dm&#34;&gt;Distributed Memory Model (PV-DM)&lt;/h3&gt;
 
-
 &lt;figure&gt;
-    
-        &lt;img src=&#34;http://sybrandt.com/img/posts/doc2vec.png&#34; /&gt;
-    
-    
-    &lt;figcaption&gt;
-        &lt;h4&gt;PV-DM training diagram. Source: Le &amp;amp; Mikolov 2014&lt;/h4&gt;
-        
-    &lt;/figcaption&gt;
-    
-&lt;/figure&gt;
 
+&lt;img src=&#34;http://sybrandt.com/img/posts/doc2vec.png&#34; /&gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
+  &lt;h4&gt;PV-DM training diagram. Source: Le &amp;amp; Mikolov 2014&lt;/h4&gt;
+  
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
 
 &lt;p&gt;In PV-DM, each time we attempt to predict a word given it&amp;rsquo;s context, we introduce a vector corresponding the paragraph from which that window was taken.
 Although it would require a little more engineering, this is the mechanisms we might use if we wanted to disambiguate &amp;ldquo;I swung the bat&amp;rdquo; and &amp;ldquo;I swung at the bat&amp;rdquo;.
@@ -404,19 +403,18 @@ Because of the paragraph vector&amp;rsquo;s influence, the model will be more li
 
 &lt;h3 id=&#34;distributed-bag-of-words-pv-dbow&#34;&gt;Distributed Bag of Words (PV-DBOW)&lt;/h3&gt;
 
-
 &lt;figure&gt;
-    
-        &lt;img src=&#34;http://sybrandt.com/img/posts/doc2vec%28b%29.png&#34; /&gt;
-    
-    
-    &lt;figcaption&gt;
-        &lt;h4&gt;PV-DBOW training diagram. Source: Le &amp;amp; Mikolov 2014&lt;/h4&gt;
-        
-    &lt;/figcaption&gt;
-    
-&lt;/figure&gt;
 
+&lt;img src=&#34;http://sybrandt.com/img/posts/doc2vec%28b%29.png&#34; /&gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
+  &lt;h4&gt;PV-DBOW training diagram. Source: Le &amp;amp; Mikolov 2014&lt;/h4&gt;
+  
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
 
 &lt;p&gt;Another way to find these vectors is the PV-DBOW method, where a paragraph vector is used to predict a number of words which have been randomly sampled from its text.
 Although this model starts with a single element and predicts a number, it seems to resemble the skip-gram method in word2vec.
@@ -594,19 +592,18 @@ We see that all of these words are verbs, in the past tense, and actions a cat c
 Note that the context of the blank has a huge, albeit inexact, bearing on what word the blank could take.
 By learning these sorts of context-sensitive relationships, word2vec is able to train its embeddings.&lt;/p&gt;
 
-
 &lt;figure&gt;
-    
-        &lt;img src=&#34;http://sybrandt.com/img/posts/word2vec.png&#34; /&gt;
-    
-    
-    &lt;figcaption&gt;
-        &lt;h4&gt;Typical word2vec Training Diagram. Source: deeplearning4j.org&lt;/h4&gt;
-        
-    &lt;/figcaption&gt;
-    
-&lt;/figure&gt;
 
+&lt;img src=&#34;http://sybrandt.com/img/posts/word2vec.png&#34; /&gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
+  &lt;h4&gt;Typical word2vec Training Diagram. Source: deeplearning4j.org&lt;/h4&gt;
+  
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
 
 &lt;p&gt;The above figure depicts the two training methods used in word2vec to learn word embeddings.
 On the left is the Continuous Bag of Words (CBOW) method, and on the right is Skip-Gram.
