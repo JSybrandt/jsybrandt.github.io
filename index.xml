@@ -11,6 +11,22 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Moliere Poster -- Google PIRC</title>
+      <link>http://sybrandt.com/post/pirc-poster-18-7-14/</link>
+      <pubDate>Sat, 14 Jul 2018 14:18:52 -0400</pubDate>
+      
+      <guid>http://sybrandt.com/post/pirc-poster-18-7-14/</guid>
+      <description>&lt;p&gt;I have the chance to present my work at the Google Ph.D. Intern Research Conference (PIRC).
+This poster represents all of the work we have added to the &lt;a href=&#34;https://dl.acm.org/citation.cfm?id=3098057&#34; target=&#34;_blank&#34;&gt;Moliere&lt;/a&gt; project since our original paper last year.&lt;/p&gt;
+
+&lt;p&gt;&lt;object data=&#34;/posters/moliere_2018_pirc.pdf&#34; type=&#34;application/pdf&#34; width=&#34;100%&#34; height=&#34;700&#34;&gt;
+&lt;!-- Fallback to linkedin version --&gt;
+&lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/4fenKs1OwgCaoP&#34; width=&#34;100%&#34; height=&#34;714&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; style=&#34;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&#34; allowfullscreen&gt; &lt;/iframe&gt; &lt;div style=&#34;margin-bottom:5px&#34;&gt; &lt;strong&gt; &lt;a href=&#34;//www.slideshare.net/JustinSybrandt/moliere-project-summary-poster-july-2018&#34; title=&#34;Moliere Project Summary Poster (July 2018)&#34; target=&#34;_blank&#34;&gt;Moliere Project Summary Poster (July 2018)&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a href=&#34;https://www.slideshare.net/JustinSybrandt&#34; target=&#34;_blank&#34;&gt;Justin Sybrandt&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;
+&lt;/object&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Are Abstracts Enough for Hypothesis Generation?</title>
       <link>http://sybrandt.com/publication/are-abstracts-enough-for-hg/</link>
       <pubDate>Tue, 17 Apr 2018 00:00:00 +0000</pubDate>
@@ -895,21 +911,6 @@ We attempt to ready ourselves for this future by identifying the techniques and 
 Unfortunately, with my schedule, these don&amp;rsquo;t come out as often as I would like, but the episodes are available for anyone interested.&lt;/p&gt;
 
 &lt;p&gt;Look for updates to this series on &lt;a href=&#34;https://www.youtube.com/watch?v=wdEl10kp62Y&amp;amp;list=PL7Qcg0xHM7prCRBfgfQCXekKx5vOQxayc&#34; target=&#34;_blank&#34;&gt;YouTube&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>MOLIERE: Automatic Biomedical Hypothesis Generation System</title>
-      <link>http://sybrandt.com/publication/moliere-automatic-biomedical-hypothesis-generation/</link>
-      <pubDate>Sun, 13 Aug 2017 00:00:00 +0000</pubDate>
-      
-      <guid>http://sybrandt.com/publication/moliere-automatic-biomedical-hypothesis-generation/</guid>
-      <description>&lt;p&gt;MOLIERE is a hypothesis generation system which is able to identify potential relationships from large text corpora.
-Our presented system was trained on the MEDLINE dataset, containing nearly 25 million documents dating back to the late 1800&amp;rsquo;s.
-We validate our system by predicting recent findings using only information present before 2010.
-These validations efforts are confirmed with the help of a domain expert.&lt;/p&gt;
-
-&lt;p&gt;Watch our &lt;a href=&#34;https://www.youtube.com/watch?v=wA6OCix-4FU&#34; target=&#34;_blank&#34;&gt;promotional video&lt;/a&gt; or our &lt;a href=&#34;https://www.youtube.com/watch?v=ra77iJ7r_Ys&#34; target=&#34;_blank&#34;&gt;KDD talk&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
