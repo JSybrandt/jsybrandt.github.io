@@ -13,7 +13,7 @@
     <item>
       <title>Are Abstracts Enough for Hypothesis Generation?</title>
       <link>http://sybrandt.com/publication/are-abstracts-enough-for-hg/</link>
-      <pubDate>Tue, 17 Apr 2018 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 22 Aug 2018 00:00:00 +0000</pubDate>
       
       <guid>http://sybrandt.com/publication/are-abstracts-enough-for-hg/</guid>
       <description>&lt;p&gt;We explore the effect corpus size and document length have on knowledge network-based HG systems, primarily by comparing their performance with full-text papers against abstracts.
@@ -24,6 +24,50 @@ Our results, while focused on Moliere, have important implications to other simi
 &lt;p&gt;We evaluate our results in terms of quality, using the hypothesis ranking techniques developed in our previous work, and discuss practical challenges in terms of memory consumption and runtime.
 We find that corpora with a higher median document length perform better than those with shorter documents and that this effect can be more substantial than simply adding more documents.
 Most importantly, when comparing a corpus of full-text documents against a corpus of the abstracts of those same documents, we notice a &lt;em&gt;marginal&lt;/em&gt; improvement in quality (if at all), yet a &lt;em&gt;45X&lt;/em&gt; increase in runtime from 100 seconds to 75 minutes.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Large-Scale Validation of Hypothesis Generation Systems via Candidate Ranking</title>
+      <link>http://sybrandt.com/publication/validation-and-topic-driven-ranking/</link>
+      <pubDate>Wed, 22 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://sybrandt.com/publication/validation-and-topic-driven-ranking/</guid>
+      <description>&lt;p&gt;In this paper we propose novel hypothesis ranking methods and a method to validate HG systems that does not require expert input and allows for large validation sets.
+This method judges a system by its ability to rank hypotheses by plausibility, similarly to how a human scientist must rank potential research directions during candidate selection.
+We start by dividing a corpus based on a ``cut date,&amp;rdquo; and provide a system only information that was priorly available.
+Then, we identify predicates (clauses consisting of subject, verb, and object) whose first co-occurrence in a sentence is after the cut date.
+Because typical corpora contain only titles and abstracts, these recently introduced connections represent significant findings that were not previously formulated, thus we can treat them as surrogates for plausible hypotheses from the perspective of the system under evaluation.
+To provide implausible hypotheses, we randomly generate predicates that do not occur in the corpus as a whole.
+Then, the HG system must rank both the plausible and implausible predicates together by evaluating the predicted connection strength between each predicate&amp;rsquo;s subject and object.
+The system&amp;rsquo;s evaluation is based on the area under this ranking&amp;rsquo;s Receiver Operating Characteristic (ROC) curve, wherein the highest area under curve (AUC) of 1 represents a ranking that places all plausible connections above the implausible, and the lowest AUC of 0.5 represents an even mixture of the two.&lt;/p&gt;
+
+&lt;p&gt;To demonstrate that our proposed validation process and new metrics apply to real-world applications, we present a case study wherein our techniques validate an open-source HG system as well as identify a novel gene-disease connection.
+We modify Moliere to support our new metrics, and we perform our validation process.
+This system is trained on Medline, a database containing over 27 million papers (titles and abstracts) maintained by the National Library of Health.
+We use SemMedDB, a database of predicates extracted from Medline, in order to identify the set of &amp;ldquo;published&amp;rdquo; (plausible) and &amp;ldquo;noise&amp;rdquo; (implausible) hypotheses.
+This database represents its connections in terms of codified entities provided by the Unified Medical Language System (UMLS), which enables our experimental procedure to be both reproducible and directly applicable to many other medical HG systems.
+This evaluation results in an ROC AUC of 0.834, and when limiting the published set to only predicates occurring in papers that received over 100 citations, this rises to 0.874.
+Then, we generate hypotheses, using up-to-date training data, which attempt to connect HIV-associated neurodegenerative disease (HAND) to over 30,000 human genes.
+From there, we select the top 1,000 genes based on our ranking metrics as a large and rudimentary &amp;ldquo;candidate set.&amp;rdquo;
+By performing laboratory experiments on select genes within our automatically generated set, we discover a new relation between HAND and Dead Box RNA Helicasee 3 (DDX3).
+Thus, demonstrating the practical utility of our proposed validation and ranking method.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Moliere Poster -- Google PIRC</title>
+      <link>http://sybrandt.com/post/pirc-poster-18-7-14/</link>
+      <pubDate>Sat, 14 Jul 2018 14:18:52 -0400</pubDate>
+      
+      <guid>http://sybrandt.com/post/pirc-poster-18-7-14/</guid>
+      <description>&lt;p&gt;I have the chance to present my work at the Google Ph.D. Intern Research Conference (PIRC).
+This poster represents all of the work we have added to the &lt;a href=&#34;https://dl.acm.org/citation.cfm?id=3098057&#34; target=&#34;_blank&#34;&gt;Moliere&lt;/a&gt; project since our original paper last year.&lt;/p&gt;
+
+&lt;p&gt;&lt;object data=&#34;/posters/moliere_2018_pirc.pdf&#34; type=&#34;application/pdf&#34; width=&#34;100%&#34; height=&#34;500&#34;&gt;
+&lt;!-- Fallback to linkedin version --&gt;
+&lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/4fenKs1OwgCaoP&#34; width=&#34;100%&#34; height=&#34;500&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; style=&#34;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&#34; allowfullscreen&gt; &lt;/iframe&gt; &lt;div style=&#34;margin-bottom:5px&#34;&gt; &lt;strong&gt; &lt;a href=&#34;//www.slideshare.net/JustinSybrandt/moliere-project-summary-poster-july-2018&#34; title=&#34;Moliere Project Summary Poster (July 2018)&#34; target=&#34;_blank&#34;&gt;Moliere Project Summary Poster (July 2018)&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a href=&#34;https://www.slideshare.net/JustinSybrandt&#34; target=&#34;_blank&#34;&gt;Justin Sybrandt&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;
+&lt;/object&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -223,15 +267,6 @@ Our validation information has been incorporated to &lt;a href=&#34;https://gith
 
 &lt;p&gt;But, we are still working on uploading all of the supporting data.&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>Validation and Topic-driven Ranking for Biomedical Hypothesis Generation Systems</title>
-      <link>http://sybrandt.com/publication/validation-and-topic-driven-ranking/</link>
-      <pubDate>Sun, 11 Feb 2018 00:00:00 +0000</pubDate>
-      
-      <guid>http://sybrandt.com/publication/validation-and-topic-driven-ranking/</guid>
-      <description></description>
     </item>
     
     <item>
@@ -898,21 +933,6 @@ We attempt to ready ourselves for this future by identifying the techniques and 
 Unfortunately, with my schedule, these don&amp;rsquo;t come out as often as I would like, but the episodes are available for anyone interested.&lt;/p&gt;
 
 &lt;p&gt;Look for updates to this series on &lt;a href=&#34;https://www.youtube.com/watch?v=wdEl10kp62Y&amp;amp;list=PL7Qcg0xHM7prCRBfgfQCXekKx5vOQxayc&#34; target=&#34;_blank&#34;&gt;YouTube&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>MOLIERE: Automatic Biomedical Hypothesis Generation System</title>
-      <link>http://sybrandt.com/publication/moliere-automatic-biomedical-hypothesis-generation/</link>
-      <pubDate>Sun, 13 Aug 2017 00:00:00 +0000</pubDate>
-      
-      <guid>http://sybrandt.com/publication/moliere-automatic-biomedical-hypothesis-generation/</guid>
-      <description>&lt;p&gt;MOLIERE is a hypothesis generation system which is able to identify potential relationships from large text corpora.
-Our presented system was trained on the MEDLINE dataset, containing nearly 25 million documents dating back to the late 1800&amp;rsquo;s.
-We validate our system by predicting recent findings using only information present before 2010.
-These validations efforts are confirmed with the help of a domain expert.&lt;/p&gt;
-
-&lt;p&gt;Watch our &lt;a href=&#34;https://www.youtube.com/watch?v=wA6OCix-4FU&#34; target=&#34;_blank&#34;&gt;promotional video&lt;/a&gt; or our &lt;a href=&#34;https://www.youtube.com/watch?v=ra77iJ7r_Ys&#34; target=&#34;_blank&#34;&gt;KDD talk&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
