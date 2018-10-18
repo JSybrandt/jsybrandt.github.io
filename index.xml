@@ -13,45 +13,119 @@
     <item>
       <title>Are Abstracts Enough for Hypothesis Generation?</title>
       <link>http://sybrandt.com/publication/are-abstracts-enough-for-hg/</link>
-      <pubDate>Wed, 22 Aug 2018 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 18 Oct 2018 00:00:00 +0000</pubDate>
       
       <guid>http://sybrandt.com/publication/are-abstracts-enough-for-hg/</guid>
-      <description>&lt;p&gt;We explore the effect corpus size and document length have on knowledge network-based HG systems, primarily by comparing their performance with full-text papers against abstracts.
-Our experimental studies are based on the HG system Moliere that extends the basic principals of knowledge discovery networks introduced in earlier works.
-This centers around two major studies: the first comparing the performance of our system trained on abstract and full-text versions of the same document set, the second comparing the performance of iterative halves of a large abstract set.
-Our results, while focused on Moliere, have important implications to other similar systems.&lt;/p&gt;
+      <description>&lt;p&gt;Our goal in this paper is to understand the effect data quality has on our hypothesis generation system, Moliere.
+We train multiple instances of our system and apply our &lt;a href=&#34;http://sybrandt.com/publication/validation-and-topic-driven-ranking/&#34;&gt;validation techniques&lt;/a&gt; to numerically quantify performance differences.&lt;/p&gt;
 
-&lt;p&gt;We evaluate our results in terms of quality, using the hypothesis ranking techniques developed in our previous work, and discuss practical challenges in terms of memory consumption and runtime.
-We find that corpora with a higher median document length perform better than those with shorter documents and that this effect can be more substantial than simply adding more documents.
-Most importantly, when comparing a corpus of full-text documents against a corpus of the abstracts of those same documents, we notice a &lt;em&gt;marginal&lt;/em&gt; improvement in quality (if at all), yet a &lt;em&gt;45X&lt;/em&gt; increase in runtime from 100 seconds to 75 minutes.&lt;/p&gt;
+&lt;p&gt;Our different datasets come from Medline and PubMed Central.
+This required a fair amount cleaning and random sampling, so those wishing to replicate our findings are encouraged to start with the &lt;a href=&#34;https://drive.google.com/drive/folders/11Nr4yPdkEUfg2LNsDRH-kTBL0Yghsgzi?usp=sharing&#34; target=&#34;_blank&#34;&gt;pre-trained datasets&lt;/a&gt;.
+These datasets are preconstructed using data that predates 2010.
+Here, directories like &lt;code&gt;2_pow_neg_2&lt;/code&gt; represent $\frac{1}{4}$ of the medline dataset, sampled randomly.
+(&lt;code&gt;2_pow_neg_0&lt;/code&gt; represents the entire ($\frac{1}{1}$) dataset.)
+Then, &lt;code&gt;pmc-abstract-network&lt;/code&gt; and &lt;code&gt;pmc-fulltext-network&lt;/code&gt; each represent the PubMed Central datasets.&lt;/p&gt;
+
+&lt;p&gt;In order to run queries against these pre-trained data sets, supply the &lt;code&gt;-d&lt;/code&gt; flag.
+We re-trained our polynomial combination per-dataset.
+In order to use each datasets polynomial parameters, supply the &lt;code&gt;-y&lt;/code&gt; flag followed by a path to the &lt;code&gt;hyper.param&lt;/code&gt; file.
+If this is not supplied, we provide a default set of parameters.
+For instance, if you download the contents of &lt;code&gt;2_pow_neg_2&lt;/code&gt; to &lt;code&gt;~/Downloads/my_test&lt;/code&gt;, you would run the &lt;code&gt;tobacco&lt;/code&gt; &lt;code&gt;lung cancer&lt;/code&gt; query with the following syntax.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;./run_query -d ~/Downloads/my_test \
+            -y ~/Downloads/my_test/hyper.param \
+            tobacco lung_cancer
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;To repeat our experiments, the files &lt;code&gt;noise-predicate-pairs&lt;/code&gt; and &lt;code&gt;published-predicate-pairs&lt;/code&gt; contain our negative and positive validation samples respectively.
+Each file is in the form &lt;code&gt;ID1|ID2|Year&lt;/code&gt;, and negative results have been assigned the year &lt;code&gt;0&lt;/code&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-text&#34;&gt;C1449699|C1176309|2014
+C0018801|C0013363|2014
+C1158564|C0329155|2012
+C0600467|C0038454|2013
+C0031667|C0018790|2011
+...
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;When running a query, simply supply &lt;code&gt;ID1&lt;/code&gt; and &lt;code&gt;ID2&lt;/code&gt;.
+Results will occur in a temporary directory named &lt;code&gt;/tmp/ID1---ID2&lt;/code&gt; by default.
+We have some more info on interpreting these results over on our &lt;a href=&#34;http://sybrandt.com/publication/validation-and-topic-driven-ranking/&#34;&gt;validation page&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Large-Scale Validation of Hypothesis Generation Systems via Candidate Ranking</title>
       <link>http://sybrandt.com/publication/validation-and-topic-driven-ranking/</link>
-      <pubDate>Wed, 22 Aug 2018 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 18 Oct 2018 00:00:00 +0000</pubDate>
       
       <guid>http://sybrandt.com/publication/validation-and-topic-driven-ranking/</guid>
-      <description>&lt;p&gt;In this paper we propose novel hypothesis ranking methods and a method to validate HG systems that does not require expert input and allows for large validation sets.
-This method judges a system by its ability to rank hypotheses by plausibility, similarly to how a human scientist must rank potential research directions during candidate selection.
-We start by dividing a corpus based on a ``cut date,&amp;rdquo; and provide a system only information that was priorly available.
-Then, we identify predicates (clauses consisting of subject, verb, and object) whose first co-occurrence in a sentence is after the cut date.
-Because typical corpora contain only titles and abstracts, these recently introduced connections represent significant findings that were not previously formulated, thus we can treat them as surrogates for plausible hypotheses from the perspective of the system under evaluation.
-To provide implausible hypotheses, we randomly generate predicates that do not occur in the corpus as a whole.
-Then, the HG system must rank both the plausible and implausible predicates together by evaluating the predicted connection strength between each predicate&amp;rsquo;s subject and object.
-The system&amp;rsquo;s evaluation is based on the area under this ranking&amp;rsquo;s Receiver Operating Characteristic (ROC) curve, wherein the highest area under curve (AUC) of 1 represents a ranking that places all plausible connections above the implausible, and the lowest AUC of 0.5 represents an even mixture of the two.&lt;/p&gt;
+      <description>&lt;p&gt;We explore and implement a number of validation methods in this work.
+In order to run these for yourself, first setup the Moliere project from our &lt;a href=&#34;https://github.com/JSybrandt/MOLIERE&#34; target=&#34;_blank&#34;&gt;github page&lt;/a&gt;.
+A fair warning, you will need some pretty powerful compute resources.
+Feel free to reach out or file a github issue for help on that front.&lt;/p&gt;
 
-&lt;p&gt;To demonstrate that our proposed validation process and new metrics apply to real-world applications, we present a case study wherein our techniques validate an open-source HG system as well as identify a novel gene-disease connection.
-We modify Moliere to support our new metrics, and we perform our validation process.
-This system is trained on Medline, a database containing over 27 million papers (titles and abstracts) maintained by the National Library of Health.
-We use SemMedDB, a database of predicates extracted from Medline, in order to identify the set of &amp;ldquo;published&amp;rdquo; (plausible) and &amp;ldquo;noise&amp;rdquo; (implausible) hypotheses.
-This database represents its connections in terms of codified entities provided by the Unified Medical Language System (UMLS), which enables our experimental procedure to be both reproducible and directly applicable to many other medical HG systems.
-This evaluation results in an ROC AUC of 0.834, and when limiting the published set to only predicates occurring in papers that received over 100 citations, this rises to 0.874.
-Then, we generate hypotheses, using up-to-date training data, which attempt to connect HIV-associated neurodegenerative disease (HAND) to over 30,000 human genes.
-From there, we select the top 1,000 genes based on our ranking metrics as a large and rudimentary &amp;ldquo;candidate set.&amp;rdquo;
-By performing laboratory experiments on select genes within our automatically generated set, we discover a new relation between HAND and Dead Box RNA Helicasee 3 (DDX3).
-Thus, demonstrating the practical utility of our proposed validation and ranking method.&lt;/p&gt;
+&lt;p&gt;Because the Moliere project represents a significant portion the lead authors thesis work, this codebase is subject to change.
+The &lt;em&gt;exact&lt;/em&gt; code referenced in this paper can be found in the &lt;a href=&#34;https://github.com/JSybrandt/MOLIERE/releases/tag/18.10&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;18.10&lt;/code&gt; release&lt;/a&gt;.
+The network referenced in this paper can be found &lt;a href=&#34;https://drive.google.com/drive/folders/1mHTcKvt6EhkHhDjQlHZ7S0T3WGZZ6K5E?usp=sharing&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Within that repo is a &lt;a href=&#34;https://github.com/JSybrandt/MOLIERE/blob/master/run_query/run_query.py&#34; target=&#34;_blank&#34;&gt;run_query.py file&lt;/a&gt; that handles the entire query process.
+For instance, assuming the system is setup properly, this simple command will evaluate the connection between tobacco and lung cancer.
+Add &lt;code&gt;-v&lt;/code&gt; for progress messages, expect this to take a few minutes.
+By default, this will attempt to find approximately 10k papers relevant to tobacco and cancer from our network, and will apply PLDA to find 20 topics from those papers.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;./run_query.py tobacco lung_cancer
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Output, by default, is written to a new directory created in &lt;code&gt;/tmp&lt;/code&gt; for each query (in this case &lt;code&gt;/tmp/tobacco---lung_cancer&lt;/code&gt;).
+Within this directory will be a result file (&lt;code&gt;/tmp/tobacco---lung_cancer/tobacco---lung_cancer.20.eval&lt;/code&gt;) that looks something like this&amp;hellip;
+(spacing added to look nice online)&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-text&#34;&gt;TopicNetCCoef     0.483871
+TopicWalkBtwn     98.0533
+TopicCorr         0.84985
+BestTopicPerWord  0.205387
+  Topic_17 smoker smoke tobacco report assess	
+  Topic_0 lung_cancer exposur worker studi cigarett_smoke	
+  Topic_4 tobacco smokeless_tobacco form india smoke	
+  Topic_10 tobacco treatment intervent quit tobacco_cessat	
+  Topic_11 tobacco tobacco_control tobacco_industri countri global
+BestCentrL2       0.0452344
+  Topic_4 tobacco smokeless_tobacco form india smoke	
+  Topic_5 lung_cancer copd screen diseas surviv	
+  Topic_0 lung_cancer exposur worker studi cigarett_smoke	
+  Topic_12 tobacco cigarett nicotin extract sampl	
+  Topic_16 lung_cancer includ lung_canc well mirna
+L2                6.47644
+PolyMultiple      -0.756896
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Note, the absolute value of each metric is far less important than the relative values between different hypotheses.&lt;/p&gt;
+
+&lt;p&gt;Here we list the quality of the tobacco to lung cancer connection with respect to our various validation metrics.
+The other files in this output directory are intended for debugging, re-runs, and later visualization.
+In addition, metrics that are per-topic include the top 5 topics (and top 5 stemmed words per topic).&lt;/p&gt;
+
+&lt;p&gt;The validation set we use can be found in &lt;a href=&#34;https://github.com/JSybrandt/Moliere_Validation_Data&#34; target=&#34;_blank&#34;&gt;this other repo&lt;/a&gt;.
+Within the &lt;code&gt;wholeSet&lt;/code&gt; directory contain the most useful files for repeating experiments.
+Each file is in the form &lt;code&gt;ID1|ID2|Year&lt;/code&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-text&#34;&gt;C1449699|C1176309|2014
+C0018801|C0013363|2014
+C1158564|C0329155|2012
+C0600467|C0038454|2013
+C0031667|C0018790|2011
+...
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code&gt;publsihed.pairs.txt&lt;/code&gt; contains actual connections that first occur within Medline after 2010.
+&lt;code&gt;noise.pairs.txt&lt;/code&gt; contains randomly sampled connections that never occur in Medline, but come from the same set of IDs.
+&lt;code&gt;highlyCited.pairs.txt&lt;/code&gt; is a subset of the published pairs, but includes only those that come from papers with over 100 citations.&lt;/p&gt;
+
+&lt;p&gt;Because of performance limitations, we subset these files for this paper.
+These subsets can be found in the &lt;code&gt;evaluatedSubset&lt;/code&gt; directory.&lt;/p&gt;
+
+&lt;p&gt;The &lt;em&gt;actual&lt;/em&gt; numbers from our evaluation can be found in the &lt;code&gt;evaluatedResults&lt;/code&gt; directory.&lt;/p&gt;
 </description>
     </item>
     

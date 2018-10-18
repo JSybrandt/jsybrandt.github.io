@@ -15,19 +15,21 @@
     <item>
       <title>Are Abstracts Enough for Hypothesis Generation?</title>
       <link>http://sybrandt.com/publication/are-abstracts-enough-for-hg/</link>
-      <pubDate>Wed, 22 Aug 2018 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 18 Oct 2018 00:00:00 +0000</pubDate>
       
       <guid>http://sybrandt.com/publication/are-abstracts-enough-for-hg/</guid>
-      <description>We explore the effect corpus size and document length have on knowledge network-based HG systems, primarily by comparing their performance with full-text papers against abstracts. Our experimental studies are based on the HG system Moliere that extends the basic principals of knowledge discovery networks introduced in earlier works. This centers around two major studies: the first comparing the performance of our system trained on abstract and full-text versions of the same document set, the second comparing the performance of iterative halves of a large abstract set.</description>
+      <description>Our goal in this paper is to understand the effect data quality has on our hypothesis generation system, Moliere. We train multiple instances of our system and apply our validation techniques to numerically quantify performance differences.
+Our different datasets come from Medline and PubMed Central. This required a fair amount cleaning and random sampling, so those wishing to replicate our findings are encouraged to start with the pre-trained datasets. These datasets are preconstructed using data that predates 2010.</description>
     </item>
     
     <item>
       <title>Large-Scale Validation of Hypothesis Generation Systems via Candidate Ranking</title>
       <link>http://sybrandt.com/publication/validation-and-topic-driven-ranking/</link>
-      <pubDate>Wed, 22 Aug 2018 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 18 Oct 2018 00:00:00 +0000</pubDate>
       
       <guid>http://sybrandt.com/publication/validation-and-topic-driven-ranking/</guid>
-      <description>In this paper we propose novel hypothesis ranking methods and a method to validate HG systems that does not require expert input and allows for large validation sets. This method judges a system by its ability to rank hypotheses by plausibility, similarly to how a human scientist must rank potential research directions during candidate selection. We start by dividing a corpus based on a ``cut date,&amp;rdquo; and provide a system only information that was priorly available.</description>
+      <description>We explore and implement a number of validation methods in this work. In order to run these for yourself, first setup the Moliere project from our github page. A fair warning, you will need some pretty powerful compute resources. Feel free to reach out or file a github issue for help on that front.
+Because the Moliere project represents a significant portion the lead authors thesis work, this codebase is subject to change.</description>
     </item>
     
     <item>
