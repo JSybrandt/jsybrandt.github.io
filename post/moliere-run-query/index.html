@@ -269,61 +269,42 @@
       <div class="article-style" itemprop="articleBody">
         <p></p>
 
+<p>Thanks for requesting a Moliere query!
+By using this form you are requesting us to run your experiment on our supercomputing infrastructure.
+Unfortunately, we have not been able to automate this process, so please allow for a little turn around time, and feel free to send us an email if you don&rsquo;t hear back soon.</p>
+
 <h1> Post Query </h1>
 
-<form action="http://biomoliere.org/query" 
+<form action="https://formspree.io/justin@sybrandt.com" 
       method="POST"
       id="query">
-Keyword List: (Comma Separated, Use underscore in phrases)
+Query Terms <br />
 <input type="text"
-       name="keywords"
-       id="keywords"
-       value="tobacco,cancer">
-<hr>
-Number of Topics:
+       name="keyword_1"
+       id="keyword_1"
+       placeholder="tobacco"
+             required>
+<input type="text"
+       name="keyword_2"
+       id="keyword_2"
+       placeholder="lung cancer"
+             required> <br /> <br />
+Number of Topics (typically btwn. 10 - 1000) <br />
 <input type="number"
        name="num_topics" 
        id="num_topics"
-       min=2 max=100 value=20>
-<hr>
+       min=2 max=100 value=20
+             required><br /> <br />
+Contact Email: <br />
+<input type="email"
+       name="contact_email"
+             id="contact_email"
+             pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+             required><br /> <br />
 <input type="submit" value="Submit">
 </form>
 
 <hr>
-
-<div id="new_query_id"></div>
-
-<h1> Retrieve Results </h1>
-
-<form method="GET"
-      action="http://biomoliere.org/result"
-      id="result">
-Query ID:
-<input type="text" 
-       id = "query_id"
-       name="query_id">
-<hr>
-<input type="submit" value="Submit">
-</form>
-
-<script type='text/javascript'>
-$( document ).ready(function(){
-  $("#query").submit(function(e){
-    e.preventDefault(); 
-    var form = $(this),
-        url = form.attr('action');
-    var post = $.post(url, {
-      keywords: $('#keywords').val(),
-      num_topics: $('#num_topics').val(),
-      cloud_size: 10000
-    });
-    post.done(function(data){
-      $('#new_query_id').empty().append(data)
-    });
-  });
-console.log("Script Loaded!");
-});
-</script>
       </div>
 
       
