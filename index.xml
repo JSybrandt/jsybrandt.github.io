@@ -168,8 +168,6 @@ Additionally, I will be writing my code in python, simply because I find that it
 Knowledge of python, hopefully, won&amp;rsquo;t be necessary.
 But first, lets go over some aspects of the problem&amp;hellip;&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
 &lt;h2 id=&#34;what-is-an-iterative-algorithm&#34;&gt;What is an iterative algorithm?&lt;/h2&gt;
 
 &lt;p&gt;As stated above, we are going to write an iterative solution, which means that our code will start with a &lt;strong&gt;random guess&lt;/strong&gt; and refine it over time.&lt;/p&gt;
@@ -303,8 +301,6 @@ print(x)
 The code is over at the &lt;a href=&#34;https://github.com/JSybrandt/MOLIERE&#34; target=&#34;_blank&#34;&gt;default repo&lt;/a&gt;&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34;&gt;2&lt;/a&gt;&lt;/sup&gt; and should be pretty straightforward, the code even downloads raw data itself!
 Just run &lt;code&gt;build_network.py&lt;/code&gt; and point it at a big parallel file systen &amp;mdash; in a few hours you&amp;rsquo;ll have your very own knowledge network!&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
 &lt;p&gt;This project was a pretty crazy conglomeration of everything I&amp;rsquo;ve been up to.
 To start, this implements a new stopword cleaning method (inspired by &lt;a href=&#34;http://arrowsmith.psych.uic.edu/arrowsmith_uic/data/stopwords_pubmed&#34; target=&#34;_blank&#34;&gt;this list from Swanson&lt;/a&gt;).
 We also use a new phrase mining tool, &lt;a href=&#34;https://github.com/shangjingbo1226/AutoPhrase&#34; target=&#34;_blank&#34;&gt;AutoPhrase&lt;/a&gt;, to replace ToPMine.&lt;/p&gt;
@@ -352,8 +348,6 @@ Our validation information has been incorporated to &lt;a href=&#34;https://gith
       <description>&lt;p&gt;I have finally had time to package Moliere, our Automatic Hypothesis Generation System, into a single easy-to-use package!&lt;/p&gt;
 
 &lt;p&gt;Take a second to check it out at &lt;a href=&#34;https://github.com/JSybrandt/Moliere&#34; target=&#34;_blank&#34;&gt;my repo&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;system-requirements&#34;&gt;System Requirements&lt;/h2&gt;
 
@@ -489,17 +483,10 @@ In the same way word2vec refers to both the CBOW and skip-gram method, doc2vec r
 
 &lt;h3 id=&#34;distributed-memory-model-pv-dm&#34;&gt;Distributed Memory Model (PV-DM)&lt;/h3&gt;
 
-
 &lt;figure&gt;
-    
-        &lt;img src=&#34;http://sybrandt.com/img/posts/doc2vec.png&#34; /&gt;
-    
-    
-    &lt;figcaption&gt;
-        &lt;h4&gt;PV-DM training diagram. Source: Le &amp;amp; Mikolov 2014&lt;/h4&gt;
-        
-    &lt;/figcaption&gt;
-    
+    &lt;img src=&#34;http://sybrandt.com/img/posts/doc2vec.png&#34;/&gt; &lt;figcaption&gt;
+            &lt;h4&gt;PV-DM training diagram. Source: Le &amp;amp; Mikolov 2014&lt;/h4&gt;
+        &lt;/figcaption&gt;
 &lt;/figure&gt;
 
 
@@ -513,17 +500,10 @@ Because of the paragraph vector&amp;rsquo;s influence, the model will be more li
 
 &lt;h3 id=&#34;distributed-bag-of-words-pv-dbow&#34;&gt;Distributed Bag of Words (PV-DBOW)&lt;/h3&gt;
 
-
 &lt;figure&gt;
-    
-        &lt;img src=&#34;http://sybrandt.com/img/posts/doc2vec%28b%29.png&#34; /&gt;
-    
-    
-    &lt;figcaption&gt;
-        &lt;h4&gt;PV-DBOW training diagram. Source: Le &amp;amp; Mikolov 2014&lt;/h4&gt;
-        
-    &lt;/figcaption&gt;
-    
+    &lt;img src=&#34;http://sybrandt.com/img/posts/doc2vec%28b%29.png&#34;/&gt; &lt;figcaption&gt;
+            &lt;h4&gt;PV-DBOW training diagram. Source: Le &amp;amp; Mikolov 2014&lt;/h4&gt;
+        &lt;/figcaption&gt;
 &lt;/figure&gt;
 
 
@@ -703,17 +683,10 @@ We see that all of these words are verbs, in the past tense, and actions a cat c
 Note that the context of the blank has a huge, albeit inexact, bearing on what word the blank could take.
 By learning these sorts of context-sensitive relationships, word2vec is able to train its embeddings.&lt;/p&gt;
 
-
 &lt;figure&gt;
-    
-        &lt;img src=&#34;http://sybrandt.com/img/posts/word2vec.png&#34; /&gt;
-    
-    
-    &lt;figcaption&gt;
-        &lt;h4&gt;Typical word2vec Training Diagram. Source: deeplearning4j.org&lt;/h4&gt;
-        
-    &lt;/figcaption&gt;
-    
+    &lt;img src=&#34;http://sybrandt.com/img/posts/word2vec.png&#34;/&gt; &lt;figcaption&gt;
+            &lt;h4&gt;Typical word2vec Training Diagram. Source: deeplearning4j.org&lt;/h4&gt;
+        &lt;/figcaption&gt;
 &lt;/figure&gt;
 
 
