@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2017 Justin Sybrandt</copyright>
-    <lastBuildDate>Sat, 01 Apr 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 12 Nov 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://sybrandt.com/publication_types/0/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Using Drive-by Health Monitoring to Detect Bridge Damage Considering Environmental and Operational Effects</title>
+      <link>http://sybrandt.com/publication/2018-drive-by-health-monitoring/</link>
+      <pubDate>Mon, 12 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://sybrandt.com/publication/2018-drive-by-health-monitoring/</guid>
+      <description>Drive-by Health Monitoring utilizes accelerometers mounted on commercial and civilian vehicles to gather dynamic response data that can be used to continuously evaluate the health of bridges faster and with less equipment than traditional structural health monitoring practices. Because vehicles and bridges create a coupled system, vehicle acceleration data contains information about bridge frequencies that can be used as health indicators. However, for drive-by health monitoring to be viable, variabilities in dynamic measurements caused by environmental and operational parameters, such as temperature, vehicle speed, traffic, and surface roughness need to be considered.</description>
+    </item>
     
     <item>
       <title>To Agile or Not to Agile: A Comparison of Software Development Methodologies</title>

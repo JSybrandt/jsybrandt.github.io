@@ -11,6 +11,22 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Using Drive-by Health Monitoring to Detect Bridge Damage Considering Environmental and Operational Effects</title>
+      <link>http://sybrandt.com/publication/2018-drive-by-health-monitoring/</link>
+      <pubDate>Mon, 12 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://sybrandt.com/publication/2018-drive-by-health-monitoring/</guid>
+      <description>&lt;p&gt;Drive-by Health Monitoring utilizes accelerometers mounted on commercial and civilian vehicles to gather dynamic response data that can be used to continuously evaluate the health of bridges faster and with less equipment than traditional structural health monitoring practices.
+Because vehicles and bridges create a coupled system, vehicle acceleration data contains information about bridge frequencies that can be used as health indicators.
+However, for drive-by health monitoring to be viable, variabilities in dynamic measurements caused by environmental and operational parameters, such as temperature, vehicle speed, traffic, and surface roughness need to be considered.
+In this paper, a finite element model of a simply supported bridge is developed considering the aforementioned variabilities and various levels of structural damage.
+Vehicle acceleration data obtained from the model is then transformed to the frequency domain and processed using a multi-layer neural network.
+This method is used to determine the relationships between noise inducing variables and changes in vehicle dynamic response spectrum; these relationships are leveraged to predict the overall health of the subject bridge.
+The results from this study indicate that the developed methodology, drive-by health monitoring data analyzed with a multi-layer neural network, can serve as a viable health monitoring strategy and should be further tested using long term real-world data.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Are Abstracts Enough for Hypothesis Generation?</title>
       <link>http://sybrandt.com/publication/are-abstracts-enough-for-hg/</link>
       <pubDate>Thu, 18 Oct 2018 00:00:00 +0000</pubDate>
@@ -967,19 +983,6 @@ Our goal is to collect data related to bridge health, such as vertical accelerat
 &lt;p&gt;In the coming years, smart cars will be more prevalent.
 This will facilitate community planning and monitoring projects, such as this.
 We attempt to ready ourselves for this future by identifying the techniques and methods nessesary to gather and interpret this very noisy data.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Learn to Program Python</title>
-      <link>http://sybrandt.com/project/learn-to-program-python/</link>
-      <pubDate>Wed, 16 Aug 2017 17:35:11 -0400</pubDate>
-      
-      <guid>http://sybrandt.com/project/learn-to-program-python/</guid>
-      <description>&lt;p&gt;I, on occasion, put together python tutorial videos as a way to explain the basics of programming to interested friends.
-Unfortunately, with my schedule, these don&amp;rsquo;t come out as often as I would like, but the episodes are available for anyone interested.&lt;/p&gt;
-
-&lt;p&gt;Look for updates to this series on &lt;a href=&#34;https://www.youtube.com/watch?v=wdEl10kp62Y&amp;amp;list=PL7Qcg0xHM7prCRBfgfQCXekKx5vOQxayc&#34; target=&#34;_blank&#34;&gt;YouTube&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
