@@ -11,6 +11,23 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>BigData 2018</title>
+      <link>http://sybrandt.com/post/big-data-2018/</link>
+      <pubDate>Mon, 10 Dec 2018 14:18:52 -0400</pubDate>
+      
+      <guid>http://sybrandt.com/post/big-data-2018/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;m here in Seattle, WA attending the IEEE International Conference on Big Data.
+I&amp;rsquo;ll be presenting two recent works.
+&lt;a href=&#34;http://sybrandt.com/2018/validation&#34;&gt;The first&lt;/a&gt;, presents a new method to validate hypothesis generation systems.
+&lt;a href=&#34;http://sybrandt.com/2018/abstracts&#34;&gt;The second&lt;/a&gt;, uses that method to determine the quality of input papers needed to make good conclusions.
+With two papers in the same conference, I will be giving a double-length talk!
+If you&amp;rsquo;re around, I&amp;rsquo;ll be at the end of the L12 session Wednesday morning.&lt;/p&gt;
+
+&lt;iframe src=&#34;https://docs.google.com/presentation/d/e/2PACX-1vRfw0sjKNQT6C5INwV-VPGrPVysScsC3Su__n32bOgWZF7Uk14kpM270PzkMgXUfduZzax_8SpPRyl4/embed?start=true&amp;loop=true&amp;delayms=3000&#34; frameborder=&#34;0&#34; width=&#34;960&#34; height=&#34;569&#34; allowfullscreen=&#34;true&#34; mozallowfullscreen=&#34;true&#34; webkitallowfullscreen=&#34;true&#34;&gt;&lt;/iframe&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Using Drive-by Health Monitoring to Detect Bridge Damage Considering Environmental and Operational Effects</title>
       <link>http://sybrandt.com/publication/2018-drive-by-health-monitoring/</link>
       <pubDate>Mon, 12 Nov 2018 00:00:00 +0000</pubDate>
@@ -968,21 +985,6 @@ Along with this come a series of complications regarding the scale of the MEDLIN
 Progress soon to come!&lt;/p&gt;
 
 &lt;p&gt;In the meantime, if you want to run a query, feel free to reach out to us &lt;a href=&#34;http://sybrandt.com/post/moliere-run-query/&#34;&gt;through this form&lt;/a&gt;, and we&amp;rsquo;ll get back to you soon.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Bridge Health Classification With Automotive Sensing</title>
-      <link>http://sybrandt.com/project/bridge-classification/</link>
-      <pubDate>Fri, 15 Sep 2017 17:35:11 -0400</pubDate>
-      
-      <guid>http://sybrandt.com/project/bridge-classification/</guid>
-      <description>&lt;p&gt;In this project, I am applying machine learning techniques to identify the structural health of arbitrary bridges.
-Our goal is to collect data related to bridge health, such as vertical acceleration and harmonic frequency, through sensors present in vehicles.&lt;/p&gt;
-
-&lt;p&gt;In the coming years, smart cars will be more prevalent.
-This will facilitate community planning and monitoring projects, such as this.
-We attempt to ready ourselves for this future by identifying the techniques and methods nessesary to gather and interpret this very noisy data.&lt;/p&gt;
 </description>
     </item>
     
