@@ -290,7 +290,7 @@
     <url>
     
       <loc>http://sybrandt.com/tags/conference/</loc>
-      <lastmod>2018-07-14T14:18:52-04:00</lastmod>
+      <lastmod>2018-12-10T14:18:52-04:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -321,6 +321,16 @@
     
       <loc>http://sybrandt.com/tags/knowledge-discovery/</loc>
       <lastmod>2017-09-15T22:27:22-04:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>http://sybrandt.com/tags/presentation/</loc>
+      <lastmod>2018-12-10T14:18:52-04:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -369,8 +379,18 @@
     
     <url>
     
-      <loc>http://sybrandt.com/tags/software/</loc>
+      <loc>http://sybrandt.com/tags/slides/</loc>
       <lastmod>2018-12-10T14:18:52-04:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>http://sybrandt.com/tags/software/</loc>
+      <lastmod>2018-02-28T14:18:52-04:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -420,7 +440,7 @@
     <url>
     
       <loc>http://sybrandt.com/tags/tutorial/</loc>
-      <lastmod>2018-12-10T14:18:52-04:00</lastmod>
+      <lastmod>2018-03-05T14:18:52-04:00</lastmod>
       <priority>0</priority>
     </url>
     

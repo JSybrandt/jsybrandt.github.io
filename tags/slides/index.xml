@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Conference on Justin Sybrandt</title>
-    <link>http://sybrandt.com/tags/conference/</link>
-    <description>Recent content in Conference on Justin Sybrandt</description>
+    <title>Slides on Justin Sybrandt</title>
+    <link>http://sybrandt.com/tags/slides/</link>
+    <description>Recent content in Slides on Justin Sybrandt</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2017 Justin Sybrandt</copyright>
     <lastBuildDate>Mon, 10 Dec 2018 14:18:52 -0400</lastBuildDate>
     
-	<atom:link href="http://sybrandt.com/tags/conference/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://sybrandt.com/tags/slides/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -19,16 +19,6 @@
       
       <guid>http://sybrandt.com/post/big-data-2018/</guid>
       <description>I&amp;rsquo;m here in Seattle, WA attending the IEEE International Conference on Big Data. I&amp;rsquo;ll be presenting two recent works. The first, presents a new method to validate hypothesis generation systems. The second, uses that method to determine the quality of input papers needed to make good conclusions. With two papers in the same conference, I will be giving a double-length talk! If you&amp;rsquo;re around, I&amp;rsquo;ll be at the end of the L12 session Wednesday morning.</description>
-    </item>
-    
-    <item>
-      <title>Moliere Poster -- Google PIRC</title>
-      <link>http://sybrandt.com/post/pirc-poster-18-7-14/</link>
-      <pubDate>Sat, 14 Jul 2018 14:18:52 -0400</pubDate>
-      
-      <guid>http://sybrandt.com/post/pirc-poster-18-7-14/</guid>
-      <description>I have the chance to present my work at the Google Ph.D. Intern Research Conference (PIRC). This poster represents all of the work we have added to the Moliere project since our original paper last year.
-  Moliere Project Summary Poster (July 2018)  from Justin Sybrandt</description>
     </item>
     
   </channel>
