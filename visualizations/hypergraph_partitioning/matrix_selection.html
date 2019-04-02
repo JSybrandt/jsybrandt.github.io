@@ -4,7 +4,6 @@
 
 <style>
 #content {
-  width:100%;
   overflow:auto;
   margin:auto;
 }
@@ -61,15 +60,13 @@
   current_imp_met_str = "avg"
 
   function set_content(partition_metric_str, improvement_metric_str){
-    origin = "http://home/jsybran/Downloads/";
-    file_path = origin
-              + "matrix_"
+    origin = "http://sybrandt.com/visualizations/hypergraph_partitioning/"
+    file_path = "matrix_"
               + partition_metric_str
               + "_"
               + improvement_metric_str
               + ".html";
-    path="http://sybrandt.com/visualizations/hypergraph_partitioning/matrix_km1.html"
-    $("#content").load(path)
+    $("#content").load(file_path)
   }
 
   var buttons = document.getElementsByTagName("button");
