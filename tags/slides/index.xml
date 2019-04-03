@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2017 Justin Sybrandt</copyright>
-    <lastBuildDate>Mon, 10 Dec 2018 14:18:52 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 04 Mar 2019 14:18:52 -0400</lastBuildDate>
     
 	<atom:link href="http://sybrandt.com/tags/slides/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Math of Neural Networks</title>
+      <link>http://sybrandt.com/post/math_of_nn/</link>
+      <pubDate>Mon, 04 Mar 2019 14:18:52 -0400</pubDate>
+      
+      <guid>http://sybrandt.com/post/math_of_nn/</guid>
+      <description>I gave this talk both internally to my lab group, as well as at the Clemson SIAM Graduate Student Seminar.
+This browser does not support PDFs. Please download the PDF to view it: Download PDF.</description>
+    </item>
     
     <item>
       <title>BigData 2018</title>
