@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Miscs on Justin Sybrandt</title>
+    <link>/misc/</link>
+    <description>Recent content in Miscs on Justin Sybrandt</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 15 Jul 2019 21:14:35 -0400</lastBuildDate>
+    
+	<atom:link href="/misc/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Submit a Moliere Query</title>
+      <link>/misc/moliere_run_query/</link>
+      <pubDate>Mon, 15 Jul 2019 21:14:35 -0400</pubDate>
+      
+      <guid>/misc/moliere_run_query/</guid>
+      <description>Thanks for requesting a Moliere query! By using this form you are requesting us to run your experiment on our supercomputing infrastructure. Unfortunately, we have not been able to automate this process, so please allow for a little turn around time, and feel free to send us an email if you don&amp;rsquo;t hear back soon.
+ Post Query  Query Terms Number of Topics (typically btwn. 10 - 100) Contact Email:   </description>
+    </item>
+    
+  </channel>
+</rss>

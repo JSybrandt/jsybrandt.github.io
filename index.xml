@@ -1,960 +1,209 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Justin Sybrandt on Justin Sybrandt</title>
-    <link>http://sybrandt.com/</link>
-    <description>Recent content in Justin Sybrandt on Justin Sybrandt</description>
+    <title>Justin Sybrandt</title>
+    <link>/</link>
+    <description>Recent content on Justin Sybrandt</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy; 2019 Justin Sybrandt</copyright>
-    <lastBuildDate>Wed, 20 Sep 2017 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 16 Jul 2019 22:59:55 -0400</lastBuildDate>
+    
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
-      <title>Inhibition of the DDX3 prevents HIV-1 Tat and cocaine-induced neurotoxicity by targeting microglia activation</title>
-      <link>http://sybrandt.com/publication/2019-inhibition-of-the-ddx3-prevents-hiv-1-tat-and-cocaine-induced-neurotoxicity-by-targeting-microglia-activation/</link>
-      <pubDate>Fri, 29 Mar 2019 00:00:00 +0000</pubDate>
+      <title>FOBE and HOBE: First- and High-Order Bipartite Embeddings</title>
+      <link>/publications/bipartite_graph_embedding/</link>
+      <pubDate>Tue, 16 Jul 2019 22:59:55 -0400</pubDate>
       
-      <guid>http://sybrandt.com/publication/2019-inhibition-of-the-ddx3-prevents-hiv-1-tat-and-cocaine-induced-neurotoxicity-by-targeting-microglia-activation/</guid>
-      <description></description>
+      <guid>/publications/bipartite_graph_embedding/</guid>
+      <description>Abstract: Typical graph embeddings may not capture type-specific bipartite graph features that arise in such areas as recommender systems, data visualization, and drug discovery. Machine learning methods utilized in these applications would be better served with specialized embedding techniques. We propose two embeddings for bipartite graphs that decompose edges into sets of indirect relationships between node neighborhoods. When sampling higher-order relationships, we reinforce similarities through algebraic distance on graphs. We also introduce ensemble embeddings to combine both into a best of both worlds embedding.</description>
     </item>
     
     <item>
-      <title>Math of Neural Networks</title>
-      <link>http://sybrandt.com/post/math_of_nn/</link>
-      <pubDate>Mon, 04 Mar 2019 14:18:52 -0400</pubDate>
+      <title>Submit a Moliere Query</title>
+      <link>/misc/moliere_run_query/</link>
+      <pubDate>Mon, 15 Jul 2019 21:14:35 -0400</pubDate>
       
-      <guid>http://sybrandt.com/post/math_of_nn/</guid>
-      <description>&lt;p&gt;I gave this talk both internally to my lab group, as well as at the Clemson SIAM
-Graduate Student Seminar.&lt;/p&gt;
-
-&lt;p&gt;&lt;object data=&#34;/slides/Math_of_Neural_Networks.pdf&#34;
-        type=&#34;application/pdf&#34;
-        width=&#34;100%&#34; height=&#34;500px&#34;&gt;
-  &lt;embed src=&#34;http://sybrandt.com/slides/Math_of_Neural_Networks.pdf&#34;&gt;
-  &lt;p&gt;This browser does not support PDFs. Please download the PDF to view it:
-  &lt;a href=&#34;http://sybrandt.com/slides/Math_of_Neural_Networks.pdf&#34;&gt;Download PDF&lt;/a&gt;.&lt;/p&gt;
-  &lt;/embed&gt;
-&lt;/object&gt;&lt;/p&gt;
-</description>
+      <guid>/misc/moliere_run_query/</guid>
+      <description>Thanks for requesting a Moliere query! By using this form you are requesting us to run your experiment on our supercomputing infrastructure. Unfortunately, we have not been able to automate this process, so please allow for a little turn around time, and feel free to send us an email if you don&amp;rsquo;t hear back soon.
+ Post Query  Query Terms Number of Topics (typically btwn. 10 - 100) Contact Email:   </description>
     </item>
     
     <item>
-      <title>BigData 2018</title>
-      <link>http://sybrandt.com/post/big-data-2018/</link>
+      <title>Thesis Proposal Presentation</title>
+      <link>/updates/thesis_proposal/</link>
+      <pubDate>Fri, 10 May 2019 14:18:52 -0400</pubDate>
+      
+      <guid>/updates/thesis_proposal/</guid>
+      <description>This browser does not support PDFs. Please download the PDF to view it: Download PDF.
+   </description>
+    </item>
+    
+    <item>
+      <title>  Inhibition of the DDX3 prevents HIV-1 Tat and cocaine-induced neurotoxicity by
+  targeting microglia activation
+</title>
+      <link>/publications/inhibition_of_ddx3/</link>
+      <pubDate>Fri, 29 Mar 2019 22:19:22 -0400</pubDate>
+      
+      <guid>/publications/inhibition_of_ddx3/</guid>
+      <description>Abstract: HIV-1 Associated Neurocognitive Disorder (HAND) is commonly seen in HIV-infected patients. Viral proteins including Tat cause neuronal toxicity and is worsened by drugs of abuse. To uncover potential targets for anti-HAND therapy, we employed a literature mining system, MOLIERE. Here, we validated Dead Box RNA Helicase 3 (DDX3) as a target to treat HAND via a selective DDX3 inhibitor, RK-33. The combined neurotoxicity of Tat protein and cocaine was blocked by RK-33 in rat and mouse cortical cultures.</description>
+    </item>
+    
+    <item>
+      <title>From BigData&#39;18 in Seattle</title>
+      <link>/updates/big_data_2018/</link>
       <pubDate>Mon, 10 Dec 2018 14:18:52 -0400</pubDate>
       
-      <guid>http://sybrandt.com/post/big-data-2018/</guid>
-      <description>&lt;p&gt;I&amp;rsquo;m here in Seattle, WA attending the IEEE International Conference on Big Data.
-I&amp;rsquo;ll be presenting two recent works.
-&lt;a href=&#34;http://sybrandt.com/2018/validation&#34;&gt;The first&lt;/a&gt;, presents a new method to validate hypothesis generation systems.
-&lt;a href=&#34;http://sybrandt.com/2018/abstracts&#34;&gt;The second&lt;/a&gt;, uses that method to determine the quality of input papers needed to make good conclusions.
-With two papers in the same conference, I will be giving a double-length talk!
-If you&amp;rsquo;re around, I&amp;rsquo;ll be at the end of the L12 session Wednesday morning.&lt;/p&gt;
-
-&lt;iframe src=&#34;https://docs.google.com/presentation/d/e/2PACX-1vRfw0sjKNQT6C5INwV-VPGrPVysScsC3Su__n32bOgWZF7Uk14kpM270PzkMgXUfduZzax_8SpPRyl4/embed?start=true&amp;loop=true&amp;delayms=3000&#34; frameborder=&#34;0&#34; width=&#34;480&#34; height=&#34;299&#34; allowfullscreen=&#34;true&#34; mozallowfullscreen=&#34;true&#34; webkitallowfullscreen=&#34;true&#34;&gt;&lt;/iframe&gt;
-</description>
+      <guid>/updates/big_data_2018/</guid>
+      <description>I&amp;rsquo;m here in Seattle, WA attending the IEEE International Conference on Big Data. I&amp;rsquo;ll be presenting two recent works. The first, presents a new method to validate hypothesis generation systems. The second, uses that method to determine the quality of input papers needed to make good conclusions. With two papers in the same conference, I will be giving a double-length talk! If you&amp;rsquo;re around, I&amp;rsquo;ll be at the end of the L12 session Wednesday morning.</description>
     </item>
     
     <item>
-      <title>Using Drive-by Health Monitoring to Detect Bridge Damage Considering Environmental and Operational Effects</title>
-      <link>http://sybrandt.com/publication/2018-drive-by-health-monitoring/</link>
-      <pubDate>Mon, 12 Nov 2018 00:00:00 +0000</pubDate>
+      <title>  Using Drive-by Health Monitoring to Detect Bridge Damage Considering
+  Environmental and Operational Effects.
+</title>
+      <link>/publications/drive_by_health_monitoring/</link>
+      <pubDate>Mon, 12 Nov 2018 23:13:01 -0400</pubDate>
       
-      <guid>http://sybrandt.com/publication/2018-drive-by-health-monitoring/</guid>
-      <description>&lt;p&gt;Drive-by Health Monitoring utilizes accelerometers mounted on commercial and civilian vehicles to gather dynamic response data that can be used to continuously evaluate the health of bridges faster and with less equipment than traditional structural health monitoring practices.
-Because vehicles and bridges create a coupled system, vehicle acceleration data contains information about bridge frequencies that can be used as health indicators.
-However, for drive-by health monitoring to be viable, variabilities in dynamic measurements caused by environmental and operational parameters, such as temperature, vehicle speed, traffic, and surface roughness need to be considered.
-In this paper, a finite element model of a simply supported bridge is developed considering the aforementioned variabilities and various levels of structural damage.
-Vehicle acceleration data obtained from the model is then transformed to the frequency domain and processed using a multi-layer neural network.
-This method is used to determine the relationships between noise inducing variables and changes in vehicle dynamic response spectrum; these relationships are leveraged to predict the overall health of the subject bridge.
-The results from this study indicate that the developed methodology, drive-by health monitoring data analyzed with a multi-layer neural network, can serve as a viable health monitoring strategy and should be further tested using long term real-world data.&lt;/p&gt;
-</description>
+      <guid>/publications/drive_by_health_monitoring/</guid>
+      <description>Abstract: Drive-by Health Monitoring utilizes accelerometers mounted on commercial and civilian vehicles to gather dynamic response data that can be used to continuously evaluate the health of bridges faster and with less equipment than traditional structural health monitoring practices. Because vehicles and bridges create a coupled system, vehicle acceleration data contains information about bridge frequencies that can be used as health indicators. However, for drive-by health monitoring to be viable, variabilities in dynamic measurements caused by environmental and operational parameters, such as temperature, vehicle speed, traffic, and surface roughness need to be considered.</description>
+    </item>
+    
+    <item>
+      <title>  Large-Scale Validation of Hypothesis Generation Systems via Candidate Ranking
+</title>
+      <link>/publications/automatic_validation/</link>
+      <pubDate>Thu, 18 Oct 2018 22:43:39 -0400</pubDate>
+      
+      <guid>/publications/automatic_validation/</guid>
+      <description>Abstract: The first step of many research projects is to define and rank a short list of candidates for study. In the modern rapidity of scientific progress, some turn to automated hypothesis generation (HG) systems to aid this process. These systems can identify implicit or overlooked connections within a large scientific corpus, and while their importance grows alongside the pace of science, they lack thorough validation. Without any standard numerical evaluation method, many validate general-purpose HG systems by rediscovering a handful of historical findings, and some wishing to be more thorough may run laboratory experiments based on automatic suggestions.</description>
     </item>
     
     <item>
       <title>Are Abstracts Enough for Hypothesis Generation?</title>
-      <link>http://sybrandt.com/publication/are-abstracts-enough-for-hg/</link>
-      <pubDate>Thu, 18 Oct 2018 00:00:00 +0000</pubDate>
+      <link>/publications/are_abstracts_enough/</link>
+      <pubDate>Thu, 18 Oct 2018 22:34:08 -0400</pubDate>
       
-      <guid>http://sybrandt.com/publication/are-abstracts-enough-for-hg/</guid>
-      <description>&lt;p&gt;Our goal in this paper is to understand the effect data quality has on our hypothesis generation system, Moliere.
-We train multiple instances of our system and apply our &lt;a href=&#34;http://sybrandt.com/publication/validation-and-topic-driven-ranking/&#34;&gt;validation techniques&lt;/a&gt; to numerically quantify performance differences.&lt;/p&gt;
-
-&lt;p&gt;Our different datasets come from Medline and PubMed Central.
-This required a fair amount cleaning and random sampling, so those wishing to replicate our findings are encouraged to start with the &lt;a href=&#34;https://drive.google.com/drive/folders/11Nr4yPdkEUfg2LNsDRH-kTBL0Yghsgzi?usp=sharing&#34; target=&#34;_blank&#34;&gt;pre-trained datasets&lt;/a&gt;.
-These datasets are preconstructed using data that predates 2010.
-Here, directories like &lt;code&gt;2_pow_neg_2&lt;/code&gt; represent $\frac{1}{4}$ of the medline dataset, sampled randomly.
-(&lt;code&gt;2_pow_neg_0&lt;/code&gt; represents the entire ($\frac{1}{1}$) dataset.)
-Then, &lt;code&gt;pmc-abstract-network&lt;/code&gt; and &lt;code&gt;pmc-fulltext-network&lt;/code&gt; each represent the PubMed Central datasets.&lt;/p&gt;
-
-&lt;p&gt;In order to run queries against these pre-trained data sets, supply the &lt;code&gt;-d&lt;/code&gt; flag.
-We re-trained our polynomial combination per-dataset.
-In order to use each datasets polynomial parameters, supply the &lt;code&gt;-y&lt;/code&gt; flag followed by a path to the &lt;code&gt;hyper.param&lt;/code&gt; file.
-If this is not supplied, we provide a default set of parameters.
-For instance, if you download the contents of &lt;code&gt;2_pow_neg_2&lt;/code&gt; to &lt;code&gt;~/Downloads/my_test&lt;/code&gt;, you would run the &lt;code&gt;tobacco&lt;/code&gt; &lt;code&gt;lung cancer&lt;/code&gt; query with the following syntax.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;./run_query -d ~/Downloads/my_test \
-            -y ~/Downloads/my_test/hyper.param \
-            tobacco lung_cancer
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;To repeat our experiments, the files &lt;code&gt;noise-predicate-pairs&lt;/code&gt; and &lt;code&gt;published-predicate-pairs&lt;/code&gt; contain our negative and positive validation samples respectively.
-Each file is in the form &lt;code&gt;ID1|ID2|Year&lt;/code&gt;, and negative results have been assigned the year &lt;code&gt;0&lt;/code&gt;.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-text&#34;&gt;C1449699|C1176309|2014
-C0018801|C0013363|2014
-C1158564|C0329155|2012
-C0600467|C0038454|2013
-C0031667|C0018790|2011
-...
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;When running a query, simply supply &lt;code&gt;ID1&lt;/code&gt; and &lt;code&gt;ID2&lt;/code&gt;.
-Results will occur in a temporary directory named &lt;code&gt;/tmp/ID1---ID2&lt;/code&gt; by default.
-We have some more info on interpreting these results over on our &lt;a href=&#34;http://sybrandt.com/publication/validation-and-topic-driven-ranking/&#34;&gt;validation page&lt;/a&gt;.&lt;/p&gt;
-</description>
+      <guid>/publications/are_abstracts_enough/</guid>
+      <description>Abstract: The potential for automatic hypothesis generation (HG) systems to improve research productivity keeps pace with the growing set of publicly available scientific information. But as data becomes easier to acquire, we must understand the effect different textual data sources have on our resulting hypotheses. Are abstracts enough for HG, or does it need full-text papers? How many papers does an HG system need to make valuable predictions? How sensitive is a general-purpose HG system to hyperparameter values or input quality?</description>
     </item>
     
     <item>
-      <title>Large-Scale Validation of Hypothesis Generation Systems via Candidate Ranking</title>
-      <link>http://sybrandt.com/publication/validation-and-topic-driven-ranking/</link>
-      <pubDate>Thu, 18 Oct 2018 00:00:00 +0000</pubDate>
-      
-      <guid>http://sybrandt.com/publication/validation-and-topic-driven-ranking/</guid>
-      <description>&lt;p&gt;We explore and implement a number of validation methods in this work.
-In order to run these for yourself, first setup the Moliere project from our &lt;a href=&#34;https://github.com/JSybrandt/MOLIERE&#34; target=&#34;_blank&#34;&gt;github page&lt;/a&gt;.
-A fair warning, you will need some pretty powerful compute resources.
-Feel free to reach out or file a github issue for help on that front.&lt;/p&gt;
-
-&lt;p&gt;Because the Moliere project represents a significant portion the lead authors thesis work, this codebase is subject to change.
-The &lt;em&gt;exact&lt;/em&gt; code referenced in this paper can be found in the &lt;a href=&#34;https://github.com/JSybrandt/MOLIERE/releases/tag/18.10&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;18.10&lt;/code&gt; release&lt;/a&gt;.
-The network referenced in this paper can be found &lt;a href=&#34;https://drive.google.com/drive/folders/1mHTcKvt6EhkHhDjQlHZ7S0T3WGZZ6K5E?usp=sharing&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Within that repo is a &lt;a href=&#34;https://github.com/JSybrandt/MOLIERE/blob/master/run_query/run_query.py&#34; target=&#34;_blank&#34;&gt;run_query.py file&lt;/a&gt; that handles the entire query process.
-For instance, assuming the system is setup properly, this simple command will evaluate the connection between tobacco and lung cancer.
-Add &lt;code&gt;-v&lt;/code&gt; for progress messages, expect this to take a few minutes.
-By default, this will attempt to find approximately 10k papers relevant to tobacco and cancer from our network, and will apply PLDA to find 20 topics from those papers.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;./run_query.py tobacco lung_cancer
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Output, by default, is written to a new directory created in &lt;code&gt;/tmp&lt;/code&gt; for each query (in this case &lt;code&gt;/tmp/tobacco---lung_cancer&lt;/code&gt;).
-Within this directory will be a result file (&lt;code&gt;/tmp/tobacco---lung_cancer/tobacco---lung_cancer.20.eval&lt;/code&gt;) that looks something like this&amp;hellip;
-(spacing added to look nice online)&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-text&#34;&gt;TopicNetCCoef     0.483871
-TopicWalkBtwn     98.0533
-TopicCorr         0.84985
-BestTopicPerWord  0.205387
-  Topic_17 smoker smoke tobacco report assess	
-  Topic_0 lung_cancer exposur worker studi cigarett_smoke	
-  Topic_4 tobacco smokeless_tobacco form india smoke	
-  Topic_10 tobacco treatment intervent quit tobacco_cessat	
-  Topic_11 tobacco tobacco_control tobacco_industri countri global
-BestCentrL2       0.0452344
-  Topic_4 tobacco smokeless_tobacco form india smoke	
-  Topic_5 lung_cancer copd screen diseas surviv	
-  Topic_0 lung_cancer exposur worker studi cigarett_smoke	
-  Topic_12 tobacco cigarett nicotin extract sampl	
-  Topic_16 lung_cancer includ lung_canc well mirna
-L2                6.47644
-PolyMultiple      -0.756896
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Note, the absolute value of each metric is far less important than the relative values between different hypotheses.&lt;/p&gt;
-
-&lt;p&gt;Here we list the quality of the tobacco to lung cancer connection with respect to our various validation metrics.
-The other files in this output directory are intended for debugging, re-runs, and later visualization.
-In addition, metrics that are per-topic include the top 5 topics (and top 5 stemmed words per topic).&lt;/p&gt;
-
-&lt;p&gt;The validation set we use can be found in &lt;a href=&#34;https://github.com/JSybrandt/Moliere_Validation_Data&#34; target=&#34;_blank&#34;&gt;this other repo&lt;/a&gt;.
-Within the &lt;code&gt;wholeSet&lt;/code&gt; directory contain the most useful files for repeating experiments.
-Each file is in the form &lt;code&gt;ID1|ID2|Year&lt;/code&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-text&#34;&gt;C1449699|C1176309|2014
-C0018801|C0013363|2014
-C1158564|C0329155|2012
-C0600467|C0038454|2013
-C0031667|C0018790|2011
-...
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;code&gt;publsihed.pairs.txt&lt;/code&gt; contains actual connections that first occur within Medline after 2010.
-&lt;code&gt;noise.pairs.txt&lt;/code&gt; contains randomly sampled connections that never occur in Medline, but come from the same set of IDs.
-&lt;code&gt;highlyCited.pairs.txt&lt;/code&gt; is a subset of the published pairs, but includes only those that come from papers with over 100 citations.&lt;/p&gt;
-
-&lt;p&gt;Because of performance limitations, we subset these files for this paper.
-These subsets can be found in the &lt;code&gt;evaluatedSubset&lt;/code&gt; directory.&lt;/p&gt;
-
-&lt;p&gt;The &lt;em&gt;actual&lt;/em&gt; numbers from our evaluation can be found in the &lt;code&gt;evaluatedResults&lt;/code&gt; directory.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Moliere Poster -- Google PIRC</title>
-      <link>http://sybrandt.com/post/pirc-poster-18-7-14/</link>
+      <title>Moliere Poster from Google PIRC</title>
+      <link>/updates/pirc_poster_2018/</link>
       <pubDate>Sat, 14 Jul 2018 14:18:52 -0400</pubDate>
       
-      <guid>http://sybrandt.com/post/pirc-poster-18-7-14/</guid>
-      <description>&lt;p&gt;I have the chance to present my work at the Google Ph.D. Intern Research Conference (PIRC).
-This poster represents all of the work we have added to the &lt;a href=&#34;https://dl.acm.org/citation.cfm?id=3098057&#34; target=&#34;_blank&#34;&gt;Moliere&lt;/a&gt; project since our original paper last year.&lt;/p&gt;
-
-&lt;p&gt;&lt;object data=&#34;/posters/moliere_2018_pirc.pdf&#34; type=&#34;application/pdf&#34; width=&#34;100%&#34; height=&#34;500&#34;&gt;
-&lt;!-- Fallback to linkedin version --&gt;
-&lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/4fenKs1OwgCaoP&#34; width=&#34;100%&#34; height=&#34;500&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; style=&#34;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&#34; allowfullscreen&gt; &lt;/iframe&gt; &lt;div style=&#34;margin-bottom:5px&#34;&gt; &lt;strong&gt; &lt;a href=&#34;//www.slideshare.net/JustinSybrandt/moliere-project-summary-poster-july-2018&#34; title=&#34;Moliere Project Summary Poster (July 2018)&#34; target=&#34;_blank&#34;&gt;Moliere Project Summary Poster (July 2018)&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a href=&#34;https://www.slideshare.net/JustinSybrandt&#34; target=&#34;_blank&#34;&gt;Justin Sybrandt&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;
-&lt;/object&gt;&lt;/p&gt;
-</description>
+      <guid>/updates/pirc_poster_2018/</guid>
+      <description>  Moliere Project Summary Poster (July 2018)  from Justin Sybrandt    </description>
     </item>
     
     <item>
       <title>Basic Iterative Numeric Optimization</title>
-      <link>http://sybrandt.com/post/basic-optimization-18-3-5/</link>
-      <pubDate>Mon, 05 Mar 2018 14:18:52 -0400</pubDate>
+      <link>/posts/basic_optimization/</link>
+      <pubDate>Mon, 05 Mar 2018 21:58:36 -0400</pubDate>
       
-      <guid>http://sybrandt.com/post/basic-optimization-18-3-5/</guid>
-      <description>&lt;p&gt;Today in a class, we were asked to write an iterative solver for numerical equations.
-Now, many students in the class did not have an optimization background, so for the benefit of everyone, I want to share a simple overview of this exercise and how to go about solving it.&lt;/p&gt;
-
-&lt;p&gt;The problem was stated as follows:&lt;/p&gt;
-
-&lt;p&gt;$$ M(a) = 2\times a + 14$$
-$$ G(b) = b - 2 $$&lt;/p&gt;
-
-&lt;p&gt;And our goal was to find some solution $x$ such that $M(x) = G(x)$.
-Additionally, we were supposed to do so iteratively, so just solving the system of equations was out of the question.
-This is because our next exercise would have a different $M$ and $G$, so our code should be able to support whatever.&lt;/p&gt;
-
-&lt;p&gt;For the sake of generalization, my solution here will assume only the $M$ and $G$ are continuous, but I will not assume we know their derivatives.
-Additionally, I will be writing my code in python, simply because I find that it is easier for anybody to understand.
-Knowledge of python, hopefully, won&amp;rsquo;t be necessary.
-But first, lets go over some aspects of the problem&amp;hellip;&lt;/p&gt;
-
-&lt;h2 id=&#34;what-is-an-iterative-algorithm&#34;&gt;What is an iterative algorithm?&lt;/h2&gt;
-
-&lt;p&gt;As stated above, we are going to write an iterative solution, which means that our code will start with a &lt;strong&gt;random guess&lt;/strong&gt; and refine it over time.&lt;/p&gt;
-
-&lt;h2 id=&#34;why-write-an-iterative-algorithm&#34;&gt;Why write an iterative algorithm?&lt;/h2&gt;
-
-&lt;p&gt;In the real world, we won&amp;rsquo;t know everything about $M$ and $G$.
-They may be uncertain, ill-defined, or the result of a large simulation.
-So we wouldn&amp;rsquo;t be able to simply solve a system of linear equations.
-By using an iterative method, we can treat each function as a &lt;strong&gt;black box&lt;/strong&gt;.
-This just means that our code won&amp;rsquo;t know what $M$ or $G$ actually do, but it will be able to evaluate each function at different points.&lt;/p&gt;
-
-&lt;h2 id=&#34;how-do-we-write-an-iterative-algorithm&#34;&gt;How do we write an iterative algorithm?&lt;/h2&gt;
-
-&lt;p&gt;First, we are going to make a random guess at $x$.
-Then, we are going to check if our guess is right.
-If our guess is wrong, we are going to check whether we need to increase or decrease $x$ to get closer to the right answer.&lt;/p&gt;
-
-&lt;p&gt;Caveat: Every optimization algorithm is going to answer the question, &lt;em&gt;&amp;ldquo;How do I update $x$?&amp;rdquo;&lt;/em&gt; a different way.
-The method presented here is very simple, for the same of explaining the overarching concept.&lt;/p&gt;
-
-&lt;h1 id=&#34;conceptual-solution&#34;&gt;Conceptual Solution&lt;/h1&gt;
-
-&lt;p&gt;For future reference, here are our two functions shown graphically.
-Note that to make these plots we need to know the values of $M$ and $G$ at EVERY $x$ value.
-In real life &lt;strong&gt;this is impossible&lt;/strong&gt;, so instead we are going to do this iterativly.
-But, this sort of check, for a simple problem, is a good idea just to know what the right answer will look like, regardless of method.
-In this case, our solution is $x = -16$.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://sybrandt.com/img/posts/18-3-5/overall-solution.jpg&#34; alt=&#34;overall-solution&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Lets start our iterative process with a random guess, $x = 1$.
-We know we want $M(x) = G(x)$, but we can simplify our analysis by defining a third function: $D(x) = M(x) - G(x)$.
-Clearly, if $D(x) = 0$, we have our answer.&lt;/p&gt;
-
-&lt;p&gt;At this point, all we know is that $M(1) = 16$ and $G(1) = -1$, so $D(1) = 17$.
-Graphically, this is just the two points shown below (dashed lines for reference, we don&amp;rsquo;t know those yet).&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://sybrandt.com/img/posts/18-3-5/first-point.jpg&#34; alt=&#34;first-point&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;So, we need to figure out whether we need to increase or decrease $x$ to get closer to a solution.
-For this, we are going to estimate the derivative of $D$.
-To do this, we just evaluate $D(x)$ at two points close to our previous guess.
-For example:&lt;/p&gt;
-
-&lt;p&gt;$$ D(1.01) = 17.01$$
-$$ D(.99) = 16.99$$&lt;/p&gt;
-
-&lt;p&gt;We use this to estimate the derivative of $D(1)$, which is simply change in y over change in x:&lt;/p&gt;
-
-&lt;p&gt;$D&amp;rsquo;(1) \approx 0.02 / 0.02 = 1$&lt;/p&gt;
-
-&lt;p&gt;So our best guess, is that if we decrease x by 1, our difference will also decrease by 1.
-Note that this only requires we evaluate $D(x)$ at two points, and we don&amp;rsquo;t need to know the entire function to make this derivative estimate.
-So for our next iteration, let $x=0$.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://sybrandt.com/img/posts/18-3-5/second-point.jpg&#34; alt=&#34;second-point&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Sure enough, $D$ decreased by 1.
-If we were to follow the whole algorithm threw, we would make another derivative estimate and eventually find our solution of $D(16) = 0$.&lt;/p&gt;
-
-&lt;h2 id=&#34;considerations&#34;&gt;Considerations&lt;/h2&gt;
-
-&lt;p&gt;A couple of things were hand-waved away so far.
-Firstly, how far away from $x$ do we need to look in order to calculate the derivative?
-Also, how far should we jump once we have a local derivative estimate?
-Finally, what if we jump past the right answer?&lt;/p&gt;
-
-&lt;p&gt;In this example, we only have linear equations, so as long as we take small steps, we will eventually get it right, but in the case of more complicated polynomials.
-In more complicated equations, we may get stuck at local optima, where no mater how we move $x$ we seem to only get further from $D(x) = 0$.
-That typically is solved by running our overall solution with multiple random guesses, or by varying the step size.
-But, lets get this solution programmed first.&lt;/p&gt;
-
-&lt;h1 id=&#34;code&#34;&gt;Code&lt;/h1&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;from random import random
-# If you don&#39;t know python, don&#39;t worry about this import
-
-# function for M
-def M(x):
-  return 2 * x + 14
-
-# function for G
-def G(x):
-  return x - 2
-
-# function for the difference of M and G
-def D(x):
-  return M(x) - G(x)
-
-# estimates the derivative of D at x.
-def estDerivative(x):
-  STEP = 0.01
-  # sample D at two points near x
-  e1 = D(x-STEP)
-  e2 = D(x+STEP)
-  # return rise over run
-  return (e2 - e1) / (2 * STEP)
-
-# dermines how far to move x each iteration
-# also, the smaller the jump, the closer
-# we end up to the right answer
-JUMP = 0.0001
-
-# start with a random guess for x
-x = random()
-
-# keep looping until the absolute difference 
-# between M and G is (practically) 0
-while abs(D(x)) &amp;gt; 0.001:
-  # calculate change in D for change in x
-  d = estDerivative(x)
-  if D(x) &amp;gt; 0:
-    # if positive, we need to update x against the direction of d
-    x += -d * JUMP
-  else:  # D(x) &amp;lt; 0
-    # if negative, we need to update x along the direction of d
-    x += d * JUMP
-
-print(x)
-&lt;/code&gt;&lt;/pre&gt;</description>
+      <guid>/posts/basic_optimization/</guid>
+      <description>Today in a class, we were asked to write an iterative solver for numerical equations. Now, many students in the class did not have an optimization background, so for the benefit of everyone, I want to share a simple overview of this exercise and how to go about solving it.
+The problem was stated as follows:
+$$ M(a) = 2\times a + 14 $$ $$ G(b) = b - 2 $$</description>
     </item>
     
     <item>
       <title>Moliere Software Overhaul</title>
-      <link>http://sybrandt.com/post/moliere-project-update-18-2-28/</link>
+      <link>/updates/moliere_software_overhaul/</link>
       <pubDate>Wed, 28 Feb 2018 14:18:52 -0400</pubDate>
       
-      <guid>http://sybrandt.com/post/moliere-project-update-18-2-28/</guid>
-      <description>&lt;p&gt;Over the last couple of days, I have retooled MOLIERE into a system that anyone&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; can deploy it and run their own queries.
-The code is over at the &lt;a href=&#34;https://github.com/JSybrandt/MOLIERE&#34; target=&#34;_blank&#34;&gt;default repo&lt;/a&gt;&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34;&gt;2&lt;/a&gt;&lt;/sup&gt; and should be pretty straightforward, the code even downloads raw data itself!
-Just run &lt;code&gt;build_network.py&lt;/code&gt; and point it at a big parallel file systen &amp;mdash; in a few hours you&amp;rsquo;ll have your very own knowledge network!&lt;/p&gt;
-
-&lt;p&gt;This project was a pretty crazy conglomeration of everything I&amp;rsquo;ve been up to.
-To start, this implements a new stopword cleaning method (inspired by &lt;a href=&#34;http://arrowsmith.psych.uic.edu/arrowsmith_uic/data/stopwords_pubmed&#34; target=&#34;_blank&#34;&gt;this list from Swanson&lt;/a&gt;).
-We also use a new phrase mining tool, &lt;a href=&#34;https://github.com/shangjingbo1226/AutoPhrase&#34; target=&#34;_blank&#34;&gt;AutoPhrase&lt;/a&gt;, to replace ToPMine.&lt;/p&gt;
-
-&lt;p&gt;Overall, these improvements are qualitatively more interpretable than the previous method.
-And, the changes in the codebase make it easier to add or remove new data sources.
-For example, this network construction script can choose to include &lt;a href=&#34;https://www.nlm.nih.gov/research/umls/&#34; target=&#34;_blank&#34;&gt;UMLS&lt;/a&gt; based on whether the use has it installed.
-I&amp;rsquo;m planning on extending this to incorporate &lt;a href=&#34;https://skr3.nlm.nih.gov/SemMedDB/&#34; target=&#34;_blank&#34;&gt;SemMedDB&lt;/a&gt; and hopefully some gene-specific data.&lt;/p&gt;
-
-&lt;p&gt;Also, in the short-term, I&amp;rsquo;m hoping to redo my validation experiments, as presented in &lt;a href=&#34;https://arxiv.org/abs/1802.03793&#34; target=&#34;_blank&#34;&gt;this paper&lt;/a&gt;, to see how these changes may have improved our overall performance.&lt;/p&gt;
-&lt;div class=&#34;footnotes&#34;&gt;
-
-&lt;hr /&gt;
-
-&lt;ol&gt;
-&lt;li id=&#34;fn:1&#34;&gt;With a big enough super computer.
- &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:1&#34;&gt;&lt;sup&gt;^&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li id=&#34;fn:2&#34;&gt;For anyone keeping up with the development, this code will look familiar to the MOLIERE_QUERY_RUNNER repo. This code is going to be phased out for the newly updated repo.
- &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:2&#34;&gt;&lt;sup&gt;^&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;</description>
-    </item>
-    
-    <item>
-      <title>Mass Validation of Hypothesis Generation Systems</title>
-      <link>http://sybrandt.com/post/moliere-validation/</link>
-      <pubDate>Sun, 11 Feb 2018 15:00:00 -0400</pubDate>
-      
-      <guid>http://sybrandt.com/post/moliere-validation/</guid>
-      <description>&lt;p&gt;We have publicly available code and experimental data.
-Our validation information has been incorporated to &lt;a href=&#34;https://github.com/JSybrandt/Moliere_Query_Runner&#34; target=&#34;_blank&#34;&gt;THIS REPO&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Our experimental data and results can be found in &lt;a href=&#34;https://github.com/JSybrandt/Moliere_Validation_Data&#34; target=&#34;_blank&#34;&gt;THIS OTHER REPO&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;But, we are still working on uploading all of the supporting data.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Run Moliere Yourself</title>
-      <link>http://sybrandt.com/post/run-moliere-yourself/</link>
-      <pubDate>Thu, 14 Dec 2017 14:18:52 -0400</pubDate>
-      
-      <guid>http://sybrandt.com/post/run-moliere-yourself/</guid>
-      <description>&lt;p&gt;I have finally had time to package Moliere, our Automatic Hypothesis Generation System, into a single easy-to-use package!&lt;/p&gt;
-
-&lt;p&gt;Take a second to check it out at &lt;a href=&#34;https://github.com/JSybrandt/Moliere&#34; target=&#34;_blank&#34;&gt;my repo&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&#34;system-requirements&#34;&gt;System Requirements&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;gcc (something recent enough to support c++11)&lt;/li&gt;
-&lt;li&gt;mpich (mpich 1, NOT 2, needs to provide mpicxx)&lt;/li&gt;
-&lt;li&gt;python 3&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;preferred:&lt;/em&gt;  some sort of parallel file system&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;install-process&#34;&gt;Install Process&lt;/h2&gt;
-
-&lt;p&gt;The install process is pretty informal.
-The following steps are how I would setup Moliere on a linux system.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;export MOLIERE_HOME=&amp;lt;some install directory&amp;gt;
-mkdir -p $MOLIERE_HOME
-cd $MOLIERE_HOME
-git clone https://github.com/JSybrandt/Moliere_Query_Runner .
-make
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Next, you just need to get the data file into &lt;code&gt;$MOLIERE_HOME/data&lt;/code&gt;.
-The latest data we have avalible can be found in the following link:&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://drive.google.com/drive/u/0/folders/0B2hkrBZ0Qc40VXNwcGQ1eEtMTDg&#34; target=&#34;_blank&#34;&gt;Get Data Here (Google Drive Link)&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;running&#34;&gt;Running&lt;/h2&gt;
-
-&lt;p&gt;Okay, now you have everything you need, assuming you ran make, setup the &lt;code&gt;$MOLIERE_HOME&lt;/code&gt; environment variable, and downloaded the provided data in to &lt;code&gt;$MOLIERE_HOME/data&lt;/code&gt;.
-To run our system, you will be executing &lt;code&gt;runQuery.py&lt;/code&gt;.
-Note, feel free to move this file anywhere you would like, as long as &lt;code&gt;$MOLIERE_HOME&lt;/code&gt; is set, you&amp;rsquo;re good to go.&lt;/p&gt;
-
-&lt;p&gt;If you run &lt;code&gt;runQuery.py -h&lt;/code&gt; you can see the options for the system.
-But, the general usage is going to be &lt;code&gt;runQuery.py -n $TOPIC_COUNT -m $TERM_A $TERM_B&lt;/code&gt;.
-Note that -n sets the number of topics (defaults to 100) and -m moves the resulting topic model and evaluation files from the local cache (default to /tmp) to the working directory.&lt;/p&gt;
-
-&lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
-
-&lt;p&gt;The work shown here is primarily based off &lt;a href=&#34;https://dl.acm.org/citation.cfm?id=3098057&#34; target=&#34;_blank&#34;&gt;this paper&lt;/a&gt; so if you use our tool in research, please include the following citation:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;@inproceedings{Sybrandt:2017:MAB:3097983.3098057,
- author = {Sybrandt, Justin and Shtutman, Michael and Safro, Ilya},
- title = {MOLIERE: Automatic Biomedical Hypothesis Generation System},
- booktitle = {Proceedings of the 23rd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining},
- series = {KDD &#39;17},
- year = {2017},
- isbn = {978-1-4503-4887-4},
- location = {Halifax, NS, Canada},
- pages = {1633--1642},
- numpages = {10},
- url = {http://doi.acm.org/10.1145/3097983.3098057},
- doi = {10.1145/3097983.3098057},
- acmid = {3098057},
- publisher = {ACM},
- address = {New York, NY, USA},
- keywords = {hypothesis generation, mining scientific publications, topic modeling, undiscovered public knowledge},
-}
-&lt;/code&gt;&lt;/pre&gt;</description>
-    </item>
-    
-    <item>
-      <title>Document Embedding</title>
-      <link>http://sybrandt.com/post/document-embedding/</link>
-      <pubDate>Wed, 27 Sep 2017 14:18:52 -0400</pubDate>
-      
-      <guid>http://sybrandt.com/post/document-embedding/</guid>
-      <description>
-
-&lt;p&gt;In a &lt;a href=&#34;http://sybrandt.com/post/word-embeddings/&#34; target=&#34;_blank&#34;&gt;previous post&lt;/a&gt; I talked about how tools like &lt;em&gt;word2vec&lt;/em&gt; are used to numerically understand the meanings behind words.
-In this post, I&amp;rsquo;m going to continue that discussion by describing ways we can find numerical representations for whole documents.
-So, I&amp;rsquo;ll be assuming you&amp;rsquo;re already familiar with the concept of word embeddings.&lt;/p&gt;
-
-&lt;h2 id=&#34;why-do-we-need-document-embeddings&#34;&gt;Why do we need document embeddings?&lt;/h2&gt;
-
-&lt;p&gt;Many real-world applications need to understand the content of text which is longer than just a single word.
-For example, imagine you wanted to find all the political tweets on twitter.
-Well, the first thing you might try is to make a big list of all the words you felt were &amp;ldquo;political.&amp;rdquo;
-You might list &amp;ldquo;president,&amp;rdquo; &amp;ldquo;congress,&amp;rdquo; and &amp;ldquo;senate&amp;rdquo; and simply search for any tweet that contained those words.&lt;/p&gt;
-
-&lt;p&gt;Of course, this would work for many cases, but you would miss tweets that don&amp;rsquo;t use the words on your list.
-For example, image a tweet that used a congressman&amp;rsquo;s name, but didn&amp;rsquo;t actually write the word &amp;ldquo;congress.&amp;rdquo;
-Also, you would get tweets that use a word on your list, but aren&amp;rsquo;t really what you&amp;rsquo;re looking for.
-For example, I just learned that one should refer to a group of small colorful lizards as a &amp;ldquo;&lt;em&gt;congress&lt;/em&gt; of salamanders.&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;Another application that can be very important is that of detecting duplicates.
-For instance, when you post on &lt;a href=&#34;https://stackoverflow.com/&#34; target=&#34;_blank&#34;&gt;Stack Overflow&lt;/a&gt;, there is a feature which attempts to find questions similar to the one you are asking.
-If we simply try to look for the number of words shared between posts then we will have very similar problems to the twitter example above.&lt;/p&gt;
-
-&lt;p&gt;In order to solve these problems we are going to use the concepts from word embeddings to learn a vector representation of each document.
-This will give us an approximation of that document&amp;rsquo;s content, and that will give us a sophisticated way to compare and classify text.&lt;/p&gt;
-
-&lt;h2 id=&#34;how-do-we-get-a-document-s-embedding&#34;&gt;How do we get a document&amp;rsquo;s embedding?&lt;/h2&gt;
-
-&lt;p&gt;Of course, there are many different ways to find a vector representation of a document.
-Here we are going to summarize three, the BOW method, the centroid method, and the doc2vec methods.&lt;/p&gt;
-
-&lt;h3 id=&#34;bag-of-words&#34;&gt;Bag Of Words&lt;/h3&gt;
-
-&lt;p&gt;The simplest embedding is still the Bag-Of-Words method.
-Like before, if we have $|W|$ different words in our corpus, then we will need a vector $R$ of length $|W|$ to represent our document.
-We assume that each word has some index $i$, so our vector $R(d)_i = \text{# of times $w_i$ occurs in $d$}$.&lt;/p&gt;
-
-&lt;p&gt;Comparing documents by their BOW vectors is a start, but we sill have all of the same problems we talked about above and in the previous post.&lt;/p&gt;
-
-&lt;h3 id=&#34;centroids&#34;&gt;Centroids&lt;/h3&gt;
-
-&lt;p&gt;If you have been following closely, you probably already thought of this.
-If we have a word embedding $R(w_i)$ for each of our words $w_i \in W$, then why not just represent a document as the average of all of its contained words?&lt;/p&gt;
-
-&lt;p&gt;$$ R(d_j) = \frac{\sum\limits_{w_i \in W_j} R(w_i)}{|W_j|}$$&lt;/p&gt;
-
-&lt;p&gt;This method actually works pretty well, especially for smaller documents&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.
-If we think about comparing tweets, like we did above, then we would expect the vectors of two political tweets to be close to each other.
-It doesn&amp;rsquo;t matter if these tweets don&amp;rsquo;t use exactly the same words, one might be talking about a prominent politician and the other might be talking about a specific policy, but they both will likely use words that often occur in a &lt;em&gt;political context&lt;/em&gt;.
-If one tweet were really talking about a congress of salamanders, then we would expect vector for salamander would move that tweet&amp;rsquo;s centroid further away from all the political tweets.&lt;/p&gt;
-
-&lt;p&gt;So whats the downside?
-Well, just like BOW, we lose the ordering of the words.
-This means &amp;ldquo;cats eat mice&amp;rdquo; and &amp;ldquo;mice eat cats&amp;rdquo; will have the same centroid.
-Additionally, we still fail to disambiguate the same word being used in different contexts.
-This means that &amp;ldquo;I swung the bat&amp;rdquo; and &amp;ldquo;I swung at the bat&amp;rdquo; will only differ slightly.&lt;/p&gt;
-
-&lt;h3 id=&#34;doc2vec&#34;&gt;Doc2Vec&lt;/h3&gt;
-
-&lt;p&gt;Yup, the moment problems arise, we make a new &lt;em&gt;blank2vec&lt;/em&gt;.
-Doc2Vec&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34;&gt;2&lt;/a&gt;&lt;/sup&gt; learns vector representations of paragraphs along with word representations.
-By combining these ideas, Doc2Vec embeddings outperformed many of the other methods that were around when it debuted&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
-
-&lt;p&gt;If you remember word2vec, we learned the representation of a word by looking at its surrounding context.
-Doc2Vec adds a new vector into this context, representing the paragraph.
-In the same way word2vec refers to both the CBOW and skip-gram method, doc2vec refers to two methods, each with their pros and cons.&lt;/p&gt;
-
-&lt;h3 id=&#34;distributed-memory-model-pv-dm&#34;&gt;Distributed Memory Model (PV-DM)&lt;/h3&gt;
-
-&lt;figure&gt;
-    &lt;img src=&#34;http://sybrandt.com/img/posts/doc2vec.png&#34;/&gt; &lt;figcaption&gt;
-            &lt;h4&gt;PV-DM training diagram. Source: Le &amp;amp; Mikolov 2014&lt;/h4&gt;
-        &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-
-&lt;p&gt;In PV-DM, each time we attempt to predict a word given it&amp;rsquo;s context, we introduce a vector corresponding the paragraph from which that window was taken.
-Although it would require a little more engineering, this is the mechanisms we might use if we wanted to disambiguate &amp;ldquo;I swung the bat&amp;rdquo; and &amp;ldquo;I swung at the bat&amp;rdquo;.
-More directly, the paragraph vector helps inform the model as to which concepts are most likely to be discussed within the current window.&lt;/p&gt;
-
-&lt;p&gt;Le, in the original paper&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;, says that this vector provides &lt;em&gt;memory&lt;/em&gt;, because the vector will change based on the words present in other parts of the same paragraph.
-Conceptually, imagine a paragraph discussing a man and his dog.
-Because of the paragraph vector&amp;rsquo;s influence, the model will be more likely to succeed when attempting to fill in the blank in: &amp;ldquo;the man walked his ____.&amp;rdquo;&lt;/p&gt;
-
-&lt;h3 id=&#34;distributed-bag-of-words-pv-dbow&#34;&gt;Distributed Bag of Words (PV-DBOW)&lt;/h3&gt;
-
-&lt;figure&gt;
-    &lt;img src=&#34;http://sybrandt.com/img/posts/doc2vec%28b%29.png&#34;/&gt; &lt;figcaption&gt;
-            &lt;h4&gt;PV-DBOW training diagram. Source: Le &amp;amp; Mikolov 2014&lt;/h4&gt;
-        &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-
-&lt;p&gt;Another way to find these vectors is the PV-DBOW method, where a paragraph vector is used to predict a number of words which have been randomly sampled from its text.
-Although this model starts with a single element and predicts a number, it seems to resemble the skip-gram method in word2vec.
-This is a bit inaccurate because the training process does not consider the ordering of these predicted words.
-Additionally, in comparison to PV-DM, this method is computationally less expensive.&lt;/p&gt;
-
-&lt;p&gt;Le&amp;rsquo;s paper states that the PV-DBOW method tends to produce poorer results than the PV-DM method, but when used in combination with PV-DM provides more consistent results.&lt;/p&gt;
-
-&lt;h2 id=&#34;comparison-and-conclusions&#34;&gt;Comparison and Conclusions&lt;/h2&gt;
-
-&lt;p&gt;So when doc2vec initially premiered, there was some controversy as to whether it could really outperform the centroid method.
-So, Lau and Baldwin performed an extensive comparison between these methodologies across different domains&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.
-The general consensus what that different methods are best suited for different tasks.
-For example, centroids perform well on tweets, but are outperformed on longer documents.
-I highly recommend this paper to anyone looking to include some of these techniques into their own work.&lt;/p&gt;
-&lt;div class=&#34;footnotes&#34;&gt;
-
-&lt;hr /&gt;
-
-&lt;ol&gt;
-&lt;li id=&#34;fn:1&#34;&gt;When comparing these methodologies, I&amp;rsquo;m referring to &lt;a href=&#34;https://arxiv.org/abs/1607.05368&#34; target=&#34;_blank&#34;&gt;this great paper&lt;/a&gt;.
- &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:1&#34;&gt;&lt;sup&gt;^&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li id=&#34;fn:2&#34;&gt;Doc2Vec was also worked on by the original word2vec author, and it is also a &lt;a href=&#34;https://arxiv.org/abs/1405.4053&#34; target=&#34;_blank&#34;&gt;very good paper&lt;/a&gt;
- &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:2&#34;&gt;&lt;sup&gt;^&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Agile Project Management in Google Sheets</title>
-      <link>http://sybrandt.com/post/google-slides-agile/</link>
-      <pubDate>Wed, 20 Sep 2017 15:00:00 -0400</pubDate>
-      
-      <guid>http://sybrandt.com/post/google-slides-agile/</guid>
-      <description>&lt;p&gt;I think its way to hard to manage small projects.
-There are so many project planning platforms out there and they typically fall into one of two major pitfalls for small teams.
-Either they are free and simplistic, i.e. &lt;a href=&#34;https://trello.com/&#34; target=&#34;_blank&#34;&gt;Trello&lt;/a&gt;, or they are expensive and complicated, i.e. &lt;a href=&#34;https://www.atlassian.com/software/jira&#34; target=&#34;_blank&#34;&gt;Jira&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Of course, there are millions of people who make these systems work for them everyday, but in my experience I find that it is hard for a small, well-intentioned group to actually use these.
-In the case of more simplistic tools, it seems like even a few collaborators can quickly clutter even the best laid system of Trello boards.
-Additionally, in the case of enterprise tools, I worry that management overhead quickly absorbs what should be a lean and organic work environment.
-This puts aside the point that many groups of this size are either amateurs or academic projects which work on a nonexistent budget.&lt;/p&gt;
-
-&lt;p&gt;So I recently looked through at least a dozen potential solutions, and the truth is, Google Sheets may really be the best answer.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://sybrandt.com/img/posts/googleSheetsAgile.png&#34; alt=&#34;An image showing an example task list and burndown chart&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;I know it seems like I&amp;rsquo;ve found a hammer and I&amp;rsquo;m just going around looking for nails, but don&amp;rsquo;t dismiss me too fast.
-Small groups working on projects of any decent size need some sort of structure to keep on track.
-They need a way to track each member&amp;rsquo;s progress, and they need to know their project is on course.
-Most importantly, they really don&amp;rsquo;t want to waste a week fiddling around chrome extensions that promise to revolutionize their Trello experience, and they don&amp;rsquo;t want to put money down for a digital manager before a single line of code is written.&lt;/p&gt;
-
-&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;p&gt;To make it even easier for small groups, I&amp;rsquo;ve gone ahead and made that Google Sheet for them!
-&lt;a href=&#34;https://docs.google.com/spreadsheets/d/1MfuBr9Aw26RMycB0cB2hWwQ8kErLMgJk0KzflRpUsz4/edit?usp=sharing&#34; target=&#34;_blank&#34;&gt;Click Here for a Template&lt;/a&gt;&lt;/p&gt;
-
-&lt;/div&gt;
-
-
-&lt;p&gt;The above template does a remarkable number of things, all you need to do is change the names around.
-For one, it manages sprints, just duplicate the existing sprint page.
-On each sprint, all you have to is change the start date and the duration and the burndown chart will be resized for you.
-Then, you can fill in tasks, estimate work times, and priorities.&lt;/p&gt;
-
-&lt;p&gt;As you complete tasks, just mark them as done and set the completion date.
-This will automatically be reflected in the given burndown chart.
-The chart is smart enough to only include data up to the current date, and will automatically progress over time.
-You even get to see how your project&amp;rsquo;s trend compares with the ideal trend.&lt;/p&gt;
-
-&lt;p&gt;Most importantly, you can make tweaks pretty quickly if this template doesn&amp;rsquo;t do something your team needs.
-To put this in perspective, this whole template only took me about an hour to throw together.&lt;/p&gt;
-
-&lt;p&gt;Hopefully this save you some time, and gives you a quick and dirty way to start planning your sprints today!&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Word Embedding Basics</title>
-      <link>http://sybrandt.com/post/word-embeddings/</link>
-      <pubDate>Sun, 17 Sep 2017 14:18:26 -0400</pubDate>
-      
-      <guid>http://sybrandt.com/post/word-embeddings/</guid>
-      <description>
-
-&lt;p&gt;Recently, in text mining circles, a new method of representing words has taken off.
-This has been due, in a large part, to recent papers from Mikolov et al. and tools like &lt;em&gt;word2vec&lt;/em&gt; &lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.
-Since then, many other projects have applied this concept to a wide variety of areas within data mining &lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;.
-So what is all the hype about? What are these embeddings and why do we need them?&lt;/p&gt;
-
-&lt;h2 id=&#34;what-is-a-word-embedding&#34;&gt;What is a word embedding?&lt;/h2&gt;
-
-&lt;p&gt;So the word &amp;ldquo;embedding&amp;rdquo; is vague, and often times the same thing will be referred to as a &amp;ldquo;representation.&amp;rdquo;
-These terms clearly aren&amp;rsquo;t clear.
-When we say we want to find &amp;ldquo;word embeddings&amp;rdquo; or &amp;ldquo;word representations&amp;rdquo; we mean that we want to find numerical representations for a set of words from a set of documents.
-Of course, the question is &amp;ldquo;how?&amp;rdquo;
-Or maybe, the question is &amp;ldquo;why?&amp;rdquo;&lt;/p&gt;
-
-&lt;h2 id=&#34;why&#34;&gt;&amp;ldquo;Why?&amp;rdquo;&lt;/h2&gt;
-
-&lt;p&gt;Well, text is very difficult for a computer to process.
-People write in very expressive ways, and the meanings of words change over time.
-Because of this, there are very few machine learning methods which accept &amp;ldquo;text&amp;rdquo; as input.
-On the other hand, practically every method accepts a vector as input.&lt;/p&gt;
-
-&lt;p&gt;So imagine you wanted to train a classifier to distinguish between happy and sad news stories.
-Data mining techniques such as Support vector Machines (SVM) and Neural Networks (NN) are already very good at solving classification problems.
-So in order to use them, we need to convert our plain text into input that these methods can accept.&lt;/p&gt;
-
-&lt;h2 id=&#34;okay-so-how&#34;&gt;&amp;ldquo;Okay, so how?&amp;rdquo;&lt;/h2&gt;
-
-&lt;p&gt;Before I get into the methods, I want to define some notation to make the explanations a bit more clear:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;$W$ is our set of words.
-
-&lt;ul&gt;
-&lt;li&gt;A single word is $w_i$.&lt;/li&gt;
-&lt;li&gt;$|W|$ is the number of different words we have.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;$D$ is our set of documents.
-
-&lt;ul&gt;
-&lt;li&gt;A single document is $d_j$.&lt;/li&gt;
-&lt;li&gt;$|D|$ is the number of different words we have.&lt;/li&gt;
-&lt;li&gt;Each document $d_j$ is comprised of its own sequence of words $W_j$.&lt;/li&gt;
-&lt;li&gt;$W_j[k]$ is the $k^{\text{th}}$ word in document $d_j$&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;$R(x)$ is a function that takes a word or document and produces a vector.
-
-&lt;ul&gt;
-&lt;li&gt;A vector of length $l$ is written as $\Re^l$.&lt;/li&gt;
-&lt;li&gt;$R(x)_k$ is the $k^{\text{th}}$ number in the vector $R(x)$.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Okay, with that out of the way:&lt;/p&gt;
-
-&lt;h3 id=&#34;the-old-bag-of-words&#34;&gt;The Old: Bag of Words&lt;/h3&gt;
-
-&lt;p&gt;The easiest representation is the &lt;em&gt;bag of words&lt;/em&gt; (BOW) method, but it&amp;rsquo;s usefulness is limited.
-The BOW method represents each word $w_i$ as a vector in $\Re^{|W|}$ where $R(w_i)_i = 1$ and all other values are 0.
-This method represents a document by simply summing together all of its word&amp;rsquo;s vectors.&lt;/p&gt;
-
-&lt;p&gt;$$ R(d_j) = \sum_{w_i \in W_j} R(w_i) $$&lt;/p&gt;
-
-&lt;p&gt;This method has some pros and some critical cons.
-On the pro side, if you want to know how often $w_i$ occurs in $d_j$ all you have to do is look at $R(d_j)_i$.
-Also, documents that use the same words will have vectors with a higher &lt;a href=&#34;https://en.wikipedia.org/wiki/Cosine_similarity&#34; target=&#34;_blank&#34;&gt;cosine similarity&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;On the con side, this method throws away the ordering of words within a document.
-For example, the sentence &lt;em&gt;&amp;ldquo;the man walks the dog&amp;rdquo;&lt;/em&gt; and &lt;em&gt;&amp;ldquo;the dog walks the man&amp;rdquo;&lt;/em&gt; have the same BOW representation.
-This additionally means that if two documents use &lt;em&gt;similar&lt;/em&gt; but not the same words, they will be seen as different as two documents using completely different words.
-Also, the vectors are inefficiently long, each as long as the entire vocabulary (typically tens of millions of words).
-This means that one of those classifiers, such as a neural net, will have to accept really really long input vectors.
-Long story short, this doesn&amp;rsquo;t scale well &lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
-
-&lt;h3 id=&#34;the-new-word2vec&#34;&gt;The New: Word2Vec&lt;/h3&gt;
-
-&lt;p&gt;The new method which solves the problems with BOW is referred to as &lt;em&gt;&amp;ldquo;word2vec&amp;rdquo;&lt;/em&gt;, which is the name of the first tool which implements Mikolov&amp;rsquo;s ideas &lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.
-This method creates vectors in a much lower dimensionality (typically, $100 \leq l \leq 600$).
-Additionally, words which are similar will tend to have similar vectors.
-As a side effect, the distance between words which have the same relationship (i.e. the distance between a US state and it&amp;rsquo;s capitol) will all be about the same.
-These improvements have directly led to a huge improvement in text mining over the last five years.&lt;/p&gt;
-
-&lt;p&gt;The guiding assumption in the word2vec method is that &lt;em&gt;similar words share similar company&lt;/em&gt;.
-For example, think of all the words that can fill in the blank in this sentence:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;The cat __ on the sofa.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;You probably thought of words like &amp;ldquo;sat,&amp;rdquo; &amp;ldquo;slept,&amp;rdquo; &amp;ldquo;jumped,&amp;rdquo; or &amp;ldquo;threw-up.&amp;rdquo;
-We see that all of these words are verbs, in the past tense, and actions a cat could take.
-Note that the context of the blank has a huge, albeit inexact, bearing on what word the blank could take.
-By learning these sorts of context-sensitive relationships, word2vec is able to train its embeddings.&lt;/p&gt;
-
-&lt;figure&gt;
-    &lt;img src=&#34;http://sybrandt.com/img/posts/word2vec.png&#34;/&gt; &lt;figcaption&gt;
-            &lt;h4&gt;Typical word2vec Training Diagram. Source: deeplearning4j.org&lt;/h4&gt;
-        &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-
-&lt;p&gt;The above figure depicts the two training methods used in word2vec to learn word embeddings.
-On the left is the Continuous Bag of Words (CBOW) method, and on the right is Skip-Gram.
-At a high level, the CBOW  and skip-gram model are opposites.
-The former learns to predict a word given that words context, the same way we did the example about the cat above.
-The latter learns to predict context given a word.&lt;/p&gt;
-
-&lt;p&gt;Both of these use some principles from convolutional neural nets, which are outside the scope of this article&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;.
-All  you need is to think of these processes as black boxes that take vectors as input, and refine their result quality by comparing their output with our existing vectors.&lt;/p&gt;
-
-&lt;p&gt;Initially, all words are initialized as a random vector.
-Then we start scanning through all of the sentences in our training corpus.
-For each word, we pull out a number of that word&amp;rsquo;s neighbors.
-Then, using either method, we attempt to find word representations.
-We use the error between our predicted vectors and the randomly initialized ones in order to improve our model.
-We also occasionally swap a word&amp;rsquo;s representation with the output of our model.&lt;/p&gt;
-
-&lt;p&gt;By this process, word2vec eventually both finds a model which can predict word vectors given context (or vice-versa) as well as a set of word vectors that maximize the quality of that predictive model.
-This gives us $R(x)$, for all our words, which we can use in a number of ways to find embeddings for our documents.
-One of the simplest ways to do this is by simply averaging all of a document&amp;rsquo;s word vectors together.&lt;/p&gt;
-
-&lt;p&gt;$$ R(d_j) = \frac{\sum_{w_i \in W_j} R(w_i) )}{ |W_j| } $$&lt;/p&gt;
-
-&lt;h2 id=&#34;so-now-what&#34;&gt;So now what?&lt;/h2&gt;
-
-&lt;p&gt;Okay, so now that we have the fancy word vectors, we can do a lot of things with them.
-For example, imagine we wanted to find news articles related to Google.
-Well, we could find a large number of them by selecting documents whose vector representation is close to $R(\text{Google})$.&lt;/p&gt;
-
-&lt;p&gt;By using these representations, we can so improve the quality of our classifiers.
-Anywhere we used to use a BOW representation, we can replace that with a more efficient and more descriptive vector.
-Adding to the benefits, the length of the word2vec embeddings does not change based on the size of our vocabulary.&lt;/p&gt;
-
-&lt;h2 id=&#34;in-conclusion&#34;&gt;In Conclusion&lt;/h2&gt;
-
-&lt;p&gt;I hope this helped give a background on word vectors, and at least brought you up to speed with this new method.
-Certainly, there is a lot more I could go into, and a lot of work is being done to apply this principle to solve a wide range of problems.
-But that will have to be the focus of a different post.&lt;/p&gt;
-&lt;div class=&#34;footnotes&#34;&gt;
-
-&lt;hr /&gt;
-
-&lt;ol&gt;
-&lt;li id=&#34;fn:1&#34;&gt;Mikolov et al. (2013) &lt;em&gt;&amp;ldquo;Distributed representations of words and phrases and their compositionality&amp;rdquo;&lt;/em&gt; and &lt;em&gt;&amp;ldquo;Efficient estimation of word representations in vector space&amp;rdquo;&lt;/em&gt;.
- &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:1&#34;&gt;&lt;sup&gt;^&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li id=&#34;fn:2&#34;&gt;KDD&amp;rsquo;17 had a whole session devoted just to embeddings. &lt;a href=&#34;http://www.kdd.org/kdd2016/files/jm/KDD2017BookletV2.2.pdf&#34; target=&#34;_blank&#34;&gt;Search the schedule for RT8 &lt;em&gt;&amp;ldquo;Representations&amp;rdquo;&lt;/em&gt;.&lt;/a&gt;
- &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:2&#34;&gt;&lt;sup&gt;^&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li id=&#34;fn:3&#34;&gt;Although, for the sake of completion, I want to note that BOW is used a lot, and there are techniques to limit the length of these vectors. The other problems are still valid though.
- &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:3&#34;&gt;&lt;sup&gt;^&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li id=&#34;fn:4&#34;&gt;There are a number of &lt;a href=&#34;https://arxiv.org/abs/1411.2738&#34; target=&#34;_blank&#34;&gt;decent papers&lt;/a&gt; which explain the math behind these methods, if you are interested.
- &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:4&#34;&gt;&lt;sup&gt;^&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;
-</description>
+      <guid>/updates/moliere_software_overhaul/</guid>
+      <description>Over the last couple of days, I have retooled MOLIERE into a system that anyone1 can deploy it and run their own queries. The code is over at the default repo2 and should be pretty straightforward, the code even downloads raw data itself! Just run build_network.py and point it at a big parallel file systen &amp;mdash; in a few hours you&amp;rsquo;ll have your very own knowledge network!
+This project was a pretty crazy conglomeration of everything I&amp;rsquo;ve been up to.</description>
     </item>
     
     <item>
       <title>Producer and Consumer Model in C&#43;&#43;</title>
-      <link>http://sybrandt.com/post/producer-consumer-openmp-cpp/</link>
-      <pubDate>Sat, 16 Sep 2017 23:18:26 -0400</pubDate>
+      <link>/posts/producer_consumer_openmp_cpp/</link>
+      <pubDate>Mon, 06 Nov 2017 23:18:26 -0400</pubDate>
       
-      <guid>http://sybrandt.com/post/producer-consumer-openmp-cpp/</guid>
-      <description>
-
-&lt;p&gt;So recently, I needed to parallelize a lot of my old code.
-This initially seemed like a daunting task.
-Now its not like I&amp;rsquo;ve never had to write parallel code before, and its not like my task was that hard.
-My issue primarily came from a staunch unwillingness to look anything up.
-After all, I could just throw my problem into python, right?&lt;/p&gt;
-
-&lt;p&gt;While that may be true, the version of myself today would like to tell the version of myself from last week that the C++ solution is not as bad as I thought.&lt;/p&gt;
-
-&lt;h2 id=&#34;the-task&#34;&gt;The Task&lt;/h2&gt;
-
-&lt;p&gt;I have a file with 40 million lines, and I have to parse and run a calculation on each.
-There are no dependencies between these lines, and the whole thing is just encoded as plain text. A line consists of an id followed by 500 floats, representing a vector in $\Re^{500}$. I just wanted to load each vector and compute two distances.
-Based on those distances, I would either keep the vector or throw it away.&lt;/p&gt;
-
-&lt;p&gt;Sequentially, this took forever.&lt;/p&gt;
-
-&lt;h2 id=&#34;the-problem&#34;&gt;The Problem&lt;/h2&gt;
-
-&lt;p&gt;There are two synchronization points in this task.
-Firstly, each line from the file must be read sequentially.
-Because the lines are of variable length, I can&amp;rsquo;t do any fancy parallel file system tricks to make loading faster.
-Secondly, the resulting data structure, my collection of selected vectors, needs to be protected so two different threads don&amp;rsquo;t try to modify it at the same time.&lt;/p&gt;
-
-&lt;p&gt;This means firstly that only a single thread can read from the time at a time, and only a single thread can store its results at a time.
-That being said, we are only going to be saving a small fraction of the total vectors.
-Also, other threads shouldn&amp;rsquo;t have to wait while the reading thread actually &lt;em&gt;parses&lt;/em&gt; the input.&lt;/p&gt;
-
-&lt;p&gt;So the idea is pretty simple.
-One thread should read from the data file, extracting each line as fast as possible.
-We will call this the &lt;strong&gt;producer&lt;/strong&gt; thread because it produces work.
-The &lt;strong&gt;consumer&lt;/strong&gt; threads will be all other threads.&lt;/p&gt;
-
-&lt;p&gt;Whenever a new line is found, one of the available threads should take it and start parsing.
-Once parsed, the thread can independently do its distance calculations.
-If the conditions are right, then the thread should get a lock on the data structure, store its result, and repeat.&lt;/p&gt;
-
-&lt;p&gt;In python that&amp;rsquo;s pretty much as easy as:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;pool.map(doWork, [line for line in file])
-# Note: This line doesn&#39;t do EXACTLY what I just described, but you get the gist.
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;How on earth do you do that in C++?&lt;/p&gt;
-
-&lt;h2 id=&#34;the-c-solution&#34;&gt;The C++ Solution&lt;/h2&gt;
-
-&lt;p&gt;Okay, we are going to use &lt;a href=&#34;http://www.openmp.org/&#34; target=&#34;_blank&#34;&gt;OpenMP&lt;/a&gt; and their &lt;em&gt;#pragma&lt;/em&gt; statements.
-For unfamiliar readers, these are statements that the compiler will use to do a lot of the gritty parallel work for us.
-For the semi-familiar readers, you probably do something like this:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-c++&#34;&gt;#pragma omp parallel for
-for(unsigned int i = 0; i &amp;lt; N; ++i){
-  //Make Magic Happen
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;The above code block says &lt;em&gt;&amp;ldquo;Do the following for loop in parallel&amp;rdquo;&lt;/em&gt;.
-Unsurprisingly, each iteration of the for loop is done be a different thread.
-Unfortunately, there is no single &lt;em&gt;#pragma&lt;/em&gt; statement for our little producer-consumer idea described above.
-That said, its easier than you might think.&lt;/p&gt;
-
-&lt;p&gt;The code looks a little something like this:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-c++&#34;&gt;DataStructure data;
-ifstream fileStream;
-string line;
-
-// ...
-
-#pragma omp parallel
-{
-#pragma omp single
-  {
-    while(getline(fileStream, line)){
-#pragma omp task firstprivate(line)
-      {
-        Vector vec(line); // Parse line
-        // Get Work Done
-        if(condition_met){
-#pragma omp critical
-          data.add(line);
-        }
-      }
-    }
-  }
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;So whats going on?&lt;/p&gt;
-
-&lt;p&gt;First thing first, we get our data setup before the &lt;em&gt;#pragma&lt;/em&gt; nonsense.
-This is because once we enter these &lt;em&gt;#pragma&lt;/em&gt; statements, we are going to be in a new scope, and we won&amp;rsquo;t be able to get the data back out. We enter the new scope with:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-c++&#34;&gt;#pragma omp parallel
-{
-  // Everything here is run in parallel.
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;This says that the following block will be run using all the threads available on the system.
-What confused me at first is that the next line seems to say the opposite:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-c++&#34;&gt;#pragma omp single
-{
-  // Everything here is run by one thread.
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;This line says that the following block will be run on only &lt;strong&gt;one&lt;/strong&gt; of the many threads.
-Whats important to note here is that the remaining threads still exist, and are waiting for work.
-Its this &lt;em&gt;#pragma&lt;/em&gt; which allows us to set up our &lt;strong&gt;producer&lt;/strong&gt;.
-We get our &lt;strong&gt;consumers&lt;/strong&gt; with this:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-c++&#34;&gt;#pragma omp task
-{
-  // A new thread takes this work.
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;This statement creates work for a &lt;strong&gt;consumer&lt;/strong&gt; to take on.
-Our single producer thread creates a new task every time they enter the body of our loop.
-The option &lt;strong&gt;firstprivate(line)&lt;/strong&gt; specifies that each task should copy over its own version of the &lt;strong&gt;line&lt;/strong&gt; variable.
-That way, each thread doesn&amp;rsquo;t need to worry about it when the &lt;strong&gt;producer&lt;/strong&gt; gets a new line.&lt;/p&gt;
-
-&lt;p&gt;Finally, we use the following to protect our data structure:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-c++&#34;&gt;#pragma omp critical
-{
-  // Only one thread can run this at a time.
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;By using the &lt;strong&gt;critical&lt;/strong&gt; keyword, we specify that only one thread is allowed to write to our data structure at a time.&lt;/p&gt;
-
-&lt;p&gt;And that&amp;rsquo;s it!
-Who knew it was so easy to set this up?
-All we need to do now is compile our code with the &lt;em&gt;-fopenmp&lt;/em&gt; flag and we are off to the races.
-I was able to use a 64 core machine at 100% using this method!
-Hope this helps you too.&lt;/p&gt;
-</description>
+      <guid>/posts/producer_consumer_openmp_cpp/</guid>
+      <description>So recently, I needed to parallelize a lot of my old code. This initially seemed like a daunting task. Now its not like I&amp;rsquo;ve never had to write parallel code before, and its not like my task was that hard. My issue primarily came from a staunch unwillingness to look anything up. After all, I could just throw my problem into python, right?
+While that may be true, the version of myself today would like to tell the version of myself from last week that the C++ solution is not as bad as I thought.</description>
+    </item>
+    
+    <item>
+      <title>Document Embedding Basics</title>
+      <link>/posts/document_embedding/</link>
+      <pubDate>Wed, 27 Sep 2017 14:18:52 -0400</pubDate>
+      
+      <guid>/posts/document_embedding/</guid>
+      <description>In a previous post I talked about how tools like word2vec are used to numerically understand the meanings behind words. In this post, I&amp;rsquo;m going to continue that discussion by describing ways we can find numerical representations for whole documents. So, I&amp;rsquo;ll be assuming you&amp;rsquo;re already familiar with the concept of word embeddings.
+Why do we need document embeddings? Many real-world applications need to understand the content of text which is longer than just a single word.</description>
+    </item>
+    
+    <item>
+      <title>Agile Project Management in Google Sheets</title>
+      <link>/posts/agile_development_in_google_sheets/</link>
+      <pubDate>Wed, 20 Sep 2017 15:00:00 -0400</pubDate>
+      
+      <guid>/posts/agile_development_in_google_sheets/</guid>
+      <description>I think its way to hard to manage small projects. There are so many project planning platforms out there and they typically fall into one of two major pitfalls for small teams. Either they are free and simplistic, i.e. Trello, or they are expensive and complicated, i.e. Jira.
+Of course, there are millions of people who make these systems work for them everyday, but in my experience I find that it is hard for a small, well-intentioned group to actually use these.</description>
+    </item>
+    
+    <item>
+      <title>Word Embedding Basics</title>
+      <link>/posts/word_embedding/</link>
+      <pubDate>Sun, 17 Sep 2017 14:18:26 -0400</pubDate>
+      
+      <guid>/posts/word_embedding/</guid>
+      <description>Recently, in text mining circles, a new method of representing words has taken off. This has been due, in a large part, to recent papers from Mikolov et al. and tools like word2vec 1. Since then, many other projects have applied this concept to a wide variety of areas within data mining 2. So what is all the hype about? What are these embeddings and why do we need them?</description>
+    </item>
+    
+    <item>
+      <title>Hypothesis Generation Explained</title>
+      <link>/posts/hypothesis_generation_explained/</link>
+      <pubDate>Fri, 15 Sep 2017 23:18:26 -0400</pubDate>
+      
+      <guid>/posts/hypothesis_generation_explained/</guid>
+      <description>Undiscovered Public Knowledge In the last couple of years, researchers worldwide have begun to develop a powerful new tool. By using data mining techniques, these scientists hope to one day put themselves out of a job.
+It all began in the 80&amp;rsquo;s with a man named Don Swanson. He was the first to notice something that he called undiscovered public knowledge. He saw that no human could possibly read all of the available information on a given topic, and he guessed that there were some truths that no one actually knows, but have already been published.</description>
+    </item>
+    
+    <item>
+      <title>MOLIERE: Automatic Biomedical Hypothesis Generation System</title>
+      <link>/publications/moliere/</link>
+      <pubDate>Sun, 13 Aug 2017 22:49:09 -0400</pubDate>
+      
+      <guid>/publications/moliere/</guid>
+      <description>Abstract: Hypothesis generation is becoming a crucial time-saving technique which allows biomedical researchers to quickly discover implicit connections between important concepts. Typically, these systems operate on domain-specific fractions of public medical data. MOLIERE, in contrast, utilizes information from over 24.5 million documents and does not limit the document vocabulary. At the heart of our approach lies a multi-modal and multi-relational network of biomedical objects extracted from several heterogeneous datasets from the National Center for Biotechnology Information (NCBI).</description>
+    </item>
+    
+    <item>
+      <title>From KDD&#39;17 in Halifax</title>
+      <link>/updates/kdd_2017/</link>
+      <pubDate>Thu, 10 Aug 2017 14:18:52 -0400</pubDate>
+      
+      <guid>/updates/kdd_2017/</guid>
+      <description>This browser does not support PDFs. Please download the PDF to view it: Download PDF.
+   </description>
+    </item>
+    
+    <item>
+      <title>  To Agile or Not to Agile: A Comparison of Software Development Methodologies
+</title>
+      <link>/publications/to_agile_or_not_to_agile/</link>
+      <pubDate>Sat, 01 Apr 2017 22:56:59 -0400</pubDate>
+      
+      <guid>/publications/to_agile_or_not_to_agile/</guid>
+      <description>Abstract: Since the Agile Manifesto, many organizations have explored agile development methods to replace traditional waterfall development. Interestingly, waterfall remains the most widely used practice, suggesting that there is something missing from the many &amp;ldquo;flavors&amp;rdquo; of agile methodologies. We explore seven of the most common practices to explore this, and evaluate each against a series of criteria centered around product quality and adherence to agile practices. We find that no methodology entirely replaces waterfall and summarize the strengths and weaknesses of each.</description>
+    </item>
+    
+    <item>
+      <title>Rapid Replication of Multi-Petabyte File Systems</title>
+      <link>/publications/rapid_replication/</link>
+      <pubDate>Mon, 16 Nov 2015 22:54:47 -0400</pubDate>
+      
+      <guid>/publications/rapid_replication/</guid>
+      <description>Abstract: As file systems grow larger, tools which were once industry standard become unsustainable at scale. Today, large data sets containing hundreds of millions of files often take longer to traverse than to copy. The time needed to replicate a file system has grown from hours to weeks, an unrealistic wait for a backup. Distsync is our new utility that can quickly update an out-of-date file system replica. By utilizing General Parallel File System (GPFS) policy scans, distsync finds changed files without navigating between directories.</description>
     </item>
     
   </channel>

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Justin Sybrandt">
+    <meta name="description" content="/">
+    <meta name="keywords" content="blog,developer,personal,resume,machine,learning">
+
+    <meta property="og:site_name" content="Justin Sybrandt">
+    <meta property="og:title" content="
+  Document Embedding Basics - Justin Sybrandt
+">
+    <meta property="og:description" content="  Covers the basis of doc2vec, as well as other methods for learning latent
+  representations of documents, extending the word embedding overview.
+">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="/posts/document_embedding/">
+    <meta property="og:image" content="/">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="/posts/document_embedding/">
+    <meta name="twitter:image" content="/">
+
+    <base href="/posts/document_embedding/">
+    <title>
+  Document Embedding Basics - Justin Sybrandt
+</title>
+
+    <link rel="canonical" href="/posts/document_embedding/">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    
+    <link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700">
+    <link rel="stylesheet" href="/css/normalize.min.css">
+    <link rel="stylesheet" href="/css/style.min.css">
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+    
+      <link rel="alternate" href="/index.xml" type="application/rss+xml" title="Justin Sybrandt">
+      <link href="/index.xml" rel="feed" type="application/rss+xml" title="Justin Sybrandt" />
+    
+
+    <meta name="generator" content="Hugo 0.55.6" />
+  </head>
+
+  <body class="">
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">Justin Sybrandt</a>
+    <input type="checkbox" id="menu-control"/>
+    <label class="menu-mobile  float-right " for="menu-control">
+      <span class="btn-mobile  float-right ">&#9776;</span>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item  align-center ">
+              <a class="navigation-link" href="/posts">Posts</a>
+            </li>
+          
+            <li class="navigation-item  align-center ">
+              <a class="navigation-link" href="/publications">Publications</a>
+            </li>
+          
+            <li class="navigation-item  align-center ">
+              <a class="navigation-link" href="/updates">Updates</a>
+            </li>
+          
+            <li class="navigation-item  align-center ">
+              <a class="navigation-link" href="/documents/resume.pdf">Resume</a>
+            </li>
+          
+        
+        
+      </ul>
+    </label>
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+  <article>
+    <header>
+      <h1 class="title">Document Embedding Basics</h1>
+      <h2 class="date">September 27, 2017</h2>
+    </header>
+
+    
+
+<p>In a <a href="/posts/word_embedding/">previous post</a> I talked about how tools like <em>word2vec</em> are used to numerically understand the meanings behind words.
+In this post, I&rsquo;m going to continue that discussion by describing ways we can find numerical representations for whole documents.
+So, I&rsquo;ll be assuming you&rsquo;re already familiar with the concept of word embeddings.</p>
+
+<h2 id="why-do-we-need-document-embeddings">Why do we need document embeddings?</h2>
+
+<p>Many real-world applications need to understand the content of text which is longer than just a single word.
+For example, imagine you wanted to find all the political tweets on twitter.
+Well, the first thing you might try is to make a big list of all the words you felt were &ldquo;political.&rdquo;
+You might list &ldquo;president,&rdquo; &ldquo;congress,&rdquo; and &ldquo;senate&rdquo; and simply search for any tweet that contained those words.</p>
+
+<p>Of course, this would work for many cases, but you would miss tweets that don&rsquo;t use the words on your list.
+For example, image a tweet that used a congressman&rsquo;s name, but didn&rsquo;t actually write the word &ldquo;congress.&rdquo;
+Also, you would get tweets that use a word on your list, but aren&rsquo;t really what you&rsquo;re looking for.
+For example, I just learned that one should refer to a group of small colorful lizards as a &ldquo;<em>congress</em> of salamanders.&rdquo;</p>
+
+<p>Another application that can be very important is that of detecting duplicates.
+For instance, when you post on <a href="https://stackoverflow.com/">Stack Overflow</a>, there is a feature which attempts to find questions similar to the one you are asking.
+If we simply try to look for the number of words shared between posts then we will have very similar problems to the twitter example above.</p>
+
+<p>In order to solve these problems we are going to use the concepts from word embeddings to learn a vector representation of each document.
+This will give us an approximation of that document&rsquo;s content, and that will give us a sophisticated way to compare and classify text.</p>
+
+<h2 id="how-do-we-get-a-document-s-embedding">How do we get a document&rsquo;s embedding?</h2>
+
+<p>Of course, there are many different ways to find a vector representation of a document.
+Here we are going to summarize three, the BOW method, the centroid method, and the doc2vec methods.</p>
+
+<h3 id="bag-of-words">Bag Of Words</h3>
+
+<p>The simplest embedding is still the Bag-Of-Words method.
+Like before, if we have $|W|$ different words in our corpus, then we will need a vector $R$ of length $|W|$ to represent our document.
+We assume that each word has some index $i$, so our vector $R(d)_i = \text{# of times $w_i$ occurs in $d$}$.</p>
+
+<p>Comparing documents by their BOW vectors is a start, but we sill have all of the same problems we talked about above and in the previous post.</p>
+
+<h3 id="centroids">Centroids</h3>
+
+<p>If you have been following closely, you probably already thought of this.
+If we have a word embedding $R(w_i)$ for each of our words $w_i \in W$, then why not just represent a document as the average of all of its contained words?</p>
+
+<p>$$ R(d_j) = \frac{\sum\limits_{w_i \in W_j} R(w_i)}{|W_j|}$$</p>
+
+<p>This method actually works pretty well, especially for smaller documents<sup class="footnote-ref" id="fnref:1"><a href="#fn:1">1</a></sup>.
+If we think about comparing tweets, like we did above, then we would expect the vectors of two political tweets to be close to each other.
+It doesn&rsquo;t matter if these tweets don&rsquo;t use exactly the same words, one might be talking about a prominent politician and the other might be talking about a specific policy, but they both will likely use words that often occur in a <em>political context</em>.
+If one tweet were really talking about a congress of salamanders, then we would expect vector for salamander would move that tweet&rsquo;s centroid further away from all the political tweets.</p>
+
+<p>So whats the downside?
+Well, just like BOW, we lose the ordering of the words.
+This means &ldquo;cats eat mice&rdquo; and &ldquo;mice eat cats&rdquo; will have the same centroid.
+Additionally, we still fail to disambiguate the same word being used in different contexts.
+This means that &ldquo;I swung the bat&rdquo; and &ldquo;I swung at the bat&rdquo; will only differ slightly.</p>
+
+<h3 id="doc2vec">Doc2Vec</h3>
+
+<p>Yup, the moment problems arise, we make a new <em>blank2vec</em>.
+Doc2Vec<sup class="footnote-ref" id="fnref:2"><a href="#fn:2">2</a></sup> learns vector representations of paragraphs along with word representations.
+By combining these ideas, Doc2Vec embeddings outperformed many of the other methods that were around when it debuted<sup class="footnote-ref" id="fnref:1"><a href="#fn:1">1</a></sup>.</p>
+
+<p>If you remember word2vec, we learned the representation of a word by looking at its surrounding context.
+Doc2Vec adds a new vector into this context, representing the paragraph.
+In the same way word2vec refers to both the CBOW and skip-gram method, doc2vec refers to two methods, each with their pros and cons.</p>
+
+<h3 id="distributed-memory-model-pv-dm">Distributed Memory Model (PV-DM)</h3>
+
+<p><img src="/img/posts/document_embedding/doc2vec.png" alt="document_embedding_1" /></p>
+
+<p>In PV-DM, each time we attempt to predict a word given it&rsquo;s context, we introduce a vector corresponding the paragraph from which that window was taken.
+Although it would require a little more engineering, this is the mechanisms we might use if we wanted to disambiguate &ldquo;I swung the bat&rdquo; and &ldquo;I swung at the bat&rdquo;.
+More directly, the paragraph vector helps inform the model as to which concepts are most likely to be discussed within the current window.</p>
+
+<p>Le, in the original paper<sup class="footnote-ref" id="fnref:2"><a href="#fn:2">2</a></sup>, says that this vector provides <em>memory</em>, because the vector will change based on the words present in other parts of the same paragraph.
+Conceptually, imagine a paragraph discussing a man and his dog.
+Because of the paragraph vector&rsquo;s influence, the model will be more likely to succeed when attempting to fill in the blank in: &ldquo;the man walked his ____.&rdquo;</p>
+
+<h3 id="distributed-bag-of-words-pv-dbow">Distributed Bag of Words (PV-DBOW)</h3>
+
+<p><img src="/img/posts/document_embedding/doc2vec_2.png" alt="document_embedding_1" /></p>
+
+<p>Another way to find these vectors is the PV-DBOW method, where a paragraph vector is used to predict a number of words which have been randomly sampled from its text.
+Although this model starts with a single element and predicts a number, it seems to resemble the skip-gram method in word2vec.
+This is a bit inaccurate because the training process does not consider the ordering of these predicted words.
+Additionally, in comparison to PV-DM, this method is computationally less expensive.</p>
+
+<p>Le&rsquo;s paper states that the PV-DBOW method tends to produce poorer results than the PV-DM method, but when used in combination with PV-DM provides more consistent results.</p>
+
+<h2 id="comparison-and-conclusions">Comparison and Conclusions</h2>
+
+<p>So when doc2vec initially premiered, there was some controversy as to whether it could really outperform the centroid method.
+So, Lau and Baldwin performed an extensive comparison between these methodologies across different domains<sup class="footnote-ref" id="fnref:1"><a href="#fn:1">1</a></sup>.
+The general consensus what that different methods are best suited for different tasks.
+For example, centroids perform well on tweets, but are outperformed on longer documents.
+I highly recommend this paper to anyone looking to include some of these techniques into their own work.</p>
+<div class="footnotes">
+
+<hr />
+
+<ol>
+<li id="fn:1">When comparing these methodologies, I&rsquo;m referring to <a href="https://arxiv.org/abs/1607.05368">this great paper</a>.
+ <a class="footnote-return" href="#fnref:1"><sup>[return]</sup></a></li>
+<li id="fn:2">Doc2Vec was also worked on by the original word2vec author, and it is also a <a href="https://arxiv.org/abs/1405.4053">very good paper</a>
+ <a class="footnote-return" href="#fnref:2"><sup>[return]</sup></a></li>
+</ol>
+</div>
+
+  </article>
+
+  <br/>
+
+  
+      <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "sybrandt-com" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  
+  
+</section>
+
+
+      </div>
+      
+        
+
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[','\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre','code'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+</script>
+
+
+      
+    </main>
+
+    
+
+  <script src="/js/app.js"></script>
+  
+  </body>
+</html>
