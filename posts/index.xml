@@ -5,10 +5,20 @@
     <link>/posts/</link>
     <description>Recent content in Posts on Justin Sybrandt</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 05 Mar 2018 21:58:36 -0400</lastBuildDate>
+    <lastBuildDate>Wed, 17 Jul 2019 22:40:43 -0400</lastBuildDate>
     
 	<atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Embeddings Conceptualized</title>
+      <link>/posts/embeddings_conceptualized/</link>
+      <pubDate>Wed, 17 Jul 2019 22:40:43 -0400</pubDate>
+      
+      <guid>/posts/embeddings_conceptualized/</guid>
+      <description>I&amp;rsquo;ve found it interesting how a lot of the conversation about embedding models and other neural network models haven&amp;rsquo;t really converged. Something that seems to complicate the issue is that Tensorflow as an object called &amp;ldquo;Embedding&amp;rdquo;. So the following describes some high-level understanding about how neural networks relate to other embedding methods.
+So an &amp;ldquo;embedding&amp;rdquo; is a simplified vector representation of something, and I phrase it like that because embeddings happen everywhere for neural networks, not just for text.</description>
+    </item>
     
     <item>
       <title>Basic Iterative Numeric Optimization</title>
