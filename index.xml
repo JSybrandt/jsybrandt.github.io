@@ -5,10 +5,21 @@
     <link>/</link>
     <description>Recent content on Justin Sybrandt</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 17 Jul 2019 22:40:43 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 19 Jul 2019 10:13:01 -0400</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>  Using Drive-by Health Monitoring to Detect Bridge Damage Considering
+  Environmental and Operational Effects
+</title>
+      <link>/publications/drive_by_health_monitoring/</link>
+      <pubDate>Fri, 19 Jul 2019 10:13:01 -0400</pubDate>
+      
+      <guid>/publications/drive_by_health_monitoring/</guid>
+      <description>Abstract: Drive-by Health Monitoring utilizes accelerometers mounted on vehicles to gather dynamic response data that can be used to continuously evaluate the health of bridges faster and with less equipment than traditional structural health monitoring practices. Because vehicles and bridges create a coupled system, vehicle acceleration data contains information about bridge frequencies that can be used as health indicators. However, for drive-by health monitoring to be viable, variabilities in dynamic measurements caused by environmental and operational parameters, such as temperature, vehicle speed, traffic, and surface roughness need to be considered.</description>
+    </item>
     
     <item>
       <title>Embeddings Conceptualized</title>

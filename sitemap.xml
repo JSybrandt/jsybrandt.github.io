@@ -3,14 +3,25 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/posts/embeddings_conceptualized/</loc>
-    <lastmod>2019-07-17T22:40:43-04:00</lastmod>
+    <loc>/publications/drive_by_health_monitoring/</loc>
+    <lastmod>2019-07-19T10:13:01-04:00</lastmod>
   </url>
   
   <url>
     <loc>/</loc>
-    <lastmod>2019-07-17T22:40:43-04:00</lastmod>
+    <lastmod>2019-07-19T10:13:01-04:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/publications/</loc>
+    <lastmod>2019-07-19T10:13:01-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/posts/embeddings_conceptualized/</loc>
+    <lastmod>2019-07-17T22:40:43-04:00</lastmod>
   </url>
   
   <url>
@@ -22,12 +33,6 @@
   <url>
     <loc>/publications/bipartite_graph_embedding/</loc>
     <lastmod>2019-07-16T22:59:55-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/publications/</loc>
-    <lastmod>2019-07-16T22:59:55-04:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
