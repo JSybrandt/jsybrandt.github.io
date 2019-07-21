@@ -5,10 +5,19 @@
     <link>/misc/</link>
     <description>Recent content in Miscs on Justin Sybrandt</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 15 Jul 2019 21:14:35 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 21 Jul 2019 00:14:35 -0400</lastBuildDate>
     
 	<atom:link href="/misc/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Partition Hypergraphs with Embeddings (Supplemental Info.)</title>
+      <link>/misc/partition_with_embeddings_supl/</link>
+      <pubDate>Sun, 21 Jul 2019 00:14:35 -0400</pubDate>
+      
+      <guid>/misc/partition_with_embeddings_supl/</guid>
+      <description>This page is a work-in-progress. Here we will post all of our visualizations, as well as our MongoDB Database Dump.</description>
+    </item>
     
     <item>
       <title>Submit a Moliere Query</title>
