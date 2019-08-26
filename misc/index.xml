@@ -5,10 +5,21 @@
     <link>/misc/</link>
     <description>Recent content in Miscs on Justin Sybrandt</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 21 Jul 2019 00:14:35 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 26 Aug 2019 00:14:35 -0400</lastBuildDate>
     
 	<atom:link href="/misc/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Partition Hypergraphs with Embeddings (HG Details)</title>
+      <link>/misc/partition_with_embeddings_supl_hg_table/</link>
+      <pubDate>Mon, 26 Aug 2019 00:14:35 -0400</pubDate>
+      
+      <guid>/misc/partition_with_embeddings_supl_hg_table/</guid>
+      <description>Details The following table demonstrates many different aspects of all considered hypergraphs. This information compliments the other results presented in the supplimental information of &amp;ldquo;Partition Hypergraphs with Embeddings.&amp;rdquo;
+Click Here to return to the rest of the supplimental information.
+ .large_scroll_table { display: block; width:100%; table-layout: fixed; } thead { display: block; } tbody { display:block; height: 500px; overflow-y: auto; }     Node Degree Edge Degree   Hypergraph   # Nodes   # Edges   Med.</description>
+    </item>
     
     <item>
       <title>Partition Hypergraphs with Embeddings (Supplemental Info.)</title>
