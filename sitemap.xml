@@ -5,13 +5,11 @@
   <url>
     <loc>/</loc>
     <lastmod>2019-07-21T00:14:35-04:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/misc/</loc>
     <lastmod>2019-07-21T00:14:35-04:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -27,7 +25,6 @@
   <url>
     <loc>/publications/</loc>
     <lastmod>2019-07-19T10:13:01-04:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -38,7 +35,6 @@
   <url>
     <loc>/posts/</loc>
     <lastmod>2019-07-17T22:40:43-04:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -59,7 +55,6 @@
   <url>
     <loc>/updates/</loc>
     <lastmod>2019-05-10T14:18:52-04:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -144,12 +139,10 @@
   
   <url>
     <loc>/categories/</loc>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/</loc>
-    <priority>0</priority>
   </url>
   
 </urlset>

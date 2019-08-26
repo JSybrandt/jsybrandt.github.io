@@ -47,7 +47,7 @@
       <link href="/index.xml" rel="feed" type="application/rss+xml" title="Justin Sybrandt" />
     
 
-    <meta name="generator" content="Hugo 0.55.6" />
+    <meta name="generator" content="Hugo 0.57.2" />
   </head>
 
   <body class="">
@@ -133,7 +133,7 @@ Once parsed, the thread can independently do its distance calculations.
 If the conditions are right, then the thread should get a lock on the data structure, store its result, and repeat.</p>
 
 <p>In python that&rsquo;s pretty much as easy as:</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">pool</span><span class="o">.</span><span class="nb">map</span><span class="p">(</span><span class="n">doWork</span><span class="p">,</span> <span class="p">[</span><span class="n">line</span> <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="nb">file</span><span class="p">])</span>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">pool</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="n">doWork</span><span class="p">,</span> <span class="p">[</span><span class="n">line</span> <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="nb">file</span><span class="p">])</span>
 <span class="c1"># Note: This line doesn&#39;t do EXACTLY what I just described, but you get the gist.</span></code></pre></div>
 <p>How on earth do you do that in C++?</p>
 
