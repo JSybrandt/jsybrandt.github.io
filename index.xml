@@ -16,9 +16,9 @@
       <pubDate>Sun, 21 Jul 2019 00:14:35 -0400</pubDate>
       
       <guid>/misc/partition_with_embeddings_supl/</guid>
-      <description>This page is a work-in-progress. Here we will post all of our visualizations, as well as our MongoDB Database Dump.
+      <description>Data Download our full results as a MongoDB Database dump. Explore these results within MongoDB with the mongorestore command. More information can be found here.
 Data Visualization Select the desired comparison using the following buttons. Then, click a cell in the resulting matrix plot to view a graph-wise comparison.
- #matrix_content { } .large_img { zoom:.25; } .btn-group { margin:auto; display: flex; flex-direction: row; justify-content: center; margin-bottom: 10pt; } .btn-group button { background-color: #4CAF50; /* Green background */ border: 1px solid green; /* Green border */ color: white; /* White text */ padding: 10px 24px; /* Some padding */ cursor: pointer; /* Pointer/hand icon */ float: left; /* Float the buttons side by side */ } /* Clear floats (clearfix hack) */ .</description>
+ #matrix_content { } .large_img { zoom:.25; } .btn-group { margin:auto; display: flex; flex-direction: row; justify-content: center; margin-bottom: 10pt; } .</description>
     </item>
     
     <item>
