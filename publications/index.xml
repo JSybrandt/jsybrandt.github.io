@@ -5,10 +5,19 @@
     <link>/publications/</link>
     <description>Recent content in Publications on Justin Sybrandt</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 19 Jul 2019 10:13:01 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 09 Sep 2019 01:34:08 -0400</lastBuildDate>
     
 	<atom:link href="/publications/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Hypergraph Partitioning with Embeddings</title>
+      <link>/publications/partition_with_embeddings/</link>
+      <pubDate>Mon, 09 Sep 2019 01:34:08 -0400</pubDate>
+      
+      <guid>/publications/partition_with_embeddings/</guid>
+      <description>Abstract: The problem of placing circuits on a chip or distributing sparse matrix operations can be modeled as the hypergraph partitioning problem. A hypergraph is a generalization of the traditional graph wherein each &amp;ldquo;hyperedge&amp;rdquo; may connect any number of nodes. Hypergraph partitioning, therefore, is the NP-Hard problem of dividing nodes into $k$ similarly sized disjoint sets while minimizing the number of hyperedges that span multiple partitions. Due to this problem&amp;rsquo;s complexity, many partitioners leverage the multilevel heuristic of iteratively &amp;ldquo;coarsening&amp;rdquo; their input to a smaller approximation until an inefficient algorithm becomes feasible.</description>
+    </item>
     
     <item>
       <title>  Using Drive-by Health Monitoring to Detect Bridge Damage Considering
