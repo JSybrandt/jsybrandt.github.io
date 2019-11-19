@@ -5,10 +5,32 @@
     <link>/publications/</link>
     <description>Recent content in Publications on Justin Sybrandt</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 09 Sep 2019 01:34:08 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 19 Nov 2019 12:12:22 -0400</lastBuildDate>
     
 	<atom:link href="/publications/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>  Inhibition of the DDX3 prevents HIV-1 Tat and cocaine-induced neurotoxicity by
+  targeting microglia activation
+</title>
+      <link>/publications/inhibition_of_ddx3/</link>
+      <pubDate>Tue, 19 Nov 2019 12:12:22 -0400</pubDate>
+      
+      <guid>/publications/inhibition_of_ddx3/</guid>
+      <description>Abstract: HIV-1 Associated Neurocognitive Disorder (HAND) is commonly seen in HIV-infected patients. Viral proteins including Tat cause neuronal toxicity and is worsened by drugs of abuse. To uncover potential targets for anti-HAND therapy, we employed a literature mining system, MOLIERE. Here, we validated Dead Box RNA Helicase 3 (DDX3) as a target to treat HAND via a selective DDX3 inhibitor, RK-33. The combined neurotoxicity of Tat protein and cocaine was blocked by RK-33 in rat and mouse cortical cultures.</description>
+    </item>
+    
+    <item>
+      <title>  Using Drive-by Health Monitoring to Detect Bridge Damage Considering
+  Environmental and Operational Effects
+</title>
+      <link>/publications/drive_by_health_monitoring/</link>
+      <pubDate>Tue, 19 Nov 2019 10:13:01 -0400</pubDate>
+      
+      <guid>/publications/drive_by_health_monitoring/</guid>
+      <description>Abstract: Drive-by Health Monitoring utilizes accelerometers mounted on vehicles to gather dynamic response data that can be used to continuously evaluate the health of bridges faster and with less equipment than traditional structural health monitoring practices. Because vehicles and bridges create a coupled system, vehicle acceleration data contains information about bridge frequencies that can be used as health indicators. However, for drive-by health monitoring to be viable, variabilities in dynamic measurements caused by environmental and operational parameters, such as temperature, vehicle speed, traffic, and surface roughness need to be considered.</description>
+    </item>
     
     <item>
       <title>Hypergraph Partitioning with Embeddings</title>
@@ -20,34 +42,12 @@
     </item>
     
     <item>
-      <title>  Using Drive-by Health Monitoring to Detect Bridge Damage Considering
-  Environmental and Operational Effects
-</title>
-      <link>/publications/drive_by_health_monitoring/</link>
-      <pubDate>Fri, 19 Jul 2019 10:13:01 -0400</pubDate>
-      
-      <guid>/publications/drive_by_health_monitoring/</guid>
-      <description>Abstract: Drive-by Health Monitoring utilizes accelerometers mounted on vehicles to gather dynamic response data that can be used to continuously evaluate the health of bridges faster and with less equipment than traditional structural health monitoring practices. Because vehicles and bridges create a coupled system, vehicle acceleration data contains information about bridge frequencies that can be used as health indicators. However, for drive-by health monitoring to be viable, variabilities in dynamic measurements caused by environmental and operational parameters, such as temperature, vehicle speed, traffic, and surface roughness need to be considered.</description>
-    </item>
-    
-    <item>
       <title>FOBE and HOBE: First- and High-Order Bipartite Embeddings</title>
       <link>/publications/bipartite_graph_embedding/</link>
       <pubDate>Tue, 16 Jul 2019 22:59:55 -0400</pubDate>
       
       <guid>/publications/bipartite_graph_embedding/</guid>
       <description>Abstract: Typical graph embeddings may not capture type-specific bipartite graph features that arise in such areas as recommender systems, data visualization, and drug discovery. Machine learning methods utilized in these applications would be better served with specialized embedding techniques. We propose two embeddings for bipartite graphs that decompose edges into sets of indirect relationships between node neighborhoods. When sampling higher-order relationships, we reinforce similarities through algebraic distance on graphs. We also introduce ensemble embeddings to combine both into a best of both worlds embedding.</description>
-    </item>
-    
-    <item>
-      <title>  Inhibition of the DDX3 prevents HIV-1 Tat and cocaine-induced neurotoxicity by
-  targeting microglia activation
-</title>
-      <link>/publications/inhibition_of_ddx3/</link>
-      <pubDate>Fri, 29 Mar 2019 22:19:22 -0400</pubDate>
-      
-      <guid>/publications/inhibition_of_ddx3/</guid>
-      <description>Abstract: HIV-1 Associated Neurocognitive Disorder (HAND) is commonly seen in HIV-infected patients. Viral proteins including Tat cause neuronal toxicity and is worsened by drugs of abuse. To uncover potential targets for anti-HAND therapy, we employed a literature mining system, MOLIERE. Here, we validated Dead Box RNA Helicase 3 (DDX3) as a target to treat HAND via a selective DDX3 inhibitor, RK-33. The combined neurotoxicity of Tat protein and cocaine was blocked by RK-33 in rat and mouse cortical cultures.</description>
     </item>
     
     <item>

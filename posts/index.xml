@@ -5,10 +5,21 @@
     <link>/posts/</link>
     <description>Recent content in Posts on Justin Sybrandt</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 17 Jul 2019 22:40:43 -0400</lastBuildDate>
+    <lastBuildDate>Wed, 06 Nov 2019 14:18:52 -0400</lastBuildDate>
     
 	<atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>The Basic Math of Neural Networks</title>
+      <link>/posts/math_of_neural_networks/</link>
+      <pubDate>Wed, 06 Nov 2019 14:18:52 -0400</pubDate>
+      
+      <guid>/posts/math_of_neural_networks/</guid>
+      <description>The following are some slides from a recent talk internal to our lab group at Clemson. Covers the absolute fundamentals of neural networks and back propagation.
+This browser does not support PDFs. Please download the PDF to view it: Download PDF.
+   </description>
+    </item>
     
     <item>
       <title>Embeddings Conceptualized</title>

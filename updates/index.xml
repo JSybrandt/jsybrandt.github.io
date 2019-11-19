@@ -5,10 +5,30 @@
     <link>/updates/</link>
     <description>Recent content in Updates on Justin Sybrandt</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 10 May 2019 14:18:52 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 19 Nov 2019 12:19:06 -0500</lastBuildDate>
     
 	<atom:link href="/updates/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Lecture: Survey of Text Mining</title>
+      <link>/updates/survey_of_text_mining/</link>
+      <pubDate>Tue, 19 Nov 2019 12:19:06 -0500</pubDate>
+      
+      <guid>/updates/survey_of_text_mining/</guid>
+      <description>How to solve complex problems with text.
+This talk was given at the Clemson Applied Data Science course on November 10&amp;rsquo;th, 2019. It is supposed to give people new to machine learning an overview of whats been going on in the world of text mining, with very little assumed prior knowledge.
+Although we do go quickly from Bag-of-Word and TF-IDF to modern transformer models, this talk should serve as a solid entry point for anyone interested in the field.</description>
+    </item>
+    
+    <item>
+      <title>Facebook Intern Executive Dinner</title>
+      <link>/updates/facebook_exec_dinner/</link>
+      <pubDate>Fri, 11 Oct 2019 12:19:06 -0500</pubDate>
+      
+      <guid>/updates/facebook_exec_dinner/</guid>
+      <description>img { width: 400px; }  While this meeting was a surreal experience, my cohort of interns and I had a good conversation (once our initial nervousness finally settled).</description>
+    </item>
     
     <item>
       <title>Thesis Proposal Presentation</title>
@@ -56,6 +76,15 @@ This project was a pretty crazy conglomeration of everything I&amp;rsquo;ve been
       <guid>/updates/kdd_2017/</guid>
       <description>This browser does not support PDFs. Please download the PDF to view it: Download PDF.
    </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/updates/pymoliere_2019/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/updates/pymoliere_2019/</guid>
+      <description></description>
     </item>
     
   </channel>
