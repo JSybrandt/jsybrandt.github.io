@@ -2,22 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Publications on Justin Sybrandt</title>
-    <link>/publications/</link>
+    <link>//localhost:1313/publications/</link>
     <description>Recent content in Publications on Justin Sybrandt</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 19 Nov 2019 12:12:22 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 13 Feb 2020 11:19:52 -0500</lastBuildDate>
     
-	<atom:link href="/publications/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="//localhost:1313/publications/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>AGATHA: Automatic Graph-mining And Transformer based Hypothesis generation Approach</title>
+      <link>//localhost:1313/publications/agatha/</link>
+      <pubDate>Thu, 13 Feb 2020 11:19:52 -0500</pubDate>
+      
+      <guid>//localhost:1313/publications/agatha/</guid>
+      <description>Abstract: Medical research is risky and expensive. Drug discovery, as an example, requires that researchers efficiently winnow thousands of potential targets to a small candidate set for more thorough evaluation. However, research groups spend significant time and money to perform the experiments necessary to determine this candidate set long before seeing intermediate results. Hypothesis generation systems address this challenge by mining the wealth of publicly available scientific information to predict plausible research directions.</description>
+    </item>
     
     <item>
       <title>  Inhibition of the DDX3 prevents HIV-1 Tat and cocaine-induced neurotoxicity by
   targeting microglia activation
 </title>
-      <link>/publications/inhibition_of_ddx3/</link>
+      <link>//localhost:1313/publications/inhibition_of_ddx3/</link>
       <pubDate>Tue, 19 Nov 2019 12:12:22 -0400</pubDate>
       
-      <guid>/publications/inhibition_of_ddx3/</guid>
+      <guid>//localhost:1313/publications/inhibition_of_ddx3/</guid>
       <description>Abstract: HIV-1 Associated Neurocognitive Disorder (HAND) is commonly seen in HIV-infected patients. Viral proteins including Tat cause neuronal toxicity and is worsened by drugs of abuse. To uncover potential targets for anti-HAND therapy, we employed a literature mining system, MOLIERE. Here, we validated Dead Box RNA Helicase 3 (DDX3) as a target to treat HAND via a selective DDX3 inhibitor, RK-33. The combined neurotoxicity of Tat protein and cocaine was blocked by RK-33 in rat and mouse cortical cultures.</description>
     </item>
     
@@ -25,75 +34,75 @@
       <title>  Using Drive-by Health Monitoring to Detect Bridge Damage Considering
   Environmental and Operational Effects
 </title>
-      <link>/publications/drive_by_health_monitoring/</link>
+      <link>//localhost:1313/publications/drive_by_health_monitoring/</link>
       <pubDate>Tue, 19 Nov 2019 10:13:01 -0400</pubDate>
       
-      <guid>/publications/drive_by_health_monitoring/</guid>
+      <guid>//localhost:1313/publications/drive_by_health_monitoring/</guid>
       <description>Abstract: Drive-by Health Monitoring utilizes accelerometers mounted on vehicles to gather dynamic response data that can be used to continuously evaluate the health of bridges faster and with less equipment than traditional structural health monitoring practices. Because vehicles and bridges create a coupled system, vehicle acceleration data contains information about bridge frequencies that can be used as health indicators. However, for drive-by health monitoring to be viable, variabilities in dynamic measurements caused by environmental and operational parameters, such as temperature, vehicle speed, traffic, and surface roughness need to be considered.</description>
     </item>
     
     <item>
       <title>Hypergraph Partitioning with Embeddings</title>
-      <link>/publications/partition_with_embeddings/</link>
+      <link>//localhost:1313/publications/partition_with_embeddings/</link>
       <pubDate>Mon, 09 Sep 2019 01:34:08 -0400</pubDate>
       
-      <guid>/publications/partition_with_embeddings/</guid>
+      <guid>//localhost:1313/publications/partition_with_embeddings/</guid>
       <description>Abstract: The problem of placing circuits on a chip or distributing sparse matrix operations can be modeled as the hypergraph partitioning problem. A hypergraph is a generalization of the traditional graph wherein each &amp;ldquo;hyperedge&amp;rdquo; may connect any number of nodes. Hypergraph partitioning, therefore, is the NP-Hard problem of dividing nodes into $k$ similarly sized disjoint sets while minimizing the number of hyperedges that span multiple partitions. Due to this problem&amp;rsquo;s complexity, many partitioners leverage the multilevel heuristic of iteratively &amp;ldquo;coarsening&amp;rdquo; their input to a smaller approximation until an inefficient algorithm becomes feasible.</description>
     </item>
     
     <item>
       <title>FOBE and HOBE: First- and High-Order Bipartite Embeddings</title>
-      <link>/publications/bipartite_graph_embedding/</link>
+      <link>//localhost:1313/publications/bipartite_graph_embedding/</link>
       <pubDate>Tue, 16 Jul 2019 22:59:55 -0400</pubDate>
       
-      <guid>/publications/bipartite_graph_embedding/</guid>
+      <guid>//localhost:1313/publications/bipartite_graph_embedding/</guid>
       <description>Abstract: Typical graph embeddings may not capture type-specific bipartite graph features that arise in such areas as recommender systems, data visualization, and drug discovery. Machine learning methods utilized in these applications would be better served with specialized embedding techniques. We propose two embeddings for bipartite graphs that decompose edges into sets of indirect relationships between node neighborhoods. When sampling higher-order relationships, we reinforce similarities through algebraic distance on graphs. We also introduce ensemble embeddings to combine both into a best of both worlds embedding.</description>
     </item>
     
     <item>
       <title>  Large-Scale Validation of Hypothesis Generation Systems via Candidate Ranking
 </title>
-      <link>/publications/automatic_validation/</link>
+      <link>//localhost:1313/publications/automatic_validation/</link>
       <pubDate>Thu, 18 Oct 2018 22:43:39 -0400</pubDate>
       
-      <guid>/publications/automatic_validation/</guid>
+      <guid>//localhost:1313/publications/automatic_validation/</guid>
       <description>Abstract: The first step of many research projects is to define and rank a short list of candidates for study. In the modern rapidity of scientific progress, some turn to automated hypothesis generation (HG) systems to aid this process. These systems can identify implicit or overlooked connections within a large scientific corpus, and while their importance grows alongside the pace of science, they lack thorough validation. Without any standard numerical evaluation method, many validate general-purpose HG systems by rediscovering a handful of historical findings, and some wishing to be more thorough may run laboratory experiments based on automatic suggestions.</description>
     </item>
     
     <item>
       <title>Are Abstracts Enough for Hypothesis Generation?</title>
-      <link>/publications/are_abstracts_enough/</link>
+      <link>//localhost:1313/publications/are_abstracts_enough/</link>
       <pubDate>Thu, 18 Oct 2018 22:34:08 -0400</pubDate>
       
-      <guid>/publications/are_abstracts_enough/</guid>
+      <guid>//localhost:1313/publications/are_abstracts_enough/</guid>
       <description>Abstract: The potential for automatic hypothesis generation (HG) systems to improve research productivity keeps pace with the growing set of publicly available scientific information. But as data becomes easier to acquire, we must understand the effect different textual data sources have on our resulting hypotheses. Are abstracts enough for HG, or does it need full-text papers? How many papers does an HG system need to make valuable predictions? How sensitive is a general-purpose HG system to hyperparameter values or input quality?</description>
     </item>
     
     <item>
       <title>MOLIERE: Automatic Biomedical Hypothesis Generation System</title>
-      <link>/publications/moliere/</link>
+      <link>//localhost:1313/publications/moliere/</link>
       <pubDate>Sun, 13 Aug 2017 22:49:09 -0400</pubDate>
       
-      <guid>/publications/moliere/</guid>
+      <guid>//localhost:1313/publications/moliere/</guid>
       <description>Abstract: Hypothesis generation is becoming a crucial time-saving technique which allows biomedical researchers to quickly discover implicit connections between important concepts. Typically, these systems operate on domain-specific fractions of public medical data. MOLIERE, in contrast, utilizes information from over 24.5 million documents and does not limit the document vocabulary. At the heart of our approach lies a multi-modal and multi-relational network of biomedical objects extracted from several heterogeneous datasets from the National Center for Biotechnology Information (NCBI).</description>
     </item>
     
     <item>
       <title>  To Agile or Not to Agile: A Comparison of Software Development Methodologies
 </title>
-      <link>/publications/to_agile_or_not_to_agile/</link>
+      <link>//localhost:1313/publications/to_agile_or_not_to_agile/</link>
       <pubDate>Sat, 01 Apr 2017 22:56:59 -0400</pubDate>
       
-      <guid>/publications/to_agile_or_not_to_agile/</guid>
+      <guid>//localhost:1313/publications/to_agile_or_not_to_agile/</guid>
       <description>Abstract: Since the Agile Manifesto, many organizations have explored agile development methods to replace traditional waterfall development. Interestingly, waterfall remains the most widely used practice, suggesting that there is something missing from the many &amp;ldquo;flavors&amp;rdquo; of agile methodologies. We explore seven of the most common practices to explore this, and evaluate each against a series of criteria centered around product quality and adherence to agile practices. We find that no methodology entirely replaces waterfall and summarize the strengths and weaknesses of each.</description>
     </item>
     
     <item>
       <title>Rapid Replication of Multi-Petabyte File Systems</title>
-      <link>/publications/rapid_replication/</link>
+      <link>//localhost:1313/publications/rapid_replication/</link>
       <pubDate>Mon, 16 Nov 2015 22:54:47 -0400</pubDate>
       
-      <guid>/publications/rapid_replication/</guid>
+      <guid>//localhost:1313/publications/rapid_replication/</guid>
       <description>Abstract: As file systems grow larger, tools which were once industry standard become unsustainable at scale. Today, large data sets containing hundreds of millions of files often take longer to traverse than to copy. The time needed to replicate a file system has grown from hours to weeks, an unrealistic wait for a backup. Distsync is our new utility that can quickly update an out-of-date file system replica. By utilizing General Parallel File System (GPFS) policy scans, distsync finds changed files without navigating between directories.</description>
     </item>
     
