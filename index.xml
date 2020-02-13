@@ -5,10 +5,19 @@
     <link>//localhost:1313/</link>
     <description>Recent content on Justin Sybrandt</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 13 Feb 2020 11:19:52 -0500</lastBuildDate>
+    <lastBuildDate>Thu, 13 Feb 2020 11:20:00 -0500</lastBuildDate>
     
 	<atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>CBAG: Conditional Biomedical Abstract Generation</title>
+      <link>//localhost:1313/publications/cbag/</link>
+      <pubDate>Thu, 13 Feb 2020 11:20:00 -0500</pubDate>
+      
+      <guid>//localhost:1313/publications/cbag/</guid>
+      <description>Abstract: Biomedical research papers use significantly different language and jargon when compared to typical English text, which reduces the utility of pre-trained NLP models in this domain. Meanwhile Medline, a database of biomedical abstracts, introduces nearly a million new documents per-year. Applications that could benefit from understanding this wealth of publicly available information, such as scientific writing assistants, chat-bots, or descriptive hypothesis generation systems, require new domain-centered approaches. A conditional language model, one that learns the probability of words given some a priori criteria, is a fundamental building block in many such applications.</description>
+    </item>
     
     <item>
       <title>AGATHA: Automatic Graph-mining And Transformer based Hypothesis generation Approach</title>
