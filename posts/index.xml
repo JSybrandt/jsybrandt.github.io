@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Justin Sybrandt</title>
-    <link>//localhost:1313/posts/</link>
+    <link>/posts/</link>
     <description>Recent content in Posts on Justin Sybrandt</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Wed, 06 Nov 2019 14:18:52 -0400</lastBuildDate>
     
-	<atom:link href="//localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>The Basic Math of Neural Networks</title>
-      <link>//localhost:1313/posts/math_of_neural_networks/</link>
+      <link>/posts/math_of_neural_networks/</link>
       <pubDate>Wed, 06 Nov 2019 14:18:52 -0400</pubDate>
       
-      <guid>//localhost:1313/posts/math_of_neural_networks/</guid>
+      <guid>/posts/math_of_neural_networks/</guid>
       <description>The following are some slides from a recent talk internal to our lab group at Clemson. Covers the absolute fundamentals of neural networks and back propagation.
 This browser does not support PDFs. Please download the PDF to view it: Download PDF.
    </description>
@@ -23,20 +23,20 @@ This browser does not support PDFs. Please download the PDF to view it: Download
     
     <item>
       <title>Embeddings Conceptualized</title>
-      <link>//localhost:1313/posts/embeddings_conceptualized/</link>
+      <link>/posts/embeddings_conceptualized/</link>
       <pubDate>Wed, 17 Jul 2019 22:40:43 -0400</pubDate>
       
-      <guid>//localhost:1313/posts/embeddings_conceptualized/</guid>
+      <guid>/posts/embeddings_conceptualized/</guid>
       <description>I&amp;rsquo;ve found it interesting how a lot of the conversation about embedding models and other neural network models haven&amp;rsquo;t really converged. Something that seems to complicate the issue is that Tensorflow as an object called &amp;ldquo;Embedding&amp;rdquo;. So the following describes some high-level understanding about how neural networks relate to other embedding methods.
 So an &amp;ldquo;embedding&amp;rdquo; is a simplified vector representation of something, and I phrase it like that because embeddings happen everywhere for neural networks, not just for text.</description>
     </item>
     
     <item>
       <title>Basic Iterative Numeric Optimization</title>
-      <link>//localhost:1313/posts/basic_optimization/</link>
+      <link>/posts/basic_optimization/</link>
       <pubDate>Mon, 05 Mar 2018 21:58:36 -0400</pubDate>
       
-      <guid>//localhost:1313/posts/basic_optimization/</guid>
+      <guid>/posts/basic_optimization/</guid>
       <description>Today in a class, we were asked to write an iterative solver for numerical equations. Now, many students in the class did not have an optimization background, so for the benefit of everyone, I want to share a simple overview of this exercise and how to go about solving it.
 The problem was stated as follows:
 $$ M(a) = 2\times a + 14 $$ $$ G(b) = b - 2 $$</description>
@@ -44,49 +44,49 @@ $$ M(a) = 2\times a + 14 $$ $$ G(b) = b - 2 $$</description>
     
     <item>
       <title>Producer and Consumer Model in C&#43;&#43;</title>
-      <link>//localhost:1313/posts/producer_consumer_openmp_cpp/</link>
+      <link>/posts/producer_consumer_openmp_cpp/</link>
       <pubDate>Mon, 06 Nov 2017 23:18:26 -0400</pubDate>
       
-      <guid>//localhost:1313/posts/producer_consumer_openmp_cpp/</guid>
+      <guid>/posts/producer_consumer_openmp_cpp/</guid>
       <description>So recently, I needed to parallelize a lot of my old code. This initially seemed like a daunting task. Now its not like I&amp;rsquo;ve never had to write parallel code before, and its not like my task was that hard. My issue primarily came from a staunch unwillingness to look anything up. After all, I could just throw my problem into python, right?
 While that may be true, the version of myself today would like to tell the version of myself from last week that the C++ solution is not as bad as I thought.</description>
     </item>
     
     <item>
       <title>Document Embedding Basics</title>
-      <link>//localhost:1313/posts/document_embedding/</link>
+      <link>/posts/document_embedding/</link>
       <pubDate>Wed, 27 Sep 2017 14:18:52 -0400</pubDate>
       
-      <guid>//localhost:1313/posts/document_embedding/</guid>
+      <guid>/posts/document_embedding/</guid>
       <description>In a previous post I talked about how tools like word2vec are used to numerically understand the meanings behind words. In this post, I&amp;rsquo;m going to continue that discussion by describing ways we can find numerical representations for whole documents. So, I&amp;rsquo;ll be assuming you&amp;rsquo;re already familiar with the concept of word embeddings.
 Why do we need document embeddings? Many real-world applications need to understand the content of text which is longer than just a single word.</description>
     </item>
     
     <item>
       <title>Agile Project Management in Google Sheets</title>
-      <link>//localhost:1313/posts/agile_development_in_google_sheets/</link>
+      <link>/posts/agile_development_in_google_sheets/</link>
       <pubDate>Wed, 20 Sep 2017 15:00:00 -0400</pubDate>
       
-      <guid>//localhost:1313/posts/agile_development_in_google_sheets/</guid>
+      <guid>/posts/agile_development_in_google_sheets/</guid>
       <description>I think its way to hard to manage small projects. There are so many project planning platforms out there and they typically fall into one of two major pitfalls for small teams. Either they are free and simplistic, i.e. Trello, or they are expensive and complicated, i.e. Jira.
 Of course, there are millions of people who make these systems work for them everyday, but in my experience I find that it is hard for a small, well-intentioned group to actually use these.</description>
     </item>
     
     <item>
       <title>Word Embedding Basics</title>
-      <link>//localhost:1313/posts/word_embedding/</link>
+      <link>/posts/word_embedding/</link>
       <pubDate>Sun, 17 Sep 2017 14:18:26 -0400</pubDate>
       
-      <guid>//localhost:1313/posts/word_embedding/</guid>
+      <guid>/posts/word_embedding/</guid>
       <description>Recently, in text mining circles, a new method of representing words has taken off. This has been due, in a large part, to recent papers from Mikolov et al. and tools like word2vec 1. Since then, many other projects have applied this concept to a wide variety of areas within data mining 2. So what is all the hype about? What are these embeddings and why do we need them?</description>
     </item>
     
     <item>
       <title>Hypothesis Generation Explained</title>
-      <link>//localhost:1313/posts/hypothesis_generation_explained/</link>
+      <link>/posts/hypothesis_generation_explained/</link>
       <pubDate>Fri, 15 Sep 2017 23:18:26 -0400</pubDate>
       
-      <guid>//localhost:1313/posts/hypothesis_generation_explained/</guid>
+      <guid>/posts/hypothesis_generation_explained/</guid>
       <description>Undiscovered Public Knowledge In the last couple of years, researchers worldwide have begun to develop a powerful new tool. By using data mining techniques, these scientists hope to one day put themselves out of a job.
 It all began in the 80&amp;rsquo;s with a man named Don Swanson. He was the first to notice something that he called undiscovered public knowledge. He saw that no human could possibly read all of the available information on a given topic, and he guessed that there were some truths that no one actually knows, but have already been published.</description>
     </item>
