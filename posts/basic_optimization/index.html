@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="">
 
-  <head>
+  <head><script src="/livereload.js?port=1313&mindelay=10&v=2" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta name="author" content="Justin Sybrandt">
-    <meta name="description" content="/">
+    <meta name="description" content="//localhost:1313/">
     <meta name="keywords" content="developer,research,personal,resume,machine,learning">
 
     <meta property="og:site_name" content="Justin Sybrandt">
@@ -16,40 +16,40 @@
     <meta property="og:description" content="  Covers the very basics of iterative optimization.
 ">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="/posts/basic_optimization/">
-    <meta property="og:image" content="/">
+    <meta property="og:url" content="//localhost:1313/posts/basic_optimization/">
+    <meta property="og:image" content="//localhost:1313/">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="/posts/basic_optimization/">
-    <meta name="twitter:image" content="/">
+    <meta name="twitter:site" content="//localhost:1313/posts/basic_optimization/">
+    <meta name="twitter:image" content="//localhost:1313/">
 
-    <base href="/posts/basic_optimization/">
+    <base href="//localhost:1313/posts/basic_optimization/">
     <title>
   Basic Iterative Numeric Optimization - Justin Sybrandt
 </title>
 
-    <link rel="canonical" href="/posts/basic_optimization/">
+    <link rel="canonical" href="//localhost:1313/posts/basic_optimization/">
     
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     
     <link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700">
-    <link rel="stylesheet" href="/css/normalize.min.css">
-    <link rel="stylesheet" href="/css/style.min.css">
+    <link rel="stylesheet" href="//localhost:1313/css/normalize.min.css">
+    <link rel="stylesheet" href="//localhost:1313/css/style.min.css">
 
     
 
     
 
-    <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="//localhost:1313/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="//localhost:1313/images/favicon-16x16.png" sizes="16x16">
 
     
-      <link rel="alternate" href="/index.xml" type="application/rss+xml" title="Justin Sybrandt">
-      <link href="/index.xml" rel="feed" type="application/rss+xml" title="Justin Sybrandt" />
+      <link rel="alternate" href="//localhost:1313/index.xml" type="application/rss+xml" title="Justin Sybrandt">
+      <link href="//localhost:1313/index.xml" rel="feed" type="application/rss+xml" title="Justin Sybrandt" />
     
 
 
 
-    <meta name="generator" content="Hugo 0.57.2" />
+    <meta name="generator" content="Hugo 0.68.3" />
   </head>
 
   <body class="">
@@ -64,19 +64,19 @@
         
           
             <li class="navigation-item  align-center ">
-              <a class="navigation-link" href="/posts">Posts</a>
+              <a class="navigation-link" href="//localhost:1313/posts">Posts</a>
             </li>
           
             <li class="navigation-item  align-center ">
-              <a class="navigation-link" href="/publications">Publications</a>
+              <a class="navigation-link" href="//localhost:1313/publications">Publications</a>
             </li>
           
             <li class="navigation-item  align-center ">
-              <a class="navigation-link" href="/updates">Updates</a>
+              <a class="navigation-link" href="//localhost:1313/updates">Updates</a>
             </li>
           
             <li class="navigation-item  align-center ">
-              <a class="navigation-link" href="/documents/resume.pdf">Resume</a>
+              <a class="navigation-link" href="//localhost:1313/documents/resume.pdf">Resume</a>
             </li>
           
         
@@ -96,98 +96,68 @@
       <h2 class="date">March 5, 2018</h2>
     </header>
 
-    
-
-<p>Today in a class, we were asked to write an iterative solver for numerical equations.
+    <p>Today in a class, we were asked to write an iterative solver for numerical equations.
 Now, many students in the class did not have an optimization background, so for the benefit of everyone, I want to share a simple overview of this exercise and how to go about solving it.</p>
-
 <p>The problem was stated as follows:</p>
-
 <p>$$ M(a) = 2\times a + 14 $$
 $$ G(b) = b - 2 $$</p>
-
 <p>And our goal was to find some solution $x$ such that $M(x) = G(x)$.
 Additionally, we were supposed to do so iteratively, so just solving the system of equations was out of the question.
 This is because our next exercise would have a different $M$ and $G$, so our code should be able to support whatever.</p>
-
 <p>For the sake of generalization, my solution here will assume only the $M$ and $G$ are continuous, but I will not assume we know their derivatives.
 Additionally, I will be writing my code in python, simply because I find that it is easier for anybody to understand.
 Knowledge of python, hopefully, won&rsquo;t be necessary.
 But first, lets go over some aspects of the problem&hellip;</p>
-
 <h2 id="what-is-an-iterative-algorithm">What is an iterative algorithm?</h2>
-
 <p>As stated above, we are going to write an iterative solution, which means that our code will start with a <strong>random guess</strong> and refine it over time.</p>
-
 <h2 id="why-write-an-iterative-algorithm">Why write an iterative algorithm?</h2>
-
 <p>In the real world, we won&rsquo;t know everything about $M$ and $G$.
 They may be uncertain, ill-defined, or the result of a large simulation.
 So we wouldn&rsquo;t be able to simply solve a system of linear equations.
 By using an iterative method, we can treat each function as a <strong>black box</strong>.
 This just means that our code won&rsquo;t know what $M$ or $G$ actually do, but it will be able to evaluate each function at different points.</p>
-
 <h2 id="how-do-we-write-an-iterative-algorithm">How do we write an iterative algorithm?</h2>
-
 <p>First, we are going to make a random guess at $x$.
 Then, we are going to check if our guess is right.
 If our guess is wrong, we are going to check whether we need to increase or decrease $x$ to get closer to the right answer.</p>
-
-<p>Caveat: Every optimization algorithm is going to answer the question, <em>&ldquo;How do I update $x$?&rdquo;</em> a different way.
+<p>Caveat: Every optimization algorithm is going to answer the question, <em>&ldquo;How do I update $x$?&quot;</em> a different way.
 The method presented here is very simple, for the same of explaining the overarching concept.</p>
-
 <h1 id="conceptual-solution">Conceptual Solution</h1>
-
 <p>For future reference, here are our two functions shown graphically.
 Note that to make these plots we need to know the values of $M$ and $G$ at EVERY $x$ value.
 In real life <strong>this is impossible</strong>, so instead we are going to do this iterativly.
 But, this sort of check, for a simple problem, is a good idea just to know what the right answer will look like, regardless of method.
 In this case, our solution is $x = -16$.</p>
-
-<p><img src="/img/posts/basic_optimization/overall-solution.jpg" alt="overall-solution" /></p>
-
+<p><img src="/img/posts/basic_optimization/overall-solution.jpg" alt="overall-solution"></p>
 <p>Lets start our iterative process with a random guess, $x = 1$.
 We know we want $M(x) = G(x)$, but we can simplify our analysis by defining a third function: $D(x) = M(x) - G(x)$.
 Clearly, if $D(x) = 0$, we have our answer.</p>
-
 <p>At this point, all we know is that $M(1) = 16$ and $G(1) = -1$, so $D(1) = 17$.
 Graphically, this is just the two points shown below (dashed lines for reference, we don&rsquo;t know those yet).</p>
-
-<p><img src="/img/posts/basic_optimization/first-point.jpg" alt="first-point" /></p>
-
+<p><img src="/img/posts/basic_optimization/first-point.jpg" alt="first-point"></p>
 <p>So, we need to figure out whether we need to increase or decrease $x$ to get closer to a solution.
 For this, we are going to estimate the derivative of $D$.
 To do this, we just evaluate $D(x)$ at two points close to our previous guess.
 For example:</p>
-
 <p>$$ D(1.01) = 17.01$$
 $$ D(.99) = 16.99$$</p>
-
 <p>We use this to estimate the derivative of $D(1)$, which is simply change in y over change in x:</p>
-
 <p>$D&rsquo;(1) \approx 0.02 / 0.02 = 1$</p>
-
 <p>So our best guess, is that if we decrease x by 1, our difference will also decrease by 1.
 Note that this only requires we evaluate $D(x)$ at two points, and we don&rsquo;t need to know the entire function to make this derivative estimate.
 So for our next iteration, let $x=0$.</p>
-
-<p><img src="/img/posts/basic_optimization/second-point.jpg" alt="second-point" /></p>
-
+<p><img src="/img/posts/basic_optimization/second-point.jpg" alt="second-point"></p>
 <p>Sure enough, $D$ decreased by 1.
 If we were to follow the whole algorithm threw, we would make another derivative estimate and eventually find our solution of $D(16) = 0$.</p>
-
 <h2 id="considerations">Considerations</h2>
-
 <p>A couple of things were hand-waved away so far.
 Firstly, how far away from $x$ do we need to look in order to calculate the derivative?
 Also, how far should we jump once we have a local derivative estimate?
 Finally, what if we jump past the right answer?</p>
-
 <p>In this example, we only have linear equations, so as long as we take small steps, we will eventually get it right, but in the case of more complicated polynomials.
 In more complicated equations, we may get stuck at local optima, where no mater how we move $x$ we seem to only get further from $D(x) = 0$.
 That typically is solved by running our overall solution with multiple random guesses, or by varying the step size.
 But, lets get this solution programmed first.</p>
-
 <h1 id="code">Code</h1>
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">from</span> <span class="nn">random</span> <span class="kn">import</span> <span class="n">random</span>
 <span class="c1"># If you don&#39;t know python, don&#39;t worry about this import</span>
@@ -233,7 +203,8 @@ But, lets get this solution programmed first.</p>
     <span class="c1"># if negative, we need to update x along the direction of d</span>
     <span class="n">x</span> <span class="o">+=</span> <span class="n">d</span> <span class="o">*</span> <span class="n">JUMP</span>
 
-<span class="k">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span></code></pre></div>
+<span class="k">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</code></pre></div>
   </article>
 
   <br/>
@@ -291,7 +262,7 @@ MathJax.Hub.Config({
 
     
 
-  <script src="/js/app.js"></script>
+  <script src="//localhost:1313/js/app.js"></script>
   
   </body>
 </html>

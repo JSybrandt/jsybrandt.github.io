@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="">
 
-  <head>
+  <head><script src="/livereload.js?port=1313&mindelay=10&v=2" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta name="author" content="Justin Sybrandt">
-    <meta name="description" content="/">
+    <meta name="description" content="//localhost:1313/">
     <meta name="keywords" content="developer,research,personal,resume,machine,learning">
 
     <meta property="og:site_name" content="Justin Sybrandt">
@@ -18,40 +18,40 @@
   like Google Sheets.
 ">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="/posts/agile_development_in_google_sheets/">
-    <meta property="og:image" content="/">
+    <meta property="og:url" content="//localhost:1313/posts/agile_development_in_google_sheets/">
+    <meta property="og:image" content="//localhost:1313/">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="/posts/agile_development_in_google_sheets/">
-    <meta name="twitter:image" content="/">
+    <meta name="twitter:site" content="//localhost:1313/posts/agile_development_in_google_sheets/">
+    <meta name="twitter:image" content="//localhost:1313/">
 
-    <base href="/posts/agile_development_in_google_sheets/">
+    <base href="//localhost:1313/posts/agile_development_in_google_sheets/">
     <title>
   Agile Project Management in Google Sheets - Justin Sybrandt
 </title>
 
-    <link rel="canonical" href="/posts/agile_development_in_google_sheets/">
+    <link rel="canonical" href="//localhost:1313/posts/agile_development_in_google_sheets/">
     
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     
     <link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700">
-    <link rel="stylesheet" href="/css/normalize.min.css">
-    <link rel="stylesheet" href="/css/style.min.css">
+    <link rel="stylesheet" href="//localhost:1313/css/normalize.min.css">
+    <link rel="stylesheet" href="//localhost:1313/css/style.min.css">
 
     
 
     
 
-    <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="//localhost:1313/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="//localhost:1313/images/favicon-16x16.png" sizes="16x16">
 
     
-      <link rel="alternate" href="/index.xml" type="application/rss+xml" title="Justin Sybrandt">
-      <link href="/index.xml" rel="feed" type="application/rss+xml" title="Justin Sybrandt" />
+      <link rel="alternate" href="//localhost:1313/index.xml" type="application/rss+xml" title="Justin Sybrandt">
+      <link href="//localhost:1313/index.xml" rel="feed" type="application/rss+xml" title="Justin Sybrandt" />
     
 
 
 
-    <meta name="generator" content="Hugo 0.57.2" />
+    <meta name="generator" content="Hugo 0.68.3" />
   </head>
 
   <body class="">
@@ -66,19 +66,19 @@
         
           
             <li class="navigation-item  align-center ">
-              <a class="navigation-link" href="/posts">Posts</a>
+              <a class="navigation-link" href="//localhost:1313/posts">Posts</a>
             </li>
           
             <li class="navigation-item  align-center ">
-              <a class="navigation-link" href="/publications">Publications</a>
+              <a class="navigation-link" href="//localhost:1313/publications">Publications</a>
             </li>
           
             <li class="navigation-item  align-center ">
-              <a class="navigation-link" href="/updates">Updates</a>
+              <a class="navigation-link" href="//localhost:1313/updates">Updates</a>
             </li>
           
             <li class="navigation-item  align-center ">
-              <a class="navigation-link" href="/documents/resume.pdf">Resume</a>
+              <a class="navigation-link" href="//localhost:1313/documents/resume.pdf">Resume</a>
             </li>
           
         
@@ -101,37 +101,28 @@
     <p>I think its way to hard to manage small projects.
 There are so many project planning platforms out there and they typically fall into one of two major pitfalls for small teams.
 Either they are free and simplistic, i.e. <a href="https://trello.com/">Trello</a>, or they are expensive and complicated, i.e. <a href="https://www.atlassian.com/software/jira">Jira</a>.</p>
-
 <p>Of course, there are millions of people who make these systems work for them everyday, but in my experience I find that it is hard for a small, well-intentioned group to actually use these.
 In the case of more simplistic tools, it seems like even a few collaborators can quickly clutter even the best laid system of Trello boards.
 Additionally, in the case of enterprise tools, I worry that management overhead quickly absorbs what should be a lean and organic work environment.
 This puts aside the point that many groups of this size are either amateurs or academic projects which work on a nonexistent budget.</p>
-
 <p>So I recently looked through at least a dozen potential solutions, and the truth is, Google Sheets may really be the best answer.</p>
-
-<p><img src="/img/posts/agile_development_in_google_sheets/burndown.png" alt="A burndown chart" /></p>
-
+<p><img src="/img/posts/agile_development_in_google_sheets/burndown.png" alt="A burndown chart"></p>
 <p>I know it seems like I&rsquo;ve found a hammer and I&rsquo;m just going around looking for nails, but don&rsquo;t dismiss me too fast.
 Small groups working on projects of any decent size need some sort of structure to keep on track.
 They need a way to track each member&rsquo;s progress, and they need to know their project is on course.
 Most importantly, they really don&rsquo;t want to waste a week fiddling around chrome extensions that promise to revolutionize their Trello experience, and they don&rsquo;t want to put money down for a digital manager before a single line of code is written.</p>
-
 <p><strong>To make it even easier for small groups, I&rsquo;ve gone ahead and made that Google Sheet for them!</strong>
 <a href="https://docs.google.com/spreadsheets/d/1MfuBr9Aw26RMycB0cB2hWwQ8kErLMgJk0KzflRpUsz4/edit?usp=sharing">Click Here for a Template</a></p>
-
 <p>The above template does a remarkable number of things, all you need to do is change the names around.
 For one, it manages sprints, just duplicate the existing sprint page.
 On each sprint, all you have to is change the start date and the duration and the burndown chart will be resized for you.
 Then, you can fill in tasks, estimate work times, and priorities.</p>
-
 <p>As you complete tasks, just mark them as done and set the completion date.
 This will automatically be reflected in the given burndown chart.
 The chart is smart enough to only include data up to the current date, and will automatically progress over time.
 You even get to see how your project&rsquo;s trend compares with the ideal trend.</p>
-
 <p>Most importantly, you can make tweaks pretty quickly if this template doesn&rsquo;t do something your team needs.
 To put this in perspective, this whole template only took me about an hour to throw together.</p>
-
 <p>Hopefully this save you some time, and gives you a quick and dirty way to start planning your sprints today!</p>
 
   </article>
@@ -191,7 +182,7 @@ MathJax.Hub.Config({
 
     
 
-  <script src="/js/app.js"></script>
+  <script src="//localhost:1313/js/app.js"></script>
   
   </body>
 </html>

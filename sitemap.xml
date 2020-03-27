@@ -1,188 +1,192 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/publications/cbag/</loc>
+    <loc>//localhost:1313/updates/defense_slides/</loc>
+    <lastmod>2020-03-27T15:26:12-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//localhost:1313/</loc>
+    <lastmod>2020-03-27T15:26:12-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//localhost:1313/updates/</loc>
+    <lastmod>2020-03-27T15:26:12-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//localhost:1313/publications/cbag/</loc>
     <lastmod>2020-02-13T11:20:00-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/</loc>
+    <loc>//localhost:1313/publications/</loc>
     <lastmod>2020-02-13T11:20:00-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/publications/</loc>
-    <lastmod>2020-02-13T11:20:00-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/publications/agatha/</loc>
+    <loc>//localhost:1313/publications/agatha/</loc>
     <lastmod>2020-02-13T11:19:52-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/updates/survey_of_text_mining/</loc>
+    <loc>//localhost:1313/updates/survey_of_text_mining/</loc>
     <lastmod>2019-11-19T12:19:06-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/updates/</loc>
-    <lastmod>2019-11-19T12:19:06-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/publications/inhibition_of_ddx3/</loc>
+    <loc>//localhost:1313/publications/inhibition_of_ddx3/</loc>
     <lastmod>2019-11-19T12:12:22-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/publications/drive_by_health_monitoring/</loc>
+    <loc>//localhost:1313/publications/drive_by_health_monitoring/</loc>
     <lastmod>2019-11-19T10:13:01-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/posts/</loc>
+    <loc>//localhost:1313/posts/</loc>
     <lastmod>2019-11-06T14:18:52-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/posts/math_of_neural_networks/</loc>
+    <loc>//localhost:1313/posts/math_of_neural_networks/</loc>
     <lastmod>2019-11-06T14:18:52-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/updates/facebook_exec_dinner/</loc>
+    <loc>//localhost:1313/updates/facebook_exec_dinner/</loc>
     <lastmod>2019-10-11T12:19:06-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/publications/partition_with_embeddings/</loc>
+    <loc>//localhost:1313/publications/partition_with_embeddings/</loc>
     <lastmod>2019-09-09T01:34:08-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/misc/</loc>
+    <loc>//localhost:1313/misc/</loc>
     <lastmod>2019-08-26T00:14:35-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/misc/partition_with_embeddings_supl_hg_table/</loc>
+    <loc>//localhost:1313/misc/partition_with_embeddings_supl_hg_table/</loc>
     <lastmod>2019-08-26T00:14:35-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/misc/partition_with_embeddings_supl/</loc>
+    <loc>//localhost:1313/misc/partition_with_embeddings_supl/</loc>
     <lastmod>2019-07-21T00:14:35-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/posts/embeddings_conceptualized/</loc>
+    <loc>//localhost:1313/posts/embeddings_conceptualized/</loc>
     <lastmod>2019-07-17T22:40:43-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/publications/bipartite_graph_embedding/</loc>
+    <loc>//localhost:1313/publications/bipartite_graph_embedding/</loc>
     <lastmod>2019-07-16T22:59:55-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/misc/moliere_run_query/</loc>
+    <loc>//localhost:1313/misc/moliere_run_query/</loc>
     <lastmod>2019-07-15T21:14:35-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/updates/thesis_proposal/</loc>
+    <loc>//localhost:1313/updates/thesis_proposal/</loc>
     <lastmod>2019-05-10T14:18:52-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/updates/big_data_2018/</loc>
+    <loc>//localhost:1313/updates/big_data_2018/</loc>
     <lastmod>2018-12-10T14:18:52-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/publications/automatic_validation/</loc>
+    <loc>//localhost:1313/publications/automatic_validation/</loc>
     <lastmod>2018-10-18T22:43:39-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/publications/are_abstracts_enough/</loc>
+    <loc>//localhost:1313/publications/are_abstracts_enough/</loc>
     <lastmod>2018-10-18T22:34:08-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/updates/pirc_poster_2018/</loc>
+    <loc>//localhost:1313/updates/pirc_poster_2018/</loc>
     <lastmod>2018-07-14T14:18:52-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/posts/basic_optimization/</loc>
+    <loc>//localhost:1313/posts/basic_optimization/</loc>
     <lastmod>2018-03-05T21:58:36-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/updates/moliere_software_overhaul/</loc>
+    <loc>//localhost:1313/updates/moliere_software_overhaul/</loc>
     <lastmod>2018-02-28T14:18:52-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/posts/producer_consumer_openmp_cpp/</loc>
+    <loc>//localhost:1313/posts/producer_consumer_openmp_cpp/</loc>
     <lastmod>2017-11-06T23:18:26-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/posts/document_embedding/</loc>
+    <loc>//localhost:1313/posts/document_embedding/</loc>
     <lastmod>2017-09-27T14:18:52-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/posts/agile_development_in_google_sheets/</loc>
+    <loc>//localhost:1313/posts/agile_development_in_google_sheets/</loc>
     <lastmod>2017-09-20T15:00:00-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/posts/word_embedding/</loc>
+    <loc>//localhost:1313/posts/word_embedding/</loc>
     <lastmod>2017-09-17T14:18:26-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/posts/hypothesis_generation_explained/</loc>
+    <loc>//localhost:1313/posts/hypothesis_generation_explained/</loc>
     <lastmod>2017-09-15T23:18:26-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/publications/moliere/</loc>
+    <loc>//localhost:1313/publications/moliere/</loc>
     <lastmod>2017-08-13T22:49:09-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/updates/kdd_2017/</loc>
+    <loc>//localhost:1313/updates/kdd_2017/</loc>
     <lastmod>2017-08-10T14:18:52-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/publications/to_agile_or_not_to_agile/</loc>
+    <loc>//localhost:1313/publications/to_agile_or_not_to_agile/</loc>
     <lastmod>2017-04-01T22:56:59-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/publications/rapid_replication/</loc>
+    <loc>//localhost:1313/publications/rapid_replication/</loc>
     <lastmod>2015-11-16T22:54:47-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/updates/pymoliere_2019/</loc>
-    <priority>0</priority>
+    <loc>//localhost:1313/updates/pymoliere_2019/</loc>
   </url>
   
   <url>
-    <loc>/categories/</loc>
+    <loc>//localhost:1313/categories/</loc>
   </url>
   
   <url>
-    <loc>/tags/</loc>
+    <loc>//localhost:1313/tags/</loc>
   </url>
   
 </urlset>
