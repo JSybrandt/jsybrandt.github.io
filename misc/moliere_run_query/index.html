@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="author" content="Justin Sybrandt">
+    <meta name="author" content="Justin Sybrandt, Ph.D.">
     <meta name="description" content="/">
     <meta name="keywords" content="developer,research,personal,resume,machine,learning">
 
@@ -30,7 +30,6 @@
     
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     
-    <link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700">
     <link rel="stylesheet" href="/css/normalize.min.css">
     <link rel="stylesheet" href="/css/style.min.css">
 
@@ -97,9 +96,36 @@
     <p>Thanks for requesting a Moliere query!
 By using this form you are requesting us to run your experiment on our supercomputing infrastructure.
 Unfortunately, we have not been able to automate this process, so please allow for a little turn around time, and feel free to send us an email if you don&rsquo;t hear back soon.</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<h1> Post Query </h1>
+<form action="https://formspree.io/justin@sybrandt.com" 
+      method="POST"
+      id="query">
+Query Terms <br />
+<input type="text"
+       name="keyword_1"
+       id="keyword_1"
+       placeholder="tobacco"
+			 required>
+<input type="text"
+       name="keyword_2"
+       id="keyword_2"
+       placeholder="lung cancer"
+			 required> <br /> <br />
+Number of Topics (typically btwn. 10 - 100) <br />
+<input type="number"
+       name="num_topics" 
+       id="num_topics"
+       min=2 max=100 value=20
+			 required><br /> <br />
+Contact Email: <br />
+<input type="email"
+       name="contact_email"
+			 id="contact_email"
+			 pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+			 required><br /> <br />
+<input type="submit" value="Submit">
+</form>
+<hr>
 
   </article>
 </section>
