@@ -5,10 +5,21 @@
     <link>/updates/</link>
     <description>Recent content in Updates on Justin Sybrandt</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 27 Mar 2020 15:26:12 -0400</lastBuildDate>
+    <lastBuildDate>Wed, 01 Apr 2020 15:26:12 -0400</lastBuildDate>
     
 	<atom:link href="/updates/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Agatha talk with AISC</title>
+      <link>/updates/2020_04_01_aisc_talk/</link>
+      <pubDate>Wed, 01 Apr 2020 15:26:12 -0400</pubDate>
+      
+      <guid>/updates/2020_04_01_aisc_talk/</guid>
+      <description>I was very happy to have a chance to talk about my recent work Agatha with the great people over at the A.I. Socratic Circles group! The talk was a &amp;ldquo;lunch &amp;amp; learn&amp;rdquo; recorded from quarantine, and broadcaster on YouTube. Check it out if you&amp;rsquo;re interested in Agatha but missed the live session!
+Here&amp;rsquo;s the slides:
+ </description>
+    </item>
     
     <item>
       <title>Dissertation Defense</title>
