@@ -324,14 +324,5 @@ It all began in the 80&amp;rsquo;s with a man named Don Swanson. He was the firs
       <description>Abstract: As file systems grow larger, tools which were once industry standard become unsustainable at scale. Today, large data sets containing hundreds of millions of files often take longer to traverse than to copy. The time needed to replicate a file system has grown from hours to weeks, an unrealistic wait for a backup. Distsync is our new utility that can quickly update an out-of-date file system replica. By utilizing General Parallel File System (GPFS) policy scans, distsync finds changed files without navigating between directories.</description>
     </item>
     
-    <item>
-      <title></title>
-      <link>/updates/pymoliere_2019/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/updates/pymoliere_2019/</guid>
-      <description></description>
-    </item>
-    
   </channel>
 </rss>
