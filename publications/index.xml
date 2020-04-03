@@ -5,10 +5,19 @@
     <link>/publications/</link>
     <description>Recent content in Publications on Justin Sybrandt</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 13 Feb 2020 11:20:00 -0500</lastBuildDate>
+    <lastBuildDate>Wed, 01 Apr 2020 11:19:52 -0500</lastBuildDate>
     
 	<atom:link href="/publications/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Unsupervised Hierarchical Graph Representation Learning by Mutual Information Maximization</title>
+      <link>/publications/2020_04_03_unsupervised_graph/</link>
+      <pubDate>Wed, 01 Apr 2020 11:19:52 -0500</pubDate>
+      
+      <guid>/publications/2020_04_03_unsupervised_graph/</guid>
+      <description>Abstract: Graph representation learning based on graph neural networks (GNNs) can greatly improve the performance of downstream tasks, such as node and graph classification. However, the general GNN models do not aggregate node information in a hierarchical manner, and can miss key higher-order structural features of many graphs. The hierarchical aggregation also enables the graph representations to be explainable. In addition, supervised graph representation learning requires labeled data, which is expensive and error-prone.</description>
+    </item>
     
     <item>
       <title>CBAG: Conditional Biomedical Abstract Generation</title>

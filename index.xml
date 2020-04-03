@@ -22,6 +22,15 @@ Here&amp;rsquo;s the slides:
     </item>
     
     <item>
+      <title>Unsupervised Hierarchical Graph Representation Learning by Mutual Information Maximization</title>
+      <link>/publications/2020_04_03_unsupervised_graph/</link>
+      <pubDate>Wed, 01 Apr 2020 11:19:52 -0500</pubDate>
+      
+      <guid>/publications/2020_04_03_unsupervised_graph/</guid>
+      <description>Abstract: Graph representation learning based on graph neural networks (GNNs) can greatly improve the performance of downstream tasks, such as node and graph classification. However, the general GNN models do not aggregate node information in a hierarchical manner, and can miss key higher-order structural features of many graphs. The hierarchical aggregation also enables the graph representations to be explainable. In addition, supervised graph representation learning requires labeled data, which is expensive and error-prone.</description>
+    </item>
+    
+    <item>
       <title>Dissertation Defense</title>
       <link>/updates/defense_slides/</link>
       <pubDate>Fri, 27 Mar 2020 15:26:12 -0400</pubDate>
