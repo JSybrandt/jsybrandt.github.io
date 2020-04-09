@@ -5,10 +5,19 @@
     <link>/posts/</link>
     <description>Recent content in Posts on Justin Sybrandt</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 06 Nov 2019 14:18:52 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 29 Mar 2020 13:42:36 -0400</lastBuildDate>
     
 	<atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Tips for Succeeding in a CS Ph.D.</title>
+      <link>/posts/2020_03_30_tips_phd_cs/</link>
+      <pubDate>Sun, 29 Mar 2020 13:42:36 -0400</pubDate>
+      
+      <guid>/posts/2020_03_30_tips_phd_cs/</guid>
+      <description>Now that I am wrapping up my Ph.D., an endeavor that has defined my last four years, it seems as good a time as any to take stock of the advice I&amp;rsquo;ve given and received. I&amp;rsquo;m recording this mostly for myself, in hopes that a few years from now I might do this again and compare notes. However, I also hope that if any up-and-coming grad students stumble on this list, maybe it might do some good.</description>
+    </item>
     
     <item>
       <title>The Basic Math of Neural Networks</title>
