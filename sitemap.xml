@@ -108,6 +108,11 @@
   </url>
   
   <url>
+    <loc>/publications/bipartite_graph_embedding/</loc>
+    <lastmod>2019-07-16T22:59:55-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/misc/moliere_run_query/</loc>
     <lastmod>2019-07-15T21:14:35-04:00</lastmod>
   </url>
@@ -190,10 +195,6 @@
   <url>
     <loc>/publications/rapid_replication/</loc>
     <lastmod>2015-11-16T22:54:47-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/publications/bipartite_graph_embedding/</loc>
   </url>
   
   <url>
