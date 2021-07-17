@@ -5,10 +5,33 @@
     <link>/</link>
     <description>Recent content on Justin Sybrandt</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 07 May 2020 01:01:01 -0100</lastBuildDate>
+    <lastBuildDate>Tue, 06 Jul 2021 11:20:00 -0500</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CBAG: Conditional Biomedical Abstract Generation</title>
+      <link>/publications/cbag/</link>
+      <pubDate>Tue, 06 Jul 2021 11:20:00 -0500</pubDate>
+      
+      <guid>/publications/cbag/</guid>
+      <description>Abstract: Biomedical research papers often combine disjoint concepts in novel ways, such as when describing a newly discovered relationship between an understudied gene with an important disease. These concepts are often explicitly encoded as metadata keywords, such as the author-provided terms included with many documents in the MEDLINE database. While substantial recent work has addressed the problem of text generation in a more general context, applications, such as scientific writing assistants, or hypothesis generation systems, could benefit from the capacity to select the specific set of concepts that underpin a generated biomedical text.</description>
+    </item>
     
-	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Accelerating COVID-19 research with graph mining and transformer-based learning</title>
+      <link>/publications/2021_02_10_accelerating/</link>
+      <pubDate>Wed, 10 Feb 2021 01:01:01 -0100</pubDate>
+      
+      <guid>/publications/2021_02_10_accelerating/</guid>
+      <description>In 2020, the White House released the, &amp;ldquo;Call to Action to the Tech Community on New Machine Readable COVID-19 Dataset,&amp;rdquo; wherein artificial intelligence experts are asked to collect data and develop text mining techniques that can help the science community answer high-priority scientific questions related to COVID-19. The Allen Institute for AI and collaborators announced the availability of a rapidly growing open dataset of publications, the COVID-19 Open Research Dataset (CORD-19).</description>
+    </item>
     
+    <item>
+      <title>Accelerating Text Mining Using Domain-Specific Stop Word Lists</title>
+      <link>/publications/2020_12_10_accelerating_text_mining/</link>
+      <pubDate>Thu, 10 Dec 2020 01:01:01 -0100</pubDate>
+      
+      <guid>/publications/2020_12_10_accelerating_text_mining/</guid>
+      <description>Text preprocessing is an essential step in text mining. Removing words that can negatively impact the quality of prediction algorithms or are not informative enough is a crucial storage-saving technique in text indexing and results in improved computational efficiency. Typically, a generic stop word list is applied to a dataset regardless of the domain. However, many common words are different from one domain to another but have no significance within a particular domain.</description>
+    </item>
     
     <item>
       <title>Exploiting Latent Features of Text and Graphs</title>
@@ -55,15 +78,6 @@ Here&amp;rsquo;s the slides:
       
       <guid>/updates/defense_slides/</guid>
       <description> </description>
-    </item>
-    
-    <item>
-      <title>CBAG: Conditional Biomedical Abstract Generation</title>
-      <link>/publications/cbag/</link>
-      <pubDate>Thu, 13 Feb 2020 11:20:00 -0500</pubDate>
-      
-      <guid>/publications/cbag/</guid>
-      <description>Abstract: Biomedical research papers use significantly different language and jargon when compared to typical English text, which reduces the utility of pre-trained NLP models in this domain. Meanwhile Medline, a database of biomedical abstracts, introduces nearly a million new documents per-year. Applications that could benefit from understanding this wealth of publicly available information, such as scientific writing assistants, chat-bots, or descriptive hypothesis generation systems, require new domain-centered approaches. A conditional language model, one that learns the probability of words given some a priori criteria, is a fundamental building block in many such applications.</description>
     </item>
     
     <item>

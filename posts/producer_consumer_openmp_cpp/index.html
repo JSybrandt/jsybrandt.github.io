@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="author" content="Justin Sybrandt, Ph.D.">
+    <meta name="author" content="Justin Sybrandt, PhD.">
     <meta name="description" content="/">
     <meta name="keywords" content="developer,research,personal,resume,machine,learning">
 
@@ -48,7 +48,7 @@
 
 
 
-    <meta name="generator" content="Hugo 0.73.0" />
+    <meta name="generator" content="Hugo 0.85.0" />
   </head>
 
   <body class="">
@@ -63,11 +63,11 @@
         
           
             <li class="navigation-item  align-center ">
-              <a class="navigation-link" href="/posts">Posts</a>
+              <a class="navigation-link" href="/publications">Publications</a>
             </li>
           
             <li class="navigation-item  align-center ">
-              <a class="navigation-link" href="/publications">Publications</a>
+              <a class="navigation-link" href="/posts">Posts</a>
             </li>
           
             <li class="navigation-item  align-center ">
@@ -122,7 +122,7 @@ The <strong>consumer</strong> threads will be all other threads.</p>
 Once parsed, the thread can independently do its distance calculations.
 If the conditions are right, then the thread should get a lock on the data structure, store its result, and repeat.</p>
 <p>In python that&rsquo;s pretty much as easy as:</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">pool</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="n">doWork</span><span class="p">,</span> <span class="p">[</span><span class="n">line</span> <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="nb">file</span><span class="p">])</span>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">pool</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="n">doWork</span><span class="p">,</span> <span class="p">[</span><span class="n">line</span> <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">file</span><span class="p">])</span>
 <span class="c1"># Note: This line doesn&#39;t do EXACTLY what I just described, but you get the gist.</span>
 </code></pre></div><p>How on earth do you do that in C++?</p>
 <h2 id="the-c-solution">The C++ Solution</h2>

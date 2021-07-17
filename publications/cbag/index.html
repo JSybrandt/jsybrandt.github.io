@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="author" content="Justin Sybrandt, Ph.D.">
+    <meta name="author" content="Justin Sybrandt, PhD.">
     <meta name="description" content="/">
     <meta name="keywords" content="developer,research,personal,resume,machine,learning">
 
@@ -47,7 +47,7 @@
 
 
 
-    <meta name="generator" content="Hugo 0.73.0" />
+    <meta name="generator" content="Hugo 0.85.0" />
   </head>
 
   <body class="">
@@ -62,11 +62,11 @@
         
           
             <li class="navigation-item  align-center ">
-              <a class="navigation-link" href="/posts">Posts</a>
+              <a class="navigation-link" href="/publications">Publications</a>
             </li>
           
             <li class="navigation-item  align-center ">
-              <a class="navigation-link" href="/publications">Publications</a>
+              <a class="navigation-link" href="/posts">Posts</a>
             </li>
           
             <li class="navigation-item  align-center ">
@@ -91,8 +91,8 @@
   <article class="publication">
     <header>
       <h1 class="title centered">CBAG: Conditional Biomedical Abstract Generation</h1>
-      <h2 class="date centered">February 13, 2020</h2>
-      <p class="paper_venue centered"> In Submission </p>
+      <h2 class="date centered">July 6, 2021</h2>
+      <p class="paper_venue centered"> PLOS ONE </p>
       <ul class="author_list centered">
         
           
@@ -108,6 +108,8 @@
     
     <ul class="pub_links centered">
       
+      <li><a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0253905">PLOS ONE</a></li>
+      
       <li><a href="/documents/cbag_2020.pdf">PDF</a></li>
       
       <li><a href="https://github.com/JSybrandt/agatha/tree/master/agatha/ml/abstract_generator">Code</a></li>
@@ -120,24 +122,20 @@
     
     </header>
     <h2 id="abstract">Abstract:</h2>
-<p>Biomedical research papers use significantly different language and jargon when
-compared to typical English text, which reduces the utility of pre-trained NLP
-models in this domain. Meanwhile Medline, a database of biomedical abstracts,
-introduces nearly a million new documents per-year.  Applications that could
-benefit from understanding this wealth of publicly available information, such
-as scientific writing assistants, chat-bots, or descriptive hypothesis
-generation systems, require new domain-centered approaches.  A conditional
-language model, one that learns the probability of words given some a priori
-criteria, is a fundamental building block in many such applications.  We propose
-a transformer-based conditional language model with a shallow encoder
-&ldquo;condition&rdquo; stack, and a deep &ldquo;language model&rdquo; stack of multi-headed
-attention blocks. The condition stack encodes metadata used to alter the output
-probability distribution of the language model stack.  We sample this
-distribution in order to generate biomedical abstracts given only a proposed
-title, an intended publication year, and a set of keywords.  Using typical
-natural language generation metrics, we demonstrate that this proposed approach
-is more capable of producing non-trivial relevant entities within the abstract
-body than the 1.5B parameter GPT-2 language model.</p>
+<p>Biomedical research papers often combine disjoint concepts in novel ways, such
+as when describing a newly discovered relationship between an understudied gene
+with an important disease. These concepts are often explicitly encoded as
+metadata keywords, such as the author-provided terms included with many
+documents in the MEDLINE database. While substantial recent work has addressed
+the problem of text generation in a more general context, applications, such as
+scientific writing assistants, or hypothesis generation systems, could benefit
+from the capacity to select the specific set of concepts that underpin a
+generated biomedical text. We propose a conditional language model following the
+transformer architecture. This model uses the “encoder stack” to encode concepts
+that a user wishes to discuss in the generated text. The “decoder stack” then
+follows the masked self-attention pattern to perform text generation, using both
+prior tokens as well as the encoded condition. We demonstrate that this approach
+provides significant control, while still producing reasonable biomedical text.</p>
 
   </article>
   <br/>

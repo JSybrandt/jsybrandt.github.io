@@ -5,11 +5,7 @@
     <link>/misc/</link>
     <description>Recent content in Miscs on Justin Sybrandt</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 26 Aug 2019 00:14:35 -0400</lastBuildDate>
-    
-	<atom:link href="/misc/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 26 Aug 2019 00:14:35 -0400</lastBuildDate><atom:link href="/misc/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Partition Hypergraphs with Embeddings (HG Details)</title>
       <link>/misc/partition_with_embeddings_supl_hg_table/</link>
