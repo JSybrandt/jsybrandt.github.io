@@ -25,12 +25,7 @@ disqusShortname = "sybrandt-com"
     Machine Learning Applied Research
     """
     bio = """
-      Justin complted a PhD. in CS at Clemson University with Dr. Ilya Safro.
-      His dissertation focuses around automatic hypothesis generation systems,
-      which combine natural langauge processing, graph mining, and machine
-      learning in order to predict fruitful new research topics. Today, he
-      works in Google Brain Applied Research and builds reusable ML
-      infrastructure.
+      Google Brain Applied Research.
     """
     avatarurl = "img/portrait.jpg"
     thumbnail = "img/portrait.jpg"
