@@ -1,0 +1,90 @@
+baseurl = "/"
+title = "Justin Sybrandt"
+
+theme = "coder-portfolio"
+
+DefaultContentLanguage = "en"
+
+paginate = 20
+
+pygmentsstyle = "b2"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
+pygmentsUseClasses = true
+
+disqusShortname = "sybrandt-com"
+
+
+[params]
+    author = "Justin Sybrandt, PhD."
+    description = """
+    Machine Learning Applied Research.
+    """
+    keywords = "developer,research,personal,resume,machine,learning"
+    info = """
+    Machine Learning Applied Research
+    """
+    bio = """
+      Justin complted a PhD. in CS at Clemson University with Dr. Ilya Safro.
+      His dissertation focuses around automatic hypothesis generation systems,
+      which combine natural langauge processing, graph mining, and machine
+      learning in order to predict fruitful new research topics. Today, he
+      works in Google Brain Applied Research and builds reusable ML
+      infrastructure.
+    """
+    avatarurl = "img/portrait.jpg"
+    thumbnail = "img/portrait.jpg"
+
+    hideCredits = false
+    hideCopyright = false
+
+    # No clue whats up, need this for latex math
+    snsShare = true
+
+
+    # Custom CSS
+    custom_css = []
+
+    # Alignment of Mobile Menu items
+    itemscentered = true
+
+    # RTL support
+    rtl = false
+
+
+[[params.social]]
+    name = "Github"
+    url = "https://github.com/jsybrandt/"
+    weight = 1
+[[params.social]]
+    name = "Scholar"
+    url = "https://scholar.google.com/citations?user=wOQvmJQAAAAJ"
+    weight = 2
+[[params.social]]
+    name = "LinkedIn"
+    url = "https://www.linkedin.com/in/justin-sybrandt-ph-d-616b9148/"
+    weight = 3
+[[params.social]]
+    name = "Twitter"
+    url = "https://twitter.com/Justin_Sybrandt"
+    weight = 4
+
+[[menu.main]]
+  name = "Publications"
+  weight = 10
+  url = "publications"
+[[menu.main]]
+  name = "Posts"
+  weight = 20
+  url = "posts"
+[[menu.main]]
+  name = "Updates"
+  weight = 30
+  url = "updates"
+[[menu.main]]
+  name = "CV"
+  weight = 40
+  url = "/documents/cv.pdf"
+
+[markup.goldmark.renderer]
+  unsafe= true

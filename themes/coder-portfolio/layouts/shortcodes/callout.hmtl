@@ -1,0 +1,13 @@
+{{ $_hugo_config := `{ "version": 1 }` }}
+<div class="callout">
+{{ with .Get "title" }}
+  <div class="callout-header">
+    {{ . }}
+  </div>
+{{ end }}
+{{ with .Inner }}
+  <div class="callout-body">
+    {{ . }}
+  </div>
+{{end}}
+</div>

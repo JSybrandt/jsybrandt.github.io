@@ -1,0 +1,28 @@
+<section class="container list">
+  <h1 class="title">{{ .Title }}</h1>
+  <ul>
+    {{ range .Paginator.Pages }}
+    <li>
+        {{ if eq .Type "publications" }}
+          <span>{{ .Date.Format "2006" }}</span>
+          <a href="{{ .Permalink }}" class="list_paper_title">{{ .Title }}</a>
+          <p class="list_paper_venue">({{.Params.Venue}})</p>
+          <ul class="author_list">
+            {{ range .Params.Authors }}
+              {{ if eq . "Justin Sybrandt" }}
+                <li class="author_elem author_is_me">{{ . }}</li>
+              {{ else }}
+                <li class="author_elem">{{ . }}</li>
+              {{ end }}
+            {{ end }}
+          </ul>
+        {{ else }}
+          <span>{{ .Date.Format "Jan. 2006" }}</span>
+          <a href="{{ .Permalink }}">{{ .Title }}</a>
+          <p class="description">{{ .Description }}</p>
+        {{ end }}
+    </li>
+    {{ end }}
+  </ul>
+  {{ partial "pagination.html" . }}
+</section>
