@@ -1,43 +1,7 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Miscs on Justin Sybrandt</title>
-    <link>/misc/</link>
-    <description>Recent content in Miscs on Justin Sybrandt</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 26 Aug 2019 00:14:35 -0400</lastBuildDate><atom:link href="/misc/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Partition Hypergraphs with Embeddings (HG Details)</title>
-      <link>/misc/partition_with_embeddings_supl_hg_table/</link>
-      <pubDate>Mon, 26 Aug 2019 00:14:35 -0400</pubDate>
-      
-      <guid>/misc/partition_with_embeddings_supl_hg_table/</guid>
-      <description>Go back to publication. Details The following table demonstrates many different aspects of all considered hypergraphs. This information compliments the other results presented in the supplimental information of &amp;ldquo;Partition Hypergraphs with Embeddings.&amp;rdquo;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Miscs on Justin Sybrandt</title><link>https://jsybrandt.github.io/misc/</link><description>Recent content in Miscs on Justin Sybrandt</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Mon, 26 Aug 2019 00:14:35 -0400</lastBuildDate><atom:link href="https://jsybrandt.github.io/misc/index.xml" rel="self" type="application/rss+xml"/><item><title>Partition Hypergraphs with Embeddings (HG Details)</title><link>https://jsybrandt.github.io/misc/partition_with_embeddings_supl_hg_table/</link><pubDate>Mon, 26 Aug 2019 00:14:35 -0400</pubDate><guid>https://jsybrandt.github.io/misc/partition_with_embeddings_supl_hg_table/</guid><description>Go back to publication. Details The following table demonstrates many different aspects of all considered hypergraphs. This information compliments the other results presented in the supplimental information of &amp;ldquo;Partition Hypergraphs with Embeddings.&amp;rdquo;
 Click Here to return to the rest of the supplimental information.
- .large_scroll_table { display: block; width:100%; table-layout: fixed; } thead { display: block; } tbody { display:block; height: 500px; overflow-y: auto; }     Node Degree Edge Degree   Hypergraph   # Nodes   # Edges   Med.</description>
-    </item>
-    
-    <item>
-      <title>Partition Hypergraphs with Embeddings (Supplemental Info.)</title>
-      <link>/misc/partition_with_embeddings_supl/</link>
-      <pubDate>Sun, 21 Jul 2019 00:14:35 -0400</pubDate>
-      
-      <guid>/misc/partition_with_embeddings_supl/</guid>
-      <description>Go back to publication.
+Node Degree Edge Degree Hypergraph # Nodes # Edges Med. Mean Std. Med. Mean Std. com-dblp-cmty 260998 13477 1 2.758 4.340 8 53.411 4.340 release-youtube-links_x0_100 115782 115778 2 3.</description></item><item><title>Partition Hypergraphs with Embeddings (Supplemental Info.)</title><link>https://jsybrandt.github.io/misc/partition_with_embeddings_supl/</link><pubDate>Sun, 21 Jul 2019 00:14:35 -0400</pubDate><guid>https://jsybrandt.github.io/misc/partition_with_embeddings_supl/</guid><description>Go back to publication.
 Data Download our full results as a MongoDB Database dump. Explore these results within MongoDB with the mongorestore command. More information can be found here.
 Data Visualization Select the desired comparison using the following buttons. Then, click a cell in the resulting matrix plot to view a graph-wise comparison.
- #matrix_content { } .large_img { zoom:.25; } .btn-group { margin:auto; display: flex; flex-direction: row; justify-content: center; margin-bottom: 10pt; } .</description>
-    </item>
-    
-    <item>
-      <title>Submit a Moliere Query</title>
-      <link>/misc/moliere_run_query/</link>
-      <pubDate>Mon, 15 Jul 2019 21:14:35 -0400</pubDate>
-      
-      <guid>/misc/moliere_run_query/</guid>
-      <description>Thanks for requesting a Moliere query! By using this form you are requesting us to run your experiment on our supercomputing infrastructure. Unfortunately, we have not been able to automate this process, so please allow for a little turn around time, and feel free to send us an email if you don&amp;rsquo;t hear back soon.
- Post Query  Query Terms Number of Topics (typically btwn. 10 - 100) Contact Email:   </description>
-    </item>
-    
-  </channel>
-</rss>
+Lambda - 1 # Cut Hyperedges Average Standard Deviation Minimum Seen Maximum Hypergraph Data The following depicts various properties per considered hypergraph.</description></item><item><title>Submit a Moliere Query</title><link>https://jsybrandt.github.io/misc/moliere_run_query/</link><pubDate>Mon, 15 Jul 2019 21:14:35 -0400</pubDate><guid>https://jsybrandt.github.io/misc/moliere_run_query/</guid><description>Thanks for requesting a Moliere query! By using this form you are requesting us to run your experiment on our supercomputing infrastructure. Unfortunately, we have not been able to automate this process, so please allow for a little turn around time, and feel free to send us an email if you don&amp;rsquo;t hear back soon.
+Post Query Query Terms Number of Topics (typically btwn. 10 - 100) Contact Email:</description></item></channel></rss>
