@@ -1,81 +1,75 @@
 baseurl = "https://jsybrandt.github.io"
+languageCode = "en-us"
 title = "Justin Sybrandt"
-
-theme = "coder-portfolio"
-
-DefaultContentLanguage = "en"
-
-paginate = 20
-
-pygmentsstyle = "b2"
-pygmentscodefences = true
-pygmentscodefencesguesssyntax = true
-pygmentsUseClasses = true
-
+theme = "cactus"
+copyright = "Justin Sybrandt"
 disqusShortname = "sybrandt-com"
 
-
 [params]
-    author = "Justin Sybrandt, PhD."
-    description = """
-    Machine Learning Applied Research.
-    """
-    keywords = "developer,research,personal,resume,machine,learning"
-    info = """
-    Machine Learning Applied Research
-    """
-    bio = """
-      Google Brain Applied Research.
-    """
-    avatarurl = "img/portrait.jpg"
-    thumbnail = "img/portrait.jpg"
+colortheme = "dark"
+description = """
+Here I post updates on projects, opine on the state of tech, and dive into
+recent advancements in Machine Learning.
 
-    hideCredits = false
-    hideCopyright = false
+I currently work on the Google Brain Applied Research team. There I work on
+building machine learning systems that intend to dramatically simplify the
+overhead of deploying production machine learning systems.
 
-    # No clue whats up, need this for latex math
-    snsShare = true
+Before that, I completed my Ph.D. at Clemson University. My dissertation
+focused on automatic biomedical hypothesis generation. Over the course of many
+projects I applied graph mining and natural language processing to anticipate
+recent advances in medical research.
+"""
+mainSectionTitle = "Recent Posts"
+mathjax = true
 
-
-    # Custom CSS
-    custom_css = []
-
-    # Alignment of Mobile Menu items
-    itemscentered = true
-
-    # RTL support
-    rtl = false
-
-
-[[params.social]]
-    name = "Github"
-    url = "https://github.com/jsybrandt/"
-    weight = 1
-[[params.social]]
-    name = "Scholar"
-    url = "https://scholar.google.com/citations?user=wOQvmJQAAAAJ"
-    weight = 2
-[[params.social]]
-    name = "LinkedIn"
-    url = "https://www.linkedin.com/in/justin-sybrandt-ph-d-616b9148/"
-    weight = 3
-[[params.social]]
-    name = "Twitter"
-    url = "https://twitter.com/Justin_Sybrandt"
-    weight = 4
+# Main menu which appears below site header.
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
 
 [[menu.main]]
-  name = "Posts"
-  weight = 10
-  url = "posts"
-[[menu.main]]
-  name = "Publications"
-  weight = 20
-  url = "publications"
-[[menu.main]]
-  name = "Resume"
-  weight = 30
-  url = "/documents/cv.pdf"
+name = "Posts"
+url = "/posts"
+weight = 2
 
-[markup.goldmark.renderer]
-  unsafe= true
+[[menu.main]]
+name = "Publications"
+url = "/publications"
+weight = 3
+
+[[menu.main]]
+name = "Resume"
+weight = 4
+url = "/documents/cv.pdf"
+
+
+[[params.social]]
+name = "email"
+link = "justin@sybrandt.com"
+
+[[params.social]]
+name = "linkedin"
+link = "https://www.linkedin.com/in/justin-sybrandt-ph-d-616b9148/"
+
+[[params.social]]
+name = "github"
+link = "https://github.com/JSybrandt"
+
+[[params.social]]
+name = "scholar"
+link = "https://scholar.google.com/citations?user=wOQvmJQAAAAJ"
+
+# Default markdown highlighting.
+[markup]
+  [markup.highlight]
+  codeFences = true
+  guessSyntax = false
+  hl_Lines = ""
+  lineNoStart = 1
+  lineNos = false
+  lineNumbersInTable = true
+  noClasses = true
+  style = "monokai"
+  tabWidth = 4

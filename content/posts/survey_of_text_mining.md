@@ -21,9 +21,5 @@ Although we do go quickly from Bag-of-Word and TF-IDF to modern transformer
 models, this talk should serve as a solid entry point for anyone interested in
 the field.
 
-<iframe
-  src="/documents/survey_of_text_mining_2019_slides.pdf"
-  width=100%
-  height=500px
-></iframe>
+{{< pdfviewer "/documents/survey_of_text_mining_2019_slides.pdf">}}
 
