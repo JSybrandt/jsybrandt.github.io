@@ -5,6 +5,9 @@ draft = false
 description = """
   Slides from my dissertation defense.
 """
+aliases = [
+  "/posts/defense_slides/",
+]
 +++ 
 
 

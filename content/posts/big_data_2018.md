@@ -7,7 +7,8 @@ description = """
   Some slides from my double-length talk at BigData'18.
 """
 aliases = [
-  "/post/big-data-2018/"
+  "/post/big-data-2018/",
+  "/updates/big-data-2018/",
 ]
 +++
 

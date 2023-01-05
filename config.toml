@@ -65,20 +65,16 @@ disqusShortname = "sybrandt-com"
     weight = 4
 
 [[menu.main]]
-  name = "Publications"
-  weight = 10
-  url = "publications"
-[[menu.main]]
   name = "Posts"
-  weight = 20
+  weight = 10
   url = "posts"
 [[menu.main]]
-  name = "Updates"
-  weight = 30
-  url = "updates"
+  name = "Publications"
+  weight = 20
+  url = "publications"
 [[menu.main]]
-  name = "CV"
-  weight = 40
+  name = "Resume"
+  weight = 30
   url = "/documents/cv.pdf"
 
 [markup.goldmark.renderer]

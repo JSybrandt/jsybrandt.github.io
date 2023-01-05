@@ -8,7 +8,8 @@ description = """
   Conference.
 """
 aliases = [
-  "/post/pirc-poster-18-7-14"
+  "/post/pirc-poster-18-7-14",
+  "/updates/pirc_poster_2018"
 ]
 +++
 

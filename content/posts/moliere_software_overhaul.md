@@ -9,7 +9,8 @@ description = """
   predicates.
 """
 aliases = [
-  "/posts/moliere-project-update-18-2-28/"
+  "/posts/moliere-project-update-18-2-28/",
+  "/updates/moliere_software_overhaul/"
 ]
 +++
 

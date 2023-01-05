@@ -8,6 +8,7 @@ description = """
   presented in under an hour!
 """
 aliases = [
+  "/updates/thesis_proposal/",
 ]
 +++
 

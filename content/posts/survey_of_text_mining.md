@@ -5,6 +5,9 @@ description = """
   How to solve complex problems with text. Presented at Clemson Applied Data
   Science course to introduce students to the overarching field of text mining.
 """
+aliases = [
+  "/updates/survey_of_text_mining/",
+]
 +++
 
 How to solve complex problems with text. 

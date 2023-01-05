@@ -5,6 +5,9 @@ description = """
   I was selected, along with 12 other interns, to have a dinner meeting with
   Mark.
 """
+aliases = [
+  "/updates/facebook_exec_dinner/",
+]
 +++
 
 <style>
