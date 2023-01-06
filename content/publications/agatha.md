@@ -1,7 +1,10 @@
 +++ 
 draft = false
 date = 2020-02-13T11:19:52-05:00
-title = "AGATHA: Automatic Graph-mining And Transformer based Hypothesis generation Approach"
+title = """
+AGATHA: Automatic Graph-mining And Transformer based Hypothesis generation
+Approach
+"""
 slug = "" 
 aliases = [
   "/2020/agatha/"

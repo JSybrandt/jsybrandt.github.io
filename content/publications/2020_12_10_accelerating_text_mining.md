@@ -20,6 +20,8 @@ venue = "Big Data 2020"
   weight = 10
 +++
 
+## Abstract:
+
 Text preprocessing is an essential step in text mining. Removing words that can
 negatively impact the quality of prediction algorithms or are not informative
 enough is a crucial storage-saving technique in text indexing and results in

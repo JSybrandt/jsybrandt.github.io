@@ -22,6 +22,8 @@ venue = "AAAI"
   weight = 10
 +++
 
+## Abstract:
+
 In 2020, the White House released the “Call to Action to the Tech Community on
 New Machine Readable COVID-19 Dataset,” wherein artificial intelligence experts
 are asked to collect data and develop text mining techniques that can help the

@@ -1,0 +1,43 @@
+<section class="container post">
+  <article class="publication" itemscope itemtype="http://schema.org/BlogPosting">
+    <header>
+      <h1 class="posttitle" itemprop="name headline">
+        {{ .Title }}
+      </h1>
+      <div class="postdate">
+        {{ .Params.Venue }}
+        <span class="spacer"></span>
+        {{ $dataFormat := .Site.Params.dateFormat | default "2006-01-02" }}
+        <time datetime="{{ .Date }}" itemprop="datePublished">
+          {{ .Date.Format $dataFormat }}
+        </time>
+      </div>
+      <br>
+      <span class="pub_authors" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        {{ range .Params.Authors }}
+          <span class="author">
+            {{ if eq . "Justin Sybrandt" }}
+              <span class="is_me">{{ . }}</span>
+            {{ else }}
+              {{ . }}
+            {{ end }}
+          </span>
+          <span class="spacer"></span>
+        {{ end }}
+      </span>
+      <hr>
+      <span class=pub_links>
+        {{ with .Params.links }}
+          {{ range sort .}}
+            <a href="{{ .url }}">{{ .name }}</a>
+            <span class="spacer"></span>
+          {{ end }}
+        {{ end }}
+      </span>
+    </header>
+    <div class="content" itemprop="articleBody">
+      {{ .Content}}
+    </div>
+  </article>
+  <br>
+</section>

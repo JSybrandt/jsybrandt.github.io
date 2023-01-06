@@ -249,3 +249,24 @@ code {
     padding-right: 1em;
   }
 }
+
+.pub_authors {
+  .author {
+    .is_me {
+      color: $color-accent-2;
+    }
+    color: $color-accent-3;
+    white-space: nowrap;
+    @include underline(5px, $color-text);
+  }
+}
+
+.pub_links a {
+  font-weight: bold;
+  font-size: 16px;
+  color: $color-accent-1;
+}
+
+.spacer {
+  padding: .5em;
+}
