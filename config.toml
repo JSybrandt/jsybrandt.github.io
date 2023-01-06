@@ -20,7 +20,7 @@ focused on automatic biomedical hypothesis generation. Over the course of many
 projects I applied graph mining and natural language processing to anticipate
 recent advances in medical research.
 """
-mainSectionTitle = "Recent Posts"
+mainSectionTitle = "Recent Updates"
 mathjax = true
 
 # Main menu which appears below site header.
