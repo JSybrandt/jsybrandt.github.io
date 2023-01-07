@@ -154,7 +154,7 @@ pre {
   border: 1px dotted $color-border;
   border-radius: 2px;
   -webkit-border-radius: 2px;
-  font-size: 13px;
+  font-size: 18px;
   font-family: $font-family-mono;
   line-height: 22px;
   position: relative;
@@ -166,7 +166,7 @@ pre {
     border: 0;
     border-radius: 0 2px;
     padding: 0;
-    font-family: "JetBrains Mono", monospace;
+    font-family: 'Roboto Mono', monospace;
     font-weight: 800;
     font-size: 0.9em;
     line-height: 1.7;
@@ -252,12 +252,12 @@ code {
 
 .pub_authors {
   .author {
-    .is_me {
-      color: $color-accent-2;
-    }
     color: $color-accent-3;
     white-space: nowrap;
-    @include underline(5px, $color-text);
+    font-size: 14px;
+    .is_me{
+      @include underline(5px, $color-text);
+    }
   }
 }
 
