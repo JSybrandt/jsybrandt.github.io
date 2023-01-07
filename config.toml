@@ -50,6 +50,10 @@ name = "email"
 link = "justin@sybrandt.com"
 
 [[params.social]]
+name = "mastodon"
+link = "https://techhub.social/@jsybrandt"
+
+[[params.social]]
 name = "linkedin"
 link = "https://www.linkedin.com/in/justin-sybrandt-ph-d-616b9148/"
 
@@ -60,6 +64,7 @@ link = "https://github.com/JSybrandt"
 [[params.social]]
 name = "scholar"
 link = "https://scholar.google.com/citations?user=wOQvmJQAAAAJ"
+
 
 # Default markdown highlighting.
 [markup]
