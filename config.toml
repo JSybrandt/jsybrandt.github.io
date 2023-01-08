@@ -22,7 +22,7 @@ recent advances in medical research.
 """
 mainSectionTitle = "Recent Updates"
 mathjax = true
-logo = "img/portrait.jpg"
+logo = "img/icon.png"
 
 # Main menu which appears below site header.
 [[menu.main]]
